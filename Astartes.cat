@@ -2713,7 +2713,7 @@
                 </entryLink>
                 <entryLink id="a452-209a-609c-ca5d" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="ebfd-0b08-97a8-70e5" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="8b3e-182e-6686-5b44" type="selectionEntry">
@@ -2735,6 +2735,18 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="c403-15f8-9ef6-4bb1" type="selectionEntry" targetId="9c2b-db0b-962e-bc3d">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -2768,7 +2780,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="39d2-7b0c-835f-33df" name="2.5) Paired Lightning Claws" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="39d2-7b0c-835f-33df" name="2.5) Paired Claws" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -2780,20 +2792,35 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="9dc8-c423-abd0-cee9" name="Two Lightning Claws" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="c1e0-1faa-68cb-0b63" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2816-f590-1c46-2a99" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a503-7e6e-3ac5-2def" includeChildSelections="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="5bec-8d40-53c3-d65b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                  <modifiers>
+                    <modifier type="set" value="2x Lightning Claw" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="14c0-44bb-ad60-b27e" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="30"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="2x Letting-Talons" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82be-fca1-25a2-0c71" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup id="bde7-608c-0054-30dc" name="4) Mobility:" hidden="false" collective="false" import="true">
               <constraints>
@@ -9871,11 +9898,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Lightning Claw" hidden="false" id="53dc-a10c-7bca-a991" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-                      </costs>
-                    </entryLink>
                     <entryLink import="true" name="Chainsword" hidden="false" id="31ec-b338-65a9-20bb" collective="false" targetId="d26e-1136-7300-4c3c" type="selectionEntry">
                       <modifiers>
                         <modifier type="set" value="0" field="b4b5-e907-ecdf-50e5"/>
@@ -9909,6 +9931,23 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Lightning Claw" hidden="false" id="4353-3875-5540-f060" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Letting-Talons" hidden="false" id="678f-d164-7459-3c0f" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -10082,10 +10121,17 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           <selectionEntryGroups>
             <selectionEntryGroup name="1 in 5 may take:" id="f7d5-31a8-8f78-d508" hidden="false" collective="false" import="true">
               <entryLinks>
-                <entryLink import="true" name="Lightning Claw" hidden="false" id="4022-d8b3-42d8-4636" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="4022-d8b3-42d8-4636" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Power Axe" hidden="false" id="cfa6-9c51-8825-0390" collective="false" targetId="9b64-83e6-bcb5-8799" type="selectionEntry">
                   <costs>
@@ -10103,6 +10149,11 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Power Sword" hidden="false" id="c16b-0e65-5cac-197d" collective="false" targetId="4f6f-0064-0a64-5565" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="6ac3-e18a-5dd5-f6e2" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
@@ -14955,6 +15006,32 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Letting-Talons" hidden="false" id="9c2b-db0b-962e-bc3d">
+      <profiles>
+        <profile name="Letting-Talons" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="25b6-142b-9632-3ed6">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">User</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shred, Rending (5+), Specialist Weapon, Paired Talons</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="b3b9-2d3f-ad7b-c10d" hidden="false" targetId="2e92-b54a-1bc2-8b3e" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred" id="466b-1675-d82c-b920" hidden="false" targetId="0e7a-9209-ce0d-7ed2" type="rule"/>
+        <infoLink name="Specialist Weapon" id="d8da-3891-85fd-faf4" hidden="false" targetId="3f63-8915-cff1-87f8" type="rule"/>
+      </infoLinks>
+      <rules>
+        <rule name="Paired Talons" id="fb68-af8c-2e90-1df7" hidden="false">
+          <description>+2 attacks when using 2 Letting-Talons</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>

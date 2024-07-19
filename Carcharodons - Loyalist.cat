@@ -249,5 +249,14 @@
         <categoryLink name="Vehicle Unit:" hidden="false" id="0797-0b60-2fea-bd1d" targetId="23eb-0b9e-0857-e965" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Carcharodons" hidden="false" id="4f76-37fa-9af5-6b60" type="selectionEntry" targetId="1e02-3d58-c2f7-2e7b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd38-df5c-7be6-09bb" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e6c-619d-1c8d-d5b1" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="c8ba-392b-ae24-505d" primary="true" name="Chapter"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>

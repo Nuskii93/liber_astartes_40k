@@ -269,6 +269,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type" hidden="false"/>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
     <categoryEntry id="9b5d-996f-8000-14f5" name="Retinue" hidden="false"/>
+    <categoryEntry name="Chapter" id="852b-f6b0-b8dd-1609" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -276,6 +277,12 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a31f-bd71-f232-dbd2" type="max"/>
       </constraints>
       <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="8f90-36fc-8ac4-e229" targetId="852b-f6b0-b8dd-1609" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="02a4-60d3-610c-36c5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e486-e5c1-291f-3145" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="25f9-0379-bfa7-08b6" name="Compulsory HQ:" hidden="false" targetId="0124-9b28-2fe3-912c" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b247-982b-6263-70fd" type="min"/>
@@ -2718,6 +2725,11 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <repeat field="7992-13c8-e552-57c1" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="326c-cd97-2293-5c69" type="max"/>
@@ -4264,6 +4276,29 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Chapters" id="cff8-edf1-c4ae-c42c" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
+          <rules>
+            <rule name="Blood Hunger" id="7336-87ff-c498-9a3b" hidden="false">
+              <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit. </description>
+            </rule>
+            <rule name="Blooded" id="7734-7a8a-d31e-f9c3" hidden="false">
+              <description>A Model with the Blooded (x) special rule receives x amount of extra attacks on a turn it charges into combat, this is in addition to Rage (x), Rampage (x) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (x) tokens, simply put he higher of the two token pools and use for the Blooded (x) special Rule.</description>
+            </rule>
+            <rule name="Reavers of the Outer Darkness" id="45aa-9ed8-8ea4-79bc" hidden="false">
+              <description>All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model. </description>
+            </rule>
+            <rule name="The Grey Tithes of the Outer Dark" id="c713-79f5-1074-a412" hidden="false">
+              <description>May include an additional Relic of the Chapter on top of what is usually allowed by the points limits or any other special rules</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Chapter" hidden="false" id="8104-f928-12e9-5fdf" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
