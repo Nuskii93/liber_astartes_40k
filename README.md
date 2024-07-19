@@ -1,4 +1,4 @@
-Template Data Repo
+Liber Badab - A Badab War supplement for 30k The Age of Darkness
 ==================
 
 [![Latest release](https://img.shields.io/github/release/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases/latest)
