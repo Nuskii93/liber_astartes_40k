@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9ce4-f26c-82d1-7baf" name="Carcharodons - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="19" revision="1" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Astartes" id="35f7-8ef4-66d3-24e1" targetId="b232-3062-241d-bf2e"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="77dc-17b6-6c09-0cbc" type="selectionEntry" targetId="2b66-226f-e1a2-c002">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="85ca-21d3-f900-eb9c" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="68c5-6c7b-5c0d-1164" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="368b-9688-2212-2a2f" type="selectionEntry" targetId="c5bb-fad3-cce1-180c">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="7652-69a6-b16c-675f" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="cb52-21fc-2d30-7424" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Assault Squad" hidden="false" id="cc63-cac7-a0ac-e183" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
+    <entryLink import="true" name="Boarding Squad" hidden="false" id="fbb9-1e93-415e-1c52" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="ae24-5198-d140-8b24" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="fd88-2dba-a754-8ec1" targetId="5596-67a3-0a72-dccb" primary="false"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="e6ca-973d-5fe6-039c" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="1844-2703-099c-ba55" type="selectionEntry" targetId="cd69-4c31-b6c2-4481">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="261b-c8f4-629d-7dad" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="adcd-9f07-7274-9660" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="9e47-e40b-1d89-a166" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castraferrum Dreadnought Talon" hidden="false" id="8872-ba43-050d-6dad" type="selectionEntry" targetId="6294-929f-bcc9-0ad8"/>
+    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="739d-7e9f-4f9a-86b2" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d"/>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="89d6-0ac0-e4ef-7e82" type="selectionEntry" targetId="e504-7189-3574-ce61">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="9a4d-6c5e-1c6b-ba31" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="11ca-cd3d-098b-71a0" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Heavy Sub-type" hidden="false" id="ecc5-22d8-9fa2-2006" targetId="9231-183c-b97b-63f9" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Company Captain" hidden="false" id="24ff-6a01-56f4-c9ba" collective="false" targetId="ede4-3265-080b-2f3a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="2853-10f8-a816-2ff4" targetId="a800-52d7-1961-6e29" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="e5e7-0941-ae5d-58d5" targetId="0124-9b28-2fe3-912c" primary="false"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="c825-95f9-b128-43aa" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Independent Character" hidden="false" id="445b-691b-f620-a4bb" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="c260-3e57-6377-4c49" targetId="6513-093f-7312-6d09" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="6301-d534-09f3-113a" type="selectionEntry" targetId="6c49-097a-1be5-82c6"/>
+    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="2ae2-7ae6-963a-0d6d" collective="false" targetId="179a-7d39-c15f-3066" type="selectionEntry"/>
+    <entryLink import="true" name="Deathstorm Drop Pod Strike Group" hidden="false" id="e85f-7c85-0077-391d" type="selectionEntry" targetId="782a-65f3-6350-4227">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="f593-89c6-f7fa-8b20" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="fda1-a2b5-c62f-5b0a" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="1694-721c-7859-e18c" type="selectionEntry" targetId="a189-dab7-3f3e-534e">
+      <categoryLinks>
+        <categoryLink name="Heavy Sub-type" hidden="false" id="7946-c98d-7c7a-742b" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="6e4e-acaf-dfe4-1e6f" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="5714-3861-43f0-79dc" type="selectionEntry" targetId="cc50-f04a-0cd6-e966">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0d90-150b-55d5-4212" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="3418-69bd-afda-08b2" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="aab4-62fe-df32-d296" type="selectionEntry" targetId="9790-9fbb-a100-0c73">
+      <categoryLinks>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="3a79-640f-6400-eb08" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="9e9a-ecf3-cd82-8ac0" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="eda7-d0cd-6237-34f8" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="c132-3fc9-8d5e-08fa" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="4cc5-13e5-a74a-4dc3" targetId="6513-093f-7312-6d09" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="e58b-c116-e687-ed53" targetId="0124-9b28-2fe3-912c" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="b06f-39f3-ca1f-dd65" targetId="a800-52d7-1961-6e29" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="87c0-e54a-ec8d-d861" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="3d2a-f244-42c3-f3fc" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="c733-33c2-4cb3-bb02" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="7727-a223-60e1-a460" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="2dd7-9f0d-5475-d930" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="dadd-c0e3-f1eb-8007" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="1913-efaa-6501-b9ef" type="selectionEntry" targetId="9de4-7d85-524d-d69a">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="4819-0fa6-4205-2de3" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="d274-b6ce-c4fc-d0c5" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Support Squadron" hidden="false" id="b67f-8270-5686-eb73" type="selectionEntry" targetId="5a6a-c53a-440b-939a">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="408d-e3c9-f05a-0828" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="f49f-ee5c-65eb-0e85" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Javelin" hidden="false" id="6bef-4f66-738f-1905" type="selectionEntry" targetId="e785-818b-fcb0-5813">
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="4ac9-1d33-c9de-7946" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
+        <categoryLink name="Cavalry Unit Type" hidden="false" id="c88f-a5c1-2565-678c" targetId="1f61-547f-0ff6-f835" primary="false"/>
+        <categoryLink name="Heavy Sub-type" hidden="false" id="2b55-4cf4-cb7e-b68a" targetId="9231-183c-b97b-63f9" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="be1f-b227-66c0-c31d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f291-81c2-dd43-082f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Proteus" hidden="false" id="acfa-5aa5-6add-7428" type="selectionEntry" targetId="f291-81c2-dd43-082f">
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="7640-5093-dd5c-99ca" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
+        <categoryLink name="Antigrav Sub-type" hidden="false" id="dd27-0fe4-ea68-bd98" targetId="d164-7f04-b9bf-cf1f" primary="false"/>
+        <categoryLink name="Heavy Sub-type" hidden="false" id="0f16-970c-cf5f-b839" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink name="Deep Strike:" hidden="false" id="1694-0e83-7c03-18e6" targetId="0d4f-ff28-d819-a512" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="1349-d543-4457-e902">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e785-818b-fcb0-5813" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="1301-063b-1a11-f1a0" type="selectionEntry" targetId="a770-b7f3-0129-7cd7"/>
+    <entryLink import="true" name="Land Speeder Storm" hidden="false" id="0fcb-6b0e-a147-4b9a" collective="false" targetId="1ecc-ee9a-1f72-1ec5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Antigrav Sub-type" hidden="false" id="38bd-a8df-5709-8a12" targetId="d164-7f04-b9bf-cf1f" primary="false"/>
+        <categoryLink name="Fast Attack:" hidden="false" id="94f0-b685-a3b4-0a8a" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
+        <categoryLink name="Light Sub-type" hidden="false" id="a98d-f426-292d-d36b" targetId="bff2-ae16-74a8-8712" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="d5ec-5afd-2a55-d687" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Leviathan Siege Dreadnought" hidden="false" id="70cd-2a92-f6c3-c8be" type="selectionEntry" targetId="8934-5581-2518-006b">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="c12c-9494-1a7b-8d24" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator Main Battle Tank Squadron" hidden="false" id="560e-56a8-95bb-bc24" type="selectionEntry" targetId="2fd6-6cd2-df56-7c43">
+      <categoryLinks>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="77cf-0a43-eec9-7773" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="5d0d-6a01-2a9d-7b4d" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="9187-014f-a806-4017" type="selectionEntry" targetId="089f-7f15-f7d1-5f42"/>
+    <entryLink import="true" name="Scout Squad" hidden="false" id="7811-553b-0bbc-6cfa" collective="false" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="1583-96ee-6518-ba5c" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="e407-681e-1f28-72b2" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Siege Assault Squad" hidden="false" id="544d-59f4-2a56-55c3" collective="false" targetId="9547-7fba-408b-91dc" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="dc21-2d94-bb1c-fdac" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="091b-7ca0-93ca-16ea" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="ae92-8937-5e73-6084" type="selectionEntry" targetId="95a7-ebc6-07a7-f651"/>
+    <entryLink import="true" name="Specialist Detachment" hidden="false" id="84f2-a333-941f-fbde" type="selectionEntry" targetId="db22-78a1-b307-ac9c"/>
+    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="f0fb-f3a5-7639-65d0" type="selectionEntry" targetId="4cc2-6eec-77d4-5165"/>
+    <entryLink import="true" name="Storm Eagle Gunship" hidden="false" id="254f-c33e-49d6-629f" type="selectionEntry" targetId="30c3-2c14-a27f-f411">
+      <categoryLinks>
+        <categoryLink name="Fast Attack:" hidden="false" id="77c2-cbbd-f562-5ab0" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="ff14-94ff-81ba-52b6" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="8940-fc55-9049-ddea" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormraven Gunship" hidden="false" id="6c6b-f4e0-f3ce-a679" type="selectionEntry" targetId="29d4-4cc4-7c36-0b58">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="9393-e478-22b1-61ff" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="f242-3dc8-989a-131c" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="7d40-75c4-6f61-f95b" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb">
+      <categoryLinks>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="bacf-6620-770e-d513" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Fast Attack:" hidden="false" id="8342-1f1d-eccc-55e9" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tactical Squad" hidden="false" id="2504-2354-fc29-0c7a" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="5fc7-1ae7-c12b-7fad" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="87cd-4746-4712-0861" targetId="5596-67a3-0a72-dccb" primary="false"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="88a7-a3d3-4325-3ee0" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terminator Company Captain" hidden="false" id="df91-3489-c713-3fab" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="ee85-973d-7031-ce75" targetId="a800-52d7-1961-6e29" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="29de-9c60-b663-71ae" targetId="0124-9b28-2fe3-912c" primary="false"/>
+        <categoryLink name="Independent Character" hidden="false" id="a9fb-226e-ba93-4b66" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="3e9c-9d71-7e86-62ff" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="31e9-361d-4475-8b80" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="c85d-2ec5-6dfb-3f7e" targetId="a800-52d7-1961-6e29" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="3518-8aa5-0d1a-8162" targetId="0124-9b28-2fe3-912c" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="48df-2072-e0b1-1ad5" targetId="6513-093f-7312-6d09" primary="false"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="80ac-bdb2-ad74-ca04" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Independent Character" hidden="false" id="6ac5-7f10-c7b6-25dd" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terminator Squad" hidden="false" id="9fb3-555e-cb9b-58f6" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="8424-ad5d-7a0d-afbe" targetId="d471-a611-11c4-7f09" primary="true"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="5f41-2171-ca69-6fc7" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Deep Strike:" hidden="false" id="5da2-111b-32a1-79e3" targetId="0d4f-ff28-d819-a512" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderfire Cannon Battery" hidden="false" id="da67-152e-93c4-4689" type="selectionEntry" targetId="325b-7a48-4da1-c934">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="3df2-cbb0-865c-ec52" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="9db5-ab17-4fce-94ac" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk Heavy Gunship" hidden="false" id="7151-365d-0740-be72" type="selectionEntry" targetId="c746-d882-2f6a-d74c">
+      <categoryLinks>
+        <categoryLink name="LoW (Max 25%)" hidden="false" id="3375-0f9d-4689-9213" targetId="2416-9b28-317a-2db1" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="6611-da9e-517a-6e1d" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="9810-0981-dec8-d3e0" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk Heavy Transporter" hidden="false" id="7e8d-4ef5-7a1c-8f03" type="selectionEntry" targetId="4d1c-ed2e-71d7-8bb5">
+      <categoryLinks>
+        <categoryLink name="LoW (Max 25%)" hidden="false" id="c3b2-a609-80fc-baf0" targetId="2416-9b28-317a-2db1" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="8270-f8b4-8701-288b" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink name="Transport Sub-type" hidden="false" id="5d30-0719-6f0b-72d3" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="b248-4dbc-12a0-30e7" type="selectionEntry" targetId="a921-21d2-1964-1e2d"/>
+    <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="9618-7fb2-df29-2b17" type="selectionEntry" targetId="101f-7164-6f2f-80e2">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="baf5-b0c8-d902-ef89" targetId="1a92-d90b-9550-a0a7" primary="true"/>
+        <categoryLink name="Vehicle Unit:" hidden="false" id="0797-0b60-2fea-bd1d" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
