@@ -155,6 +155,18 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="97d5-ddd7-07cc-7be0" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="e782-1c0b-703a-b43d" name="1.5) Bayonet" hidden="false" collective="false" import="true">
@@ -1103,7 +1115,7 @@
             <categoryLink id="d609-dda6-130d-5a4b" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="aba2-31f1-10a4-f380" name="4) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9e3-7585-635b-4352">
+            <selectionEntryGroup id="aba2-31f1-10a4-f380" name="2) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9e3-7585-635b-4352">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9071-4c9d-89b1-384d" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e945-6911-7a4f-d9a9" type="max"/>
@@ -1131,7 +1143,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c0ff-2182-e7dc-626e" name="2) Weapon Choices:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="c0ff-2182-e7dc-626e" name="3) Weapon Choices:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b1a-7fe8-4258-edd4" type="max"/>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2de6-2a37-f5dd-0c00" type="min"/>
@@ -1253,11 +1265,23 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Letting-Talons" hidden="false" id="847f-4bfa-fe17-4577" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e4dd-3da4-94f5-bc06" name="5) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d75-9fec-e533-def9">
+            <selectionEntryGroup id="e4dd-3da4-94f5-bc06" name="1) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d75-9fec-e533-def9">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f76-01d0-cd16-d4fb" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163d-daa3-7de2-bbf8" type="min"/>
@@ -3167,23 +3191,47 @@
                   </costs>
                 </entryLink>
                 <entryLink id="3e78-44ff-054d-c607" name="Power Maul" hidden="false" collective="false" import="true" targetId="d831-0043-0944-a75f" type="selectionEntry"/>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="2f09-57c1-cefa-e934" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="41b6-1cfe-e71d-38a2" name="4) Paired Lightning Claws" hidden="false" collective="false" import="true">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="d524-6aec-c531-07ba" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="41b6-1cfe-e71d-38a2" name="4) Paired Claws" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="2612-2dfc-839f-bb5e" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="2x Letting-Talons" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="3010-bb2d-e55d-6dcc" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3300-542d-efe0-7d60" type="max"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3393-d7cb-a342-ec6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="1afa-57ec-8e5e-87b4" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e03a-8abb-4137-ac48" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -3600,7 +3648,7 @@
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
                 <entryLink id="7da3-e05c-0076-7d7a" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="8b3e-182e-6686-5b44" type="selectionEntry">
@@ -3691,6 +3739,18 @@
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f62-1f5c-b70c-0965" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="5fcd-b036-9af3-9380" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="b26f-0d6d-b649-2541" name="3) Other Wargear:" hidden="false" collective="false" import="true">
@@ -3721,7 +3781,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f5fd-9c3c-fdb2-522f" name="2.5) Paired Lightning Claws" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f5fd-9c3c-fdb2-522f" name="2.5) Paired Claws" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -3735,20 +3795,26 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="43b1-d9ab-252e-0f42" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec81-490b-86bc-0e61" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="3062-38de-945d-c127" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="5c0a-c1bb-5f6f-20f8" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="30"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="2x Letting-Talons" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="c4c6-0480-7212-eb79" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="e817-9b9c-b3e8-beae" name="4) Mobility:" hidden="false" collective="false" import="true">
               <constraints>
@@ -4863,9 +4929,21 @@
                   </costs>
                 </entryLink>
                 <entryLink id="9e7a-f6e4-f7f5-59c5" name="Power Maul" hidden="false" collective="false" import="true" targetId="d831-0043-0944-a75f" type="selectionEntry"/>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="4408-3308-702b-d2cb" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6d54-0aa9-53dd-e70f" name="4) Paired Lightning Claws" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6d54-0aa9-53dd-e70f" name="4) Paired Claws" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -4878,20 +4956,29 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="2e93-ae17-ab37-2edc" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="5757-2df6-5718-022f" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="2x Letting-Talons" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="f67b-93b3-9a2b-e03f" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3b4-e8db-b2dd-7acb" type="max"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="86db-d8da-4e18-cccb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="189a-8a59-e4ad-24ac" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f1ff-88d5-db89-4401" name="0.6) Master Craft 1 Weapon" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -6076,22 +6163,29 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce33-e390-7e84-04ed" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="42b3-7f9c-96e4-624d" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="bbb4-4826-3f3b-c81c" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5706-4a87-f6a3-2d6b" name="Thunder Hammer and Storm Shield" hidden="false" collective="false" import="true" targetId="e3f0-5de0-b66e-bdb6" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="f62a-df1e-4ede-b9eb" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="00f4-47cb-3ab7-fbdc" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="2x Letting-Talons" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6152,6 +6246,18 @@
               </costs>
             </entryLink>
             <entryLink id="a8b4-364a-8175-48af" name="Power Maul" hidden="false" collective="false" import="true" targetId="d831-0043-0944-a75f" type="selectionEntry"/>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="4478-83c0-17a1-a9ff" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="eeda-e701-5b1c-81ee" name="2.5) 1 in 5 May Take:" hidden="false" collective="false" import="true">
@@ -6602,17 +6708,6 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1884-9d5f-e469-e1f7" type="max"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="2d43-7023-674a-07fa" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
-                      <entryLinks>
-                        <entryLink id="7456-cf21-c79a-f8ac" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d48-986b-9208-949f" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                   <entryLinks>
                     <entryLink id="a6e1-54dd-d45f-1161" name="Thunder Hammer and Storm Shield" hidden="false" collective="false" import="true" targetId="e3f0-5de0-b66e-bdb6" type="selectionEntry">
                       <constraints>
@@ -6621,6 +6716,20 @@
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Lightning Claw" hidden="false" id="5b08-011c-8270-7aab" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry"/>
+                    <entryLink import="true" name="Letting-Talons" hidden="false" id="738f-f194-4d6d-99c7" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="2x Letting-Talons" field="name"/>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -6819,19 +6928,26 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="914f-faad-cdf7-74ed" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="c759-b724-1075-8cd2" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="9698-a7a6-a35f-5874" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="c053-4907-41a5-2b70" name="Thunder Hammer and Storm Shield" hidden="false" collective="false" import="true" targetId="e3f0-5de0-b66e-bdb6" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="2a2c-6448-a5cb-3fd0" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="2x Letting-Talons" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="4c17-03eb-61e5-03a4" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="faaf-97a7-8b1f-2f69" name="5) Dedicated Transport" hidden="false" collective="false" import="true">
@@ -7583,6 +7699,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <modifier type="set" value="0" field="700e-fc0b-aeb6-db07"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="ba5b-cbf7-a63b-afaa" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f44f-90fa-eee1-c0a3" includeChildSelections="false"/>
@@ -7883,6 +8011,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="42e5-fef8-3793-f41f" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10644,6 +10784,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Letting-Talons" hidden="false" id="e1f0-bbb9-cf04-48be" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="0) Sgt or Vet Sgt:" id="8458-8a33-1460-1af0" hidden="false" collective="false" import="true" defaultSelectionEntryId="2363-9552-49d8-a481">
@@ -11892,6 +12044,18 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Letting-Talons" hidden="false" id="f78f-0bce-6f01-0eab" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
