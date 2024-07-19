@@ -277,7 +277,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a31f-bd71-f232-dbd2" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Chapter" hidden="false" id="8f90-36fc-8ac4-e229" targetId="852b-f6b0-b8dd-1609" type="category">
+        <categoryLink name="Chapter" hidden="false" id="8f90-36fc-8ac4-e229" targetId="852b-f6b0-b8dd-1609">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="02a4-60d3-610c-36c5" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e486-e5c1-291f-3145" includeChildSelections="false"/>
@@ -4170,7 +4170,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">36&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">7</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot, Twin-linked </characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4282,13 +4282,13 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
           <rules>
             <rule name="Blood Hunger" id="7336-87ff-c498-9a3b" hidden="false">
-              <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit. </description>
+              <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit.</description>
             </rule>
             <rule name="Blooded" id="7734-7a8a-d31e-f9c3" hidden="false">
               <description>A Model with the Blooded (x) special rule receives x amount of extra attacks on a turn it charges into combat, this is in addition to Rage (x), Rampage (x) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (x) tokens, simply put he higher of the two token pools and use for the Blooded (x) special Rule.</description>
             </rule>
             <rule name="Reavers of the Outer Darkness" id="45aa-9ed8-8ea4-79bc" hidden="false">
-              <description>All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model. </description>
+              <description>All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model.</description>
             </rule>
             <rule name="The Grey Tithes of the Outer Dark" id="c713-79f5-1074-a412" hidden="false">
               <description>May include an additional Relic of the Chapter on top of what is usually allowed by the points limits or any other special rules</description>

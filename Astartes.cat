@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="18" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="19" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -726,6 +726,18 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="e5da-496f-9349-b512" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5682,12 +5694,12 @@
             </modifier>
             <modifier type="decrement" field="9df8-581b-b37a-b72f" value="2">
               <repeats>
-                <repeat field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c8-da14-48a0-f2f8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90cd-11af-436a-c257" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3b99-b98d-b84d-53d6" value="2">
               <repeats>
-                <repeat field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e1c8-da14-48a0-f2f8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90cd-11af-436a-c257" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -5754,6 +5766,21 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66ab-1db8-8d60-afaf" type="min"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="1821-f525-498a-e3cd" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5769,7 +5796,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2e5-dcd8-eaae-b07c" type="equalTo"/>
-                        <condition field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e1c8-da14-48a0-f2f8" type="atLeast"/>
+                        <condition field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90cd-11af-436a-c257" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5826,7 +5853,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="90cd-11af-436a-c257" name="3.5) Paired Lightning Claws" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="90cd-11af-436a-c257" name="3.5) Paired Claws" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -5837,28 +5864,45 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="1" field="cb7b-9606-ff73-f50d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="7e8b-f8c8-2f70-5802" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e1c8-da14-48a0-f2f8" name="Paired Lightning Claws" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Lightning Claw" hidden="false" id="aae0-e71b-3143-7c08" collective="false" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c1d9-91a9-c1a0-1ee1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
               <modifiers>
-                <modifier type="increment" field="6e12-c893-c3c5-e009" value="1">
+                <modifier type="increment" value="1" field="c1d9-91a9-c1a0-1ee1">
                   <repeats>
-                    <repeat field="selections" scope="8ba2-ea7b-a90e-36bf" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8b-f8c8-2f70-5802" repeats="1" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="7e8b-f8c8-2f70-5802" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e12-c893-c3c5-e009" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="1a3f-63dd-cb35-aefa" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="eff7-5e88-f348-cce0" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="830e-7ff0-d580-e796" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="2x Letting-Talons" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb7b-9606-ff73-f50d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -14553,7 +14597,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
       </selectionEntryGroups>
       <rules>
         <rule name="Fury of the Skies" id="faba-d4b3-ad64-7376" hidden="false">
-          <description>If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12&quot; of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they would be required to make. </description>
+          <description>If a model with a Locator Beacon is on the battlefield at the start of the player turn, any Deepstrike/Drop Pod Assaults that occur may chose to place their first model within 12&quot; of the model with the Locator Beacon. If this is done, do not roll to scatter the original model, simply deploy it as if it had not scattered. In addition to this, all following units automatically pass any Disruption rolls they would be required to make.</description>
         </rule>
         <rule name="Stormraven Transport" id="c674-d06a-1614-28df" hidden="false">
           <description>The Stormraven Gunship can carry two separate units: one unit of up to 12 models in its cabin, plus a single Castra Ferrum Dreadnought, All the usual Vehicle Transport rules apply, except in the case of the dreadnought, Instead of a S8 hit if the vehicle explodes, the Castra Free um receives a S12 hit instead, If the Stormraven Crashes and Burns, the Castra Ferrum Dreadnought instead receives D3 S12, AP1 hits</description>
@@ -14700,7 +14744,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           <description>Contrary to the usual rules for Flyers, a Caestus may in fact Ram and Tank Shock like any normal vehicle. When conducting a ram attack, the Caestus&apos; controlling player can roll I two dice and pick the higher number when determining if it has penetrated the target&apos;s armour and add +1 to any rolls on the Vehicle Damage chart that it uses. The Caestus Assault Ram conducts all of its ramming attacks at Strength 10, in addition to its other rules. Note a Caestus may only Ram/Tank Shock a unit that is in the same mode as it. E.G. It may not Ram a zooming flyer if it is hovering, nor may it tank shock an infantry unit while it is zooming. 
 
 
-In addition, the Caestus has an invulnerable save of 5+ against any attacks against its Front armour, including any damage it suffers as a result of carrying out a ram or being rammed itself from the front. </description>
+In addition, the Caestus has an invulnerable save of 5+ against any attacks against its Front armour, including any damage it suffers as a result of carrying out a ram or being rammed itself from the front.</description>
         </rule>
       </rules>
       <costs>
