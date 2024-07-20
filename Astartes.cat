@@ -727,7 +727,6 @@
             <categoryLink id="88b3-01c4-1f73-c1af" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
             <categoryLink id="6945-8736-6698-c10d" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
             <categoryLink id="f3b5-c711-764e-4a03" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
-            <categoryLink id="6f85-96d2-e804-3601" name="Heavy Support:" hidden="false" targetId="1a92-d90b-9550-a0a7" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="835a-7579-9bf0-cc7f" name="1) Bolter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8256-42d5-37af-9a1c">
@@ -1081,7 +1080,6 @@
               <categoryLinks>
                 <categoryLink id="dffa-db79-0a5e-0053" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
                 <categoryLink id="025c-7de5-65c5-e562" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-                <categoryLink id="f1bc-1ea3-b23e-8e6d" name="Heavy Support:" hidden="false" targetId="1a92-d90b-9550-a0a7" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a634-0ae0-68c3-2d05" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="e664-853b-6a67-58d7">
@@ -3404,6 +3402,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1393-d3a7-cd02-1c59" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="9f40-1b3a-443b-dc6c" type="selectionEntryGroup" targetId="965b-0785-f059-fa03">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="3e07-e3f8-e151-5b5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3736,6 +3743,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07b5-9dde-d527-2b70" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f07-8060-081d-9a55" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="0d52-724c-6450-9751" type="selectionEntryGroup" targetId="965b-0785-f059-fa03">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="3e07-e3f8-e151-5b5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4965,6 +4981,15 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da80-12b0-e3ab-4a76" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="3b1d-16cc-cf9b-e524" type="selectionEntryGroup" targetId="965b-0785-f059-fa03">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="3e07-e3f8-e151-5b5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -5854,6 +5879,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e4e-cc85-8f4d-ba38" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="596b-4502-0ada-3e1d" type="selectionEntryGroup" targetId="965b-0785-f059-fa03">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="3e07-e3f8-e151-5b5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7079,7 +7113,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -7094,7 +7128,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -7124,7 +7158,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -7139,7 +7173,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -7158,7 +7192,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -7173,7 +7207,7 @@
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -16344,7 +16378,66 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
       </rules>
     </selectionEntry>
   </sharedSelectionEntries>
-  <categoryEntries>
-    <categoryEntry name="Primary" id="899c-6c8c-054e-cc57" hidden="false"/>
-  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Warlord Traits" id="965b-0785-f059-fa03" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stoic Defender" hidden="false" id="da71-9137-1b75-8c4a">
+          <profiles>
+            <profile name="Stoic Defender" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="2f88-dfc8-9ced-3a97">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">When this Warlord or any friendly unit joined by a a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Shooting phase as long as the Warlord has not been removed as a casualty</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bloody Handed" hidden="false" id="9e49-958c-c6c2-42fc">
+          <profiles>
+            <profile name="Bloody Handed" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="9647-ae03-d3f6-3cb9" publicationId="2d25-7683-189b-ddd5">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Assault phase as long as the Warlord has not been removed as a casualty</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ever-vigilant" hidden="false" id="fc5c-9bc7-6076-8d4a">
+          <profiles>
+            <profile name="Ever-vigilant" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="b363-24de-7a3c-c1a7">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord&apos;s Initiative Characteristic, increase by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Movement phase as long as the Warlord has not been removed as a casualty</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frenzied Swarm" hidden="false" id="4fcf-2beb-00c7-1431">
+          <profiles>
+            <profile name="Frenzied Swarm" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="a948-aaef-230f-112b">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he has joined may reroll charge distance when charging into existing combat where a model (on either side) has already been slain. While the warlord is alive, the army may make an additional reaction in the Movement Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Carcharodons</comment>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7073-60ea-b9ab-49c9" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2689-3666-9d6c-708a" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="400c-5996-81b3-c0d5" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="3e07-e3f8-e151-5b5a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

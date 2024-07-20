@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ce4-f26c-82d1-7baf" name="Carcharodons - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="19" revision="1" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9ce4-f26c-82d1-7baf" name="Carcharodons - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="19" revision="2" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="35f7-8ef4-66d3-24e1" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -258,5 +258,466 @@
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="c8ba-392b-ae24-505d" primary="true" name="Chapter"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="The Red Brethren" hidden="false" id="c848-03e8-96dd-a796" type="selectionEntry" targetId="c70b-ae4a-e26d-68f4">
+      <categoryLinks>
+        <categoryLink targetId="d471-a611-11c4-7f09" id="f0fe-0f3d-68c6-5522" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tyberos The Red" hidden="false" id="e3f9-8d16-df57-b199" type="selectionEntry" targetId="3b94-46af-7cd2-15a7"/>
   </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="The Red Brethren" hidden="false" id="c70b-ae4a-e26d-68f4" collective="false">
+      <infoLinks>
+        <infoLink name="And they Shall Know No Fear" id="a400-7baa-bd74-8497" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
+        <infoLink name="Bulky (X)" id="8a63-fd0e-dd63-bcfc" hidden="false" targetId="80f9-973b-28f9-020d" type="rule">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Inexorable" id="6c33-f2f6-4e5c-e58e" hidden="false" targetId="0d74-cda7-ebdd-3789" type="rule"/>
+        <infoLink name="Relentless" id="c140-5fb8-2c50-d5b3" hidden="false" targetId="6195-0e44-7c46-5a47" type="rule"/>
+        <infoLink name="Combat Squads" id="464e-532a-e436-8603" hidden="false" targetId="0b95-38d2-a654-1ff9" type="rule"/>
+        <infoLink name="Deep Strike" id="e58d-38d6-bb83-443b" hidden="false" targetId="e8a1-d7ca-d389-f158" type="rule">
+          <modifiers>
+            <modifier type="set" value="Deep Strike (Indomitus Armour Only)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Battle-Hardened (X)" id="a8d2-12ed-3b57-20ae" hidden="false" targetId="abc2-980b-b86f-a5c5" type="rule">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="1c45-966f-4c97-c517" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Deep Strike:" hidden="false" id="c563-2410-8aa8-d708" targetId="0d4f-ff28-d819-a512" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="0.5) Terminator Armour" id="2a53-b2e2-7ad4-cd39" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1b6-5423-9486-4650">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85c8-dd69-ff89-1e32" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2df-21d4-b5fb-73c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cataphractii Terminator Armour" hidden="false" id="96ee-4b07-e03e-9c7f" collective="false" targetId="08d7-6abe-1e0d-f5b4" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" value="5" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="c70b-ae4a-e26d-68f4" childId="7c5f-2508-1341-dfcd" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Red Brethren Sergeant" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="9115-5e96-79e6-2a4e">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Red Brethren Cataphractii" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="c684-9b23-51f2-710f">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Relic of the Chapter" hidden="false" id="380b-da3a-cc8e-1c68" collective="false" targetId="b6ad-296c-4584-e676" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7268-d67c-3cb9-9d60" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f19-b516-4fe0-a30d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="e1b6-5423-9486-4650" collective="false" targetId="d357-1419-fc5c-7ecf" type="selectionEntry">
+              <profiles>
+                <profile name="Red Brethren Indomitus" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="b05f-9ae4-82af-347b">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Red Brethren Sergeant" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="6a81-8b2e-c3d9-1a90">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </entryLink>
+            <entryLink import="true" name="Tartaros Terminator Armour" hidden="false" id="f4d5-66be-1c97-da0b" collective="false" targetId="9112-fe20-34ec-5b47" type="selectionEntry">
+              <profiles>
+                <profile name="Red Brethren Tartaros" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="14f6-ea72-c43b-e8cb">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Red Brethren Sergeant" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="5479-6cf5-bf63-8239">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Relic of the Chapter" hidden="false" id="ef41-614f-fd5b-c2b3" collective="false" targetId="b6ad-296c-4584-e676" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ae3-dced-d18c-8440" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5dd-60f1-65df-a3ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0) Red Brethren" id="7c5f-2508-1341-dfcd" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Red Brethren Terminator" hidden="false" id="132f-e2d0-1278-9641" collective="false">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ff6b-c57e-f31f-540e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="9ca7-ed0c-73bc-d50c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Line Sub-type" hidden="false" id="ae6d-1b1e-61b2-e458" targetId="6399-5c65-7833-1025" primary="false"/>
+                <categoryLink name="Infantry Unit Type" hidden="false" id="5ce9-d372-8df8-1aeb" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Red Brethren Sergeant" hidden="false" id="d6c7-e629-593a-6ba5" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2b1-605f-99ff-a41d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc65-c87c-9762-3e45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Line Sub-type" hidden="false" id="1508-a871-7a43-e791" targetId="6399-5c65-7833-1025" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Letting-Talons" hidden="false" id="1cb6-ace9-5fea-2bfc" type="selectionEntry" targetId="9c2b-db0b-962e-bc3d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e7-b5d1-5c44-5b58" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e305-f730-2602-863a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="bf82-0ad2-cf89-a1f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0986-3c8b-7ce1-2cbe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="2) Additional Wargear:" id="4453-9da9-cd83-f84f" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Auspex" hidden="false" id="3f3b-3c58-7920-09fc" collective="false" targetId="44bc-4848-60e9-2ff5" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="868c-c3ac-98f1-8ff9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Nuncio-Vox" hidden="false" id="8982-aec5-4548-4b7c" collective="false" targetId="dceb-9b22-a168-188d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d70-c046-7898-bdd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Squad Banner" hidden="false" id="7106-62c7-b28b-2039" type="selectionEntry" targetId="61a6-6162-ee02-01a2">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0846-fb6d-9da3-5ab5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="3) Dedicated Transport" id="6cce-07e6-6474-fe71" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Land Raider Crusader" hidden="false" id="5ae9-e61c-7494-22fe" type="selectionEntry" targetId="efe9-67ff-1635-80ec">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="230"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Land Raider Phobos" hidden="false" id="f98e-4191-42f8-f50c" type="selectionEntry" targetId="06d0-cc53-8f85-7149">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Land Raider Redeemer" hidden="false" id="f7b5-616e-d3c7-d320" collective="false" targetId="5b63-160c-9e8a-7bce" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="230"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="c70b-ae4a-e26d-68f4" childId="7c5f-2508-1341-dfcd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55f0-4fe5-a02e-1905" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) 2x Letting-Talons Each" id="c69e-0217-8032-41c0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Letting-Talons" hidden="false" id="102d-4c3b-c76a-0feb" type="selectionEntry" targetId="9c2b-db0b-962e-bc3d">
+              <modifiers>
+                <modifier type="set" value="2x Letting-Talons" field="name"/>
+                <modifier type="set" value="0" field="d908-61a1-8f1f-2e1e"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d908-61a1-8f1f-2e1e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="426b-37e8-af9f-4f1a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="c70b-ae4a-e26d-68f4" childId="132f-e2d0-1278-9641" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="1a62-0aae-2090-07a5">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="c70b-ae4a-e26d-68f4" childId="132f-e2d0-1278-9641" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="426b-37e8-af9f-4f1a" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a62-0aae-2090-07a5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="65"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="27a8-c4ea-46b1-a594"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tyberos The Red" hidden="false" id="3b94-46af-7cd2-15a7">
+      <profiles>
+        <profile name="Tyberos The Red" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="34cf-1b2b-65de-0be3">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">7</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">4</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">1</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">5*</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="cdfa-c824-0ad1-8b3b" type="selectionEntry" targetId="c1cb-2e29-bf3f-9b32">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9e8-9893-f53c-a805" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee20-c5f0-4298-4987" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Teleport Homer" hidden="false" id="c69a-7a70-d8b4-bcf1" type="selectionEntry" targetId="1318-e061-1aad-3da4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e42e-c102-288e-3ab3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc37-5f60-101b-6347" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="f49d-9beb-4769-d751" collective="false" targetId="fd37-1b61-577f-b84b" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7035-daff-c5bd-26a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9739-f5eb-0afa-1ea0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Tartaros Terminator Armour" hidden="false" id="e186-f90e-4602-8182" type="selectionEntry" targetId="9112-fe20-34ec-5b47">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc3b-1027-f5e5-229d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6876-10c5-aa65-2a8e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Relic Tartaros Terminator Plate" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hunger &amp; Slake" hidden="false" id="94a1-8dfd-948a-1f07">
+          <profiles>
+            <profile name="Hunger" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="bde8-3ffe-0672-8524">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">x2</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Armourbane (Melee), Specialist Weapon, Brutal (2), Unweildly, Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Slake" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="ee94-fede-eb31-e906">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">User</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shred, Specialist Weapon, Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armourbane (X)" id="7627-0f12-5caf-111a" hidden="false" type="rule" targetId="a8e9-62f7-a858-933a">
+              <modifiers>
+                <modifier type="set" value="Armourbane (Melee)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shred" id="2aca-622d-1f44-b389" hidden="false" type="rule" targetId="0e7a-9209-ce0d-7ed2"/>
+            <infoLink name="Brutal (X)" id="c088-03cd-5dd0-35b5" hidden="false" type="rule" targetId="8110-939a-9318-c008">
+              <modifiers>
+                <modifier type="set" value="Brutal (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Specialist Weapon" id="2419-99ce-e6e2-92ae" hidden="false" type="rule" targetId="3f63-8915-cff1-87f8"/>
+            <infoLink name="Master-crafted" id="d639-a5e5-1217-b0b2" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Unwieldy" id="4593-87a4-a1a8-a1ab" hidden="false" type="rule" targetId="7efd-92ce-72e1-132e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ce-5f2b-3a81-d0fe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="babb-39f7-0e7d-adff" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Captain of the Nicor" id="da3c-11f8-9ff9-0306" hidden="false">
+          <description>Tyberos grants up to 3 infantry units the Deep Strike special rule</description>
+        </rule>
+        <rule name="Weapon Mastery" id="1ceb-8a79-f6aa-0ecd" hidden="false">
+          <description>The dividing of his attacks must be declared before he attacks with any weapon</description>
+        </rule>
+        <rule name="The Scent of Blood" id="a401-2d7f-eade-4cbb" hidden="false">
+          <description>Should Tyberos become subject to the Rage (1) Special Rule due to the Blood Hunger Special rule, both he and any unit he has joined that are also subject to the Rage (X+1) Special Rule gain +1 Strength for the remainder of the battle.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warlord Trait" id="217f-8efc-6fde-2657" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Savagery Beyond Reason" hidden="false" id="17ea-f0f4-794a-7c42">
+              <profiles>
+                <profile name="Savagery Beyond Reason" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="78bf-a341-454e-b45b">
+                  <characteristics>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Tyberos is your warlord, then both he and any infantry unit he joins gains the Preferred Enemy (Infantry) special rule. In addition, while Tyberos the Red Wake is alive, the controlling player may make an addition reaction in the movement phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5d8-bf2b-b789-cb2e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e544-ab5c-79bb-4cfd" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="02e3-c760-3dbc-d0fc" id="49df-728e-1dde-9963" primary="false" name="Tyberos"/>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="2e23-eb65-e1a8-b089" primary="true" name="HQ:"/>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="4f55-b1e4-f46d-79c8" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ba72-d1d8-f0be-a665" primary="false" name="Independent Character"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="e947-e15d-6ea2-a262" primary="false" name="Character"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Master of the Chapter" id="f9b8-421c-7d01-39e7" hidden="false" type="rule" targetId="9c0a-081e-93fa-d4d7"/>
+        <infoLink name="And they Shall Know No Fear" id="bc2d-5a59-0c48-2713" hidden="false" type="rule" targetId="ce91-e2c8-ffa1-14a8"/>
+        <infoLink name="Independent Character" id="07aa-c77d-7151-63e6" hidden="false" type="rule" targetId="20ff-8476-332b-4530"/>
+        <infoLink name="Bulky (X)" id="4cd2-fc5b-dfa1-2fec" hidden="false" type="rule" targetId="80f9-973b-28f9-020d">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="6805-eb9a-fadd-016a" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+        <infoLink name="Master of the Company" id="9931-0bb1-4a6e-e179" hidden="false" type="rule" targetId="c976-effe-a686-f9cf"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <forceEntries>
+    <forceEntry name="New Force" id="e0d4-6407-82b3-ce4f" hidden="false"/>
+  </forceEntries>
 </catalogue>

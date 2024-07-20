@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="19" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="20" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Badab v1.3" shortName="Main Rules" publicationDate="June 2022"/>
@@ -172,6 +172,13 @@ A unit that includes one or more models with the Artillery sub-type may not make
         <constraint type="max" value="4" field="selections" scope="force" shared="true" id="6f35-49d6-4dda-f8cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3b25-3d01-4578-c348" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="6f35-49d6-4dda-f8cb">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="02e3-c760-3dbc-d0fc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </categoryEntry>
     <categoryEntry id="4fc9-a33f-1125-1cb7" name="Fast Attack:" hidden="false"/>
     <categoryEntry id="2416-9b28-317a-2db1" name="LoW (Max 25%)" hidden="false"/>
@@ -270,6 +277,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
     <categoryEntry id="9b5d-996f-8000-14f5" name="Retinue" hidden="false"/>
     <categoryEntry name="Chapter" id="852b-f6b0-b8dd-1609" hidden="false"/>
+    <categoryEntry name="Tyberos" id="02e3-c760-3dbc-d0fc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
