@@ -712,11 +712,6 @@
       <infoLinks>
         <infoLink id="13af-aaa3-08b8-7085" name="And they Shall Know No Fear" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f227-0f24-a284-618e" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
-        <categoryLink id="ea4d-9014-9265-d2b3" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="0549-870b-dbf4-7ef9" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1f86-b935-2af3-c80b" name="Boarding Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -3016,7 +3011,6 @@
           <infoLinks>
             <infoLink id="18d4-2c8a-4688-fa55" name="And they Shall Know No Fear" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
             <infoLink id="57a5-223f-b1e1-9876" name="Relentless" hidden="false" targetId="6195-0e44-7c46-5a47" type="rule"/>
-            <infoLink id="9e3c-5263-00b5-29f6" name="Master of the Company" hidden="false" targetId="c976-effe-a686-f9cf" type="rule"/>
             <infoLink id="49cf-59e3-8564-217d" name="Independent Character" hidden="false" targetId="20ff-8476-332b-4530" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
@@ -3411,6 +3405,12 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="9e2c-f9a9-a40f-6080" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fda5-2ee1-ba43-a56c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3959-5e06-67b6-20a3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3428,7 +3428,6 @@
             <infoLink id="3172-429d-2d70-5cd3" name="Relentless" hidden="false" targetId="6195-0e44-7c46-5a47" type="rule"/>
             <infoLink id="b1ce-29b4-f417-2f7d" name="And they Shall Know No Fear" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
             <infoLink id="5d31-7110-02a7-1cf2" name="Independent Character" hidden="false" targetId="20ff-8476-332b-4530" type="rule"/>
-            <infoLink id="16fc-b639-d708-c0c4" name="Master of the Company" hidden="false" targetId="c976-effe-a686-f9cf" type="rule"/>
             <infoLink id="0f91-7c91-c23b-04fe" name="Bulky (X)" hidden="false" targetId="80f9-973b-28f9-020d" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Bulky (2)"/>
@@ -3752,6 +3751,12 @@
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="ab22-aed3-a794-0f16" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d5-d4bf-aa3b-dae0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e51-77a5-0d86-f7ba" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4220,10 +4225,16 @@
                         <condition field="selections" scope="7111-dfcb-76f1-8189" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c28e-2a73-b08c-e301" type="lessThan"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="1" field="46c9-812c-6c7b-9ac0">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7889-8a1f-bd24-3f65" type="max"/>
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f62-1f5c-b70c-0965" type="min"/>
+                    <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="46c9-812c-6c7b-9ac0" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Letting-Talons" hidden="false" id="5fcd-b036-9af3-9380" collective="false" targetId="9c2b-db0b-962e-bc3d" type="selectionEntry">
@@ -4934,6 +4945,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fae-740f-1d94-4b2e" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Lord Executioner Chapter Specialization" hidden="false" id="cb87-beaa-f667-560b" type="selectionEntry" targetId="3621-51e2-dc53-6d7b"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
@@ -4965,12 +4977,17 @@
                   <description>Once per battle, at the start of any of the controlling player&apos;s turns, this rule may be activated. Once activated, take a Leadership test for this model; if passed then all friendly units that are Pinned or Falling Back and have at least one model that can draw line of sight to the model with this special rule immediately rally, and are no longer Pinned or Falling Back and may act normally this turn.</description>
                 </rule>
               </rules>
-              <infoLinks>
-                <infoLink id="df50-d4cf-3324-4d7a" name="Master of the Chapter" hidden="false" targetId="9c0a-081e-93fa-d4d7" type="rule"/>
-              </infoLinks>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Master of the Company" hidden="false" id="4cc2-6849-6b8f-2c36" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a28-e8b8-2785-6c86" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9f1-ac63-7b2c-17ab" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5343,10 +5360,16 @@
                         <condition field="selections" scope="5ed8-8c58-e3e4-9887" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ce0-2727-7920-cb33" type="lessThan"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="1" field="3059-5a21-65ef-f034">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ad-a305-af16-5e04" type="max"/>
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b69-9b18-59ae-832d" type="min"/>
+                    <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="3059-5a21-65ef-f034" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -5833,6 +5856,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fdf-fde7-2823-7b01" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Lord Executioner Chapter Specialization" hidden="false" id="3428-7123-c718-e369" type="selectionEntry" targetId="3621-51e2-dc53-6d7b"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
@@ -5864,12 +5888,17 @@
                   <description>Once per battle, at the start of any of the controlling player&apos;s turns, this rule may be activated. Once activated, take a Leadership test for this model; if passed then all friendly units that are Pinned or Falling Back and have at least one model that can draw line of sight to the model with this special rule immediately rally, and are no longer Pinned or Falling Back and may act normally this turn.</description>
                 </rule>
               </rules>
-              <infoLinks>
-                <infoLink id="edec-0c1a-fe1d-ac47" name="Master of the Chapter" hidden="false" targetId="9c0a-081e-93fa-d4d7" type="rule"/>
-              </infoLinks>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Master of the Company" hidden="false" id="2c1f-6e2d-1ec6-a0c7" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4501-9d73-502b-da91" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bc6-d75e-9e3a-97b1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5914,12 +5943,6 @@
         <infoLink id="8f68-402e-a1b0-741b" name="Infantry Transport" hidden="false" targetId="90cb-d88e-0b04-2bf2" type="rule"/>
         <infoLink id="31c1-c648-b77b-758e" name="Support Squad" hidden="false" targetId="06dc-16c5-166c-544b" type="rule"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink id="a2f8-50d8-6b5b-e3c2" name="Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="08b4-edff-6d1b-b834" name="Transport Sub-type" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
-        <categoryLink id="c29f-8ad6-ba7d-1153" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
-        <categoryLink id="167e-47ff-58f0-0dd6" name="HQ:" hidden="false" targetId="a800-52d7-1961-6e29" primary="true"/>
-      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f61f-3d84-34bd-9837" name="1) Additional Pintle Weapon:" hidden="false" collective="false" import="true">
           <constraints>
@@ -7868,12 +7891,6 @@ The Apothecary cannot ever leave the unit it was assigned to. If that unit is re
           </rules>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="11b9-55be-e096-037a" primary="true" name="Elites:"/>
-        <categoryLink targetId="6513-093f-7312-6d09" id="b359-77ff-92d0-11a0" primary="false" name="Character"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8bc9-86ca-5510-34fd" primary="false" name="Infantry Unit Type"/>
-        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="877c-8049-8f57-198f" primary="false" name="Astartes"/>
-      </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cc41-5245-a8c3-2104" includeChildSelections="true"/>
       </constraints>
@@ -8141,11 +8158,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </rules>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="d43d-5ee7-bea8-5c9d" primary="true" name="Elites:"/>
-        <categoryLink targetId="6513-093f-7312-6d09" id="2725-ecfb-8dd3-04e1" primary="false" name="Character"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="bf1c-31db-7569-ea8f" primary="false" name="Infantry Unit Type"/>
-      </categoryLinks>
       <comment>Moved to Specialist Detachment</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vanguard Veteran Squad" hidden="false" id="a921-21d2-1964-1e2d">
@@ -8445,10 +8457,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="5276-06ae-6e31-9b98" primary="true" name="Elites:"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b79a-71a1-25fa-90cf" primary="false" name="Infantry Unit Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Chosen Warriors" id="15c2-33a6-b10e-157f" hidden="false" targetId="ea67-a8b8-b434-660e" type="rule"/>
         <infoLink name="And they Shall Know No Fear" id="90ce-f50b-235b-c8f5" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
@@ -8905,10 +8913,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="d4fc-e128-58a0-f8ac" primary="true" name="Elites:"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8038-78bc-e83b-f35d" primary="false" name="Infantry Unit Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Contemptor Dreadnought" hidden="false" id="6c49-097a-1be5-82c6">
       <costs>
@@ -9160,7 +9164,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="c3bb-b5ff-6271-68e0" primary="true" name="Elites:"/>
+        <categoryLink targetId="d471-a611-11c4-7f09" id="c3bb-b5ff-6271-68e0" primary="false" name="Elites:"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Castraferrum Dreadnought Talon" hidden="false" id="6294-929f-bcc9-0ad8">
@@ -9925,9 +9929,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="2069-b88e-410c-552e" primary="true" name="Elites:"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Centurion Assault Squad" hidden="false" id="7e18-45b5-06ba-cd6d">
       <infoLinks>
@@ -10183,10 +10184,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="0a32-778f-b5c5-e6a4" primary="true" name="Elites:"/>
-        <categoryLink targetId="9231-183c-b97b-63f9" id="c5ee-be75-1b90-c4ac" primary="false" name="Heavy Sub-type"/>
-      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="70"/>
       </costs>
@@ -11339,10 +11336,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="4fc9-a33f-1125-1cb7" id="4dd1-f28b-88bd-e32d" primary="true" name="Fast Attack:"/>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="93ff-a9b4-8ed2-ebb6" primary="false" name="Infantry Unit Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="14"/>
       </costs>
@@ -11747,10 +11740,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink name="Cavalry Unit Type" hidden="false" id="9ece-3468-c48e-a59c" targetId="1f61-547f-0ff6-f835" primary="false"/>
-        <categoryLink name="Fast Attack:" hidden="false" id="871a-faf3-01d6-a649" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Firing Protocols (X)" id="6d44-e178-e780-fd7c" hidden="false" type="rule" targetId="ff1a-fd14-8080-aff2">
           <modifiers>
@@ -12100,10 +12089,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink name="Cavalry Unit Type" hidden="false" id="d36d-f282-daf7-23e4" targetId="1f61-547f-0ff6-f835" primary="false"/>
-        <categoryLink name="Fast Attack:" hidden="false" id="3efd-0dc7-d413-6da1" targetId="4fc9-a33f-1125-1cb7" primary="true"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Firing Protocols (X)" id="5165-f68a-b385-d7dd" hidden="false" type="rule" targetId="ff1a-fd14-8080-aff2">
           <modifiers>
@@ -12164,7 +12149,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="4fc9-a33f-1125-1cb7" id="fb8b-d088-34aa-d54e" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="4fc9-a33f-1125-1cb7" id="fb8b-d088-34aa-d54e" primary="false" name="Fast Attack:"/>
         <categoryLink targetId="d164-7f04-b9bf-cf1f" id="1eef-14ce-b925-85cd" primary="false" name="Antigrav Sub-type"/>
         <categoryLink targetId="1f61-547f-0ff6-f835" id="4159-c719-7487-7a8e" primary="false" name="Cavalry Unit Type"/>
       </categoryLinks>
@@ -12659,12 +12644,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1349-d543-4457-e902"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="2880-d687-4599-8a9a" primary="true" name="Elites:"/>
-        <categoryLink targetId="1f61-547f-0ff6-f835" id="b583-dcca-c897-c446" primary="false" name="Cavalry Unit Type"/>
-        <categoryLink targetId="9231-183c-b97b-63f9" id="1993-5647-2a15-10e9" primary="false" name="Heavy Sub-type"/>
-        <categoryLink targetId="d164-7f04-b9bf-cf1f" id="ee4c-a779-b344-71eb" primary="false" name="Antigrav Sub-type"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Bolt Pistol" hidden="false" id="59dc-a59e-a6cf-bcec" collective="false" targetId="54b1-8989-fbbe-7cc3" type="selectionEntry">
           <constraints>
@@ -13388,7 +13367,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="9b46-341e-f63e-8985" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="675e-999f-0119-d80a" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
       <costs>
@@ -13919,7 +13897,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="6462-2603-2ca8-dac0" primary="true" name="Elites:"/>
+        <categoryLink targetId="d471-a611-11c4-7f09" id="6462-2603-2ca8-dac0" primary="false" name="Elites:"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="af99-dcf2-342f-8187" includeChildSelections="true"/>
@@ -14026,9 +14004,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </constraints>
         </entryLink>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="d471-a611-11c4-7f09" id="a50a-9527-71eb-e721" primary="true" name="Elites:"/>
-      </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bf91-5032-6083-2a3f" includeChildSelections="true"/>
       </constraints>
@@ -16376,6 +16351,60 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <description>+2 attacks when using 2 Letting-Talons</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="1st Company Compulsory Troops" hidden="true" id="8c3a-f99e-4226-e519" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="05bd-95fb-9c04-985f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="256c-d251-7f31-271d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d79-d24d-7187-7910" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="30c5-80a9-f462-6fc3" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chapter Ancient - 1st Company" hidden="false" id="4f93-64d4-2882-1945"/>
+    <selectionEntry type="upgrade" import="true" name="Lord Executioner Chapter Specialization" hidden="false" id="3621-51e2-dc53-6d7b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f186-0960-7a3d-c0f5" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b47-7a6d-8d65-1c30" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="1cb6-6b02-c262-4276" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="1cb6-6b02-c262-4276">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="8th Company Compulsory Troops" hidden="false" id="05d2-ec28-4bf4-8751">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1966-44bc-c928-8c4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="d698-0527-ddcf-3969" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="48b0-755b-7e83-b77c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="256c-d251-7f31-271d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

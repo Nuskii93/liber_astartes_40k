@@ -2,10 +2,11 @@
 <gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="20" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
-    <publication id="0a24-8d5a-55ca-b028" name="Liber Badab v1.3" shortName="Main Rules" publicationDate="June 2022"/>
-    <publication id="8279-7d35-9862-c63e" name="Liber Imperium" shortName="Liber Imperium" publicationDate="Nov 2022"/>
+    <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
+    <publication id="8279-7d35-9862-c63e" name="Liber Loyalists" shortName="Liber Imperium" publicationDate="Nov 2022"/>
     <publication id="1ea9-215e-21c0-c2e9" name="30k Astartes Books" publicationDate="2022"/>
     <publication id="2d25-7683-189b-ddd5" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook" publicationDate="2022"/>
+    <publication name="Liber Traitors" id="80c7-2b43-b40c-7455" hidden="false" shortName="Liber Imperium" publicationDate="Nov 2022"/>
   </publications>
   <costTypes>
     <costType id="7992-13c8-e552-57c1" name="Pts" defaultCostLimit="0" hidden="false"/>
@@ -278,6 +279,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry id="9b5d-996f-8000-14f5" name="Retinue" hidden="false"/>
     <categoryEntry name="Chapter" id="852b-f6b0-b8dd-1609" hidden="false"/>
     <categoryEntry name="Tyberos" id="02e3-c760-3dbc-d0fc" hidden="false"/>
+    <categoryEntry name="Company Level Deployments" id="c44a-e987-25a0-8e01" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -301,6 +303,15 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8891-52c8-fcb0-cfdb" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Company Level Deployments" hidden="false" id="ea20-4faa-d95b-995e" targetId="c44a-e987-25a0-8e01">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7fa0-6f89-c10e-6e29" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="f036-cf4a-6b4f-99e0" name="HQ:" hidden="false" targetId="a800-52d7-1961-6e29" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fce7-9adf-2b84-e40a" type="max"/>
@@ -319,8 +330,28 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4f5-1c8a-d007-ad11" type="max"/>
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cab2-c985-97be-05a7" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="b4f5-1c8a-d007-ad11">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
-        <categoryLink name="Heavy Support:" hidden="false" id="4255-4999-d331-1da1" targetId="1a92-d90b-9550-a0a7"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="4255-4999-d331-1da1" targetId="1a92-d90b-9550-a0a7">
+          <modifiers>
+            <modifier type="set" value="1" field="6788-98e7-34c3-25ba">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="dda7-10c2-7d57-4f56" name="LoW (Max 25%)" hidden="false" targetId="2416-9b28-317a-2db1" primary="false">
           <modifiers>
             <modifier type="increment" field="256d-ad1b-834e-1b2e" value="1">
@@ -4259,6 +4290,11 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Master of the Company" hidden="false" id="7fa0-6f89-c10e-6e29">
+      <infoLinks>
+        <infoLink name="Master of the Company" id="26e1-6eb1-72dc-071e" hidden="false" type="rule" targetId="c976-effe-a686-f9cf"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
@@ -4307,6 +4343,53 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Company Level Deployments" id="0218-ea7c-b054-4189" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="1st Company Deployment" hidden="false" id="05bd-95fb-9c04-985f">
+          <rules>
+            <rule name="1st Company Deployment" id="13a2-93ea-4c2a-bbd7" hidden="false">
+              <description>Effects
+• Terminator, Sternguard Veteran, and Vanguard Veteran Squads may selected as Troops choices in a Detachment using this Company Level Deployment
+• Any Terminator, Sternguard Veteran, and Vanguard Veteran Squads taken as Compulsory Troops choices in a Detachment using this Company Level Deployment gain the Line Sub-type.
+• Any unit composed entirely of models with any pattern of Terminator armour and that is normally selected as an Elites choice may be included in a Detachment using this Company Level Deployment as a Troops choice.
+Limitations
+• An army whose Primary Detachment is using this Company Level Deployment may not select an Allied Detachment.
+• A Detachment using this Company Level Deployment may only select a single Heavy Support choice and a single Fast Attack choice.
+ An Allied Detachment may not use this Company Level Deployment.
+• An army usinig this Company Level Deployment may not select any Fortification choices.
+• An army using this Company Level Deployment may not include more non-lnfantry units than it does Infantry units.
+• In addition to any normal compulsory choices, this detachment must take at least one Force Commander with the Chapter Ancient Chapter Specialization.
+For Each Terminator, Sternguard Veteran or Vanguard Veteran Squad taken as a Troops Choice is destroyed by the end of the game, the opponent gains 1 VP per squad.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="8th Company Deployment" hidden="false" id="48b0-755b-7e83-b77c">
+          <rules>
+            <rule name="8th Company Deployment" id="b2c2-6d17-1919-6856" hidden="false">
+              <description>Effects:
+Assault Centurion, Assault Marine and Space Marine Biker squads may be selected as Troops choices in a Detachment using this Company Level Deployment . 
+Assault Centurion, Assault Marine and Space Marine Biker squads taken as Compulsory Troops choices in a Detachment using this Company Level Deployment gain the Line Sub-type. 
+Limitations:
+A Detachment using this Company Level Deployment may only select a single Heavy Support. 
+An army using this Company Level Deployment may not select any Fortification choices. 
+An army using this Company Level Deployment may not include more non-Infantry/cavalry units than it does Infantry/Cavalry units. 
+In addition to any normal compulsory choices, this detachment must take at least one Force Commander with the Lord Executioner Chapter Specialization. </description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="380f-5676-709c-7b71" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c088-6572-dcb3-5578" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
