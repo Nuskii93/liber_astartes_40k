@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="20" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="21" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -280,6 +280,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Chapter" id="852b-f6b0-b8dd-1609" hidden="false"/>
     <categoryEntry name="Tyberos" id="02e3-c760-3dbc-d0fc" hidden="false"/>
     <categoryEntry name="Company Level Deployments" id="c44a-e987-25a0-8e01" hidden="false"/>
+    <categoryEntry name="Skirmish" id="d87f-b1a3-5a99-9669" hidden="false"/>
+    <categoryEntry name="Dreadnought" id="528c-8d49-6bd6-8b22" hidden="false"/>
+    <categoryEntry name="Fortifications" id="b641-b5fc-cebd-7593" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -303,15 +306,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8891-52c8-fcb0-cfdb" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Company Level Deployments" hidden="false" id="ea20-4faa-d95b-995e" targetId="c44a-e987-25a0-8e01">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7fa0-6f89-c10e-6e29" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
+        <categoryLink name="Company Level Deployments" hidden="false" id="ea20-4faa-d95b-995e" targetId="c44a-e987-25a0-8e01"/>
         <categoryLink id="f036-cf4a-6b4f-99e0" name="HQ:" hidden="false" targetId="a800-52d7-1961-6e29" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fce7-9adf-2b84-e40a" type="max"/>
@@ -332,9 +327,14 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="b4f5-1c8a-d007-ad11">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4a1c-c8db-3a55-dd21" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -1790,6 +1790,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c37-9b1c-17ac-f404" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2d91-2ee6-882d-64ed" name="Twin-linked Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4346,7 +4353,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
     </selectionEntryGroup>
     <selectionEntryGroup name="Company Level Deployments" id="0218-ea7c-b054-4189" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="1st Company Deployment" hidden="false" id="05bd-95fb-9c04-985f">
+        <selectionEntry type="upgrade" import="true" name="1st Company Deployment (Elite)" hidden="false" id="05bd-95fb-9c04-985f">
           <rules>
             <rule name="1st Company Deployment" id="13a2-93ea-4c2a-bbd7" hidden="false">
               <description>Effects
@@ -4364,31 +4371,110 @@ For Each Terminator, Sternguard Veteran or Vanguard Veteran Squad taken as a Tro
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="8th Company Deployment" hidden="false" id="48b0-755b-7e83-b77c">
+        <selectionEntry type="upgrade" import="true" name="8th Company Deployment (Assault)" hidden="false" id="48b0-755b-7e83-b77c">
           <rules>
             <rule name="8th Company Deployment" id="b2c2-6d17-1919-6856" hidden="false">
               <description>Effects:
-Assault Centurion, Assault Marine and Space Marine Biker squads may be selected as Troops choices in a Detachment using this Company Level Deployment . 
-Assault Centurion, Assault Marine and Space Marine Biker squads taken as Compulsory Troops choices in a Detachment using this Company Level Deployment gain the Line Sub-type. 
+•Assault Centurion, Assault Marine and Space Marine Biker squads may be selected as Troops choices in a Detachment using this Company Level Deployment . 
+•Assault Centurion, Assault Marine and Space Marine Biker squads taken as Compulsory Troops choices in a Detachment using this Company Level Deployment gain the Line Sub-type. 
 Limitations:
-A Detachment using this Company Level Deployment may only select a single Heavy Support. 
-An army using this Company Level Deployment may not select any Fortification choices. 
-An army using this Company Level Deployment may not include more non-Infantry/cavalry units than it does Infantry/Cavalry units. 
-In addition to any normal compulsory choices, this detachment must take at least one Force Commander with the Lord Executioner Chapter Specialization. </description>
+•A Detachment using this Company Level Deployment may only select a single Heavy Support. 
+•An army using this Company Level Deployment may not select any Fortification choices. 
+•An army using this Company Level Deployment may not include more non-Infantry/cavalry units than it does Infantry/Cavalry units. 
+•In addition to any normal compulsory choices, this detachment must take at least one Force Commander with the Lord Executioner Chapter Specialization.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="9th Company Deployment (Devastator)" hidden="false" id="4a1c-c8db-3a55-dd21">
+          <rules>
+            <rule name="9th Company Deployment" id="fbe4-77c9-6362-7d2a" hidden="false">
+              <description>Effects:
+• Devastator and Devastator Centurion Squads may be selected as Troops choices in a Detachment using this Company Level Deployment . 
+• Devastator and Devastator Centurion Squads taken as Compulsory Troops choices in a Detachment using this Company Level Deployment gain the Line Sub-type. 
+Limitations:
+•An army whose Primary Detachment is using this Company Level Deployment may not select an Allied Detachment. 
+• A Detachment using this Company Level Deployment may only take a single Fast Attack Choice.
+• An army that contains this detachment may never Attempt to Seize the Initiative, nor may it ever elect to take the first turn.
+• In addition to any normal compulsory choices, this detachment must take at least one Force Commander with the Master of the Forge Chapter Specialization.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Siege Assault Vanguard Force" hidden="false" id="9638-87a5-011a-fac0">
+          <rules>
+            <rule name="Siege Assault Vanguard Force" id="5153-a227-0734-5ab9" hidden="false">
+              <description>Effects:
+• Any squad that may take a Rhino or Landraider (of any type) as a Dedicated Transport may instead take a Land Raider Prometheus. 
+• Boarding and Siege Assault Squads lose the Support Squad Special Rule.
+• Remove the 0-1 Limitation on the Land Raider Support Squadron.
+Limitations:
+• A Detachment using this Company Level Deployment may not have more Elites choices than it does Heavy Support
+• A Detachment using this Company Level Deployment may not take Scouts, Scout Bikers or Landspeeder Storms. 
+• If less than half (rounding up) of this detachments units (Dedicated Transports count as a unit in this regard) are outside of the enemy deployment zone at the end of the game the opposing player gains D3 Victory Points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="10th Company Deployment (Scout)" hidden="false" id="f97c-25b6-f5e9-3e88">
+          <rules>
+            <rule name="10th Company Deployment" id="152d-f877-8e6c-c579" hidden="false">
+              <description>Effects:
+• Scout Biker Squads in a Detachment using this company level deployment may be taken as Troops choice
+• Space Marine Scout and Scout Biker Squads in a Detachment using this Company level Deployment gain the Line unit sub-type. 
+• All Scout and Scout Biker Squads may take the Veteran Sergeant leader Upgrade for free.
+• A player whose army includes at least one Detachment using this Company Level Deployment may re-roll any dice they roll to see which player takes the first turn or when attempting to Seize the Initiative.
+• Space Marine Scout Squads may take Rhino Armoured Carriers as Dedicated Transports. 
+• A Space Marine Company Captain {or Force Commander with the Master of the Keep Chapter Specialisation} and their Retinue Squad {if taken} may choose to exchange their Power/ Artificer Armour for Scout Armour
+(Gaining the Light and Skirmish Sub-Types, in Addition to the Scout and Infiltrate Special Rules).
+Limitations:
+• No unit in a Detachment using this Company Level Deployment that includes any models with the Heavy Sub-type may be deployed onto the battlefield during deployment, and must instead be placed into Reserves.
+• A Detachment using this Company level Deployment may not select any Fortification choices.
+• All Compulsory Troops choices in a Detachment using this Company Level Deployment must be either Scout or Scout Biker squads. 
+• In addition to any nbrmal compulsory choices, this detachment must take at least one Force Commander with the Master of Recruits Chapter Specialisation.
+• If all Scout and Scout Biker squads are either destroyed or retreating by the end of the game, the opposing player scores D3 victory points.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Void Assault Deployment" hidden="false" id="9c37-9b1c-17ac-f404">
+          <rules>
+            <rule name="Void Assault Deployment" id="cbd6-3b5f-bad0-c8f7" hidden="false">
+              <description>Effects:
+• Any unit in a Detachment using this Company Level Deployment eligible to take a Rhino or Land Raider (of any kind) as a Dedicated Transport may instead take a Storm Eagle Gunship or Storm Raven Gunship as a Dedicated Transport.
+• Boarding Squads lose the Support Squad special rule.
+• For any model with the Vehicle Unit Type and both the Flyer and Transport Sub-types from a Detachment that is using this Rite of War, and that is in Reserve, the controlling player may choose to automatically have them enter play at the start of their first turn without making a Reserves roll. If they are not brought into play on Turn One then Reserves rolls are made for the models normally from Turn Two onwards.
+• Any Terminator Armour equipped unit may elect to take a Caestus Assault Ram as Dedicated Transport.
+Limitations:
+• All models with the Infantry Unit Type in a Detachment using this Rite of
+War that do not have jump packs of any kind must begin the battle Embarked upon a model with the Vehicle Unit Type and both the Flyer and Transport Sub-types.
+• Tactical Squads lose the Line unit Sub-Type.
+• Tactical Squads and Scout Squads gain the Support Squad special rule.
+• All models with both the Infantry Unit Type and a jump pack of any kind
+in a Detachment using this Rite of War must begin the battle in Reserves,
+but may be assigned to a Deep Strike Assault as normal. ,1 
+• A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer subtype
+• A Detachment using this Company Level Deployment may not take any models with the Cavalry unit type.
+• A Detachment using this Company Level Deployment may not select any Fortification choices.
+• In addition to any normal compulsory choices, this detachment must take
+at least one Force Commander with the Master of Sign a Is Chapter Specialization.</description>
             </rule>
           </rules>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set" value="0" field="380f-5676-709c-7b71">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="any" shared="true"/>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="7fa0-6f89-c10e-6e29" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="c088-6572-dcb3-5578">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="7fa0-6f89-c10e-6e29" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="6d32-94ce-73c9-83e9"/>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="380f-5676-709c-7b71" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c088-6572-dcb3-5578" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d32-94ce-73c9-83e9" includeChildSelections="true"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

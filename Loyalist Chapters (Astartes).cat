@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="642b-58c5-2fab-e243" name="Chapter Template (Astartes)" revision="13" battleScribeVersion="2.03" authorName="Boff89" library="false" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="642b-58c5-2fab-e243" name="Chapter Template (Astartes)" revision="14" battleScribeVersion="2.03" authorName="Boff89" library="false" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
-    <entryLink id="6df6-9d29-3dc5-5260" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="a8ae-5ddd-1200-afd2" name="Troops:" hidden="false" targetId="256c-d251-7f31-271d" primary="true"/>
-        <categoryLink id="b567-fbc8-eff7-e8e8" name="Compulsory Troops:" hidden="false" targetId="5596-67a3-0a72-dccb" primary="false"/>
-        <categoryLink id="8bd4-8fc7-7b70-246e" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="0268-ee9b-d2ad-4494" name="Boarding Squad" hidden="false" collective="false" import="true" targetId="b94f-4192-0adb-b0ff" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="d5f8-87d9-0d7a-2cd6" name="Troops:" hidden="false" targetId="256c-d251-7f31-271d" primary="true"/>
-        <categoryLink id="34c7-126f-9671-f6dd" name="Compulsory Troops:" hidden="false" targetId="5596-67a3-0a72-dccb" primary="false"/>
-        <categoryLink id="f174-0cf1-b317-81ca" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink id="6df6-9d29-3dc5-5260" name="Tactical Squad" hidden="false" collective="false" import="true" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
+    <entryLink id="0268-ee9b-d2ad-4494" name="Boarding Squad" hidden="false" collective="false" import="true" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
     <entryLink id="b3fd-02ce-0d77-5621" name="Siege Assault Squad" hidden="false" collective="false" import="true" targetId="9547-7fba-408b-91dc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e568-7014-83d7-a483" name="Troops:" hidden="false" targetId="256c-d251-7f31-271d" primary="true"/>
         <categoryLink id="886b-5d96-9791-c5db" name="Line Sub-type" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2328-2886-f183-d7b9" name="Scout Squad" hidden="false" collective="false" import="true" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="c4e9-50ae-8988-bb3d" name="Troops:" hidden="false" targetId="256c-d251-7f31-271d" primary="true"/>
-        <categoryLink id="d962-540b-5d4c-07fa" name="Compulsory Troops:" hidden="false" targetId="5596-67a3-0a72-dccb" primary="false"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink id="2328-2886-f183-d7b9" name="Scout Squad" hidden="false" collective="false" import="true" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry"/>
     <entryLink id="1f43-a018-e97e-d48e" name="Land Speeder Storm" hidden="false" collective="false" import="true" targetId="1ecc-ee9a-1f72-1ec5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e6cc-ddb9-c404-c1c7" name="Antigrav Sub-type" hidden="false" targetId="d164-7f04-b9bf-cf1f" primary="false"/>
@@ -429,6 +412,101 @@
         </modifier>
       </modifiers>
       <comment>8th Company ROW</comment>
+    </entryLink>
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="ae10-37aa-41f1-9273" type="selectionEntry" targetId="cc50-f04a-0cd6-e966">
+      <categoryLinks>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="efae-53ee-9a70-500e" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="256c-d251-7f31-271d" id="d403-fd5a-1bbf-551e" primary="true" name="Troops:"/>
+        <categoryLink targetId="5596-67a3-0a72-dccb" id="ca51-6ba7-9b6b-bddc" primary="false" name="Compulsory Troops:"/>
+      </categoryLinks>
+      <comment>9th Company ROW</comment>
+      <entryLinks>
+        <entryLink import="true" name="9th Company Compulsory Troops" hidden="false" id="b706-ac8f-7463-3e33" type="selectionEntry" targetId="e6d5-c21b-d9e1-59d0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4a1c-c8db-3a55-dd21" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b706-ac8f-7463-3e33" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="138c-8cbd-7177-814b" type="selectionEntry" targetId="e504-7189-3574-ce61">
+      <categoryLinks>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="60e2-8cbc-e727-b6ae" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="cb65-8f28-e9af-ff0f" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="256c-d251-7f31-271d" id="2f2f-f338-b40b-9f18" primary="true" name="Troops:"/>
+        <categoryLink targetId="5596-67a3-0a72-dccb" id="23d3-7759-2eef-7c86" primary="false" name="Compulsory Troops:"/>
+      </categoryLinks>
+      <comment>9th Company ROW</comment>
+      <entryLinks>
+        <entryLink import="true" name="9th Company Compulsory Troops" hidden="false" id="ed4d-b961-daef-21de" type="selectionEntry" targetId="e6d5-c21b-d9e1-59d0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4a1c-c8db-3a55-dd21" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ed4d-b961-daef-21de" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="72a9-2e33-37e3-9c22" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="3d6d-1a08-9a88-72ae" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="e784-174b-3834-c363" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="8th Company Compulsory Troops" hidden="false" id="e58a-5ee5-a59b-6320" type="selectionEntry" targetId="05d2-ec28-4bf4-8751"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e58a-5ee5-a59b-6320" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>8th Company ROW</comment>
+    </entryLink>
+    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="22da-9779-655f-27f7" type="selectionEntry" targetId="089f-7f15-f7d1-5f42">
+      <categoryLinks>
+        <categoryLink targetId="4fc9-a33f-1125-1cb7" id="ebfb-4ef2-69ea-bd70" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="1f61-547f-0ff6-f835" id="aa50-49d3-6072-723d" primary="false" name="Cavalry Unit Type"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="e15e-8a44-14b5-258c" primary="false" name="Line Sub-type"/>
+        <categoryLink targetId="5596-67a3-0a72-dccb" id="85b9-7b7f-0d97-a220" primary="false" name="Compulsory Troops:"/>
+      </categoryLinks>
+      <comment>10th Company ROW</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="f97c-25b6-f5e9-3e88" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f97c-25b6-f5e9-3e88" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Company Level Deployments" hidden="false" id="d68d-2d19-a38c-a2a5" type="selectionEntry" targetId="fb02-1d06-e689-6dee">
+      <categoryLinks>
+        <categoryLink targetId="c44a-e987-25a0-8e01" id="c23a-54b1-2ba0-dcc8" primary="true" name="Company Level Deployments"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
