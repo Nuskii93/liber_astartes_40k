@@ -312,6 +312,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cab2-c985-97be-05a7" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="4255-4999-d331-1da1" targetId="1a92-d90b-9550-a0a7"/>
         <categoryLink id="dda7-10c2-7d57-4f56" name="LoW (Max 25%)" hidden="false" targetId="2416-9b28-317a-2db1" primary="false">
           <modifiers>
             <modifier type="increment" field="256d-ad1b-834e-1b2e" value="1">
@@ -336,7 +337,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f453-d2cb-6e35-a473" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Heavy Support:" hidden="false" id="4255-4999-d331-1da1" targetId="1a92-d90b-9550-a0a7"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>

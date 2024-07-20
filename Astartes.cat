@@ -32,11 +32,13 @@
                 <entryLink id="28a0-8c04-7012-0cf2" name="Bolter" hidden="false" collective="false" import="true" targetId="b17f-053a-3e74-f4cb" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ac-69bd-d6e8-54d9" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c55-7287-9367-9b0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="e704-0ceb-8233-b4bc" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="cde8-883c-c7bc-c472" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a3-9da0-b539-6dbe" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca4d-57d0-a274-3df7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -49,28 +51,65 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0eeb-69b7-3cb6-0f5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Magna Combi-Weapon - Plasma" hidden="false" id="a678-bc5f-d127-c905" collective="false" targetId="c229-8d6f-acb2-52fb" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c45b-9b82-af3c-b9d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Minor Combi-Weapon - Flamer" hidden="false" id="d916-ce73-ac01-d904" collective="false" targetId="957c-ab37-12e9-00d0" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="853d-a78b-a831-7745" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" id="cc6b-3642-02c1-97a8" collective="false" targetId="f686-d830-e417-31e2" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bb0-f245-78f7-725d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="be57-3c4a-5639-1be9" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b564-f686-ca1b-a630" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Carcharodons - Replace Bolter" id="efc5-92df-f228-db42" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="42ee-29db-67f3-0841" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bca0-6b34-28a4-71df" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eaf-e387-258b-c1e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
             <selectionEntryGroup id="e7e5-7818-0003-a42b" name="0.5) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a479-2dc7-ff71-7e70">
               <constraints>
@@ -262,6 +301,30 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="0.8) Carcharodons - Extra Weapon" id="4cad-d5b0-b5e6-e4a4" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="d7ab-8c67-4771-a932" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="ab3f-c4e7-5096-b2f9" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40ed-f0c4-34b9-1851" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="3b1b-c342-dc9f-46e5" name="Melta bombs" hidden="false" collective="false" import="true" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
@@ -317,19 +380,6 @@
                     <entryLink id="627d-5078-8089-a06c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="4f2f-7de5-37b2-3322" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3593-8e6a-be49-ff88" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="b46b-75ff-e34f-2c4a" name="Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="96cf-01d8-f454-9636">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b152-1500-d6f8-aeb7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfc-855d-ac07-f9c2" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="96cf-01d8-f454-9636" name="Bolter" hidden="false" collective="false" import="true" targetId="9a88-6eec-d597-8a08" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b5-5cfa-46bf-a766" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -476,12 +526,7 @@
               <modifiers>
                 <modifier type="increment" field="7992-13c8-e552-57c1" value="2">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="297c-2c0a-fbd0-eee0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="7992-13c8-e552-57c1" value="2">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="89bf-b32d-f938-1896" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="8a3e-fbcb-5cfc-3367" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21de-2a0e-603d-ab62" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -493,12 +538,7 @@
               <modifiers>
                 <modifier type="increment" field="7992-13c8-e552-57c1" value="1">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="297c-2c0a-fbd0-eee0" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="7992-13c8-e552-57c1" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="89bf-b32d-f938-1896" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="8a3e-fbcb-5cfc-3367" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21de-2a0e-603d-ab62" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -535,6 +575,113 @@
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.8) Carcharodons - Extra Weapon" id="2be1-9a1c-d752-3a24" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="f4db-73d4-a5c8-a561" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="8663-e84b-bdd4-efff" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a78d-4654-dafe-1920" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a78d-4654-dafe-1920">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="297c-2c0a-fbd0-eee0" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.9) Carcharodons - Replace Bolter" id="c866-c066-53e2-7680" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="3bc9-071d-ca19-743f" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="16d3-ea80-f3ba-b6ef" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6eed-01c1-c308-9c04">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="297c-2c0a-fbd0-eee0" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="6eed-01c1-c308-9c04">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="89bf-b32d-f938-1896" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6eed-01c1-c308-9c04"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.1) Must Take:" id="21de-2a0e-603d-ab62" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="2302-00e4-a51a-f565" collective="false" targetId="9a88-6eec-d597-8a08" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9add-94a7-065d-76bb" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="9add-94a7-065d-76bb"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="780e-fa86-e830-a653" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c0f0-0f36-9fc4-eafe" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="780e-fa86-e830-a653">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="c866-c066-53e2-7680" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="c0f0-0f36-9fc4-eafe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="c866-c066-53e2-7680" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="780e-fa86-e830-a653">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="297c-2c0a-fbd0-eee0" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="c0f0-0f36-9fc4-eafe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="297c-2c0a-fbd0-eee0" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="780e-fa86-e830-a653">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="89bf-b32d-f938-1896" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="c0f0-0f36-9fc4-eafe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="89bf-b32d-f938-1896" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -630,6 +777,26 @@
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Carcharodons - Replace Bolter" id="dabf-ed5b-a9f7-d53d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="7fc5-16a0-673d-7fdf" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b800-72d3-6bab-1e91" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fc4-5859-4243-2d1d" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -846,6 +1013,30 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="0.1) Carcharodons - Extra Weapon" id="e5bb-70f5-a8a8-4ca3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="c9c8-be35-93b6-ba9b" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7a02-7348-65f8-3bcf" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d000-81b9-0d08-6068" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="8b08-af9a-cf53-6787" name="Melta bombs" hidden="false" collective="false" import="true" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
@@ -1061,6 +1252,69 @@
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.1) Carcharodons - Extra Weapon" id="4ef2-1aea-d530-0d0b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="9a0f-df87-434d-8c75" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="1179-5aa7-0e6c-8a5f" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0c9c-fa70-3037-8187" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="0c9c-fa70-3037-8187">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="d0d4-cf3a-7a39-2fa6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.2) Carcharodons - Replace Bolter" id="1b10-3ff7-352c-26f6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="c15d-e3b9-8975-de30" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="588d-57ac-c8da-ceeb" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0c09-0b1f-08d0-dfba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="0c09-0b1f-08d0-dfba">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="d0d4-cf3a-7a39-2fa6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="0c09-0b1f-08d0-dfba">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="0470-d9f5-a7d1-8e3d" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1340,6 +1594,30 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="f8d2-03e4-d06e-f4bf" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="54e8-80ad-0464-788e" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7195-4e40-0a18-c487" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47ea-b6d8-7264-591e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="7cbb-60d3-4dcb-a658" name="Melta bombs" hidden="false" collective="false" import="true" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
@@ -1544,6 +1822,35 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="cfcc-6605-ce30-4418" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="3bf6-dca8-d6d6-d4cc" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="066b-df3c-dd0f-25f5" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e506-8a93-7fef-bf03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e506-8a93-7fef-bf03">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="6067-77e5-eef1-1434" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fc7c-b19e-6d9c-ec4e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -1639,6 +1946,26 @@
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Carcharodons - Replace Bolter" id="58fb-987c-7b30-9168" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="d6fc-5998-61fd-9e77" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="27c7-8c65-ff62-3b23" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3c-20ca-5129-48ec" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -1825,6 +2152,30 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="9327-0dbf-6bf6-acaf" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="86e4-7d3f-36b9-02be" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="f4bd-acc2-9ae8-0b1c" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb99-0376-ec2a-b8fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -1962,6 +2313,25 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Carcharodons - Replace Bolter" id="7da5-7615-767c-52d6" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="322b-faae-9498-09b7" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="17f2-e167-64ba-f997" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -2048,6 +2418,35 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b3d-40e2-4ceb-112b" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="5701-a494-0f08-59b3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="7033-0b1e-48f9-256c" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0446-ed01-da50-3ad8" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ffd1-92cd-e04f-35d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="ffd1-92cd-e04f-35d2">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d6ad-6c5a-46d3-0343" childId="b399-634a-f414-f026" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2501,6 +2900,30 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="a740-04fe-1ff3-f9f6" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="ee35-565a-b35a-20a7" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="17f6-7948-b9ab-4e8c" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4df6-7a28-6f91-d75f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4762-5a08-d872-dd73" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
@@ -2511,8 +2934,8 @@
         </entryLink>
         <entryLink id="382b-f0b4-e7f9-b408" name="Chainsword" hidden="false" collective="false" import="true" targetId="d26e-1136-7300-4c3c" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41f5-6d6a-b460-1214" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbb-19c0-af32-34c9" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41f5-6d6a-b460-1214" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebbb-19c0-af32-34c9" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="e19f-39bb-e1ac-cb62" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="54b1-8989-fbbe-7cc3" type="selectionEntry">
@@ -2702,8 +3125,8 @@
                     <modifier type="set" field="cb44-caeb-1cf8-cffd" value="0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fb-c63e-338d-f186" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb44-caeb-1cf8-cffd" type="min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5faf-cb62-7b5e-6b38" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2897,6 +3320,30 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="0.1) Carcharodons - Extra Weapon" id="ce2b-a216-9c35-c551" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="50c3-7e4a-75f8-f033" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="7e10-b9f1-5aa2-3706" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2868-60a2-3539-47c8" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -3233,6 +3680,30 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e03a-8abb-4137-ac48" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="629c-b7fe-4d76-35e5" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="1d73-13c0-77ff-bb9c" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bfa4-c011-6e6d-8917" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d27-8331-5cdc-6a10" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="130"/>
@@ -3564,7 +4035,7 @@
                     <modifier type="set" field="2d2e-6330-99d8-4f95" value="0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09a3-6c32-3f84-452c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09a3-6c32-3f84-452c" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d2e-6330-99d8-4f95" type="min"/>
                   </constraints>
                   <costs>
@@ -3815,6 +4286,9 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf79-3825-841f-04dc" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup id="e817-9b9c-b3e8-beae" name="4) Mobility:" hidden="false" collective="false" import="true">
               <constraints>
@@ -4028,6 +4502,30 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="0.7) Carcharodons - Extra Weapon" id="85ef-96b0-22da-4d80" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="3792-725a-2071-8116" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="4889-07f7-5007-44f4" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a68-d9e8-aab7-a53b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -4974,11 +5472,11 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="86db-d8da-4e18-cccb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47a0-55ec-1ba7-3c3a" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup id="f1ff-88d5-db89-4401" name="0.6) Master Craft 1 Weapon" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -4994,6 +5492,30 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="9382-2422-cf20-fd81" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="c3e1-36c2-7610-ede5" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="5cfa-2860-a764-1aa2" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4456-f8e8-e9e2-2299" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -5728,6 +6250,25 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Carcharodons - Replace Bolter" id="36f5-7e97-a13b-33b0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="a6ac-3235-35a0-dd96" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2863-0137-a9ed-f135" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="be2a-1355-9f1c-32f3" name="2.5) Bayonet" hidden="false" collective="false" import="true">
           <modifiers>
@@ -5990,6 +6531,35 @@
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb7b-9606-ff73-f50d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.1) Carcharodons - Extra Weapon" id="548c-c831-f121-322b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="0677-370b-0c30-e7e7" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0550-1991-5ea9-d928" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c92-9ae9-ceb4-0023" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="4c92-9ae9-ceb4-0023">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="7e8b-f8c8-2f70-5802" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -6434,6 +7004,35 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6936-26b4-909e-67ef" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="ebbc-4bcf-5ebb-3579" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="f680-c21b-3687-ba33" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="9e34-4e6d-da1e-4c16" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9426-d322-3ae0-8700" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="9426-d322-3ae0-8700">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="58f4-572d-850f-93e6" childId="e933-88d6-a838-0c42" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -6733,6 +7332,30 @@
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="1) Carcharodons - Extra Weapon" id="1544-f1d9-5fdb-521a" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="8a86-310f-5cd1-70d0" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="c6dc-3da2-e17e-39a0" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc2b-fc68-bff1-1456" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -6978,6 +7601,35 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1db-b6aa-bb6b-3206" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="3b93-414e-95ca-606f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="c4a4-cc67-1903-9a5a" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="47e3-6c35-38b4-8707" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bf7-5a96-1e41-772c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3bf7-5a96-1e41-772c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fdcf-6d36-3180-a928" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7631,7 +8283,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1) Each Veteran May take 2 of the Following:" id="2087-df45-2f9e-397f" hidden="false">
+        <selectionEntryGroup name="1.5) Each Veteran May take 2 of the Following:" id="2087-df45-2f9e-397f" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Plasma Pistol" hidden="false" id="5bf1-919c-ee64-1036" type="selectionEntry" targetId="a765-b19a-2f01-721d">
               <costs>
@@ -7723,6 +8375,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </repeats>
             </modifier>
             <modifier type="increment" value="2" field="ab3b-d5e5-a104-0c48">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="a921-21d2-1964-1e2d" childId="c1ef-398e-7e25-5879" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="3cc2-ae71-c2f7-1f38" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="03ba-0029-f6c9-b2f0" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="48ff-7a00-aac3-1e3e" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dbeb-df9c-36e5-c250" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="dbeb-df9c-36e5-c250">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="a921-21d2-1964-1e2d" childId="c1ef-398e-7e25-5879" shared="true" roundUp="false"/>
               </repeats>
@@ -7923,6 +8604,25 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </repeats>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Carcharodons - Replace Bolter" id="0d48-2232-7941-f61b" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="3209-1a15-d372-77ea" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="9ca9-bb6f-c6b2-7d94" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="3) Wargear:" id="a887-e44f-23b1-2d46" hidden="false">
           <entryLinks>
@@ -8100,6 +8800,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3873-4fb8-bb2b-e3eb" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="0.8) Carcharodons - Extra Weapon" id="36c4-d32b-c268-dd70" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="6e23-4177-82bd-e158" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b619-a46a-bbea-473b" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="690e-bf5d-7c0e-84f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="690e-bf5d-7c0e-84f0">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="94cb-2428-de66-e118" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="7c43-d29f-5502-25f8" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
@@ -8124,6 +8853,12 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16b4-ec89-4d01-f5ca" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d905-3919-ebf3-3894" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="0599-ea55-bdad-d769" type="selectionEntry" targetId="4f2f-7de5-37b2-3322">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90aa-4306-3489-071e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e084-eb95-bef6-f63e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -9602,6 +10337,28 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94de-3e4b-db90-64cf" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cae-2818-ab75-90e6" includeChildSelections="false"/>
                   </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Carcharodons - Replace Bolter" id="42c6-f945-8587-49e0" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Chainsword" hidden="false" id="96b0-b750-29b8-ebc7" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                          <costs>
+                            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2ab1-b895-77a0-4c6e" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b6d-6bff-2d91-8bcc" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="0) Must Take 1:" id="ee33-d9b6-572b-352a" hidden="false" defaultSelectionEntryId="7457-3b82-9bc2-a537">
                   <entryLinks>
@@ -9669,6 +10426,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="11ca-4814-0f4c-1566" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="2fdc-9cdf-d682-f9b9" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="6f47-8e1e-36df-93ab" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="618b-c57e-ea27-e2ea" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -9859,6 +10640,28 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b1c-63a7-c54c-7758" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1990-7401-b863-02dd" includeChildSelections="false"/>
                   </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Carcharodons - Replace Bolter" id="f10a-5a7e-3165-240c" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Chainsword" hidden="false" id="cba9-95e3-a0b6-e30c" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                          <costs>
+                            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="c037-785e-37cb-7690" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d64-d5c2-6d3d-8ef0" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="2) Melee Weapon:" id="30ef-e176-22f0-9825" hidden="false" defaultSelectionEntryId="ab7f-1e63-354a-fc44">
                   <entryLinks>
@@ -9956,6 +10759,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="0ee0-b751-b307-db11" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="e5c1-53b8-53a8-2f29" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0853-e981-c943-dea1" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8274-4b64-7772-09e3" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -10448,6 +11275,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da06-251d-c878-e74a" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="971c-cf78-f08f-a193" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="4faf-3686-f74f-c00c" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="594b-d003-9325-ad99" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4e1-fc73-1819-4bdb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="c4e1-fc73-1819-4bdb">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="b670-4e31-f41f-0fb1" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="4fc9-a33f-1125-1cb7" id="4dd1-f28b-88bd-e32d" primary="true" name="Fast Attack:"/>
@@ -10461,8 +11317,8 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
       <entryLinks>
         <entryLink import="true" name="Chainsword" hidden="false" id="15c4-a7f5-2a5b-5c81" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a0d-5716-107f-e4fe" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e727-acf0-403e-5222" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a0d-5716-107f-e4fe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e727-acf0-403e-5222" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="9765-310b-0b8b-7fd6" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
@@ -10580,74 +11436,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </repeats>
                 </modifier>
               </modifiers>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="3) Attack Bike" id="20fa-c3e2-770c-a4bd" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Attack Bike" hidden="false" id="4fe2-0676-a90e-4d51">
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7f38-21f4-16aa-d47d" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="7f38-21f4-16aa-d47d">
-                      <repeats>
-                        <repeat value="3" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="95c0-bb97-feb2-e1e4" shared="true" roundUp="false" includeChildSelections="true"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Attack Bike" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="df8e-78fb-7d75-810b">
-                      <characteristics>
-                        <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Cavalry (Skirmish)</characteristic>
-                        <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">14</characteristic>
-                        <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
-                        <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
-                        <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
-                        <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
-                        <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
-                        <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
-                        <characteristic name="Ld" typeId="0474-29b3-6a22-7416">7</characteristic>
-                        <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Choices" id="ad79-9dcd-0c5c-6a09" hidden="false" defaultSelectionEntryId="ed17-9398-35e7-2ad0">
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="08f2-55f3-179e-c4b2" type="selectionEntry" targetId="07fd-c24a-9235-4206"/>
-                    <entryLink import="true" name="Multi-Melta" hidden="false" id="8815-0894-d030-2bde" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b545-e513-2fe3-3b08" includeChildSelections="false"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3b04-04ca-aab4-ea9d" includeChildSelections="false"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="b545-e513-2fe3-3b08">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="4fe2-0676-a90e-4d51" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="increment" value="1" field="3b04-04ca-aab4-ea9d">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="4fe2-0676-a90e-4d51" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <infoLinks>
-                <infoLink name="Firing Protocols (X)" id="5892-6119-43cf-080b" hidden="false" type="rule" targetId="ff1a-fd14-8080-aff2">
-                  <modifiers>
-                    <modifier type="set" value="Firing Protocols (3)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
@@ -10857,6 +11645,23 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="1) Carcharodons - Extra Weapon" id="edd5-6fb6-5b6f-2729" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="3739-423e-3b0b-264a" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b792-63df-52b9-3a8c" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d06b-9c16-251b-0735" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Melta bombs" hidden="false" id="13e0-271f-ed5b-0e79" collective="false" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
@@ -10877,6 +11682,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9aeb-a08b-a549-af37" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d7bd-7bc2-ccf7-61f1" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="8615-d67f-6d8e-8060" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="620d-1b42-1c0b-5959" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="f462-b179-c247-2ec1" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="2c60-cd62-a1ba-aa4f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="2c60-cd62-a1ba-aa4f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="95c0-bb97-feb2-e1e4" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -10966,7 +11800,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </selectionEntryGroup>
         <selectionEntryGroup name="1) Scout Bikers" id="e109-c930-7b7a-248e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Space Marine Bikers" hidden="false" id="585c-0221-4966-4ec5">
+            <selectionEntry type="upgrade" import="true" name="Scout Bikers" hidden="false" id="585c-0221-4966-4ec5">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8fb2-144e-abcd-a9f2" includeChildSelections="false"/>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="785a-b9c4-3f14-5f9b" includeChildSelections="false"/>
@@ -10992,7 +11826,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="17"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Marine Biker Sergeant" hidden="false" id="bbd9-0dfb-6576-bade" collective="false">
+            <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="bbd9-0dfb-6576-bade" collective="false">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6ba-efeb-04dc-5e25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fec6-2fd2-bd81-4c3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -11116,6 +11950,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="4076-028f-f381-5549" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="ee71-d0b3-db9e-03ff" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bdeb-0a86-6a99-b0ef" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b68-fc1f-77b4-4aa9" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Melta bombs" hidden="false" id="eafd-a748-3218-3c01" collective="false" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
@@ -11177,6 +12035,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </costs>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="91d8-ee99-9e5a-d8a5" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="0e5a-8b63-589b-9909" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="df3b-e8b2-f515-6922" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3eff-b3e7-4e31-06d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3eff-b3e7-4e31-06d0">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="089f-7f15-f7d1-5f42" childId="585c-0221-4966-4ec5" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -11307,6 +12194,32 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="6c83-b3bf-35de-9b30" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="e376-9be9-7b33-ba7f" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="8699-8d84-b01a-8c08" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0733-5f35-a1f9-4faa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Land Speeder" hidden="false" id="5108-7974-7e21-8978">
               <profiles>
@@ -11366,6 +12279,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1177-c6a8-0149-a081" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="cbd2-13fc-bcdb-135d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="24fc-4be1-7654-05a6" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bf22-5551-c070-56ac" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="679c-db84-4e03-c81c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="70"/>
@@ -11403,8 +12340,8 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </entryLink>
         <entryLink import="true" name="Chainsword" hidden="false" id="136d-7ccb-971e-151b" collective="false" targetId="d26e-1136-7300-4c3c" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fa0-3b08-b7c0-a29c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c624-eb45-2a27-6ab5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3fa0-3b08-b7c0-a29c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c624-eb45-2a27-6ab5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Nuncio-Vox" hidden="false" id="219a-f93c-cb5f-047e" type="selectionEntry" targetId="dceb-9b22-a168-188d">
@@ -11464,6 +12401,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Carcharodons - Extra Weapon" id="08e7-e1e3-d736-2e40" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="caa7-ea86-ad3c-a980" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="c396-f146-5ee9-831e" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03a3-e449-4d41-9203" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
@@ -11600,6 +12561,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adba-db47-23c4-aa82" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="691c-c336-d9c3-9477" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="d20f-28ba-72eb-988b" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="869d-5589-10f6-024e" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b79-16a9-6650-a673" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
             <profile name="Land Speeder Proteus" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="6285-007c-b92e-fb0b">
@@ -11646,6 +12631,26 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         <categoryLink targetId="9231-183c-b97b-63f9" id="1993-5647-2a15-10e9" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="d164-7f04-b9bf-cf1f" id="ee4c-a779-b344-71eb" primary="false" name="Antigrav Sub-type"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="59dc-a59e-a6cf-bcec" collective="false" targetId="54b1-8989-fbbe-7cc3" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86c5-71bf-a4ef-f8cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f31-2949-6052-3b64" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chainsword" hidden="false" id="4942-aea0-a28c-558b" collective="false" targetId="d26e-1136-7300-4c3c" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7d9c-ce6c-146d-f56c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="152d-6c99-2dc6-7fe5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power Armour" hidden="false" id="21fa-f0b6-9932-7c71" collective="false" targetId="09dd-c282-03ec-ad0e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d095-cc9b-0f2f-1c08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c56-2410-65d5-0e69" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stormtalon Gunship" hidden="false" id="e0ef-1221-0dcb-56bb">
       <costs>
@@ -11931,6 +12936,25 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
               </repeats>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Carcharodons - Replace Bolter" id="d04a-10d6-768d-28ba" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="c1fd-2000-66bb-c635" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b5c2-0585-83d8-6663" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="1) Devastators" id="4d0c-e757-85ea-3c87" hidden="false">
           <selectionEntries>
@@ -12174,18 +13198,22 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                 </selectionEntryGroup>
                 <selectionEntryGroup name="1) Bolter or:" id="b4c4-2436-ee71-5d4b" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bcb-c096-b988-e731">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afca-9562-397a-b2b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5ed-721e-3893-23af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83a5-c6d5-f2a8-edec" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d672-7067-ebc0-09cf" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="1bcb-c096-b988-e731" collective="false" targetId="b17f-053a-3e74-f4cb" type="selectionEntry">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db4d-54dc-d1c1-c143" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28d1-f692-506f-3f5b" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Storm Bolter" hidden="false" id="5029-bbaa-e719-2477" collective="false" targetId="cde8-883c-c7bc-c472" type="selectionEntry">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea9f-75c4-0465-0431" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bda8-c16c-fd63-a08a" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0352-3b29-6391-8b93" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="befa-0464-9f17-dad6" includeChildSelections="false"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -12198,28 +13226,73 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ea4-43e6-287f-a644" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Magna Combi-Weapon - Plasma" hidden="false" id="c77b-a320-6716-4409" collective="false" targetId="c229-8d6f-acb2-52fb" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3116-d1a9-3d28-2399" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Flamer" hidden="false" id="3082-d7cd-455a-15bd" collective="false" targetId="957c-ab37-12e9-00d0" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60ca-fb33-0ae3-336a" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" id="f908-b5c2-35d9-7fdc" collective="false" targetId="f686-d830-e417-31e2" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3e-1047-c0ae-24d0" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="d794-e82a-3702-2850" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7281-cb8d-3a45-87f5" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de5b-d884-3157-6ce3" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Carcharodons - Replace Bolter" id="c318-91d4-cf68-f6d3" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Chainsword" hidden="false" id="81fb-16da-7363-bb31" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                          <costs>
+                            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f740-6aad-4182-2db2" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fdb-21a7-adbf-f632" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="200a-b55c-3573-4ee3" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97fd-4b5b-e3b6-3a46" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2bfb-2c3f-ece2-a7c8" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a8-45a5-987a-63ed" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
@@ -12249,6 +13322,35 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acbd-254d-47af-a4e8" includeChildSelections="false"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0.5) Carcharodons - Extra Weapon" id="4b0c-46d7-bb24-ba0d" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="8379-c622-51a2-5255" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="3994-a9d0-4bc7-89e3" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bea-6c69-a0b0-45b9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="0bea-6c69-a0b0-45b9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="cc50-f04a-0cd6-e966" childId="d822-7f78-2873-8ea3" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
