@@ -5315,20 +5315,6 @@
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Enochian Command Squad" hidden="false" id="f7fc-fb53-08d8-8dac" type="selectionEntry" targetId="3bc6-c4dc-99d4-56f7">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e871-7ac9-0777-c3c3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
