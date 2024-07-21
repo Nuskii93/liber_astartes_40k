@@ -398,6 +398,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58f7-42ef-4270-80fc" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="d7be-d955-6ac5-c671" type="selectionEntry" targetId="fd37-1b61-577f-b84b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ab0-74e5-e481-defc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <rules>
         <rule name="Firefall" id="54d0-3ce4-2de5-1b53" hidden="false">
@@ -434,8 +439,14 @@
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f6-0f4b-6206-c9ee" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ac-5b8e-90ab-c6db" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
