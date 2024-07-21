@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="23" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="24" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -4441,6 +4441,17 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           <categoryLinks>
             <categoryLink targetId="852b-f6b0-b8dd-1609" id="fa56-1d7b-c7db-c437" primary="true" name="Chapter"/>
           </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Fire Angels" hidden="false" id="b2ec-b3ad-c672-8de4">
+          <rules>
+            <rule name="Gladius Incandor" id="2c14-ddc5-94c0-246e" hidden="false">
+              <description>All units with the chapter tactic (Fire Angels) gain a bonus + 1 to hit when rolling To Hit with in an assault with one of the following weapons: chainsword, force­-sword, power sword, Terranic great sword. In addition a models with the vehicle sub­type gain + 1 Strength when making a ram action. </description>
+            </rule>
+            <rule name="Mechanised Furore" id="fc7d-8743-076e-4cd3" hidden="false">
+              <description>Any of the following units with the Chapter Tactics (Fire Angels) receive a discount to their initial cost (and subsequent purchases if in squadrons). Rhino/Razorback: - 5pts 
+Predator/Vindicator: -10pts </description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
