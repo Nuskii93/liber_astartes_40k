@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="24" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="25" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -4385,6 +4385,78 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <infoLink name="Master of the Company" id="26e1-6eb1-72dc-071e" hidden="false" type="rule" targetId="c976-effe-a686-f9cf"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
+      <rules>
+        <rule name="Blood Hunger" id="557e-b6fb-3b9f-9297" hidden="false">
+          <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit.</description>
+        </rule>
+        <rule name="Blooded" id="1b12-a69c-4e4b-60a4" hidden="false">
+          <description>A Model with the Blooded (x) special rule receives x amount of extra attacks on a turn it charges into combat, this is in addition to Rage (x), Rampage (x) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (x) tokens, simply put he higher of the two token pools and use for the Blooded (x) special Rule.</description>
+        </rule>
+        <rule name="Reavers of the Outer Darkness" id="e198-5525-02d5-b6c9" hidden="false">
+          <description>All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model.</description>
+        </rule>
+        <rule name="The Grey Tithes of the Outer Dark" id="458a-db5c-ee9a-48bd" hidden="false">
+          <description>May include an additional Relic of the Chapter on top of what is usually allowed by the points limits or any other special rules</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="47d6-2c7c-0c7d-8a28" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
+      <rules>
+        <rule name="Indomitable" id="02ff-b504-b173-d842" hidden="false">
+          <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="1da1-f676-c5df-9d0a" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Fire Angels" hidden="false" id="b2ec-b3ad-c672-8de4">
+      <rules>
+        <rule name="Gladius Incandor" id="f941-120f-9d83-f09f" hidden="false">
+          <description>All units with the chapter tactic (Fire Angels) gain a bonus + 1 to hit when rolling To Hit with in an assault with one of the following weapons: chainsword, force­-sword, power sword, Terranic great sword. In addition a models with the vehicle sub­type gain + 1 Strength when making a ram action.</description>
+        </rule>
+        <rule name="Mechanised Furore" id="c286-ed1b-6978-7999" hidden="false">
+          <description>Any of the following units with the Chapter Tactics (Fire Angels) receive a discount to their initial cost (and subsequent purchases if in squadrons). Rhino/Razorback: - 5pts 
+Predator/Vindicator: -10pts</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Fire Hawks" hidden="false" id="7899-9401-b915-2859">
+      <rules>
+        <rule name="On Wings of Fire" id="600c-6a4c-9cad-a5c8" hidden="false">
+          <description>All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play 
+using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength. </description>
+        </rule>
+        <rule name="Speed and Fury" id="ae79-b153-8804-f2aa" hidden="false">
+          <description>All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type. </description>
+        </rule>
+        <rule name="The Livery of Curs" id="992e-8077-e110-bf66" hidden="false">
+          <description>􀀃del with the Chapter Tactics ( Fire Hawks) special rule lessens all cover saves receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="d9a3-4ad1-31c3-c90e" name="Hand Flamer" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="cb21-2292-cbc9-ed1f" name="Hand Flamer" publicationId="1ea9-215e-21c0-c2e9" page="132" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">Template</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">3</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Pistol 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0dcd-2bf7-0a3f-2985" name="Template Weapons" hidden="false" targetId="3d7a-7ae8-f063-593c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
@@ -4410,50 +4482,6 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </costs>
         </entryLink>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Chapters" id="cff8-edf1-c4ae-c42c" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
-          <rules>
-            <rule name="Blood Hunger" id="7336-87ff-c498-9a3b" hidden="false">
-              <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit.</description>
-            </rule>
-            <rule name="Blooded" id="7734-7a8a-d31e-f9c3" hidden="false">
-              <description>A Model with the Blooded (x) special rule receives x amount of extra attacks on a turn it charges into combat, this is in addition to Rage (x), Rampage (x) etc. The X is the number of Blooded tokens the unit currently has. If there is an Independent Character within the unit that also has Blooded (x) tokens, simply put he higher of the two token pools and use for the Blooded (x) special Rule.</description>
-            </rule>
-            <rule name="Reavers of the Outer Darkness" id="45aa-9ed8-8ea4-79bc" hidden="false">
-              <description>All models with Chapter Tactics (Carcharodons) may exchange a boltgun they are already equipped with for a close combat weapon for free or a chainsword for +1 point. Any model may also choose to equip an additional close combat weapon for +1 point or chainsword for +2 points per model.</description>
-            </rule>
-            <rule name="The Grey Tithes of the Outer Dark" id="c713-79f5-1074-a412" hidden="false">
-              <description>May include an additional Relic of the Chapter on top of what is usually allowed by the points limits or any other special rules</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="Chapter" hidden="false" id="8104-f928-12e9-5fdf" targetId="852b-f6b0-b8dd-1609" primary="true"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
-          <rules>
-            <rule name="Indomitable" id="afbe-76cd-8808-2d1b" hidden="false">
-              <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink targetId="852b-f6b0-b8dd-1609" id="fa56-1d7b-c7db-c437" primary="true" name="Chapter"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Fire Angels" hidden="false" id="b2ec-b3ad-c672-8de4">
-          <rules>
-            <rule name="Gladius Incandor" id="2c14-ddc5-94c0-246e" hidden="false">
-              <description>All units with the chapter tactic (Fire Angels) gain a bonus + 1 to hit when rolling To Hit with in an assault with one of the following weapons: chainsword, force­-sword, power sword, Terranic great sword. In addition a models with the vehicle sub­type gain + 1 Strength when making a ram action. </description>
-            </rule>
-            <rule name="Mechanised Furore" id="fc7d-8743-076e-4cd3" hidden="false">
-              <description>Any of the following units with the Chapter Tactics (Fire Angels) receive a discount to their initial cost (and subsequent purchases if in squadrons). Rhino/Razorback: - 5pts 
-Predator/Vindicator: -10pts </description>
-            </rule>
-          </rules>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Company Level Deployments" id="0218-ea7c-b054-4189" hidden="false">
       <selectionEntries>

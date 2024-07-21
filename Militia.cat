@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="9bc1-29bf-9e4e-a6b8" name="Militia" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="24" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Astartes" id="4a78-a5d8-1808-fd5f" targetId="b232-3062-241d-bf2e"/>
+  </catalogueLinks>
+</catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="23" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="24" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -495,6 +495,13 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="aa12-cd9c-f3c8-bf9a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="2) Wargear:" id="602f-9e6d-8245-95fc" hidden="false">
           <entryLinks>
@@ -581,7 +588,7 @@
             </modifier>
           </modifiers>
           <selectionEntryGroups>
-            <selectionEntryGroup name="1) 1 in 5 May Take:" id="4a09-3d3a-c4b8-4c4b" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="1.1) 1 in 5 May Take:" id="4a09-3d3a-c4b8-4c4b" hidden="false" collective="false" import="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Heavy Weapon" id="5d40-527f-aa77-50ea" hidden="false" collective="false" import="true">
                   <modifiers>
@@ -691,6 +698,22 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Fire Hawks - Replace Bolter with Hand Flamer" id="03c4-612d-cc5c-ce82" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="4a2f-3083-7a91-6faf" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -866,6 +889,37 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="72e9-a7cf-56fa-bded" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="d74d-a0f7-0d20-450a">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="778a-375a-03c4-dd51" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="0dfe-bb49-8378-5397" shared="true" roundUp="false" includeChildSelections="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a54e-4167-22f5-bdb4" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="125d-e202-e781-fa9a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ac8e-b80f-3ae9-8bc0" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -1023,6 +1077,21 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="0fbc-60a9-42d9-286f" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a194-6591-682a-36c2" includeChildSelections="false"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -1314,6 +1383,21 @@
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="439f-2067-855f-bada" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="0d3d-0ac4-4623-9c70" type="selectionEntry" targetId="d9a3-4ad1-31c3-c90e">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cbd-292a-b483-e69c" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1364,7 +1448,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="72c3-3f12-d6bf-7510" name="1) 1 in 5 May Take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="72c3-3f12-d6bf-7510" name="1) 1 in 5 May Replace Bolter For:" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
             <selectionEntryGroup id="0470-d9f5-a7d1-8e3d" name="Special Weapon" hidden="false" collective="false" import="true">
               <modifiers>
@@ -1442,6 +1526,13 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="9a88-6eec-d597-8a08" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="2) Wargear:" id="49f9-925a-09d8-ffe7" hidden="false">
           <entryLinks>
@@ -1676,6 +1767,35 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawk - Replace Bolter with Hand Flamer" id="70ee-18f5-3e2c-9595" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="5d1a-3151-d53b-3deb" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7410-7a53-587c-90c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="7410-7a53-587c-90c7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="d0d4-cf3a-7a39-2fa6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="7410-7a53-587c-90c7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="0470-d9f5-a7d1-8e3d" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d043-efc3-982b-25fe" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -1868,6 +1988,21 @@
                       </costs>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9913-caec-9e5e-898a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="9ac3-8959-a73d-60da" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1ae-62d3-d44b-0de3" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -2207,7 +2342,7 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1 in 5 may take:" id="3fa2-1cf4-93e7-d224" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="1.5) 1 in 5 May Replace Bolt Pistol For:" id="3fa2-1cf4-93e7-d224" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" value="1" field="ced1-83f8-48ec-b536">
               <repeats>
@@ -2425,6 +2560,66 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="711b-fdc9-c47b-f6cc" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="b1cb-e9fa-4ad2-24e0">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="6067-77e5-eef1-1434" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="cba4-49b8-03d1-cd7f" shared="true" roundUp="false" includeChildSelections="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1400-1c0b-7228-2530" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="ff79-e0b2-973c-62c4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.1) Fire Hawks - Replace Bolt Pistol" id="09af-ab3d-f4b3-9064" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="270d-351d-2189-7a12" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f259-ce24-e38f-81a6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f259-ce24-e38f-81a6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="6067-77e5-eef1-1434" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f259-ce24-e38f-81a6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="3fa2-1cf4-93e7-d224" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fc7c-b19e-6d9c-ec4e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -2453,6 +2648,11 @@
         <modifier type="add" value="5596-67a3-0a72-dccb" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9638-87a5-011a-fac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="711b-fdc9-c47b-f6cc" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2603,6 +2803,21 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b1-2b63-52e7-5ccf" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7289-9584-775b-b1f2" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2200-5177-c3af-2c4b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="25fb-a39b-abed-67b5" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e2-ff1f-5226-f16c" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2886,6 +3101,18 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="eadb-b68c-26ac-a2fa" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -4779,6 +5006,21 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="def2-0167-1fb8-d2b0" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a8e-d7ad-09ae-0e45" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="97e5-d9ec-7fce-29d2" name="3) Must Select Two Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d96-7ddf-961a-7842">
@@ -5248,6 +5490,32 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1) Upgrade to Mk.III Iron Armour" id="e006-3c4c-d9cb-ccef" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="fe95-e2ef-e469-777d">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd18-f25b-1e97-e69b" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="18bb-0d06-f3a3-befe">
+                      <characteristics>
+                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="b078-70e6-9c81-2451" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
@@ -5296,6 +5564,11 @@
             <modifier type="add" value="d87f-b1a3-5a99-9669" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="1f41-6da3-9a7c-3800" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e006-3c4c-d9cb-ccef" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6934,6 +7207,32 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="343a-965b-0594-9a86" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="739e-1dbe-4097-1325">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86bd-432c-4dd9-8184" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="7323-4a46-373a-adcd">
+                      <characteristics>
+                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="c362-c06f-4b8b-56e8" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
@@ -6982,6 +7281,11 @@
             <modifier type="add" value="d87f-b1a3-5a99-9669" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="1f41-6da3-9a7c-3800" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="343a-965b-0594-9a86" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9198,6 +9502,21 @@
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="7e8e-5059-cb87-a5a3" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c3f-5810-c45e-681a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Carcharodons - Replace Bolter" id="36f5-7e97-a13b-33b0" hidden="false">
@@ -9660,6 +9979,36 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Upgrade to Mk.III Iron Armour" id="720a-893a-63cf-72d0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="bf1f-1814-e51d-e8e0">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="40ac-f969-9095-2d9f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b9d-94c5-ff54-bbdc" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1fa3-86d4-1b42-d6eb">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -9676,6 +10025,13 @@
         <categoryLink targetId="9b5d-996f-8000-14f5" id="3a3b-2f3c-6795-8d8c" primary="true" name="Retinue"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="cbb1-077b-0d5a-94b1" primary="false" name="Character"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="720a-893a-63cf-72d0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="58f4-572d-850f-93e6" name="Terminator Command Squad" publicationId="0a24-8d5a-55ca-b028" page="19" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -11740,6 +12096,16 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <condition type="equalTo" value="1" field="selections" scope="a921-21d2-1964-1e2d" childId="ce80-3806-af8b-1c9b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="Infantry (Character, Line)" field="b6e9-f8ba-2256-a63e">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </profile>
               </profiles>
@@ -11771,6 +12137,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Line)" field="b6e9-f8ba-2256-a63e">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -11985,6 +12363,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="0dba-b765-c655-22a4" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12205,6 +12595,36 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="d784-438b-53be-81ce" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="08bd-69e4-f52e-87ff">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1ef-398e-7e25-5879" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dff-45af-a2da-16c3" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="9339-0a97-4d8e-e2ac">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Chosen Warriors" id="15c2-33a6-b10e-157f" hidden="false" targetId="ea67-a8b8-b434-660e" type="rule"/>
@@ -12246,6 +12666,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         <modifier type="add" value="b3ff-5ddd-f1d6-29b6" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9638-87a5-011a-fac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d784-438b-53be-81ce" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12317,6 +12752,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="2" field="selections" scope="parent" childId="aa12-cd9c-f3c8-bf9a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="2) 2 Veterans May Take:" id="c33d-1afa-72a2-6fd8" hidden="false" collective="false" import="true">
           <constraints>
@@ -12398,6 +12840,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="c89f-4945-2819-8bdc" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="7685-cc66-5bb4-1e54" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -12693,6 +13147,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="755c-78d6-ea99-d705" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e63-a1e4-d2e3-ea99" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adb7-96bf-94aa-865a" includeChildSelections="false"/>
@@ -12924,6 +13393,36 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="407b-c578-bed2-80f8" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="e320-8481-6d85-e5b6">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="94cb-2428-de66-e118" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f18-f0d5-4f35-d19a" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="cae7-9dec-18fb-c18d">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="7c43-d29f-5502-25f8" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
@@ -12980,6 +13479,11 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         <modifier type="add" value="b3ff-5ddd-f1d6-29b6" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9638-87a5-011a-fac0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="407b-c578-bed2-80f8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15298,100 +15802,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d33-7093-aeed-5bc0" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="1.5) Must Take One Ranged:" id="8fc9-537a-2985-cff0" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Magna Combi-Weapon - Melta" hidden="false" id="f2a5-c4ba-1a3a-78e9" collective="false" targetId="cf8a-1598-64ea-1f4b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Magna Combi-Weapon - Plasma" hidden="false" id="63fa-83ba-9418-2ad9" collective="false" targetId="c229-8d6f-acb2-52fb" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Minor Combi-Weapon - Flamer" hidden="false" id="4b4f-516f-b8c4-db36" collective="false" targetId="957c-ab37-12e9-00d0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" id="626d-5c09-8578-ae9d" collective="false" targetId="f686-d830-e417-31e2" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="9747-af3a-723a-941e" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="70bb-cf08-6fbc-9bcd" type="selectionEntry" targetId="a765-b19a-2f01-721d">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Flamer" hidden="false" id="6372-e3db-4be4-86e4" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Graviton Gun" hidden="false" id="9de2-c33a-3d49-dc41" type="selectionEntry" targetId="5303-5a3e-de51-1707">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Meltagun" hidden="false" id="eb12-4edd-0f21-b90f" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Gun" hidden="false" id="0409-6be5-e88b-fa97" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Master-crafted Bolter" hidden="false" id="5063-fc8b-b2e8-1fb5" type="selectionEntry" targetId="5749-6084-3302-38e3">
-                      <costs>
-                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Bolter" hidden="false" id="3cb7-2c3a-a461-f6e2" type="selectionEntry" targetId="b17f-053a-3e74-f4cb">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca34-ba86-4604-3a57" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="ca34-ba86-4604-3a57"/>
-                      </modifiers>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94de-3e4b-db90-64cf" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cae-2818-ab75-90e6" includeChildSelections="false"/>
-                  </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Carcharodons - Replace Bolter" id="42c6-f945-8587-49e0" hidden="false">
-                      <entryLinks>
-                        <entryLink import="true" name="Chainsword" hidden="false" id="96b0-b750-29b8-ebc7" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
-                          <costs>
-                            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2ab1-b895-77a0-4c6e" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
-                      </entryLinks>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b6d-6bff-2d91-8bcc" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="2) Must Select One Melee:" id="ee33-d9b6-572b-352a" hidden="false" defaultSelectionEntryId="7457-3b82-9bc2-a537">
+                <selectionEntryGroup name="2) Must Select One Melee:" id="ee33-d9b6-572b-352a" hidden="false" defaultSelectionEntryId="f527-8ea8-a546-93bf">
                   <entryLinks>
                     <entryLink import="true" name="Power Axe" hidden="false" id="f527-8ea8-a546-93bf" type="selectionEntry" targetId="9b64-83e6-bcb5-8799">
                       <constraints>
@@ -15653,6 +16064,167 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="cc4a-8330-5f9a-ae1f" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="e6af-95dc-6900-613c">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51c3-7636-a1a8-63ee" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1c70-d07e-6c28-fab5">
+                          <characteristics>
+                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1.5) Must Take One Ranged:" id="f9b5-39ff-2156-6ce1" hidden="false" defaultSelectionEntryId="ea1b-e8c2-d2a9-dc3f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe7-7cb4-823a-c5d5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c03f-1af8-4313-9172" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolter" hidden="false" id="ea1b-e8c2-d2a9-dc3f" type="selectionEntry" targetId="b17f-053a-3e74-f4cb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9913-32cb-53fa-bb2d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Flamer" hidden="false" id="4c7b-7458-db3b-2725" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7047-fe66-9fc7-106c" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton Gun" hidden="false" id="902b-6f3f-9f34-e2f2" type="selectionEntry" targetId="5303-5a3e-de51-1707">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e47f-a37f-2937-96ee" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="3a83-8015-0906-c47d" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77b5-2ca7-8d95-4067" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Magna Combi-Weapon - Melta" hidden="false" id="ac6d-fcdd-fd15-14d1" collective="false" targetId="cf8a-1598-64ea-1f4b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="153a-e683-6df5-e212" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Magna Combi-Weapon - Plasma" hidden="false" id="39dd-fdfb-5005-756d" collective="false" targetId="c229-8d6f-acb2-52fb" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e40-054e-b4e3-e6f1" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Master-crafted Bolter" hidden="false" id="6a3c-d199-e63c-2a9d" type="selectionEntry" targetId="5749-6084-3302-38e3">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecf3-a52f-a04e-252e" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="7567-e0c6-0359-503f" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c3f-4674-4d04-7d8b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Minor Combi-Weapon - Flamer" hidden="false" id="d394-dabd-36ac-8aff" collective="false" targetId="957c-ab37-12e9-00d0" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67cd-49a2-b965-570d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" id="4806-db87-2c10-0099" collective="false" targetId="f686-d830-e417-31e2" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea1-ebbe-780e-8398" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="d956-5f53-0a8c-7903" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f224-8d8b-d346-f91d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="11e4-deff-1214-0ff0" type="selectionEntry" targetId="f0d1-332b-c719-ede7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae6-1614-f883-58c4" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" id="1e15-27bf-9e98-74dc" type="selectionEntry" targetId="a765-b19a-2f01-721d">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00cf-0ce7-3db2-d734" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Carcharodons - Replace Bolter" id="b180-aa14-b895-d2f0" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Chainsword" hidden="false" id="2dbb-16bb-88a8-e4fb" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
+                          <costs>
+                            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="90f5-d844-6f55-2b1e" type="selectionEntry" targetId="cf59-e92c-408f-232f"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
                 <profile name="Techmarine" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="6f11-0bd4-89ae-a448">
@@ -15708,6 +16280,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <categoryLinks>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="b5d2-2344-6fc4-2681" primary="false" name="Heavy Sub-type"/>
               </categoryLinks>
+              <modifiers>
+                <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="cc4a-8330-5f9a-ae1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Apothecary" hidden="false" id="a4e1-d401-d8cc-c2e8">
               <costs>
@@ -15809,34 +16388,65 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a76f-2476-9960-3513" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Magna Combi-Weapon - Plasma" hidden="false" id="56dc-82e3-b62a-3753" collective="false" targetId="c229-8d6f-acb2-52fb" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a58-db69-09bb-e2a2" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Flamer" hidden="false" id="7a6e-4025-efc9-aa2e" collective="false" targetId="957c-ab37-12e9-00d0" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dcb-bc11-7024-1c67" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" id="8357-3428-ab72-ff79" collective="false" targetId="f686-d830-e417-31e2" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c016-9542-ba3d-5444" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Minor Combi-Weapon - Volkite Charger" hidden="false" id="eb43-1f16-eaaa-1b3f" collective="false" targetId="f6b0-9c63-34ff-27aa" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65d9-0fdd-fda5-29de" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Bolter" hidden="false" id="29b7-10e8-a736-4ff4" type="selectionEntry" targetId="b17f-053a-3e74-f4cb">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cec3-1544-c510-d5d6" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d98-fd11-ab36-1d52" includeChildSelections="false"/>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="0" field="cec3-1544-c510-d5d6"/>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="c523-8ab1-8fa2-46bc" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9251-d8ef-578c-5041" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -15872,25 +16482,38 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2503-7794-d702-2536" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power Lance" hidden="false" id="e53f-e713-fa22-15ff" collective="false" targetId="6015-a078-64cc-6a54" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0e7-bc36-cb81-b861" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power Maul" hidden="false" id="2b12-def5-7227-8997" collective="false" targetId="d831-0043-0944-a75f" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf17-beeb-11de-00f5" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power Sword" hidden="false" id="e468-6acd-bc1c-4efb" collective="false" targetId="4f6f-0064-0a64-5565" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d21-ea04-52e9-76c8" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                     <entryLink import="true" name="Chainsword" hidden="false" id="9dbf-e49b-cb6e-7fe2" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38b1-4a46-1fdb-c5fd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5a8-5e68-e92c-0cdf" includeChildSelections="false"/>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="0" field="38b1-4a46-1fdb-c5fd"/>
@@ -16158,6 +16781,32 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="78d5-5a8d-1004-3c2e" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="db82-37a6-ae52-88eb">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cfd-915b-fb99-ab97" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="f95b-5e01-32f8-fd97">
+                          <characteristics>
+                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <infoLinks>
                 <infoLink name="And they Shall Know No Fear" id="de48-ddbf-80c0-46ae" hidden="false" type="rule" targetId="ce91-e2c8-ffa1-14a8"/>
@@ -16177,6 +16826,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   <description>Any model with this special rule must be attached to an infantry unit (or cavalry if equipped with a Spatha Combat Bike) at the beginning of a battle before deployment. If it cannot be deployed with a unit it counts as destroyed. They may not join a unit consisting of models with Terminator (any kind) or Centurion Armour. If the unit has any particular Sub-Types (EG Heavy, Light, Skirmish etc) this model then gains them.</description>
                 </rule>
               </rules>
+              <modifiers>
+                <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="78d5-5a8d-1004-3c2e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -16296,6 +16952,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                       </costs>
+                      <modifiers>
+                        <modifier type="set" value="3" field="7992-13c8-e552-57c1">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -16389,6 +17052,16 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                             <condition type="equalTo" value="1" field="selections" scope="b8d9-0796-943f-ec40" childId="ce80-3806-af8b-1c9b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                           </conditions>
                         </modifier>
+                        <modifier type="set" value="Infantry (Character, Line)" field="b6e9-f8ba-2256-a63e">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
                       </modifiers>
                     </profile>
                   </profiles>
@@ -16412,6 +17085,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="Infantry (Character, Line)" field="b6e9-f8ba-2256-a63e">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <costs>
@@ -16451,7 +17136,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="0) Assault Marines" id="b670-4e31-f41f-0fb1" hidden="false" collective="false" import="true" defaultSelectionEntryId="752a-b8f9-2247-2d9b">
+        <selectionEntryGroup name="0.5) Assault Marines" id="b670-4e31-f41f-0fb1" hidden="false" collective="false" import="true" defaultSelectionEntryId="752a-b8f9-2247-2d9b">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8e98-919d-7e56-28e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7b39-8f7f-7c22-6505" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -16473,23 +17158,31 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">7</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Line)" field="b6e9-f8ba-2256-a63e">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Bolt Pistol" id="1436-42fd-4287-56a4" hidden="false" collective="false" import="true" defaultSelectionEntryId="5e21-e756-6b2c-87a6">
+                <selectionEntryGroup name="Bolt Pistol" id="1436-42fd-4287-56a4" hidden="false" collective="false" import="true" defaultSelectionEntryId="3188-20f5-3502-3b95">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fcc-b86d-508d-d3b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="933c-4d7e-cdbe-1dcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="327f-4ec0-87be-6298" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f69-251e-c26c-73cc" includeChildSelections="false"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Bolt Pistol" hidden="false" id="3188-20f5-3502-3b95" collective="false" targetId="4f2f-7de5-37b2-3322" type="selectionEntry">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4789-4ba6-0d32-5705" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6b2-5a78-8069-aefc" includeChildSelections="false"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="b6b2-5a78-8069-aefc"/>
-                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -16521,7 +17214,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1.5) 1 in 5 May Take:" id="d0e1-7dc3-3044-fc37" hidden="false" collective="false" import="true">
+        <selectionEntryGroup name="1.5) 1 in 5 May Replace Pistol For:" id="d0e1-7dc3-3044-fc37" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee:" id="f7d5-31a8-8f78-d508" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -16564,7 +17257,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Pistols:" id="2412-91f6-76eb-7193" hidden="false" collective="false" import="true">
+            <selectionEntryGroup name="Ranged:" id="2412-91f6-76eb-7193" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink import="true" name="Hand Flamer" hidden="false" id="6788-2852-aded-9fb3" collective="false" targetId="8b3e-182e-6686-5b44" type="selectionEntry">
                   <costs>
@@ -16869,6 +17562,66 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="04f3-b308-ff35-c26b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="7d94-2124-849d-55e1">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="b670-4e31-f41f-0fb1" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="b8d9-0796-943f-ec40" shared="true" roundUp="false" includeChildSelections="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="062f-954b-d34d-1af8" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="bb92-9ffc-db0a-c03f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.1) Fire Hawks - Replace Bolt Pistol" id="0983-da56-8a9f-f388" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="5733-6b77-6c7e-c505" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2d46-1e91-8943-e6a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="2d46-1e91-8943-e6a8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="6731-34f1-5dc1-a601" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="2d46-1e91-8943-e6a8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="d0e1-7dc3-3044-fc37" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="14"/>
@@ -16877,6 +17630,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         <categoryLink targetId="4fc9-a33f-1125-1cb7" id="2d3d-29b8-3a4b-b63b" primary="true" name="Fast Attack:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="0ed6-82d5-4f18-d8fc" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="04f3-b308-ff35-c26b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Space Marine Bike Squad" hidden="false" id="95a7-ebc6-07a7-f651">
       <entryLinks>
@@ -20014,7 +20774,23 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Fire Hawks - Replace Bolter with Hand Flamer" id="4621-f971-9efe-4392" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Hand Flamer" hidden="false" id="7689-08e9-af68-9db3" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -20328,6 +21104,21 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de5b-d884-3157-6ce3" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" id="140d-dc8a-544d-ec5b" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d8d-8493-c3b4-5c9f" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Carcharodons - Replace Bolter" id="c318-91d4-cf68-f6d3" hidden="false">
@@ -20598,6 +21389,36 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Fire Hawks - Upgrade to Mk.III Iron Armour" id="61cf-e926-2879-68f0" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mk.III Iron Armour" hidden="false" id="d15d-e9cd-67de-2508">
+              <modifiers>
+                <modifier type="increment" value="2" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="cc50-f04a-0cd6-e966" childId="4d0c-e757-85ea-3c87" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="802a-c1d2-5f65-5127" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="8b10-34b3-5493-fb1b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="675e-999f-0119-d80a" primary="false" name="Infantry Unit Type"/>
@@ -20606,6 +21427,13 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="40"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="61cf-e926-2879-68f0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Centurion Devastator Squad" hidden="false" id="e504-7189-3574-ce61">
       <selectionEntries>
@@ -26815,6 +27643,18 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Hand Flamer" hidden="false" id="43d9-6dbd-e682-4461" type="selectionEntry" targetId="8b3e-182e-6686-5b44">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Carcharodons - Replace Bolter" id="a9d2-8fcb-42fe-a521" hidden="false">
@@ -28076,6 +28916,27 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="2ee0-a21b-e048-7aa8">
+      <rules>
+        <rule name="Indomitable" id="43f5-da95-872f-84e7" hidden="false">
+          <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="dc38-3aaa-0c2c-0429" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Fire Angels" hidden="false" id="6bf3-aeac-1bfa-69a2">
+      <rules>
+        <rule name="Gladius Incandor" id="948f-cbe0-345e-3416" hidden="false">
+          <description>All units with the chapter tactic (Fire Angels) gain a bonus + 1 to hit when rolling To Hit with in an assault with one of the following weapons: chainsword, force­-sword, power sword, Terranic great sword. In addition a models with the vehicle sub­type gain + 1 Strength when making a ram action.</description>
+        </rule>
+        <rule name="Mechanised Furore" id="bb6a-1c45-103e-e49d" hidden="false">
+          <description>Any of the following units with the Chapter Tactics (Fire Angels) receive a discount to their initial cost (and subsequent purchases if in squadrons). Rhino/Razorback: - 5pts 
+Predator/Vindicator: -10pts</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Warlord Traits" id="965b-0785-f059-fa03" hidden="false">
@@ -28145,7 +29006,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="Mechanized Specialist" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="80aa-b8b7-f410-c735">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">While the Warlord is embarked on a vehicle, any other vehicle within 12&quot; of the Warlords&apos; Vehicle may increase its move characteristic by +2&quot;. While the warlord is alive, the army may make an additional reaction in the Movement Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">While the Warlord is embarked on a vehicle, any other vehicle within 12&quot; of the Warlords&apos; Vehicle may increase its move characteristic by +2&quot;. While the warlord is alive, the army may make an additional reaction in the Movement Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -28157,6 +29018,23 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
             </modifier>
           </modifiers>
           <comment>The Fire Angels</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Raptorus Rex is Watching" hidden="false" id="fa33-50cc-f80b-8e49">
+          <profiles>
+            <profile name="The Raptorus Rex is Watching" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="6f43-020f-f65e-d44e">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">While the Warlord is alive, the controlling player may reroll all 1&apos;s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additionaI reaction in the Shooting Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>The Fire Hawks</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
