@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="21" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="22" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -162,25 +162,8 @@ A unit that includes one or more models with the Artillery sub-type may not make
     <categoryEntry id="5596-67a3-0a72-dccb" name="Compulsory Troops:" hidden="false"/>
     <categoryEntry id="a800-52d7-1961-6e29" name="HQ:" hidden="false"/>
     <categoryEntry id="256c-d251-7f31-271d" name="Troops:" hidden="false"/>
-    <categoryEntry id="1a92-d90b-9550-a0a7" name="Heavy Support:" hidden="false">
-      <constraints>
-        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6788-98e7-34c3-25ba" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5bd1-25af-4e5a-7c87" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="d471-a611-11c4-7f09" name="Elites:" hidden="false">
-      <constraints>
-        <constraint type="max" value="4" field="selections" scope="force" shared="true" id="6f35-49d6-4dda-f8cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3b25-3d01-4578-c348" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="6f35-49d6-4dda-f8cb">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="02e3-c760-3dbc-d0fc" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
+    <categoryEntry id="1a92-d90b-9550-a0a7" name="Heavy Support:" hidden="false"/>
+    <categoryEntry id="d471-a611-11c4-7f09" name="Elites:" hidden="false"/>
     <categoryEntry id="4fc9-a33f-1125-1cb7" name="Fast Attack:" hidden="false"/>
     <categoryEntry id="2416-9b28-317a-2db1" name="LoW (Max 25%)" hidden="false"/>
     <categoryEntry id="956c-46fc-0736-1f34" name="Relics (1 per 1k)" hidden="false"/>
@@ -248,9 +231,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </rules>
     </categoryEntry>
     <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd31-bf22-2243-ccc7" type="max"/>
-      </constraints>
       <rules>
         <rule id="79ce-8870-0b12-79ab" name="Heavy Sub-type" publicationId="1ea9-215e-21c0-c2e9" page="197" hidden="false">
           <description>• A unit that includes only models with the Heavy subtype may re-roll failed Armour Saves against Template and Blast weapons.
@@ -283,6 +263,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Skirmish" id="d87f-b1a3-5a99-9669" hidden="false"/>
     <categoryEntry name="Dreadnought" id="528c-8d49-6bd6-8b22" hidden="false"/>
     <categoryEntry name="Fortifications" id="b641-b5fc-cebd-7593" hidden="false"/>
+    <categoryEntry name="Dedicated Transport" id="a601-892d-b14a-0b44" hidden="false"/>
+    <categoryEntry name="Flyer" id="daa1-3ace-c7ac-10ba" hidden="false"/>
+    <categoryEntry name="Reinforced" id="a7fa-0a53-e64f-3cf1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -306,7 +289,12 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8891-52c8-fcb0-cfdb" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Company Level Deployments" hidden="false" id="ea20-4faa-d95b-995e" targetId="c44a-e987-25a0-8e01"/>
+        <categoryLink name="Company Level Deployments" hidden="false" id="ea20-4faa-d95b-995e" targetId="c44a-e987-25a0-8e01">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6642-4758-bbb1-49f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87d9-24a5-5675-808b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="f036-cf4a-6b4f-99e0" name="HQ:" hidden="false" targetId="a800-52d7-1961-6e29" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fce7-9adf-2b84-e40a" type="max"/>
@@ -319,7 +307,19 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c456-52b0-6144-3066" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1bd8-a816-4a0c-7290" name="Elites:" hidden="false" targetId="d471-a611-11c4-7f09" primary="false"/>
+        <categoryLink id="1bd8-a816-4a0c-7290" name="Elites:" hidden="false" targetId="d471-a611-11c4-7f09" primary="false">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="6dc2-e9d8-a1d4-18be" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="bb9d-d3cb-fa4d-dcdd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="02e3-c760-3dbc-d0fc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="13f2-88b4-a4ee-22fa" name="Fast Attack:" hidden="false" targetId="4fc9-a33f-1125-1cb7" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4f5-1c8a-d007-ad11" type="max"/>
@@ -351,6 +351,10 @@ Conversely, if an Independent Character joins a unit after that unit has been th
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4cfb-2bec-86aa-6007" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="ecb8-7c6a-fe23-b6ac" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
         </categoryLink>
         <categoryLink id="dda7-10c2-7d57-4f56" name="LoW (Max 25%)" hidden="false" targetId="2416-9b28-317a-2db1" primary="false">
           <modifiers>
@@ -374,6 +378,55 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f453-d2cb-6e35-a473" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fortifications" hidden="false" id="e009-305e-558e-b38d" targetId="b641-b5fc-cebd-7593" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ccd0-e31a-46a4-9a68" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="2. Allied Force Organisation Chart" id="c725-43be-4b72-85d4" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="4543-e6cd-2eb7-4df4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="8dc5-6138-7505-1e45" targetId="852b-f6b0-b8dd-1609">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6368-e5b4-342b-9b30" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d78-1c61-531c-7771" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Company Level Deployments" hidden="false" id="f21a-79b9-415d-46e0" targetId="c44a-e987-25a0-8e01" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="03c6-8371-cb24-dac9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e30-ed07-9bd2-de3e" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="HQ:" hidden="false" id="00de-6195-785e-74d3" targetId="a800-52d7-1961-6e29" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5833-3c12-e309-41f7"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops:" hidden="false" id="3ccc-45e4-3ddd-c3fd" targetId="256c-d251-7f31-271d" type="category">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="07f8-56b9-00a0-83cd"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="f137-e3d8-0325-4933" targetId="d471-a611-11c4-7f09" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="588f-6b46-b095-e2a1"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="9a88-49df-faee-7c4b" targetId="4fc9-a33f-1125-1cb7" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d88-c85f-a442-2b7b" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="4832-a910-16d5-5b3d" targetId="1a92-d90b-9550-a0a7" type="category">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9812-1210-1e35-6ca9" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -4347,6 +4400,16 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </rules>
           <categoryLinks>
             <categoryLink name="Chapter" hidden="false" id="8104-f928-12e9-5fdf" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
+          <rules>
+            <rule name="Indomitable" id="afbe-76cd-8808-2d1b" hidden="false">
+              <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw. </description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="852b-f6b0-b8dd-1609" id="fa56-1d7b-c7db-c437" primary="true" name="Chapter"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
