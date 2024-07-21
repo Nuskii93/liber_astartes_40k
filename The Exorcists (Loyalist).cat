@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1b10-068c-408a-8be4" name="The Exorcists (Loyalist)" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="21" revision="2" authorName="B0ff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1b10-068c-408a-8be4" name="The Exorcists - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="21" revision="2" authorName="B0ff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="9537-5e31-cd30-ae58" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
     <entryLink import="true" name="Assault Squad" hidden="false" id="e332-49b9-2d36-e048" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
