@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="22" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="23" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -266,6 +266,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Dedicated Transport" id="a601-892d-b14a-0b44" hidden="false"/>
     <categoryEntry name="Flyer" id="daa1-3ace-c7ac-10ba" hidden="false"/>
     <categoryEntry name="Reinforced" id="a7fa-0a53-e64f-3cf1" hidden="false"/>
+    <categoryEntry name="Combi-Bolter" id="0ee3-bc2e-d2fc-b66e" hidden="false"/>
+    <categoryEntry name="Bolter" id="57d6-e49a-34e1-b43a" hidden="false"/>
+    <categoryEntry name="Bolt Pistol" id="6788-9641-e041-1aab" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -380,7 +383,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f453-d2cb-6e35-a473" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Fortifications" hidden="false" id="e009-305e-558e-b38d" targetId="b641-b5fc-cebd-7593" type="category">
+        <categoryLink name="Fortifications" hidden="false" id="e009-305e-558e-b38d" targetId="b641-b5fc-cebd-7593">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ccd0-e31a-46a4-9a68" includeChildSelections="false"/>
           </constraints>
@@ -398,33 +401,33 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d78-1c61-531c-7771" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Company Level Deployments" hidden="false" id="f21a-79b9-415d-46e0" targetId="c44a-e987-25a0-8e01" type="category">
+        <categoryLink name="Company Level Deployments" hidden="false" id="f21a-79b9-415d-46e0" targetId="c44a-e987-25a0-8e01">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="03c6-8371-cb24-dac9" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e30-ed07-9bd2-de3e" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="HQ:" hidden="false" id="00de-6195-785e-74d3" targetId="a800-52d7-1961-6e29" type="category">
+        <categoryLink name="HQ:" hidden="false" id="00de-6195-785e-74d3" targetId="a800-52d7-1961-6e29">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5833-3c12-e309-41f7"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Troops:" hidden="false" id="3ccc-45e4-3ddd-c3fd" targetId="256c-d251-7f31-271d" type="category">
+        <categoryLink name="Troops:" hidden="false" id="3ccc-45e4-3ddd-c3fd" targetId="256c-d251-7f31-271d">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="07f8-56b9-00a0-83cd"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Elites:" hidden="false" id="f137-e3d8-0325-4933" targetId="d471-a611-11c4-7f09" type="category">
+        <categoryLink name="Elites:" hidden="false" id="f137-e3d8-0325-4933" targetId="d471-a611-11c4-7f09">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="588f-6b46-b095-e2a1"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Fast Attack:" hidden="false" id="9a88-49df-faee-7c4b" targetId="4fc9-a33f-1125-1cb7" type="category">
+        <categoryLink name="Fast Attack:" hidden="false" id="9a88-49df-faee-7c4b" targetId="4fc9-a33f-1125-1cb7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d88-c85f-a442-2b7b" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Heavy Support:" hidden="false" id="4832-a910-16d5-5b3d" targetId="1a92-d90b-9550-a0a7" type="category">
+        <categoryLink name="Heavy Support:" hidden="false" id="4832-a910-16d5-5b3d" targetId="1a92-d90b-9550-a0a7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9812-1210-1e35-6ca9" includeChildSelections="false"/>
           </constraints>
@@ -632,6 +635,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="6788-9641-e041-1aab" id="57d1-d38b-987a-d119" primary="true" name="Bolt Pistol"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b17f-053a-3e74-f4cb" name="Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -640,6 +646,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="57d6-e49a-34e1-b43a" id="9fd6-2836-8fd2-db07" primary="true" name="Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="81b4-2785-dd48-1a8d" name="Boreas Air Defence Missile" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -980,6 +989,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="5c81-f98f-3dc2-d832" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="f686-d830-e417-31e2" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -992,6 +1004,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="572f-78cf-0522-5a76" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="f6b0-9c63-34ff-27aa" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1002,6 +1017,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="b17c-5032-285e-8939" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="cf8a-1598-64ea-1f4b" name="Magna Combi-Weapon - Melta" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1017,6 +1035,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="1e92-c031-778c-907a" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="c229-8d6f-acb2-52fb" name="Magna Combi-Weapon - Plasma" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1033,6 +1054,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="0d31-9f6b-86f1-2abd" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="cde8-883c-c7bc-c472" name="Storm Bolter" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1428,6 +1452,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="6788-9641-e041-1aab" id="5e1d-03a9-eeb4-6145" primary="true" name="Bolt Pistol"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="9a88-6eec-d597-8a08" name="Bolter" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -1436,6 +1463,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="57d6-e49a-34e1-b43a" id="dae2-5750-3f9d-bfff" primary="true" name="Bolter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d49c-bc28-34c3-1b4e" name="Chain Bayonet" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -4405,7 +4435,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
           <rules>
             <rule name="Indomitable" id="afbe-76cd-8808-2d1b" hidden="false">
-              <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw. </description>
+              <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw.</description>
             </rule>
           </rules>
           <categoryLinks>
