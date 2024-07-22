@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1b10-068c-408a-8be4" name="The Exorcists - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="21" revision="3" authorName="B0ff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1b10-068c-408a-8be4" name="The Exorcists - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="21" revision="4" authorName="B0ff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="9537-5e31-cd30-ae58" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
     <entryLink import="true" name="Assault Squad" hidden="false" id="e332-49b9-2d36-e048" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
@@ -1094,6 +1094,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84fd-3960-aeda-7b04" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="9a48-2a89-5486-9316" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Captain Silas Alberec" hidden="false" id="7eee-3098-ce23-69a2">
@@ -1183,6 +1184,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e644-63a4-db3f-faa1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="b62a-ec63-7d03-a045" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Hellslayer" hidden="false" id="e391-55cc-c743-643d">
@@ -1276,6 +1278,9 @@
         <categoryLink targetId="6513-093f-7312-6d09" id="d283-f79e-b346-9f2f" primary="false" name="Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9651-c04b-6bf3-2d09" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1d26-7c8b-1d19-7d5e" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

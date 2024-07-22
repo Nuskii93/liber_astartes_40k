@@ -403,6 +403,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ab0-74e5-e481-defc" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="b6f7-07ab-f688-bcab" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
       <rules>
         <rule name="Firefall" id="54d0-3ce4-2de5-1b53" hidden="false">
@@ -449,6 +450,9 @@
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9fb6-99b3-6b8d-9d08" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

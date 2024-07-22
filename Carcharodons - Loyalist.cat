@@ -657,6 +657,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="e2a7-6a9b-8e11-471e" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tyberos The Red" hidden="false" id="3b94-46af-7cd2-15a7">
       <profiles>
@@ -713,6 +716,8 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2354-979e-0988-359e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="02d3-10cd-41d9-ec32" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="2352-649b-8211-51a8" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Hunger &amp; Slake" hidden="false" id="94a1-8dfd-948a-1f07">
@@ -822,6 +827,9 @@
         <infoLink name="Deep Strike" id="6805-eb9a-fadd-016a" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
         <infoLink name="Master of the Company" id="9931-0bb1-4a6e-e179" hidden="false" type="rule" targetId="c976-effe-a686-f9cf"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="df49-0c7e-dff8-0279" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

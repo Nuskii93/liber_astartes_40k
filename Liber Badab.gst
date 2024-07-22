@@ -4384,6 +4384,11 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       <infoLinks>
         <infoLink name="Master of the Company" id="26e1-6eb1-72dc-071e" hidden="false" type="rule" targetId="c976-effe-a686-f9cf"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e8a-e4be-1f32-cfa5" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="743c-8f7b-ce78-6382" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61ea-bd9c-28e0-56f9" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
       <rules>
@@ -4456,6 +4461,52 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Howling Griffons" hidden="false" id="890d-5016-a243-69f3">
+      <rules>
+        <rule name="Into the Fray" id="c9fb-a0c1-8a01-064f" hidden="false">
+          <description>On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="5477-4d3f-e3ba-b482" name="Master-Crafted Gravis Power Fist w/ Built in Storm Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="237b-538d-0595-6028" name="Master-Crafted Gravis Power Fist" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">9</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Brutal (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal (X)" id="bdb6-ae05-dcdb-d01d" hidden="false" type="rule" targetId="8110-939a-9318-c008">
+          <modifiers>
+            <modifier type="set" value="Brutal (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ferromantic Deflector" hidden="false" id="a2c7-5747-8608-781e">
+      <profiles>
+        <profile name="Ferromantic Deflector" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="f801-f360-9f8a-c98e">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with an Ferromantic deflector gains a 5+ Invulnerable Save and any model with a Ferromantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses three Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with a Ferromantic deflector loses its last Wound or Hull Point, but 
+before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 6, AP -.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Marines Errant" hidden="false" id="7e67-696a-e56a-312b">
+      <rules>
+        <rule name="Fervent Fighters" id="f29c-9b03-152d-f7fd" hidden="false">
+          <description>During a turn in which a unit made up entirely of models with the Marines Errant Chapter Tactic successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1. </description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
