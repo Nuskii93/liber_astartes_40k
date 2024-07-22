@@ -272,6 +272,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Asterion Moloc" id="5c66-2eef-e584-a440" hidden="false"/>
     <categoryEntry name="Enkomi" id="4580-2b27-ee69-e8f5" hidden="false"/>
     <categoryEntry name="Issodon" id="03eb-a86d-969a-6d68" hidden="false"/>
+    <categoryEntry name="Vaylund" id="1491-0e46-6f25-551b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -337,6 +338,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4437-641f-d17b-bf52" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1491-0e46-6f25-551b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2901,6 +2907,21 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <condition type="atLeast" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="2" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3885-72f6-8cc9-9239" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1491-0e46-6f25-551b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="326c-cd97-2293-5c69" type="max"/>
@@ -4700,6 +4721,68 @@ Note that units which contain models with any variant of the Bulky (x) special r
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Salamanders" hidden="false" id="a545-c6d2-36bd-9d03">
+      <rules>
+        <rule name="Blood of Fire" id="8dc3-ffa5-9bd2-dd69" hidden="false">
+          <description>When rolling to wound against a model with this special rule for any attack inflicted by a Flame, Melta, or Plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule. </description>
+        </rule>
+        <rule name="Master Artisan" id="fc38-ec6c-61c3-9079" hidden="false">
+          <description>Any model with the Chapter Tactics (Salamanders) and the Character unit sub­type may upgrade their weapon to have the Master-Crafted special rule for +10 points. </description>
+        </rule>
+        <rule name="First Founding Chapter" id="bedd-2d1a-3284-965b" hidden="false">
+          <description>A Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="bee9-3cf9-cc59-b058" name="Master-Crafted Combi-Flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="26b9-70eb-0590-243b" name="Bolter (Primary)" hidden="false" targetId="73cf-e9e9-d29e-07e4" type="profile"/>
+        <infoLink id="f625-43fb-d697-f8a3" name="Flamer (Secondary)" hidden="false" targetId="7573-bcc1-a99f-d1d3" type="profile"/>
+        <infoLink id="b7a2-fbf0-6fcd-1b02" name="Template Weapons" hidden="false" targetId="3d7a-7ae8-f063-593c" type="rule"/>
+        <infoLink name="Master-Crafted" id="9af4-5206-cbff-5ce9" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="790b-fdf2-e9de-6d6d" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Sons of Medusa" hidden="false" id="3885-72f6-8cc9-9239">
+      <rules>
+        <rule name="True Sons" id="0de9-43e2-31ef-b21a" hidden="false">
+          <description>All shooting attacks made against a model with this special rule that does not have the vehicle Unit Type, suffer a modifier of -1 to the strength of the attack. </description>
+        </rule>
+        <rule name="Maletek-Exorcism Reclamation Protocols" id="e6aa-5558-954c-ba7c" hidden="false">
+          <description>A Sons of Medusa Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="8712-4c7a-0e48-5315" name="Master-Crafted Thunder Hammer" publicationId="0a24-8d5a-55ca-b028" page="223" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6330-13bc-7c88-d13d" name="Master-Crafted Thunder Hammer" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">x2</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Unwieldy, Brutal(2), Specialist Weapon, Master-Crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5e40-a80a-f6f5-7600" name="Unwieldy" hidden="false" targetId="7efd-92ce-72e1-132e" type="rule"/>
+        <infoLink id="c33e-14fa-d69b-395e" name="Specialist Weapon" hidden="false" targetId="3f63-8915-cff1-87f8" type="rule"/>
+        <infoLink id="d764-b7be-0699-6ea9" name="Brutal (X)" hidden="false" targetId="8110-939a-9318-c008" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master-Crafted" id="fe7a-bb5a-c426-e183" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

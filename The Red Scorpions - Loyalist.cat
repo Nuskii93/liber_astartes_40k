@@ -587,11 +587,17 @@ In Addition to this while Culln is alive, the controlling player may make an add
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c6c-169a-f9dd-057d" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c130-fb06-ff12-ac28" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="c130-fb06-ff12-ac28">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
