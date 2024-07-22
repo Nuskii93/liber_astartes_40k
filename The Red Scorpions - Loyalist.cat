@@ -1,2 +1,617 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="47de-6963-c3b0-1154" name="The Red Scorpions - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="47de-6963-c3b0-1154" name="The Red Scorpions - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Astartes" id="5574-3e98-425c-16c6" targetId="b232-3062-241d-bf2e"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="b0f8-f7cd-9c5c-3c9e" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
+    <entryLink import="true" name="Assault Squad" hidden="false" id="4b5a-0b7a-e85b-0f4d" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
+    <entryLink import="true" name="Assault Squad" hidden="false" id="0e95-6968-cc0b-f279" type="selectionEntry" targetId="b769-b066-d315-9de4">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="603c-a90d-9a04-c2c7" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="024f-e47b-b382-0cc3" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <comment>8th Company ROW</comment>
+      <entryLinks>
+        <entryLink import="true" name="8th Company Compulsory Troops" hidden="false" id="51e2-1021-240f-226c" type="selectionEntry" targetId="05d2-ec28-4bf4-8751"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="51e2-1021-240f-226c" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Boarding Squad" hidden="false" id="0232-aa09-f175-87f2" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
+    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="01e9-1e9d-6fde-c768" type="selectionEntry" targetId="cd69-4c31-b6c2-4481"/>
+    <entryLink import="true" name="The Red Scorpions" hidden="false" id="7050-1fbc-4d1b-8760" type="selectionEntry" targetId="0f62-d077-925a-d095">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed4-9585-01db-3217" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77bc-9ca0-bd77-94c0" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Chapter" hidden="false" id="8b1c-017c-dcd3-b2b3" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castraferrum Dreadnought Talon" hidden="false" id="d3fb-ce2b-f88b-4006" type="selectionEntry" targetId="6294-929f-bcc9-0ad8">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="9874-5aa7-a0b0-465a" targetId="d471-a611-11c4-7f09" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="109e-bb3b-f864-3d82" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d"/>
+    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="c858-250d-6913-0b50" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d">
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="5b9b-e5eb-5f3c-c4fd" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="387e-aab0-2229-54a7" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="8th Company Compulsory Troops" hidden="false" id="4c5d-955f-a28c-6fc1" type="selectionEntry" targetId="05d2-ec28-4bf4-8751"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4c5d-955f-a28c-6fc1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>8th Company ROW</comment>
+    </entryLink>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="b116-a1f7-3a51-8e3f" type="selectionEntry" targetId="e504-7189-3574-ce61"/>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="acea-3ea5-9d28-56c8" type="selectionEntry" targetId="e504-7189-3574-ce61">
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="a862-c7e7-3b47-07c4" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Heavy Sub-type" hidden="false" id="6393-1922-558a-628c" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="bff1-2f41-f5f0-9179" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="87de-bf49-ee83-38a1" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <comment>9th Company ROW</comment>
+      <entryLinks>
+        <entryLink import="true" name="9th Company Compulsory Troops" hidden="false" id="9c13-66ba-22a0-7892" type="selectionEntry" targetId="e6d5-c21b-d9e1-59d0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4a1c-c8db-3a55-dd21" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9c13-66ba-22a0-7892" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Company Captain" hidden="false" id="cd9b-ad46-5c98-853c" collective="false" targetId="ede4-3265-080b-2f3a" type="selectionEntry"/>
+    <entryLink import="true" name="Company Level Deployments" hidden="false" id="c0c8-9207-c3f9-397f" type="selectionEntry" targetId="fb02-1d06-e689-6dee"/>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="77df-2f6b-85c4-9d45" type="selectionEntry" targetId="6c49-097a-1be5-82c6"/>
+    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="6cbd-1aef-c473-df83" collective="false" targetId="179a-7d39-c15f-3066" type="selectionEntry"/>
+    <entryLink import="true" name="Deathstorm Drop Pod Strike Group" hidden="false" id="a6c5-03ad-6bd3-d812" type="selectionEntry" targetId="782a-65f3-6350-4227"/>
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="dff3-0d04-b637-bbd5" type="selectionEntry" targetId="a189-dab7-3f3e-534e"/>
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="5f64-e1ff-0ad1-2008" type="selectionEntry" targetId="cc50-f04a-0cd6-e966"/>
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="1a3d-7d3d-0085-3ce5" type="selectionEntry" targetId="cc50-f04a-0cd6-e966">
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="272e-f2fb-1934-4dff" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="d902-0e0c-b299-398e" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="98b9-65da-a422-675f" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <comment>9th Company ROW</comment>
+      <entryLinks>
+        <entryLink import="true" name="9th Company Compulsory Troops" hidden="false" id="a6f3-51b4-f157-4941" type="selectionEntry" targetId="e6d5-c21b-d9e1-59d0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4a1c-c8db-3a55-dd21" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a6f3-51b4-f157-4941" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="36ed-d0e6-c7d0-cfbc" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
+    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="3f1b-101d-7083-e994" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="c54a-d864-6023-8d49" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
+    <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="3737-358f-4a69-961c" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
+    <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="af92-424a-888e-c807" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
+    <entryLink import="true" name="Land Raider Support Squadron" hidden="false" id="185c-cbf0-b91e-a5f8" type="selectionEntry" targetId="5a6a-c53a-440b-939a"/>
+    <entryLink import="true" name="Land Speeder Javelin" hidden="false" id="ad3b-711a-ebf8-dca8" type="selectionEntry" targetId="e785-818b-fcb0-5813">
+      <modifiers>
+        <modifier type="set" value="0" field="be1f-b227-66c0-c31d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f291-81c2-dd43-082f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Proteus" hidden="false" id="3149-83db-7c5b-7723" type="selectionEntry" targetId="f291-81c2-dd43-082f">
+      <modifiers>
+        <modifier type="set" value="0" field="1349-d543-4457-e902">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e785-818b-fcb0-5813" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="2403-5445-9a53-787a" type="selectionEntry" targetId="a770-b7f3-0129-7cd7"/>
+    <entryLink import="true" name="Land Speeder Storm" hidden="false" id="cebc-b891-8825-b03d" collective="false" targetId="1ecc-ee9a-1f72-1ec5" type="selectionEntry"/>
+    <entryLink import="true" name="Leviathan Siege Dreadnought" hidden="false" id="563f-abf6-98eb-83bd" type="selectionEntry" targetId="8934-5581-2518-006b"/>
+    <entryLink import="true" name="Predator Main Battle Tank Squadron" hidden="false" id="325f-7e65-d64a-858e" type="selectionEntry" targetId="2fd6-6cd2-df56-7c43"/>
+    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="9e4d-aaef-5e4a-2a50" type="selectionEntry" targetId="089f-7f15-f7d1-5f42"/>
+    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="1b7a-3891-8825-c02c" type="selectionEntry" targetId="089f-7f15-f7d1-5f42">
+      <categoryLinks>
+        <categoryLink name="Cavalry Unit Type" hidden="false" id="3b11-45b3-a2c7-0187" targetId="1f61-547f-0ff6-f835" primary="false"/>
+        <categoryLink name="Line Sub-type" hidden="false" id="5f29-6392-657f-2d09" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="9a83-6f39-65b5-d82c" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="941c-6c1b-1614-b1c5" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <comment>10th Company ROW</comment>
+      <modifiers>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0176-d0bd-efa0-eee4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="f97c-25b6-f5e9-3e88" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="a53b-5603-8cec-83f7" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scout Squad" hidden="false" id="be2f-9e13-34d0-8093" collective="false" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry"/>
+    <entryLink import="true" name="Siege Assault Squad" hidden="false" id="6785-15d7-8ea5-16aa" collective="false" targetId="9547-7fba-408b-91dc" type="selectionEntry"/>
+    <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="47fe-1a58-a37b-46ed" type="selectionEntry" targetId="95a7-ebc6-07a7-f651"/>
+    <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="3ac6-62cf-c4c8-7317" type="selectionEntry" targetId="95a7-ebc6-07a7-f651">
+      <categoryLinks>
+        <categoryLink name="Cavalry Unit Type" hidden="false" id="662a-b150-4a10-cf84" targetId="1f61-547f-0ff6-f835" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="34c6-3707-1490-0013" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="477c-a674-32e1-7076" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="8th Company Compulsory Troops" hidden="false" id="f00e-b504-1d6e-fe3c" type="selectionEntry" targetId="05d2-ec28-4bf4-8751"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="48b0-755b-7e83-b77c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f00e-b504-1d6e-fe3c" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>8th Company ROW</comment>
+    </entryLink>
+    <entryLink import="true" name="Specialist Detachment" hidden="false" id="6c21-1d41-48be-55d3" type="selectionEntry" targetId="db22-78a1-b307-ac9c"/>
+    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="4308-cb30-49ae-ac09" type="selectionEntry" targetId="4cc2-6eec-77d4-5165"/>
+    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="feca-43de-70aa-922d" type="selectionEntry" targetId="4cc2-6eec-77d4-5165">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="923d-c3ff-3c53-6d4d" targetId="d471-a611-11c4-7f09" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="a87c-beeb-e9b8-04dc" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="1f8f-74b3-3dde-5f92" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4d0c-c2f8-1964-de8d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="4d0c-c2f8-1964-de8d" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
+      </entryLinks>
+      <comment>1st Company RoW</comment>
+    </entryLink>
+    <entryLink import="true" name="Storm Eagle Gunship" hidden="false" id="51e1-310d-8390-0c83" type="selectionEntry" targetId="30c3-2c14-a27f-f411"/>
+    <entryLink import="true" name="Stormraven Gunship" hidden="false" id="a8d9-820b-a391-4758" type="selectionEntry" targetId="29d4-4cc4-7c36-0b58"/>
+    <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="1f64-64d1-0507-6605" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
+    <entryLink import="true" name="Tactical Squad" hidden="false" id="9d53-89c9-2175-7fac" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Company Captain" hidden="false" id="fa03-4075-1e23-71f1" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="27f1-4461-63f1-a980" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Squad" hidden="false" id="a1a2-bf76-6b93-19da" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
+    <entryLink import="true" name="Terminator Squad" hidden="false" id="dc85-db98-36f2-50d4" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="34c9-45e5-24ab-df5c" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Deep Strike:" hidden="false" id="cbe9-2b9e-070a-21e7" targetId="0d4f-ff28-d819-a512" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="cf9a-070c-2465-8e26" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="69d2-5133-2197-69ec" targetId="5596-67a3-0a72-dccb" primary="false"/>
+      </categoryLinks>
+      <comment>1st Company ROW</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4ed0-726e-39dd-31bd" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="4ed0-726e-39dd-31bd" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderfire Cannon Battery" hidden="false" id="0a49-6ed7-d807-a42e" type="selectionEntry" targetId="325b-7a48-4da1-c934"/>
+    <entryLink import="true" name="Thunderhawk Heavy Gunship" hidden="false" id="b139-c5c0-120f-b167" type="selectionEntry" targetId="c746-d882-2f6a-d74c"/>
+    <entryLink import="true" name="Thunderhawk Heavy Transporter" hidden="false" id="f992-be83-567a-0828" type="selectionEntry" targetId="4d1c-ed2e-71d7-8bb5"/>
+    <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="b197-4dae-e298-bfc3" type="selectionEntry" targetId="a921-21d2-1964-1e2d"/>
+    <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="f1a2-ab7c-d9b3-0e0e" type="selectionEntry" targetId="a921-21d2-1964-1e2d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="05bd-95fb-9c04-985f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="10e0-4c18-8654-beeb" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>1st Company RoW</comment>
+      <categoryLinks>
+        <categoryLink name="Troops:" hidden="false" id="3b25-8546-74a3-e7ea" targetId="256c-d251-7f31-271d" primary="true"/>
+        <categoryLink name="Compulsory Troops:" hidden="false" id="2e4b-d6d7-fe67-43d1" targetId="5596-67a3-0a72-dccb" primary="false"/>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="9f5a-3b3b-f8e7-f5b1" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="10e0-4c18-8654-beeb" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="20e3-2737-39d1-ba55" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
+    <entryLink import="true" name="Lord High Commander Carab Culln" hidden="false" id="7cc5-ad47-7cce-6619" type="selectionEntry" targetId="316d-401a-2d10-0fb7"/>
+    <entryLink import="true" name="Iron Halo" hidden="false" id="61dd-2f7a-b348-969d" type="selectionEntry" targetId="c1cb-2e29-bf3f-9b32">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b400-de14-6f14-8ea3" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6804-5458-97a0-198f" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Magister Sevrin Loth" hidden="false" id="7078-b9bf-dfc9-b9b8" type="selectionEntry" targetId="d679-19a4-0a39-5d60"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Lord High Commander Carab Culln" hidden="false" id="316d-401a-2d10-0fb7">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="235"/>
+      </costs>
+      <profiles>
+        <profile name="Lord High Commander Carab Culln" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="5295-bf17-65c8-191e">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique, Heavy)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">7</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">4</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">5</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="da1c-ac3d-17d6-6ea4" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Teleport Homer" hidden="false" id="8724-5f21-d09b-347f" collective="false" targetId="1318-e061-1aad-3da4" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a7e-298c-bb15-31eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0362-f150-00e1-93e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Master-Crafted Storm Bolter" hidden="false" id="00b3-2f96-21ed-bb58" collective="false" targetId="080f-971e-e104-7be3" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ef5-9a44-6efd-bdf8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeb5-04ec-e02d-3ce0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="de6d-e787-683b-1f17" collective="false" targetId="c1cb-2e29-bf3f-9b32" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0261-972e-108c-ba6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4a2-3fd0-9f0b-c717" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="8a9d-df27-1e01-3e2e" collective="false" targetId="d357-1419-fc5c-7ecf" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eec9-66df-6835-60d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ad6-cd7f-4dc6-00e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="8968-300c-2696-19db" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="a35a-580d-fbd7-d75d" type="selectionEntry" targetId="fd37-1b61-577f-b84b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="663c-f53f-e761-fd8d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Blade of the Scorpion" hidden="false" id="c588-527a-a77e-7aab">
+          <profiles>
+            <profile name="The Blade of the Scorpion" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="1f4e-7e43-e5a1-2564">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Master-Crafted, Murderous Strike (5+), Brutal (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="The Blade of the Scorpion" id="0068-60a8-cd5d-1ee4" hidden="false">
+              <description>If Carab Culln&apos;s Weapon Skill is greater than the highest weapon skill of the enemy he is fighting he gains a bonus number of attacks equal to the difference in the characteristics</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Murderous Strike (X)" id="dcdd-591a-5820-38de" hidden="false" type="rule" targetId="fe05-b753-330d-ab0a">
+              <modifiers>
+                <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Master-Crafted" id="a4bc-4a73-d060-45aa" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Brutal (X)" id="2256-086f-0aae-868e" hidden="false" type="rule" targetId="8110-939a-9318-c008">
+              <modifiers>
+                <modifier type="set" value="Brutal (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd1-7000-380f-e5e5" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37a8-4c1b-6e0c-0e04" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Proud to Live, Proud to Die, Hard to Kill" id="e56a-9df1-5d07-8451" hidden="false">
+          <description>While Lord Commander Carab Culln is alive all friendly units within 12&quot; add +1 to their combat resolution score. Note, this bonus does not stack for multiple units involved in a single combat.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Master of the Chapter" id="e4c6-7136-5bba-272c" hidden="false" type="rule" targetId="9c0a-081e-93fa-d4d7"/>
+        <infoLink name="And they Shall Know No Fear" id="2cfb-87d5-9829-c647" hidden="false" type="rule" targetId="ce91-e2c8-ffa1-14a8"/>
+        <infoLink name="Eternal Warrior" id="24d1-5af3-201c-d50e" hidden="false" type="rule" targetId="558c-aa67-7345-570d"/>
+        <infoLink name="Bulky (X)" id="37c4-8f54-3851-8bce" hidden="false" type="rule" targetId="80f9-973b-28f9-020d">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Independent Character" id="2ca6-fbf5-9a0f-2de5" hidden="false" type="rule" targetId="20ff-8476-332b-4530"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warlord Trait" id="2c1b-3d50-3ff3-4e9a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Supreme Commander" hidden="false" id="7d14-1c2e-998c-36d7">
+              <profiles>
+                <profile name="Supreme Commander" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="ad8c-1414-84b4-9752">
+                  <characteristics>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Carab Culln is the army&apos;s warlord, the army may take an additional Allied Detachment (2 Allied Detachments in total). In addition to this all Allies count-as one better than they would usually be on the allied chart when fighting under Carab Culln.
+Eg. If two of the detachments were &quot;By The Tyrant&apos;s/High Commanders Command&quot;, they would instead become &quot;Distrusted Allies&quot; Instead.
+In Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase ( only 1 additional reaction per player turn).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9969-8bb3-441b-d6fc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b05c-13fe-29bf-b438" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74f6-5a8f-95f0-1e77" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Retinue" id="ed6c-d643-f444-1ef7" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="518b-0578-739e-d530" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Command Squad" hidden="false" id="f5df-01f6-6dd2-34fa" collective="false" targetId="8ba2-ea7b-a90e-36bf" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Terminator Command Squad" hidden="false" id="f478-d5f1-8234-f087" collective="false" targetId="58f4-572d-850f-93e6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="57a3-887c-64d8-6f4b" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="9916-189c-0032-456c" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="c051-3a32-bd6a-f9bd" primary="true" name="HQ:"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d62a-54cb-f84a-7c12" primary="false" name="Independent Character"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="5099-504a-2635-6170" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="0d4f-ff28-d819-a512" id="763e-2947-288a-fc7a" primary="false" name="Deep Strike:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="0e2c-bee7-dc59-8c93" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="65df-dd62-ad8f-7b1e" primary="false" name="Character"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magister Sevrin Loth" hidden="false" id="d679-19a4-0a39-5d60">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="205"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Armour of Selket" hidden="false" id="bee7-024e-a063-296c">
+          <profiles>
+            <profile name="The Armour of Selket" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1126-6190-f04e-bb5e">
+              <characteristics>
+                <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">At the beginning of the controlling players first turn (Before Reserve Rolls have been made) Loth may make a Psychic Check. If passed he receives a 3+ Invulnerable Save for himself at a 5+ Invulnerable Save for his squad until the start of his next player turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25c1-8005-6f46-7e03" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d0-5024-be27-770c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Magister Sevrin Loth" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="93eb-968f-cd9d-0711">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique, Psyker)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">5</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Psychic Hood" hidden="false" id="8c2e-a7dc-1b19-511d" type="selectionEntry" targetId="4df2-d42b-504d-3ec5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2154-0eca-4e8c-f6fe" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6564-ed65-dbf5-f58b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="262c-3197-bb6e-eb89" type="selectionEntry" targetId="c1cb-2e29-bf3f-9b32">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9166-ef9f-98a0-93cf" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbec-c804-2272-9ffe" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="8eae-7544-793e-4625" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cd1-a620-ff3e-29da" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26b3-2f6a-5a41-6608" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="8953-bfab-eed5-d0aa" type="selectionEntry" targetId="e0be-9432-bcf8-d305">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e2-3b3f-6b44-bf6a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="598a-19f7-3a7f-0a79" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="fb6c-7d89-31c1-46ba" type="selectionEntry" targetId="f2ba-4369-e687-0f22">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ffd-8934-09f5-5c54" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0155-ae5c-c6ef-e1fc" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="007c-f1d8-c448-3464" type="selectionEntry" targetId="fd37-1b61-577f-b84b"/>
+        <entryLink import="true" name="Master-Crafted Force Axe" hidden="false" id="b79b-c139-a70f-3bc4" type="selectionEntry" targetId="4c31-c474-a7dd-c3a4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a9-11b0-3f9f-d7ca" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="effe-556d-7bf9-22aa" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="And they Shall Know No Fear" id="fe85-69c7-23cd-fb10" hidden="false" type="rule" targetId="ce91-e2c8-ffa1-14a8"/>
+        <infoLink name="Independent Character" id="4a42-447f-3455-dc96" hidden="false" type="rule" targetId="20ff-8476-332b-4530"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1) Psychic Discipline" id="24c5-9f8a-3cdd-9202" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f0e8-b9b1-c4bc-0667" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Pyromancy" hidden="false" id="e700-3604-99b1-42b6" collective="false" targetId="c73a-8c52-4780-71e1" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fde0-165a-384f-30cb" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Divination" hidden="false" id="f0e7-a432-fcb2-efa6" collective="false" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30e-56fc-cd08-e474" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="6d54-2781-f4c4-76fb" collective="false" targetId="f7ab-1fb2-91b0-028d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b463-27eb-5800-1def" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telekinesis" hidden="false" id="7ab0-cfaa-d820-1590" collective="false" targetId="2599-31ff-74a5-70ec" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a36-c946-b6fa-1438" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telepathy" hidden="false" id="2b3e-27e8-30dc-eaa0" collective="false" targetId="b751-a605-75e8-dd6f" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6e3-b23e-1b9c-4aa0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Biomancy" hidden="false" id="0948-8343-b9a8-4187" collective="false" targetId="861c-3744-c4ff-ef6c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1410-3b63-b39c-eb66" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="2) Retinue" id="6486-b8da-8cb7-6faa" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b36f-a6f8-a861-ffbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Command Squad" hidden="false" id="fae5-c3b7-4153-72e7" collective="false" targetId="8ba2-ea7b-a90e-36bf" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Terminator Command Squad" hidden="false" id="df17-c5b1-7fa1-270f" collective="false" targetId="58f4-572d-850f-93e6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0) Warlord Trait" id="9632-bc25-36ee-80b9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Trusted Advisor" hidden="false" id="b086-13ce-400a-3661" type="selectionEntry" targetId="524d-5c37-11dd-5562"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c6c-169a-f9dd-057d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Master Psyker" id="33a7-b444-db40-6f51" hidden="false">
+          <description>May pick up to 3 psychic disciplines. In addition, Sevrin Loth may use two Psychic Powers or Psychic weapons each phase, but if he does so, the second power&apos;s Psychic Check is made at -1 Leadership</description>
+        </rule>
+        <rule name="Revered" id="d446-6209-b803-bdd6" hidden="false">
+          <description>Sevrin Loth may take a Retinue as if he had the Master of the Company special rule</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="12dc-1f77-2714-82c4" primary="true" name="HQ:"/>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="cefc-f690-0c4a-cbbd" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6c2e-6ed0-68de-b878" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="f5bc-6289-aa67-7286" primary="false" name="Independent Character"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="59d1-ddb6-be4d-0f59" primary="false" name="Character"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>

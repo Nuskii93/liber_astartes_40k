@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="24" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="26" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -24,7 +24,7 @@
         <categoryLink targetId="256c-d251-7f31-271d" id="4e2c-6256-bb11-bcdc" primary="true" name="Troops:"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="778a-375a-03c4-dd51" name="Tactical Sergeant" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="778a-375a-03c4-dd51" name="Tactical Sergeant" hidden="false" collective="false" import="true" type="model" collapsible="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab4-b345-fa18-17a4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75cc-67ab-be61-6ea1" type="max"/>
@@ -35,7 +35,7 @@
             <categoryLink id="c1e7-21c7-9448-2a5f" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="b60a-f13d-71d6-386d" name="1) Bolter or:" hidden="false" collective="false" import="true" defaultSelectionEntryId="28a0-8c04-7012-0cf2">
+            <selectionEntryGroup id="b60a-f13d-71d6-386d" name="2) Bolter or:" hidden="false" collective="false" import="true" defaultSelectionEntryId="28a0-8c04-7012-0cf2">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ddf-f47e-38cf-07f1" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b9-acc2-5651-cc95" type="max"/>
@@ -151,7 +151,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="153e-59b7-a794-73b5" name="2) Pistol / CC Choices:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a0a-deef-8e3c-94e0">
+            <selectionEntryGroup id="153e-59b7-a794-73b5" name="3) Pistol / CC Choices:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a0a-deef-8e3c-94e0">
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d60-de0d-b3ca-22ac" type="max"/>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c86c-b77c-bcd1-9779" type="min"/>
@@ -218,7 +218,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="3d37-2d2f-ad93-3209" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="3d37-2d2f-ad93-3209" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -232,7 +232,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e782-1c0b-703a-b43d" name="1.5) Bayonet" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e782-1c0b-703a-b43d" name="2.5) Bayonet" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -266,7 +266,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="ce79-4376-6e8b-be45" name="0) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6bee-c30f-71ff-9f30">
+            <selectionEntryGroup id="ce79-4376-6e8b-be45" name="1) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6bee-c30f-71ff-9f30">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b7-d93b-7ac5-6601" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d80-c8ac-f124-5e73" type="min"/>
@@ -337,7 +337,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="0.8) Carcharodons - Extra Weapon" id="4cad-d5b0-b5e6-e4a4" hidden="false">
+            <selectionEntryGroup name="1.5) Carcharodons - Extra Weapon" id="4cad-d5b0-b5e6-e4a4" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="d7ab-8c67-4771-a932" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
                   <costs>
@@ -361,7 +361,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="3) Grenades:" id="6002-b58e-29e8-0dff" hidden="false">
+            <selectionEntryGroup name="4) Grenades:" id="6002-b58e-29e8-0dff" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Melta bombs" hidden="false" id="f8cf-e391-b367-8edf" collective="false" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
                   <constraints>
@@ -372,6 +372,38 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1.5) Red Scorpions - Purity Above All" id="34ef-53c0-540a-768b" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Narthecium Upgrade" hidden="false" id="ed23-9e0d-71d3-2e83">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e917-156c-6e76-b618" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Narthecium" hidden="false" id="129c-d99f-bd1a-69af" type="selectionEntry" targetId="dd7a-d404-a96c-1251">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91a5-1d70-a857-7e94" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68ef-9c3c-7ce7-b183" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <rules>
+                    <rule name="Purity Above All" id="0b2d-04db-0c7d-25ed" hidden="false">
+                      <description>Any Tactical, Boarding, Siege Assault, Assault or Devastator squad&apos;s Sergeant or Veteran Sergeant with Chapter Tactics ( Red Scorpions) may be made a member of the Chapter&apos;s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model. </description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -934,7 +966,7 @@
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="125d-e202-e781-fa9a">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -980,7 +1012,7 @@
             <selectionEntry type="upgrade" import="true" name="Reconnaissance Squad" hidden="false" id="8508-2b72-5d44-ff8e">
               <rules>
                 <rule name="Fatal Strike" id="919d-7de5-2608-c389" hidden="false">
-                  <description>Once per game, a Raptor Reconnaissance Squad may execute a fatal strike attack against a chosen target. The Reconnaissance Squad&apos;s controlling player declares the Fatal Strike at the start of one of the squad&apos;s Shooting phases. For the duration of that phase, the squad&apos;s shooting attacks have both the Twin-linked and Rending (6+) special rules, in addition to any other effects their weapons might have. In the case of weapons already with the Rending (X) Special rule, increase it by 1,eg during the Fatal Strike a weapon with Rending (6+) would go to Rending (5+) for the duration of the attack. </description>
+                  <description>Once per game, a Raptor Reconnaissance Squad may execute a fatal strike attack against a chosen target. The Reconnaissance Squad&apos;s controlling player declares the Fatal Strike at the start of one of the squad&apos;s Shooting phases. For the duration of that phase, the squad&apos;s shooting attacks have both the Twin-linked and Rending (6+) special rules, in addition to any other effects their weapons might have. In the case of weapons already with the Rending (X) Special rule, increase it by 1,eg during the Fatal Strike a weapon with Rending (6+) would go to Rending (5+) for the duration of the attack.</description>
                 </rule>
               </rules>
               <modifiers>
@@ -1091,7 +1123,7 @@
             <categoryLink id="f3b5-c711-764e-4a03" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="835a-7579-9bf0-cc7f" name="1) Bolter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8256-42d5-37af-9a1c">
+            <selectionEntryGroup id="835a-7579-9bf0-cc7f" name="3) Bolter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8256-42d5-37af-9a1c">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d8-129b-320e-06ec" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a0-5605-9875-4ba8" type="max"/>
@@ -1191,7 +1223,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="27ea-d36d-d7b9-e3a9" name="4) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a45d-b2b1-ddfa-80cf">
+            <selectionEntryGroup id="27ea-d36d-d7b9-e3a9" name="1) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a45d-b2b1-ddfa-80cf">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cda-c697-02e6-f840" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3326-3d59-0a0a-5a2d" type="max"/>
@@ -1219,7 +1251,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e93b-9097-6cfd-a50b" name="2) Pistol / CC Choices:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c9-eb3d-8462-32b2">
+            <selectionEntryGroup id="e93b-9097-6cfd-a50b" name="4) Pistol / CC Choices:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c9-eb3d-8462-32b2">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6360-6518-8bae-aa50" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="19e3-15af-f7a8-1352" type="min"/>
@@ -1294,7 +1326,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="8158-4f9f-2a3f-6002" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="8158-4f9f-2a3f-6002" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -1308,7 +1340,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f622-27ca-4b20-e356" name="0) Bayonet" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f622-27ca-4b20-e356" name="3.5) Bayonet" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -1342,7 +1374,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6ac6-f667-1634-2e7c" name="5) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e979-f3f9-e6e2-7b2a">
+            <selectionEntryGroup id="6ac6-f667-1634-2e7c" name="2) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e979-f3f9-e6e2-7b2a">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89f-58b2-7b68-9843" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ab-0ec6-c734-ab1a" type="min"/>
@@ -1401,7 +1433,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="0.1) Carcharodons - Extra Weapon" id="e5bb-70f5-a8a8-4ca3" hidden="false">
+            <selectionEntryGroup name="2.5) Carcharodons - Extra Weapon" id="e5bb-70f5-a8a8-4ca3" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="c9c8-be35-93b6-ba9b" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
                   <costs>
@@ -1421,6 +1453,38 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="2.5) Red Scorpions - Purity Above All" id="7e01-b8cf-7984-1e60" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Narthecium Upgrade" hidden="false" id="95a8-31f7-1185-d1cc">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="725f-a6ec-c952-6c09" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Narthecium" hidden="false" id="5c1f-b725-f739-3ecf" type="selectionEntry" targetId="dd7a-d404-a96c-1251">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="089d-776c-1250-247b" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1c5-b390-467c-fc7e" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <rules>
+                    <rule name="Purity Above All" id="43d7-f5a3-dd69-f1ed" hidden="false">
+                      <description>Any Tactical, Boarding, Siege Assault, Assault or Devastator squad&apos;s Sergeant or Veteran Sergeant with Chapter Tactics ( Red Scorpions) may be made a member of the Chapter&apos;s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model. </description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2039,7 +2103,7 @@
             <categoryLink id="d609-dda6-130d-5a4b" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="aba2-31f1-10a4-f380" name="2) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9e3-7585-635b-4352">
+            <selectionEntryGroup id="aba2-31f1-10a4-f380" name="1) Armour:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9e3-7585-635b-4352">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9071-4c9d-89b1-384d" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e945-6911-7a4f-d9a9" type="max"/>
@@ -2218,7 +2282,7 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="de44-c501-da90-e82d" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="de44-c501-da90-e82d" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -2234,7 +2298,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e4dd-3da4-94f5-bc06" name="1) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d75-9fec-e533-def9">
+            <selectionEntryGroup id="e4dd-3da4-94f5-bc06" name="1.5) Sgt or Vet Sgt:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d75-9fec-e533-def9">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f76-01d0-cd16-d4fb" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163d-daa3-7de2-bbf8" type="min"/>
@@ -2293,7 +2357,7 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="2.5) Carcharodons - Extra Weapon" id="f8d2-03e4-d06e-f4bf" hidden="false">
+            <selectionEntryGroup name="2) Carcharodons - Extra Weapon" id="f8d2-03e4-d06e-f4bf" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="54e8-80ad-0464-788e" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
                   <costs>
@@ -2328,6 +2392,38 @@
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="2) Red Scorpions - Purity Above All" id="fb69-8223-04a9-3464" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Narthecium Upgrade" hidden="false" id="4a12-687b-4954-34ca">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6286-698e-7c24-d96c" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Narthecium" hidden="false" id="fafb-f5fe-5d08-bc34" type="selectionEntry" targetId="dd7a-d404-a96c-1251">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0b8-8fae-c36f-653e" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b606-0ffb-ec6e-1ebf" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <rules>
+                    <rule name="Purity Above All" id="add5-821e-1c0f-4aa7" hidden="false">
+                      <description>Any Tactical, Boarding, Siege Assault, Assault or Devastator squad&apos;s Sergeant or Veteran Sergeant with Chapter Tactics ( Red Scorpions) may be made a member of the Chapter&apos;s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model. </description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -2742,7 +2838,7 @@
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="ff79-e0b2-973c-62c4">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3083,7 +3179,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="5022-c7f4-5e4b-1710" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="5022-c7f4-5e4b-1710" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -5420,7 +5516,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="e4b1-195d-193c-b1d6" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="e4b1-195d-193c-b1d6" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -5432,7 +5528,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Legatine Axes" hidden="false" id="79d9-04ff-201d-4af9" type="selectionEntry" targetId="6e7f-82b9-1e46-e2e2"/>
+                <entryLink import="true" name="Legatine Axe" hidden="false" id="79d9-04ff-201d-4af9" type="selectionEntry" targetId="6e7f-82b9-1e46-e2e2"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="132f-7b41-c7b8-294f" name="5) Other Wargear:" hidden="false" collective="false" import="true">
@@ -5442,7 +5538,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf5e-e3dd-f1e9-b4f3" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="5f67-92e0-8d2a-a7a8" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="5f67-92e0-8d2a-a7a8" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -5767,7 +5863,7 @@
                   <profiles>
                     <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="18bb-0d06-f3a3-befe">
                       <characteristics>
-                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5984,7 +6080,7 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d97c-b9ea-1aff-eb28" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="462d-399d-e0c1-17de" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                <infoLink id="462d-399d-e0c1-17de" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -6199,7 +6295,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="e1f0-bdff-d957-3280" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="e1f0-bdff-d957-3280" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -7026,7 +7122,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="5569-cd9b-7387-5618" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="5569-cd9b-7387-5618" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -7180,7 +7276,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d4e-7f47-6f60-0d53" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="9265-2e55-4c6a-38a5" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="9265-2e55-4c6a-38a5" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -7296,7 +7392,7 @@
               <entryLinks>
                 <entryLink id="4d83-e720-b41f-1408" name="Master-crafted Autocannon" hidden="false" collective="false" import="true" targetId="4fba-11f4-d739-acfd" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="b535-8367-7ac2-24fe" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="b535-8367-7ac2-24fe" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -7304,7 +7400,7 @@
                 </entryLink>
                 <entryLink id="06e4-ac27-ada1-ca38" name="Master-crafted Heavy Bolter" hidden="false" collective="false" import="true" targetId="74ea-8456-d505-32aa" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="780c-b343-7476-135d" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="780c-b343-7476-135d" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -7312,7 +7408,7 @@
                 </entryLink>
                 <entryLink id="4f1f-202c-3b61-8a22" name="Master-crafted Missile Launcher" hidden="false" collective="false" import="true" targetId="9345-4836-c06c-834b" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="de11-f098-c14c-4019" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="de11-f098-c14c-4019" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -7320,7 +7416,7 @@
                 </entryLink>
                 <entryLink id="512a-996d-1f27-f874" name="Master-crafted Lascannon" hidden="false" collective="false" import="true" targetId="a902-d4fc-8ee8-ad2d" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="2ee1-1cb8-6725-6b20" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="2ee1-1cb8-6725-6b20" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
@@ -7328,7 +7424,7 @@
                 </entryLink>
                 <entryLink id="200a-682e-5329-8a2f" name="Master-crafted Multi-Melta" hidden="false" collective="false" import="true" targetId="b948-ed00-fdbb-1ee6" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="36de-3f27-4bcf-0799" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="36de-3f27-4bcf-0799" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -7336,7 +7432,7 @@
                 </entryLink>
                 <entryLink id="3ebf-9bdc-20da-3505" name="Master-crafted Plasma Cannon" hidden="false" collective="false" import="true" targetId="40b8-5ef6-66de-0eb4" type="selectionEntry">
                   <infoLinks>
-                    <infoLink id="9d31-fb72-a72c-69a5" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="9d31-fb72-a72c-69a5" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
@@ -7356,7 +7452,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7cb-db73-f2bd-f0b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Master-crafted" id="ed93-4d5d-9dbf-70ce" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink name="Master-Crafted" id="ed93-4d5d-9dbf-70ce" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -7566,7 +7662,7 @@
                   <profiles>
                     <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="7323-4a46-373a-adcd">
                       <characteristics>
-                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8273,7 +8369,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a7-ffc6-13d4-5d00" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="ce22-7e83-eca3-4fa6" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="ce22-7e83-eca3-4fa6" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -8703,7 +8799,7 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="5fb5-e674-16ea-b2cf" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="5fb5-e674-16ea-b2cf" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -8761,7 +8857,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d652-1536-8e32-423b" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="ab3b-8d38-3fe4-0331" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink id="ab3b-8d38-3fe4-0331" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -9022,7 +9118,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5329-895b-986c-eca4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Master-crafted" id="d1d2-c10c-3d99-4c4e" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+                    <infoLink name="Master-Crafted" id="d1d2-c10c-3d99-4c4e" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
@@ -11041,7 +11137,7 @@
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1fa3-86d4-1b42-d6eb">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11069,6 +11165,22 @@
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Red Scorpions - Honour Guard" id="0603-8376-726c-4ab8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Honour Guard" hidden="false" id="67d2-2b97-e0df-83fc" type="selectionEntry" targetId="d26e-6934-cc30-cd39">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8313-6716-ffd8-6772" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="40ac-f969-9095-2d9f" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -11107,11 +11219,6 @@
             <modifier type="set" field="name" value="Bulky (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Deep Strike" id="5a88-dee7-e02e-81c1" hidden="false" targetId="e8a1-d7ca-d389-f158" type="rule">
-          <modifiers>
-            <modifier type="set" value="Deep Strike (Indomitus Armour Only)" field="name"/>
-          </modifiers>
-        </infoLink>
         <infoLink name="Battle-Hardened (X)" id="65d9-dc27-24ad-cd86" hidden="false" type="rule" targetId="abc2-980b-b86f-a5c5">
           <modifiers>
             <modifier type="set" value="Battle-Hardened (1)" field="name"/>
@@ -11127,7 +11234,6 @@
         <categoryLink id="52c5-aa03-04ea-3018" name="Retinue" hidden="false" targetId="9b5d-996f-8000-14f5" primary="true"/>
         <categoryLink id="d3be-7307-130a-1586" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="75e7-dbd9-60a0-490c" name="Character" hidden="false" targetId="6513-093f-7312-6d09" primary="false"/>
-        <categoryLink id="5abb-9c51-17a4-efa1" name="Deep Strike:" hidden="false" targetId="0d4f-ff28-d819-a512" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e933-88d6-a838-0c42" name="0) Terminator Veteran" hidden="false" collective="false" import="true">
@@ -11472,6 +11578,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="0679-307f-6bd5-0199" name="Cataphractii Ancient" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -11487,6 +11600,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -11509,6 +11629,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="451e-2cf8-b4d2-1962" name="Indomitus Veteran" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -11524,6 +11651,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </entryLink>
@@ -11543,6 +11677,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="246b-e550-7eb0-824c" name="Tartaros Veteran" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -11558,6 +11699,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="f99d-536e-b5c2-fb36" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -11841,6 +11989,22 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Red Scorpions - Anphelion Veterans" id="607f-04e6-932e-9224" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="455e-8049-bcd3-c91a" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Anphelion Veterans" hidden="false" id="f99d-536e-b5c2-fb36" type="selectionEntry" targetId="d1b6-6da6-bd24-1de3">
+              <modifiers>
+                <modifier type="increment" value="12" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="e933-88d6-a838-0c42" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -11860,11 +12024,6 @@
         <infoLink id="cc7e-4975-4d72-5e9e" name="Inexorable" hidden="false" targetId="0d74-cda7-ebdd-3789" type="rule"/>
         <infoLink id="8097-3d51-29c1-de78" name="Relentless" hidden="false" targetId="6195-0e44-7c46-5a47" type="rule"/>
         <infoLink id="696e-5024-84fe-4607" name="Combat Squads" hidden="false" targetId="0b95-38d2-a654-1ff9" type="rule"/>
-        <infoLink name="Deep Strike" id="3a9d-e15e-01ce-3963" hidden="false" targetId="e8a1-d7ca-d389-f158" type="rule">
-          <modifiers>
-            <modifier type="set" value="Deep Strike (Indomitus Armour Only)" field="name"/>
-          </modifiers>
-        </infoLink>
         <infoLink name="Battle-Hardened (X)" id="38b8-bc2b-7aa5-e862" hidden="false" type="rule" targetId="abc2-980b-b86f-a5c5">
           <modifiers>
             <modifier type="set" value="Battle-Hardened (1)" field="name"/>
@@ -11878,7 +12037,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fdf1-e72f-0ac0-bfb8" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="5b44-9cde-0365-3543" name="Deep Strike:" hidden="false" targetId="0d4f-ff28-d819-a512" primary="false"/>
         <categoryLink targetId="d471-a611-11c4-7f09" id="c175-3bce-8190-103a" primary="true" name="Elites:"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="f3a5-5e16-4b03-2f65" primary="false" name="Character"/>
       </categoryLinks>
@@ -11912,6 +12070,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="e908-71a4-8149-7006" name="Cataphractii Terminator" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -11927,6 +12092,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -11957,6 +12129,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="d0f6-c4e7-17f8-559f" name="Indomitus Sergeant" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -11972,6 +12151,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
             </entryLink>
@@ -11991,6 +12177,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile id="1202-4bcc-a9d1-7f41" name="Tartaros Sergeant" hidden="false" typeId="3191-d50d-2aeb-5707" typeName="Unit">
                   <characteristics>
@@ -12006,6 +12199,13 @@
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="5" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="fc6b-f5f6-1745-280c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -12078,7 +12278,7 @@
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Master-crafted Power Sword" hidden="false" id="fe90-1d16-43d0-0991" type="selectionEntry" targetId="562c-7928-20ce-1674"/>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="fac9-c314-8e56-dca6" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="fac9-c314-8e56-dca6" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -12713,6 +12913,22 @@
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Red Scorpions - Anphelion Veterans" id="566e-ad4c-d084-e956" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c96a-881a-1f60-5659" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Anphelion Veterans" hidden="false" id="fc6b-f5f6-1745-280c" type="selectionEntry" targetId="d1b6-6da6-bd24-1de3">
+              <modifiers>
+                <modifier type="increment" value="12" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d8b6-23f4-210a-437b" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -13524,7 +13740,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           <selectionEntryGroups>
             <selectionEntryGroup name="Sergeant Only:" id="a3f6-8111-f044-2d56" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Griffon Warblades" hidden="false" id="33e5-26bf-e3ed-2332" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                <entryLink import="true" name="Griffon Warblade" hidden="false" id="33e5-26bf-e3ed-2332" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
@@ -13543,7 +13759,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="1.2) Carcharodons - Extra Weapon" id="3cc2-ae71-c2f7-1f38" hidden="false">
+        <selectionEntryGroup name="1) Carcharodons - Extra Weapon" id="3cc2-ae71-c2f7-1f38" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Chainsword" hidden="false" id="03ba-0029-f6c9-b2f0" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
               <costs>
@@ -13757,7 +13973,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="9339-0a97-4d8e-e2ac">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13785,6 +14001,22 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Red Scorpions - Honour Guard" id="7348-64cd-0acf-a163" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Honour Guard" hidden="false" id="65f9-fe41-5b0a-f081" type="selectionEntry" targetId="d26e-6934-cc30-cd39">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbd-0ceb-78db-fa8e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="c1ef-398e-7e25-5879" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -14245,7 +14477,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="f142-ad04-e9cb-d89f" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="f142-ad04-e9cb-d89f" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -14595,7 +14827,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="cae7-9dec-18fb-c18d">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17340,7 +17572,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <profiles>
                         <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1c70-d07e-6c28-fab5">
                           <characteristics>
-                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -17799,7 +18031,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <modifier type="set" value="0" field="38b1-4a46-1fdb-c5fd"/>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="a768-791e-754b-0686" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="a768-791e-754b-0686" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -18082,7 +18314,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <profiles>
                         <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="f95b-5e01-32f8-fd97">
                           <characteristics>
-                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -18344,7 +18576,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="b979-c441-f901-65da" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="b979-c441-f901-65da" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -18447,25 +18679,59 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1.5) Red Scorpions - Purity Above All" id="92ac-520f-f5b5-b516" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Narthecium Upgrade" hidden="false" id="b53c-aaac-7fd6-53d0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c2-d464-01b7-1c6a" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Narthecium" hidden="false" id="d51d-86cb-dacf-83bd" type="selectionEntry" targetId="dd7a-d404-a96c-1251">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b0d-0a83-c4ff-3c58" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4567-ca3f-83bf-2a55" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <rules>
+                    <rule name="Purity Above All" id="c14f-e9b1-cb7c-94b7" hidden="false">
+                      <description>Any Tactical, Boarding, Siege Assault, Assault or Devastator squad&apos;s Sergeant or Veteran Sergeant with Chapter Tactics ( Red Scorpions) may be made a member of the Chapter&apos;s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model. </description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="3) Wargear:" id="af9d-1ae5-d5cd-6893" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Melta bombs" hidden="false" id="17c8-1baf-de48-a025" collective="false" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4533-77f1-a358-69d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combat Shield" hidden="false" id="7238-e02e-7539-8d5b" type="selectionEntry" targetId="c599-cb6f-f414-ea6d">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2b6-1853-c5a2-8ca1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Melta bombs" hidden="false" id="da12-2e23-2bd6-9c1b" collective="false" targetId="2ba5-704d-48a6-ddd9" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfc0-9756-687d-80e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Combat Shield" hidden="false" id="e3ef-d5fe-93ee-4e73" type="selectionEntry" targetId="c599-cb6f-f414-ea6d">
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f023-ad95-3dff-5963" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
           </costs>
@@ -18915,7 +19181,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="bb92-9ffc-db0a-c03f">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19290,7 +19556,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="c33d-7823-32d0-679c" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="c33d-7823-32d0-679c" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -19836,7 +20102,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="6031-d56b-1471-0369" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="6031-d56b-1471-0369" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -22313,7 +22579,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="3) Pistol / CC Choices:" id="b418-7e95-0f6f-7001" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1dd-315b-c11b-ef29">
+                <selectionEntryGroup name="2) Pistol / CC Choices:" id="b418-7e95-0f6f-7001" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1dd-315b-c11b-ef29">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eae5-dadf-103a-5729" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ca1f-3dc8-5dea-7518" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -22375,7 +22641,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Griffon Warblades" hidden="false" id="d31b-e016-944b-da36" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
+                    <entryLink import="true" name="Griffon Warblade" hidden="false" id="d31b-e016-944b-da36" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
@@ -22389,7 +22655,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="1) Sgt or Vet Sgt:" id="8d57-119f-7f5a-abf5" hidden="false" collective="false" import="true" defaultSelectionEntryId="6af7-a025-69f0-1622">
+                <selectionEntryGroup name="0.6) Sgt or Vet Sgt:" id="8d57-119f-7f5a-abf5" hidden="false" collective="false" import="true" defaultSelectionEntryId="6af7-a025-69f0-1622">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb8-166b-4421-9ac6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa70-2ffa-2709-dd87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -22448,7 +22714,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="4) Devastator Sergeant May Take:" id="cda7-bc83-76d0-155c" hidden="false">
+                <selectionEntryGroup name="3) Devastator Sergeant May Take:" id="cda7-bc83-76d0-155c" hidden="false">
                   <entryLinks>
                     <entryLink import="true" name="Melta bombs" hidden="false" id="9d68-2b8d-5e62-f003" type="selectionEntry" targetId="2ba5-704d-48a6-ddd9">
                       <constraints>
@@ -22468,7 +22734,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="1.5) Bayonet" id="864f-8bcd-f51a-35fc" hidden="false" collective="false" import="true">
+                <selectionEntryGroup name="1.6) Bayonet" id="864f-8bcd-f51a-35fc" hidden="false" collective="false" import="true">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditionGroups>
@@ -22502,7 +22768,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="1) Bolter or:" id="b4c4-2436-ee71-5d4b" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bcb-c096-b988-e731">
+                <selectionEntryGroup name="1.5) Bolter or:" id="b4c4-2436-ee71-5d4b" hidden="false" collective="false" import="true" defaultSelectionEntryId="1bcb-c096-b988-e731">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83a5-c6d5-f2a8-edec" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d672-7067-ebc0-09cf" includeChildSelections="false"/>
@@ -22614,6 +22880,38 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                       </modifiers>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1) Red Scorpions - Purity Above All" id="fe3d-164f-87de-1abf" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Narthecium Upgrade" hidden="false" id="9eda-3580-c8d2-96c7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1492-fd32-fe0c-6711" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink import="true" name="Narthecium" hidden="false" id="2f3b-efd7-9050-bafb" type="selectionEntry" targetId="dd7a-d404-a96c-1251">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0026-a162-72ba-5e77" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0b6-dfa3-eed2-a1d2" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <rules>
+                        <rule name="Purity Above All" id="4a41-1b02-b1d9-3e1d" hidden="false">
+                          <description>Any Tactical, Boarding, Siege Assault, Assault or Devastator squad&apos;s Sergeant or Veteran Sergeant with Chapter Tactics ( Red Scorpions) may be made a member of the Chapter&apos;s expansive Apothecarion and upgraded to carry a Narthecium for +20 points a model. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model. </description>
+                        </rule>
+                      </rules>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
@@ -22870,7 +23168,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
               <profiles>
                 <profile name="Mk.III Iron Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="8b10-34b3-5493-fb1b">
                   <characteristics>
-                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately. </characteristic>
+                    <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">This gives the unit the Heavy Sub-Type and must be modelled appropriately.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -30569,7 +30867,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
     <selectionEntry type="upgrade" import="true" name="The Dark Void Elite" hidden="false" id="277e-9937-f5b3-fb78">
       <rules>
         <rule name="The Dark Void Elite" id="4907-a406-39b1-cad5" hidden="false">
-          <description>Up to 3 of any of the following units may be upgraded to the Dark Void Elite; Sternguard Veteran Squad, Tactical Squad, Devastator Squad or a Character and their Retinue, for + 20 points a squad. Any unit so upgraded gains the Deep Strike Special Rule and the Heavy unit Sub. Type. </description>
+          <description>Up to 3 of any of the following units may be upgraded to the Dark Void Elite; Sternguard Veteran Squad, Tactical Squad, Devastator Squad or a Character and their Retinue, for + 20 points a squad. Any unit so upgraded gains the Deep Strike Special Rule and the Heavy unit Sub. Type.</description>
         </rule>
       </rules>
       <constraints>
@@ -30655,6 +30953,42 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5156-0db7-149c-32d4" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anphelion Veterans" hidden="false" id="d1b6-6da6-bd24-1de3">
+      <infoLinks>
+        <infoLink name="Move Through Cover" id="d668-b21d-23cc-f060" hidden="false" type="rule" targetId="b4e6-c3e5-cdc7-7939"/>
+        <infoLink name="Poisoned (X)" id="22d6-28dd-1c88-0230" hidden="false" type="rule" targetId="0c6e-f761-792b-5d03">
+          <modifiers>
+            <modifier type="set" value="Poisoned (2+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Night Vision" id="0773-a4f9-fe8d-fa7d" hidden="false" type="rule" targetId="8b46-6eb8-78bc-5f62"/>
+      </infoLinks>
+      <rules>
+        <rule name="Anphelion Veterans" id="57b4-9e5a-ac6d-2fbc" hidden="false">
+          <description>A single Terminator Command Squad or Terminator Squad may be up Anphelion Veterans for +12 points a model. They each increase their Balls by+ 1 and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ece5-f426-c2fb-98f4" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Honour Guard" hidden="false" id="d26e-6934-cc30-cd39">
+      <modifiers>
+        <modifier type="increment" value="1" field="cbe4-9fcb-59ce-8e95">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4f07-3d45-4f28-a0c6" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="cbe4-9fcb-59ce-8e95" includeChildSelections="true"/>
+      </constraints>
+      <rules>
+        <rule name="Cloaked in Honour" id="8b90-3e88-7acf-f94c" hidden="false">
+          <description>Whenever a unit containing models with this special rule declares a charge targeting a unit already engaged in combat, the charge roll gains an additional +1 modifier. If the charge is successful then all models in the charging unit with the Cloaked in Honour special rule gain +1 to hit for the duration of the turn in which that charge is made. </description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -30742,7 +31076,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="The Raptorus Rex is Watching" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="6f43-020f-f65e-d44e">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">While the Warlord is alive, the controlling player may reroll all 1&apos;s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additionaI reaction in the Shooting Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">While the Warlord is alive, the controlling player may reroll all 1&apos;s when rolling for reserves. The Warlord and his unit may also re-roll their charge moves on a turn they arrive from reserve. While the warlord is alive, the army may make an additionaI reaction in the Shooting Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30760,7 +31094,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="Forward, For the Emperor!" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="7a65-eca5-ed62-d9f1">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and all friendly units within 6&quot;, add + 1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player mal{ make an additional reaction in the Movement Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and all friendly units within 6&quot;, add + 1 to their initiative for any Run moves or Movement Reactions. While the Warlord is alive, the controlling player mal{ make an additional reaction in the Movement Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30776,7 +31110,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="Coordinated Assault" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="d0a1-128c-a12d-81af">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and all friendly units within 6&quot;, add + 1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and all friendly units within 6&quot;, add + 1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30793,7 +31127,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="Shock and Awe" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="7bbb-6464-549c-b08f">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30813,7 +31147,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           <profiles>
             <profile name="Weapon Mastery" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="db53-40fc-8b54-5298">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and unit he joins lose the &apos;one shot&apos; rule from any Combi-Melta or Combi-Plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and unit he joins lose the &apos;one shot&apos; rule from any Combi-Melta or Combi-Plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30831,7 +31165,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
             <profile name="Tenets of the Codex" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="9ea9-de9f-31b1-077f">
               <characteristics>
                 <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. 
-While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+While the warlord is alive, the army may make an additional reaction in the Assault Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30853,7 +31187,7 @@ While the warlord is alive, the army may make an additional reaction in the Assa
           <profiles>
             <profile name="Stalk Unseen" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="71ad-5213-7776-b5cc">
               <characteristics>
-                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase. </characteristic>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30861,6 +31195,23 @@ While the warlord is alive, the army may make an additional reaction in the Assa
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="1d9b-3e37-8a75-d5f6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Coordinated Assault" hidden="false" id="a19a-e734-b757-bc4f">
+          <profiles>
+            <profile name="Coordinated Assault" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="ada8-a99f-91ff-3c26">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and all friendly units within 6&quot;, add + 1 to their results when rolling for charge distance. While the warlord is alive, the army may make an additional reaction in the Assault Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Red Scorps</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

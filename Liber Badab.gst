@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="25" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="27" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -334,6 +334,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="03eb-a86d-969a-6d68" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4437-641f-d17b-bf52" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink id="13f2-88b4-a4ee-22fa" name="Fast Attack:" hidden="false" targetId="4fc9-a33f-1125-1cb7" primary="false">
@@ -352,11 +357,16 @@ Conversely, if an Independent Character joins a unit after that unit has been th
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="b4f5-1c8a-d007-ad11">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="30c9-3707-d8b7-b81d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Heavy Support:" hidden="false" id="4255-4999-d331-1da1" targetId="1a92-d90b-9550-a0a7">
           <modifiers>
-            <modifier type="set" value="1" field="6788-98e7-34c3-25ba">
+            <modifier type="set" value="1" field="4cfb-2bec-86aa-6007">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -365,6 +375,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="4cfb-2bec-86aa-6007">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="a1b4-79e4-bbe3-5d7f" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -473,7 +488,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="c131-7f83-890f-8fa5" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="c131-7f83-890f-8fa5" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
         <infoLink id="4906-7c86-21bf-77c3" name="Rending (X)" hidden="false" targetId="2e92-b54a-1bc2-8b3e" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rending (3+)"/>
@@ -1964,6 +1979,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="5a55-03d2-09b6-d631" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="08d7-6abe-1e0d-f5b4" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2466,7 +2484,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="4998-7634-3543-3239" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="4998-7634-3543-3239" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2515,7 +2533,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
         </infoLink>
         <infoLink id="78af-a70f-304a-ded6" name="Sniper" hidden="false" targetId="f790-1b7f-3438-7f4d" type="rule"/>
         <infoLink id="0442-dfaa-375c-c6c6" name="Pinning" hidden="false" targetId="1af5-e189-a698-3034" type="rule"/>
-        <infoLink id="635c-9345-066a-a9e3" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="635c-9345-066a-a9e3" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2547,7 +2565,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f184-176f-48ac-abce" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="f184-176f-48ac-abce" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2566,7 +2584,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       </profiles>
       <infoLinks>
         <infoLink id="961a-61f8-1c1c-c6c9" name="Sunder" publicationId="2d25-7683-189b-ddd5" hidden="false" targetId="c19f-9dd1-2047-aa27" type="rule"/>
-        <infoLink id="eb1c-a8a8-1c0b-c703" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="eb1c-a8a8-1c0b-c703" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2614,7 +2632,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </modifiers>
         </infoLink>
         <infoLink id="0c0c-553f-ceb0-10b5" name="Twin-linked" hidden="false" targetId="6ee4-c64d-5db6-b2d9" type="rule"/>
-        <infoLink id="8ff0-e7d8-9866-60fc" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="8ff0-e7d8-9866-60fc" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2637,7 +2655,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="e1cd-b95d-5aef-95d9" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="e1cd-b95d-5aef-95d9" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2664,7 +2682,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
     </selectionEntry>
     <selectionEntry id="9345-4836-c06c-834b" name="Master-crafted Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="e44e-ab1a-8236-38a6" name="Master-crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink id="e44e-ab1a-8236-38a6" name="Master-Crafted" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="6222-470c-478e-8330" name="Missile Launcher - Krak" hidden="false" collective="false" import="true" type="upgrade">
@@ -2897,7 +2915,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
     <selectionEntry type="upgrade" import="true" name="Master-crafted Bolter" hidden="false" id="5749-6084-3302-38e3" collective="false">
       <infoLinks>
         <infoLink name="Bolter" id="bf2c-de52-493a-c1ce" hidden="false" targetId="ace3-6d7c-5854-1e59" type="profile"/>
-        <infoLink name="Master-crafted" id="fd5e-5997-3aab-8b8c" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="fd5e-5997-3aab-8b8c" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3214,7 +3232,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <modifier type="set" value="Rending (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master-crafted" id="292a-adf3-4d81-0fe8" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="292a-adf3-4d81-0fe8" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3233,7 +3251,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       </profiles>
       <infoLinks>
         <infoLink name="Unwieldy" id="ea94-34ce-6c12-2ff8" hidden="false" targetId="7efd-92ce-72e1-132e" type="rule"/>
-        <infoLink name="Master-crafted" id="4e42-ccb5-d3a0-a8f5" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="4e42-ccb5-d3a0-a8f5" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3253,7 +3271,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       <infoLinks>
         <infoLink name="Specialist Weapon" id="5ca2-4908-5f25-93de" hidden="false" targetId="3f63-8915-cff1-87f8" type="rule"/>
         <infoLink name="Unwieldy" id="ae74-f1c2-9e07-4a41" hidden="false" targetId="7efd-92ce-72e1-132e" type="rule"/>
-        <infoLink name="Master-crafted" id="8917-9f52-46cc-e3d5" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="8917-9f52-46cc-e3d5" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3276,7 +3294,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <modifier type="set" value="Reach (1)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master-crafted" id="dd5c-3829-8a29-360f" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="dd5c-3829-8a29-360f" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -3297,7 +3315,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Master-crafted" id="b7eb-6191-3e5f-59fc" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+        <infoLink name="Master-Crafted" id="b7eb-6191-3e5f-59fc" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Locator Beacon" hidden="false" id="d4a4-3d66-5fba-cdae">
@@ -4470,13 +4488,13 @@ Predator/Vindicator: -10pts</description>
       <rules>
         <rule name="On Wings of Fire" id="600c-6a4c-9cad-a5c8" hidden="false">
           <description>All Flamer, Hand Flamer and Heavy Flamer attacks made by models with Chapter Tactics (Fire Hawks) gain +1 Strength on the turn in which the unit enters play 
-using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength. </description>
+using the Deep Strike special rule (including models exiting from Drop Pods). Hammer of Wrath attacks made by jump pack-equipped models with Chapter Tactics (Fire Hawks) also gain +1 Strength.</description>
         </rule>
         <rule name="Speed and Fury" id="ae79-b153-8804-f2aa" hidden="false">
-          <description>All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type. </description>
+          <description>All Assault squads and Vanguard Veteran squads equipped with Warhawk Jump Packs with the Chapter Tactics (Fire Hawks) special rule, chosen as part of a Primary Detachment gain the Line unit Sub-Type.</description>
         </rule>
         <rule name="The Livery of Curs" id="992e-8077-e110-bf66" hidden="false">
-          <description>􀀃del with the Chapter Tactics ( Fire Hawks) special rule lessens all cover saves receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save. </description>
+          <description>􀀃del with the Chapter Tactics ( Fire Hawks) special rule lessens all cover saves receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4501,7 +4519,7 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
     <selectionEntry type="upgrade" import="true" name="The Howling Griffons" hidden="false" id="890d-5016-a243-69f3">
       <rules>
         <rule name="Into the Fray" id="c9fb-a0c1-8a01-064f" hidden="false">
-          <description>On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account. </description>
+          <description>On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4540,33 +4558,33 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
     <selectionEntry type="upgrade" import="true" name="The Marines Errant" hidden="false" id="7e67-696a-e56a-312b">
       <rules>
         <rule name="Fervent Fighters" id="f29c-9b03-152d-f7fd" hidden="false">
-          <description>During a turn in which a unit made up entirely of models with the Marines Errant Chapter Tactic successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1. </description>
+          <description>During a turn in which a unit made up entirely of models with the Marines Errant Chapter Tactic successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1.</description>
         </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Minotaurs" hidden="false" id="f8d3-3df4-1a6d-2ee6">
       <rules>
         <rule name="Unrelenting Assault" id="7d42-5045-2ab7-fb89" hidden="false">
-          <description>Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction. </description>
+          <description>Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction.</description>
         </rule>
         <rule name="Trample and Crush" id="3ea3-8ed9-e5b5-1b7b" hidden="false">
-          <description>Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone. </description>
+          <description>Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone.</description>
         </rule>
         <rule name="Vaults of Terra" id="5280-ad0f-defc-4551" hidden="false">
-          <description>A Minotaurs Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+          <description>A Minotaurs Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Star Phantoms" hidden="false" id="89f6-d4c6-33f8-f34b">
       <rules>
         <rule name="Orbital Wave Attack" id="325b-7c57-79a4-b4ba" hidden="false">
-          <description>Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes. </description>
+          <description>Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes.</description>
         </rule>
         <rule name="Hail of Destruction" id="7121-1754-9212-4587" hidden="false">
-          <description>Once per game, the player may declare the use of this ability and its effects last from the start of the controlling player&apos;s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked. </description>
+          <description>Once per game, the player may declare the use of this ability and its effects last from the start of the controlling player&apos;s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked.</description>
         </rule>
         <rule name="Unfettered Destructio" id="19f1-dde0-a5ab-78d3" hidden="false">
-          <description>Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any &apos;Plasma&apos; or &apos;Melta&apos; weapons. </description>
+          <description>Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any &apos;Plasma&apos; or &apos;Melta&apos; weapons.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4580,7 +4598,7 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
           </modifiers>
         </infoLink>
         <infoLink id="ad91-60b1-d4c0-ed3f" name="One Use/One Shot" hidden="false" targetId="856b-ad3e-6ce1-a1ba" type="rule"/>
-        <infoLink name="Master-crafted" id="7038-5e8b-3d54-64fa" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+        <infoLink name="Master-Crafted" id="7038-5e8b-3d54-64fa" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -4592,10 +4610,10 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
     <selectionEntry type="upgrade" import="true" name="The Novamarines" hidden="false" id="435f-66fa-79e7-1d94">
       <rules>
         <rule name="The Strength of Wisdom" id="cf8e-27f2-1a84-2a7a" hidden="false">
-          <description>When rolling To Hit with this special rule as part of a Shooting Attack add+ 1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6&quot; of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules. </description>
+          <description>When rolling To Hit with this special rule as part of a Shooting Attack add+ 1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6&quot; of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules.</description>
         </rule>
         <rule name="2nd Founding" id="cc25-ef7f-53d3-b845" hidden="false">
-          <description>A Nova marines Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. They may also include an additional Elite Slot, but it may only be used on a Terminator Squad or Castraferrum Dreadnought. </description>
+          <description>A Nova marines Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. They may also include an additional Elite Slot, but it may only be used on a Terminator Squad or Castraferrum Dreadnought.</description>
         </rule>
         <rule name="Wealth of Ages" id="21e1-bc50-ba93-92ab" hidden="false">
           <description>Any model with the Chapter Tactics (Novamarines) Special that does not have the Character Sub-Type or lndependant Character Special Rule may chose to replace either a Close Combat Weapon or Boltgun with a Power Sword for 
@@ -4625,15 +4643,63 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       <rules>
         <rule name="Strike from the Shadows" id="fd51-2e9b-7884-165e" hidden="false">
           <description>Models in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) Special Rule. This may stack with any other version of the Shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. 
-Note that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule. </description>
+Note that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule.</description>
         </rule>
         <rule name="Legendary Marksman" id="e96a-2ffb-360b-6db1" hidden="false">
-          <description>Any unit with this special rule that does not move in the Movement phase of their tum or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that tum with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack. </description>
+          <description>Any unit with this special rule that does not move in the Movement phase of their tum or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that tum with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Scout" id="2190-3869-f9a8-3841" hidden="false" type="rule" targetId="aadf-0b76-d0cb-a098"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Red Scorpions" hidden="false" id="0f62-d077-925a-d095">
+      <rules>
+        <rule name="Fortitude and Contempt" id="7ec3-36c9-39f2-db23" hidden="false">
+          <description>Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="4c31-c474-a7dd-c3a4" name="Master-Crafted Force Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2e76-9bbd-1bac-b99b" name="Master-Crafted Force Axe" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Unwieldy, Force, Master-Crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="242c-33b8-0db1-faa6" name="Unwieldy" hidden="false" targetId="7efd-92ce-72e1-132e" type="rule"/>
+        <infoLink id="35ec-2487-cb02-fc38" name="Force" hidden="false" targetId="4c70-53e3-b356-ec36" type="rule"/>
+        <infoLink name="Master-Crafted" id="4cc6-11c4-f92c-6b9b" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trusted Advisor" hidden="false" id="524d-5c37-11dd-5562">
+      <profiles>
+        <profile name="Trusted Advisor" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="44d9-b601-6518-1508">
+          <characteristics>
+            <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Primary Detachment may take a single additional force organization slot from the following list: Elites, Fast Attack, Heavy Support. In addition to this, while Sevrin Loth is alive the controlling player may make an additional Reaction in the Assault Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Extra Force Org Slot:" id="1653-6000-238d-12af" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa4f-554d-9c48-bf31" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Support" hidden="false" id="a1b4-79e4-bbe3-5d7f"/>
+            <selectionEntry type="upgrade" import="true" name="Fast Attack" hidden="false" id="30c9-3707-d8b7-b81d"/>
+            <selectionEntry type="upgrade" import="true" name="Elites" hidden="false" id="4437-641f-d17b-bf52"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
