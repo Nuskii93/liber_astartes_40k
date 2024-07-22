@@ -4545,6 +4545,38 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Star Phantoms" hidden="false" id="89f6-d4c6-33f8-f34b">
+      <rules>
+        <rule name="Orbital Wave Attack" id="325b-7c57-79a4-b4ba" hidden="false">
+          <description>Any unit in the detachment arriving via Deep Strike may re-roll any Reserve roll of 1 if its controlling player wishes. </description>
+        </rule>
+        <rule name="Hail of Destruction" id="7121-1754-9212-4587" hidden="false">
+          <description>Once per game, the player may declare the use of this ability and its effects last from the start of the controlling player&apos;s Shooting phase until the start of their next Shooting phase. During this period, all infantry and cavalry units in the detachment with Chapter Tactics (Star Phantoms) count their Rapid Fire, Assault and Heavy Weapons as being twin-linked. </description>
+        </rule>
+        <rule name="Unfettered Destructio" id="19f1-dde0-a5ab-78d3" hidden="false">
+          <description>Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any &apos;Plasma&apos; or &apos;Melta&apos; weapons. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="a752-be2b-9987-47a5" name="Master-Crafted Combi-Melta" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="457f-d213-f092-b654" name="Bolter (Primary)" hidden="false" targetId="73cf-e9e9-d29e-07e4" type="profile"/>
+        <infoLink id="3b0e-d576-8ebb-a1f7" name="Meltagun (Secondary)" hidden="false" targetId="e4c7-37aa-91d1-4d0d" type="profile"/>
+        <infoLink id="4025-9aa9-0269-ae6f" name="Armourbane (X)" hidden="false" targetId="a8e9-62f7-a858-933a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ad91-60b1-d4c0-ed3f" name="One Use/One Shot" hidden="false" targetId="856b-ad3e-6ce1-a1ba" type="rule"/>
+        <infoLink name="Master-crafted" id="7038-5e8b-3d54-64fa" hidden="false" targetId="b56f-12c1-9c3e-8cea" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="7ab6-9031-c49b-fb95" primary="true" name="Combi-Bolter"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
@@ -5071,7 +5103,7 @@ The Grey Tithes of the Outer Dark: A Carcharodons Detachment may include an addi
     <rule id="3606-f636-3240-f9dc" name="Master of Automata" publicationId="0a24-8d5a-55ca-b028" page="122" hidden="false">
       <description>A model with this special rule may join a unit that includes one of more models with the Automata Unit Type. While part of a unit that includes one of more models with this Automata Unit Type, a model with this special rule may not make Reactions and gains the Fearless special rule. If the Automata models in the unit are subject to the Programmed Behaviours provision then those rules are not used as long as a model with this special rule is part of the unit.</description>
     </rule>
-    <rule id="b56f-12c1-9c3e-8cea" name="Master-crafted" publicationId="0a24-8d5a-55ca-b028" page="243" hidden="false">
+    <rule id="b56f-12c1-9c3e-8cea" name="Master-Crafted" publicationId="0a24-8d5a-55ca-b028" page="243" hidden="false">
       <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
     </rule>
     <rule id="326c-3667-5d03-2001" name="Monster Hunter" publicationId="0a24-8d5a-55ca-b028" page="243" hidden="false">

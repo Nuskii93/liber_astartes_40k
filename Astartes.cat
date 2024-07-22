@@ -944,6 +944,21 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="fdb9-a97e-8be5-3195" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="588f-6c01-c6e3-4b16" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02b-f288-4ec8-f230" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ac8e-b80f-3ae9-8bc0" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -1833,6 +1848,21 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="62b6-2a44-7382-61bd" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="cc8b-76e7-8f83-d83f" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bba1-67d7-1b54-deed" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d043-efc3-982b-25fe" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -2667,6 +2697,21 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="3fa2-1cf4-93e7-d224" shared="true" roundUp="false"/>
               </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="9337-c5b8-d2b0-39cc" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="ff5c-c002-3aea-a061" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dff-c39d-b140-6d45" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -3535,6 +3580,21 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="dabf-a607-bbed-a8a4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="e3cc-0668-f3e0-695c" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e02b-be63-2fcd-d8f0" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5610,6 +5670,21 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="fe82-a4aa-b960-d47d" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Badab Assault Force" hidden="false" id="b221-e910-0f53-72b5" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9cf-0ef7-b3a2-911e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="b078-70e6-9c81-2451" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
@@ -6242,6 +6317,21 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="0a18-ce86-5d83-47f2" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Badab Assault Force" hidden="false" id="d582-bb31-b847-560a" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a89-6c43-8bf5-afeb" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7375,6 +7465,21 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="42e2-5f67-2da1-bf6e" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Badab Assault Force" hidden="false" id="ac55-db3e-518b-3d71" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0654-ce56-7cde-348a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8739,6 +8844,21 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="9cf3-8c05-28a7-9250" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Badab Assault Force" hidden="false" id="e1bc-70bd-bf83-b571" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc7c-5824-af2b-4100" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10795,6 +10915,21 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="9309-ab56-9dcf-9b1c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="fb2f-edaf-b20b-2756" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98fe-eaf1-9d21-75ea" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -11547,6 +11682,21 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="5765-2471-8236-295c" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="cd32-8dcf-cc14-0f1e" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dae-7066-8047-167e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12385,6 +12535,21 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="94a1-1034-872e-e293" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="743e-eb78-fa92-0984" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="390b-8691-3445-216c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -13451,6 +13616,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="2740-bf7a-f2a7-8999" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="7ad2-580e-4952-cd7a" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e079-f189-31e6-c012" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Chosen Warriors" id="15c2-33a6-b10e-157f" hidden="false" targetId="ea67-a8b8-b434-660e" type="rule"/>
@@ -14270,6 +14450,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="654d-f887-a1b7-9abe" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="df9c-3cd3-7980-a5f5" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b79-a08c-9540-464c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -16550,6 +16745,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="e7f9-9e4c-e3a5-2de9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="3964-a918-eb50-dc75" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8736-2549-da17-e08f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="70"/>
@@ -17240,6 +17450,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed74-7e46-ea78-6849" includeChildSelections="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6613-68bd-8128-5ca6" includeChildSelections="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7be5-e249-d55a-b34d" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="6613-68bd-8128-5ca6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7be5-e249-d55a-b34d" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Krak Grenades" hidden="false" id="eb7e-c475-3522-0bee" type="selectionEntry" targetId="e0be-9432-bcf8-d305">
                   <constraints>
@@ -17709,6 +17931,37 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       </conditions>
                     </modifier>
                   </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="0.5) Star Phantoms - Chapter Mortuary Cult Imperialis" id="303f-53e3-7ef6-66e0" hidden="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Mortuary Chaplain" hidden="false" id="7be5-e249-d55a-b34d">
+                      <entryLinks>
+                        <entryLink import="true" name="Master-crafted Power Maul" hidden="false" id="049d-74d8-b9ca-0b73" type="selectionEntry" targetId="7e2c-8974-a9a9-82b1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7c8-b3ab-a392-43aa" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89a8-3c9b-00c5-6717" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <infoLinks>
+                        <infoLink name="Hatred (X)" id="02ff-d6f6-fc0d-bf25" hidden="false" type="rule" targetId="a0e7-d035-d976-fd42">
+                          <modifiers>
+                            <modifier type="set" value="Hatred (Everything!)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6f-fb5f-6bad-daa7" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <infoLinks>
@@ -18535,6 +18788,21 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="d0e1-7dc3-3044-fc37" shared="true" roundUp="false"/>
               </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="6e81-e9e8-f55b-eb6e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="3c0c-a249-9b10-242f" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4121-d577-2c2d-418e" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -22392,6 +22660,21 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="3a9d-416c-3710-f050" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="e9b2-81a7-0831-4697" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="976d-d6c6-8a48-4901" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="675e-999f-0119-d80a" primary="false" name="Infantry Unit Type"/>
@@ -22810,6 +23093,21 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="aafa-21d4-157b-c383" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="b045-d174-5f88-a158" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5fa-6ea1-5c0c-5d7f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="And they Shall Know No Fear" id="361b-2249-45d7-707d" hidden="false" type="rule" targetId="ce91-e2c8-ffa1-14a8"/>
@@ -22900,6 +23198,21 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="greaterThan" value="1" field="selections" scope="325b-7a48-4da1-c934" childId="904e-1468-7e74-2987" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="0) Star Phantoms - Badab Assault" id="8d7e-8f00-a914-0e9f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="33f7-b765-7c82-009c" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="561d-71db-5cb0-780f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -29118,6 +29431,21 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Star Phantoms - Badab Assault" id="85f2-a3b9-0452-30d7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Badab Assault Force" hidden="false" id="7f00-2811-1dbc-6df1" type="selectionEntry" targetId="ee90-34b9-5fc2-7021"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c36-5826-0ff6-c064" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -29979,6 +30307,11 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true" percentValue="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Chapter Tactics (The Star Phantoms)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </rule>
       </rules>
@@ -30041,6 +30374,23 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Badab Assault Force" hidden="false" id="ee90-34b9-5fc2-7021">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Breacher Charge" hidden="false" id="fbe8-ef26-fb63-4484" type="selectionEntry" targetId="bc52-9c1d-464b-6fde">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad59-bb9e-6571-4272" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f07f-613f-648d-97d7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Move Through Cover" id="f52f-cd39-465d-44c2" hidden="false" type="rule" targetId="b4e6-c3e5-cdc7-7939"/>
+        <infoLink name="Deep Strike" id="ac5f-0c59-898f-1445" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -30191,6 +30541,15 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
             </modifier>
           </modifiers>
           <comment>The Minotaurs</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weapon Mastery" hidden="false" id="02a0-b642-6eea-5229">
+          <profiles>
+            <profile name="Weapon Mastery" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="db53-40fc-8b54-5298">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and unit he joins lose the &apos;one shot&apos; rule from any Combi-Melta or Combi-Plasma weapons the unit carries. While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
