@@ -269,6 +269,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Combi-Bolter" id="0ee3-bc2e-d2fc-b66e" hidden="false"/>
     <categoryEntry name="Bolter" id="57d6-e49a-34e1-b43a" hidden="false"/>
     <categoryEntry name="Bolt Pistol" id="6788-9641-e041-1aab" hidden="false"/>
+    <categoryEntry name="Asterion Moloc" id="5c66-2eef-e584-a440" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -319,6 +320,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="02e3-c760-3dbc-d0fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5c66-2eef-e584-a440" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2856,7 +2862,12 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4508,6 +4519,19 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Minotaurs" hidden="false" id="f8d3-3df4-1a6d-2ee6">
+      <rules>
+        <rule name="Unrelenting Assault" id="7d42-5045-2ab7-fb89" hidden="false">
+          <description>Models with Chapter Tactics (Minotaurs) do not take Morale checks due to casualties in any shooting phase and may re-roll failed Pinning Checks. They may never make use of the Withdraw Reaction. </description>
+        </rule>
+        <rule name="Trample and Crush" id="3ea3-8ed9-e5b5-1b7b" hidden="false">
+          <description>Models with Chapter Tactics (Minotaurs) gain the Crusader special rule. In addition, they add +1 to any roll to determine charge distances while in an enemy deployment zone. </description>
+        </rule>
+        <rule name="Vaults of Terra" id="5280-ad0f-defc-4551" hidden="false">
+          <description>A Minotaurs Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
@@ -5341,7 +5365,7 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
         <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
         <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 1</characteristic>
+        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 1, Breaching (5+)</characteristic>
       </characteristics>
     </profile>
     <profile id="8f98-9516-fff0-87fc" name="Volkite Charger (Secondary)" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">

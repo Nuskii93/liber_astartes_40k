@@ -14751,6 +14751,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -16120,6 +16127,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Dreadnought Talon" id="adb4-3d9c-4352-50d9" hidden="false" type="rule" targetId="c5f9-f813-1875-2939"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Centurion Assault Squad" hidden="false" id="7e18-45b5-06ba-cd6d">
@@ -29966,6 +29974,11 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" percentValue="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Chapter Tactics (The Minotaurs)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </rule>
       </rules>
@@ -30161,6 +30174,23 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shock and Awe" hidden="false" id="8ed3-9ddc-043d-924e">
+          <profiles>
+            <profile name="Shock and Awe" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="7bbb-6464-549c-b08f">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gain the Deep Strike Special rule. While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>The Minotaurs</comment>
         </selectionEntry>
       </selectionEntries>
       <constraints>
