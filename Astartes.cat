@@ -697,7 +697,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Carcharodons - Replace Bolter" id="e543-0f1a-cea4-3c87" hidden="false">
+            <selectionEntryGroup name="1) Carcharodons - Replace Bolter" id="e543-0f1a-cea4-3c87" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="ecd8-968e-9e78-09d1" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
                   <costs>
@@ -726,6 +726,22 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="1) Novamarines - Replace Bolter For:" id="aa99-e595-584f-23f3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="1494-878e-46d9-33e4" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -955,6 +971,46 @@
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Raptors - Upgrade to Reconnaissance Squad" id="1b82-1f09-dd60-dcd6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reconnaissance Squad" hidden="false" id="8508-2b72-5d44-ff8e">
+              <rules>
+                <rule name="Fatal Strike" id="919d-7de5-2608-c389" hidden="false">
+                  <description>Once per game, a Raptor Reconnaissance Squad may execute a fatal strike attack against a chosen target. The Reconnaissance Squad&apos;s controlling player declares the Fatal Strike at the start of one of the squad&apos;s Shooting phases. For the duration of that phase, the squad&apos;s shooting attacks have both the Twin-linked and Rending (6+) special rules, in addition to any other effects their weapons might have. In the case of weapons already with the Rending (X) Special rule, increase it by 1,eg during the Fatal Strike a weapon with Rending (6+) would go to Rending (5+) for the duration of the attack. </description>
+                </rule>
+              </rules>
+              <modifiers>
+                <modifier type="increment" value="6" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="778a-375a-03c4-dd51" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="0dfe-bb49-8378-5397" shared="true" roundUp="false" includeChildSelections="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21c-85ba-1f5a-f75a" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Outflank" id="8881-e142-d015-82aa" hidden="false" type="rule" targetId="d065-a2ef-17c8-f28d"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Shroud Bombs" hidden="false" id="ae85-147c-2172-782f" type="selectionEntry" targetId="5d4d-36b7-6bf5-fc92">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5123-6f39-b2a0-db03" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8817-d006-a62a-2a38" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1d9b-3e37-8a75-d5f6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1863,6 +1919,35 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="0.2) Novamarines - Replace Bolter for Power Sword" id="fd99-bc90-94ba-6591" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Power Sword" hidden="false" id="2daa-feaa-afe6-1245" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e737-e515-63b0-2754" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e737-e515-63b0-2754">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="d0d4-cf3a-7a39-2fa6" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="e737-e515-63b0-2754">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="0470-d9f5-a7d1-8e3d" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d043-efc3-982b-25fe" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -2715,6 +2800,35 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1.1) Novamarines- Replace Chainsword For:" id="c717-c46c-18fe-90a4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Power Sword" hidden="false" id="b84a-0b35-9166-c968" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9b69-9623-49df-52cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="9b69-9623-49df-52cc">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="6067-77e5-eef1-1434" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="9b69-9623-49df-52cc">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="9547-7fba-408b-91dc" childId="3fa2-1cf4-93e7-d224" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fc7c-b19e-6d9c-ec4e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -3218,6 +3332,18 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Power Sword" hidden="false" id="1874-baad-9a7c-449e" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10242,6 +10368,13 @@
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Skirmish)" field="b6e9-f8ba-2256-a63e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="03eb-a86d-969a-6d68" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -10294,6 +10427,13 @@
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Skirmish)" field="b6e9-f8ba-2256-a63e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="03eb-a86d-969a-6d68" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -12554,6 +12694,26 @@
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Novamarines - Storm Chasers" id="8177-ce66-4191-e2d3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Storm Chasers" hidden="false" id="85f0-4e24-cabf-88b3" type="selectionEntry" targetId="565b-d899-00be-67a9">
+              <modifiers>
+                <modifier type="increment" value="10" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d8b6-23f4-210a-437b" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="55"/>
@@ -13307,11 +13467,6 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e8ca-2e8c-4dfd-74c0" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Power Sword" hidden="false" id="648f-c32c-2d4e-d6f7" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
-              </costs>
-            </entryLink>
             <entryLink import="true" name="Power Sword" hidden="false" id="a552-b623-519c-2253" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -13859,6 +14014,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               </modifiers>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Sword" hidden="false" id="b433-57a7-ad6e-2922" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -18786,7 +18953,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             </modifier>
             <modifier type="decrement" value="1" field="2d46-1e91-8943-e6a8">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="d0e1-7dc3-3044-fc37" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="2412-91f6-76eb-7193" shared="true" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -18803,6 +18970,35 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.1) Novamarines - Replace Chainsword" id="5417-ce02-7a9b-c684" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Power Sword" hidden="false" id="5840-46d9-aa7c-7019" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e75c-e855-d3f2-1bff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="e75c-e855-d3f2-1bff">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="6731-34f1-5dc1-a601" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="e75c-e855-d3f2-1bff">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="f7d5-31a8-8f78-d508" shared="true" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -19408,6 +19604,30 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1.5) Novamarines - Replace Chainsword For:" id="28a4-2278-373d-983a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Power Sword" hidden="false" id="3192-290f-6371-da4e" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="51eb-4e12-b508-38ac" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="51eb-4e12-b508-38ac">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="7e95-9653-8967-7ed1" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -22008,6 +22228,22 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Novamarines - Replace Bolter with Power Sword" id="b348-ba7c-9397-e790" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Sword" hidden="false" id="80c4-2925-bb00-9a8b" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -30312,6 +30548,16 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true" percentValue="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Chapter Tactics (The Novamarines)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Chapter Tactics (The Raptors)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1d9b-3e37-8a75-d5f6" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </rule>
       </rules>
@@ -30391,6 +30637,24 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
         <infoLink name="Move Through Cover" id="f52f-cd39-465d-44c2" hidden="false" type="rule" targetId="b4e6-c3e5-cdc7-7939"/>
         <infoLink name="Deep Strike" id="ac5f-0c59-898f-1445" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Storm Chasers" hidden="false" id="565b-d899-00be-67a9">
+      <rules>
+        <rule name="Iron Bulwark" id="63b5-4bc4-50e5-09cc" hidden="false">
+          <description>If a unit includes at least three models with the Iron Bulwark Special rule and is not locked in combat, all friendly models in that unit (including those without Iron Bulwark) gain the Battle-Hardened (1) Special Rule for the duration of any Assault Phase in which they charge or are charged by one or more enemy units.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Stubborn" id="4842-99ca-41e4-b747" hidden="false" type="rule" targetId="d995-66b1-9d51-7873"/>
+        <infoLink name="Battle-Hardened (X)" id="75a6-47b5-b080-e724" hidden="false" type="rule" targetId="abc2-980b-b86f-a5c5">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5156-0db7-149c-32d4" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -30541,6 +30805,9 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
             </modifier>
           </modifiers>
           <comment>The Minotaurs</comment>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="6fc1-67a3-c801-b54e" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Weapon Mastery" hidden="false" id="02a0-b642-6eea-5229">
           <profiles>
@@ -30550,6 +30817,53 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
               </characteristics>
             </profile>
           </profiles>
+          <comment>Star Phantoms</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tenets of the Codex" hidden="false" id="d00a-4a7b-7260-991f">
+          <profiles>
+            <profile name="Tenets of the Codex" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="9ea9-de9f-31b1-077f">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The warlord and any unit he joins gains both the Line Sub-Type and the Heart of the Chapter Special Rule. 
+While the warlord is alive, the army may make an additional reaction in the Assault Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6399-5c65-7833-1025" field="category"/>
+          </modifiers>
+          <comment>Novamarines</comment>
+          <infoLinks>
+            <infoLink name="Heart of the Chapter" id="65f6-e187-ae31-4fe2" hidden="false" type="rule" targetId="0d36-0f96-fa60-a82a"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stalk Unseen" hidden="false" id="3475-1341-daf5-de80">
+          <comment>Raptors</comment>
+          <profiles>
+            <profile name="Stalk Unseen" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="71ad-5213-7776-b5cc">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and any unit he joins gains the Shrouded (6+) Special Rule, this may stack with any other version of the shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. While the warlord is alive, the army may make an additional reaction in the Shooting Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="1d9b-3e37-8a75-d5f6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>

@@ -271,6 +271,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Bolt Pistol" id="6788-9641-e041-1aab" hidden="false"/>
     <categoryEntry name="Asterion Moloc" id="5c66-2eef-e584-a440" hidden="false"/>
     <categoryEntry name="Enkomi" id="4580-2b27-ee69-e8f5" hidden="false"/>
+    <categoryEntry name="Issodon" id="03eb-a86d-969a-6d68" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -326,6 +327,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5c66-2eef-e584-a440" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="03eb-a86d-969a-6d68" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1927,6 +1933,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
     <selectionEntry id="fd37-1b61-577f-b84b" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7baa-caa1-144b-c37f" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93f7-658c-4cd0-b9da" includeChildSelections="false"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -2869,6 +2876,11 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4576,6 +4588,52 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       <categoryLinks>
         <categoryLink targetId="0ee3-bc2e-d2fc-b66e" id="7ab6-9031-c49b-fb95" primary="true" name="Combi-Bolter"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Novamarines" hidden="false" id="435f-66fa-79e7-1d94">
+      <rules>
+        <rule name="The Strength of Wisdom" id="cf8e-27f2-1a84-2a7a" hidden="false">
+          <description>When rolling To Hit with this special rule as part of a Shooting Attack add+ 1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of the models with this special rule in the same shooting phase, and if the attacking model is within 6&quot; of a model from that friendly unit. This does not affect attacks made with a Blast or Barrage special rules. </description>
+        </rule>
+        <rule name="2nd Founding" id="cc25-ef7f-53d3-b845" hidden="false">
+          <description>A Nova marines Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. They may also include an additional Elite Slot, but it may only be used on a Terminator Squad or Castraferrum Dreadnought. </description>
+        </rule>
+        <rule name="Wealth of Ages" id="21e1-bc50-ba93-92ab" hidden="false">
+          <description>Any model with the Chapter Tactics (Novamarines) Special that does not have the Character Sub-Type or lndependant Character Special Rule may chose to replace either a Close Combat Weapon or Boltgun with a Power Sword for 
++5 points each.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="080f-971e-e104-7be3" name="Master-Crafted Storm Bolter" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6248-a6ad-953d-be25" name="Storm Bolter" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">4</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">5</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 2, Master-Crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Master-Crafted" id="1046-0053-47dc-2f24" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Raptors" hidden="false" id="1d9b-3e37-8a75-d5f6">
+      <rules>
+        <rule name="Strike from the Shadows" id="fd51-2e9b-7884-165e" hidden="false">
+          <description>Models in this detachment have the Scout special rule. In addition, on the first game turn, models in the detachment have the Shrouded (6+) Special Rule. This may stack with any other version of the Shrouded rule eg. Shrouded (5+) from Evade goes to Shrouded (4+) etc. 
+Note that units which contain models with any variant of the Bulky (x) special rule do not benefit from either rule. </description>
+        </rule>
+        <rule name="Legendary Marksman" id="e96a-2ffb-360b-6db1" hidden="false">
+          <description>Any unit with this special rule that does not move in the Movement phase of their tum or is not pinned, may choose to gain the Rending (6+) special rule when firing in the Shooting phase of that tum with boltguns, combi-weapons fired as boltguns or bolt pistols. When using this rule, such weapons are counted as being Heavy 1 instead of their usual type for that attack. </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Scout" id="2190-3869-f9a8-3841" hidden="false" type="rule" targetId="aadf-0b76-d0cb-a098"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
