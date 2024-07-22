@@ -1230,6 +1230,7 @@
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="34ea-59fc-f121-0e77" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="c234-2e2d-4bd9-6a72" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="288e-f8d8-4fb7-ba7c" primary="false" name="Character"/>
+        <categoryLink targetId="4580-2b27-ee69-e8f5" id="937b-3b40-c937-f87f" primary="false" name="Enkomi"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

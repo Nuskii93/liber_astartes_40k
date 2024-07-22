@@ -270,6 +270,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Bolter" id="57d6-e49a-34e1-b43a" hidden="false"/>
     <categoryEntry name="Bolt Pistol" id="6788-9641-e041-1aab" hidden="false"/>
     <categoryEntry name="Asterion Moloc" id="5c66-2eef-e584-a440" hidden="false"/>
+    <categoryEntry name="Enkomi" id="4580-2b27-ee69-e8f5" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -4400,6 +4401,18 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="743c-8f7b-ce78-6382" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61ea-bd9c-28e0-56f9" includeChildSelections="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="743c-8f7b-ce78-6382">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5c66-2eef-e584-a440" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4580-2b27-ee69-e8f5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
       <rules>
