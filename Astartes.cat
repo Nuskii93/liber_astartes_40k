@@ -85,7 +85,7 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Tactical Sergeant" hidden="false" id="41ba-7dfd-f70c-d2de" collective="false" collapsible="false">
+            <selectionEntry type="model" import="true" name="Tactical Sergeant" hidden="false" id="41ba-7dfd-f70c-d2de" collective="false" collapsible="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e92-4e71-8bbe-3afb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="095d-1b74-eaec-6fd8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
