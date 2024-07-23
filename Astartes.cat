@@ -11974,7 +11974,7 @@
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="18"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="46b9-99d3-b2a1-1276" name="Company Ancient" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="46b9-99d3-b2a1-1276" name="Company Ancient" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f091-8638-adea-6afe" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e79f-3581-14f9-ba3b" includeChildSelections="false"/>
@@ -12219,7 +12219,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3b65-ab8e-9762-a423" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ba91-a436-1325-c593" name="1.3) Unit Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ba91-a436-1325-c593" name="4.5) Wargear:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="0136-402e-bdc2-3ea7" name="Auspex" hidden="false" collective="false" import="true" targetId="44bc-4848-60e9-2ff5" type="selectionEntry">
               <constraints>
