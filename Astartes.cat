@@ -1147,6 +1147,42 @@
             <entryLink import="true" name="Hellfire Rounds" hidden="false" id="da9e-c57c-e390-ec64" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Mantis Warriors - Guardians of the Endymion Cluster" id="9abc-3f15-4162-f31d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Guardians of the Endymion Cluster" hidden="false" id="b023-550f-14b0-639a">
+              <infoLinks>
+                <infoLink name="Sudden Strike (X)" id="a58c-6952-95fa-6510" hidden="false" type="rule" targetId="09ff-1d02-2ae3-0d72">
+                  <modifiers>
+                    <modifier type="set" value="Sudden Strike (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="1cf8-e7f7-9ea2-e1c4" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="increment" value="4" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="0dfe-bb49-8378-5397" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6595-d6f7-dfe1-33bb" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Fateful Strike" id="18d7-df69-a834-4cc0" hidden="false">
+                  <description>Models with this special rule have a cover save of 5+ on the turn they arrive via Deep strike</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="a8ae-c0b5-6ffb-d492" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ac8e-b80f-3ae9-8bc0" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -3884,16 +3920,12 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="82fc-02c9-3fdb-cf4e" name="0.5) Bayonets" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="82fc-02c9-3fdb-cf4e" name="1.5) Bayonets" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="d6ad-6c5a-46d3-0343" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fe5-0269-7ae8-d9cd" type="lessThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="lessThan" value="2" field="selections" scope="d6ad-6c5a-46d3-0343" childId="32e0-b129-1dce-671e" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -16277,6 +16309,13 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Skirmish)" field="b6e9-f8ba-2256-a63e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="cad2-22f5-6326-c972" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -16310,6 +16349,11 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <modifier type="set" value="2+" field="0517-4c64-4fd7-6739">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="ce80-3806-af8b-1c9b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Infantry (Character, Skirmish)" field="b6e9-f8ba-2256-a63e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="cad2-22f5-6326-c972" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -16879,6 +16923,41 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           <entryLinks>
             <entryLink import="true" name="Hellfire Rounds" hidden="false" id="5109-30b4-e828-962e" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Mantis Warriors - Tranquillity Veterans" id="67fb-4ae9-cf25-b84c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tranquility Veterans" hidden="false" id="cad2-22f5-6326-c972">
+              <infoLinks>
+                <infoLink name="Scout" id="c7ef-4afc-25b2-eac6" hidden="false" type="rule" targetId="aadf-0b76-d0cb-a098"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="add" value="d87f-b1a3-5a99-9669" field="category"/>
+                <modifier type="increment" value="12" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="94cb-2428-de66-e118" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Sniper Rifle" hidden="false" id="3f10-ce51-b77c-1a87" type="selectionEntry" targetId="7193-de25-bbd5-7b9b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a078-1417-d30e-2154" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9403-ef20-e0c4-9b30" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdd1-3a4d-a47a-6113" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="a8ae-c0b5-6ffb-d492" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -21621,6 +21700,43 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
           <entryLinks>
             <entryLink import="true" name="Hellfire Rounds" hidden="false" id="1a5f-50e2-c5cb-60d9" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Mantis Warriors - Guardians of the Endymion Cluster" id="6141-82d8-fdb0-0cfc" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Guardians of the Endymion Cluster" hidden="false" id="f080-3ae6-3600-ef47">
+              <infoLinks>
+                <infoLink name="Sudden Strike (X)" id="dcf0-cd25-65b4-126b" hidden="false" type="rule" targetId="09ff-1d02-2ae3-0d72">
+                  <modifiers>
+                    <modifier type="set" value="Sudden Strike (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deep Strike" id="b5b5-5b2c-037f-f688" hidden="false" type="rule" targetId="e8a1-d7ca-d389-f158"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="increment" value="4" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="b670-4e31-f41f-0fb1" shared="true" roundUp="false"/>
+                    <repeat value="1" repeats="1" field="selections" scope="b769-b066-d315-9de4" childId="b8d9-0796-943f-ec40" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88c9-bbbe-2a3c-fca0" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Fateful Strike" id="4ae7-6c9f-49cd-8ba3" hidden="false">
+                  <description>Models with this special rule have a cover save of 5+ on the turn they arrive via Deep strike</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="a8ae-c0b5-6ffb-d492" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -33814,6 +33930,11 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="12c6-07ed-0a19-fb87" shared="true" percentValue="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Chapter Tactics (Mantis Warriors)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a8ae-c0b5-6ffb-d492" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </rule>
       </rules>
@@ -34769,6 +34890,23 @@ While the warlord is alive, the army may make an additional reaction in the Assa
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="12c6-07ed-0a19-fb87" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Strike from the Shadows" hidden="false" id="da0f-26ff-77bd-d804">
+          <comment>Mantis Warriors</comment>
+          <profiles>
+            <profile name="Strike from the Shadows" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="fa6f-1b55-564a-2032">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord Gains the Precision Strike (2+) Special Rule. The Warlord and any unit he joins gains the Shrouded (6+) Special rule while within cover. (This stacks with other forms of Shrouded (X) ). While the warlord is alive, the army may make an additional reaction in the Movement Phase. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="a8ae-c0b5-6ffb-d492" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="27" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="28" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -4865,6 +4865,20 @@ The character with the highest WS (if two or more characters are tied, then the 
           <description>All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered.</description>
         </rule>
         <rule name="Maelstrom Warder" id="375f-07bb-50ad-8b57" hidden="false">
+          <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Mantis Warriors" hidden="false" id="a8ae-c0b5-6ffb-d492">
+      <rules>
+        <rule name="Shadow Killers" id="f22b-741f-7b2c-ab08" hidden="false">
+          <description>Infantry models with the Chapter Tactics (Mantis Warriors) and without any form of the Bulky (X) Rule gain the Move Through Cover Special Rule and and add +1 to their movement characteristic. 
+In addition, ANY non-vehicle Model with the Chapter Tactics (Mantis Warriors) Special Rule, on any turn in which they declare a charge from within a terrain feature that grants a cover save (not including any terrain piece purchased as a Fortification choice), they gain the Furious Charge (1) special rule. </description>
+        </rule>
+        <rule name="Children of Prophecy" id="6fe8-aecc-f334-c4af" hidden="false">
+          <description>A force whose primary detachment has Chapter Tactics (Mantis Warriors) may re­roll failed attempts to Seize the Initiative where this is a factor in the mission being played. </description>
+        </rule>
+        <rule name="Maelstrom Warder" id="8dd3-a3b7-b396-02ea" hidden="false">
           <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.</description>
         </rule>
       </rules>
