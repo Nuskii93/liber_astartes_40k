@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="27" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="28" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -13525,6 +13525,13 @@
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="1) Astral Claws - Battle Alchemy" id="c38f-b227-3487-9445" hidden="false">
           <modifiers>
@@ -14516,6 +14523,13 @@
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="1) Astral Claws - Battle Alchemy" id="5c9f-3407-3efc-ae21" hidden="false">
           <modifiers>
@@ -33754,7 +33768,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
       </infoLinks>
       <rules>
         <rule name="Anphelion Veterans" id="57b4-9e5a-ac6d-2fbc" hidden="false">
-          <description>A single Terminator Command Squad or Terminator Squad may be up Anphelion Veterans for +12 points a model. They each increase their Balls by+ 1 and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules.</description>
+          <description>A single Terminator Command Squad or Terminator Squad may be up Anphelion Veterans for +12 points a model. They each increase their BS by+ 1 and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules.</description>
         </rule>
       </rules>
       <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1efb-40af-8ab1-45bf" name="The Lamenters - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1efb-40af-8ab1-45bf" name="The Lamenters - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="9505-35f5-1b51-a41f" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -784,303 +784,6 @@
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sanguinary Guard" hidden="false" id="8a9f-a7b8-4e56-273f" publicationId="0a24-8d5a-55ca-b028" page="18" collective="false">
-      <infoLinks>
-        <infoLink name="Chosen Warriors" id="8417-5acb-43f9-f27c" hidden="false" targetId="ea67-a8b8-b434-660e" type="rule"/>
-        <infoLink name="Retinue" id="4dc3-b0ea-57b3-81ca" hidden="false" targetId="44f8-daf1-b5f8-9f19" type="rule"/>
-        <infoLink name="And they Shall Know No Fear" id="a07a-9f82-df1e-4365" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
-        <infoLink name="Relentless" id="fbf8-5744-47de-5de4" hidden="false" targetId="6195-0e44-7c46-5a47" type="rule"/>
-        <infoLink name="Stubborn" id="58c9-9b75-9c53-11f8" hidden="false" targetId="d995-66b1-9d51-7873" type="rule"/>
-        <infoLink name="Furious Charge (X)" id="6715-8043-d476-4325" hidden="false" targetId="8334-21c3-ec24-e62a" type="rule">
-          <modifiers>
-            <modifier type="set" value="Furious Charge (1)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="6) Dedicated Transport:" id="6f4b-f188-e41d-2457" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6702-d42e-f0c5-e06e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Rhino Transport" hidden="false" id="06c3-9041-0345-16d2" collective="false" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Razorback Armoured Carrier" hidden="false" id="9ea2-3063-da07-779e" collective="false" targetId="ebd4-5249-f734-4d2d" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="greaterThan" value="4" field="selections" scope="8a9f-a7b8-4e56-273f" childId="5bf6-92aa-8a51-ad8f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="50"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Land Raider Prometheus" hidden="false" id="ee57-6c7f-98cd-c3af" collective="false" targetId="e2c1-2566-2f90-8b34" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="greaterThan" value="4" field="selections" scope="8a9f-a7b8-4e56-273f" childId="5bf6-92aa-8a51-ad8f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="2351-3a1b-dfb3-6cbf" collective="false" targetId="179a-7d39-c15f-3066" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="greaterThan" value="4" field="selections" scope="8a9f-a7b8-4e56-273f" childId="5bf6-92aa-8a51-ad8f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="100"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Land Raider Phobos" hidden="false" id="3d22-7d44-7b26-5c43" type="selectionEntry" targetId="06d0-cc53-8f85-7149">
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="0) Sanguinary Guard" id="9fea-7815-2a7d-fe34" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Sanguinary Guard" hidden="false" id="5bf6-92aa-8a51-ad8f" collective="true">
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8036-0276-75f5-223f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="676e-2696-9590-8c02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Sanguinary Guard" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="6597-f751-f8af-c7f5">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry</characteristic>
-                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
-                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
-                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
-                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
-                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
-                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
-                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
-                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>Jetbike</comment>
-                      <modifiers>
-                        <modifier type="set" value="Cavalry (Skirmish)" field="b6e9-f8ba-2256-a63e">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="14" field="d878-f1bf-ac4f-2af5">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="5e7b-26ca-3c3d-1719">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Line Sub-type" hidden="false" id="b4a7-ef90-5afd-5457" targetId="6399-5c65-7833-1025" primary="false"/>
-                <categoryLink name="Infantry Unit Type" hidden="false" id="0f72-4648-da61-71e9" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="33"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Angelus Boltgun" hidden="false" id="a4f5-13f1-cee7-0e0d" type="selectionEntry" targetId="1a2e-264d-9fc2-3fd7" collective="true">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffc6-b68e-02f3-99c0" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e22b-1b8c-deb2-4042" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Company Ancient" hidden="false" id="5f0e-7e8f-45a8-7b56" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2861-d0c1-f454-1046" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a932-8aa4-22b0-7a22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Sanguinary Guard Ancient" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="dbfb-d112-6b56-faca">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry</characteristic>
-                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
-                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
-                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
-                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
-                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
-                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
-                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
-                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
-                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>Jetbike</comment>
-                      <modifiers>
-                        <modifier type="set" value="Cavalry (Skirmish)" field="b6e9-f8ba-2256-a63e">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="14" field="d878-f1bf-ac4f-2af5">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="5e7b-26ca-3c3d-1719">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="b881-6b78-c77c-3400" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink name="Line Sub-type" hidden="false" id="544c-0eb7-ff79-57c1" targetId="6399-5c65-7833-1025" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink import="true" name="Company Standard" hidden="false" id="2998-c70a-22a7-1329" collective="false" targetId="2be8-d5cc-4b03-2014" type="selectionEntry">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cd2-b99c-b1a5-183a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b07-c3aa-ca39-fec1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="54"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e665-f7d7-f359-6d23" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="57e6-ed52-fcf7-5b2d" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="1.3) Unit Options" id="fc33-7372-2c00-31f7" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink import="true" name="Auspex" hidden="false" id="d23b-aef0-b867-0be9" collective="false" targetId="44bc-4848-60e9-2ff5" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ec1-cc5c-704b-cb5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Nuncio-Vox" hidden="false" id="b4ce-41d6-d68f-fed7" collective="false" targetId="dceb-9b22-a168-188d" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fbf-3de7-d8e0-ae83" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Combat Shield" hidden="false" id="c5ed-3d46-15f8-16b6" collective="false" targetId="c599-cb6f-f414-ea6d" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" value="1" field="d995-7b57-d737-87df">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d995-7b57-d737-87df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="5) Mobility (Must match Leaders option)" id="3416-ca58-7cad-6072" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c27-c4ee-2fe5-e490" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Astartes Combat Bike" hidden="false" id="c663-cd9a-1a34-1f4b" collective="false" targetId="b881-6b78-c77c-3400" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                        <condition type="atLeast" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="10" field="7992-13c8-e552-57c1">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Warhawk Jump Pack" hidden="false" id="8f4b-edee-f421-57a4" collective="false" targetId="500d-64ae-f076-0a26" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="10" field="7992-13c8-e552-57c1">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="8a9f-a7b8-4e56-273f" childId="9fea-7815-2a7d-fe34" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Artificer Armour" hidden="false" id="ef91-809b-9190-61b3" type="selectionEntry" targetId="ce80-3806-af8b-1c9b">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9656-370f-fea8-8d4e" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf8d-a98b-cfa2-3085" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Chapter Tactics" hidden="false" id="8b24-2a4f-b942-2381" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
-      </entryLinks>
-      <categoryLinks>
-        <categoryLink name="Retinue" hidden="false" id="ac53-20d7-a6b4-b973" targetId="9b5d-996f-8000-14f5" primary="true"/>
-        <categoryLink name="Character" hidden="false" id="3016-8557-7768-51ee" targetId="6513-093f-7312-6d09" primary="false"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Malakim Phoros" hidden="false" id="a6b2-b473-7bdd-1d68">
       <profiles>
         <profile name="Malakim Phoros" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="55c3-2e0d-a916-005c">
@@ -1189,10 +892,10 @@
       </selectionEntries>
       <rules>
         <rule name="Rage Unto Death" id="de82-70dd-4c82-8800" hidden="false">
-          <description>For every wound Malakim Phoros loses, increase his Strength and Attacks by+ 1 (Eg if he is down to 2 wounds, he is Strength 6 with 6 Attacks base). In addition to this, he and any unit he joins gains the Rage (1) Special rule. </description>
+          <description>For every wound Malakim Phoros loses, increase his Strength and Attacks by+ 1 (Eg if he is down to 2 wounds, he is Strength 6 with 6 Attacks base). In addition to this, he and any unit he joins gains the Rage (1) Special rule.</description>
         </rule>
         <rule name="Lord of Ruin" id="5692-a16f-8de3-3981" hidden="false">
-          <description>Any Infantry unit with the Chapter Tactics (Lamenters) That Malakim Phoros joins adds +1 to Combat Resolution when determining victory. His Unit may also re-roll any failed morale checks. </description>
+          <description>Any Infantry unit with the Chapter Tactics (Lamenters) That Malakim Phoros joins adds +1 to Combat Resolution when determining victory. His Unit may also re-roll any failed morale checks.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1219,6 +922,22 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1c29-8f7a-9bb2-86ea" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="0c41-b89f-382c-8725" primary="false" name="Character"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Retinue" id="c259-a5fd-6110-5640" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05c9-7ae0-76d7-70db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Command Squad" hidden="false" id="c62a-9897-fd19-ab2d" collective="false" targetId="8ba2-ea7b-a90e-36bf" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Terminator Command Squad" hidden="false" id="e71d-9ca4-7380-9389" collective="false" targetId="58f4-572d-850f-93e6" type="selectionEntry"/>
+            <entryLink import="true" name="Sanguinary Guard" hidden="false" id="0d9b-4265-4335-9929" type="selectionEntry" targetId="cec7-7717-8ece-6ad7"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
