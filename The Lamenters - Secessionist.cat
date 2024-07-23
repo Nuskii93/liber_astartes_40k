@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1efb-40af-8ab1-45bf" name="The Lamenters - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1efb-40af-8ab1-45bf" name="The Lamenters - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="9505-35f5-1b51-a41f" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -287,6 +287,9 @@
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="4db8-37e2-50c8-eec1" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Death Company" hidden="false" id="5803-1695-9f4a-2f52" type="selectionEntry" targetId="b151-ce24-1095-2092"/>
     <entryLink import="true" name="Malakim Phoros" hidden="false" id="ba3b-3a80-a574-f378" type="selectionEntry" targetId="a6b2-b473-7bdd-1d68"/>
+    <entryLink import="true" name="Librarian Dreadnought" hidden="false" id="5c9e-83a1-712c-3900" type="selectionEntry" targetId="cb5e-7a1d-21b1-8d63"/>
+    <entryLink import="true" name="Furioso Dreadnought" hidden="false" id="dd39-8f2c-d785-dc09" type="selectionEntry" targetId="3586-f06f-bead-cd75"/>
+    <entryLink import="true" name="Death Company Dreadnought" hidden="false" id="a838-d4e5-c740-8766" type="selectionEntry" targetId="aca2-016b-886d-1c95"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Death Company" hidden="false" id="b151-ce24-1095-2092">
@@ -938,6 +941,629 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Librarian Dreadnought" hidden="false" id="cb5e-7a1d-21b1-8d63">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="175"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psychic Discipline" id="54cc-f6b8-7aab-9df3" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e46f-e4d4-7008-877d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Pyromancy" hidden="false" id="73c8-b139-0a9a-7fc4" collective="false" targetId="c73a-8c52-4780-71e1" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d027-baef-0306-6288" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Divination" hidden="false" id="52a6-e24d-2686-3223" collective="false" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8327-8976-4393-4681" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Thaumaturgy" hidden="false" id="e547-c1fe-6917-461b" collective="false" targetId="f7ab-1fb2-91b0-028d" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108b-ca76-1120-f621" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telekinesis" hidden="false" id="9b8e-3717-d934-1d41" collective="false" targetId="2599-31ff-74a5-70ec" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84f-6cbf-0837-2108" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telepathy" hidden="false" id="3db8-c8f8-43cb-96c1" collective="false" targetId="b751-a605-75e8-dd6f" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae6-ecae-883d-a3bc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Biomancy" hidden="false" id="05ff-cae1-6623-acb8" collective="false" targetId="861c-3744-c4ff-ef6c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce6-1cc2-c5b5-d321" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="496d-6e1b-7bce-ac57" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="75ed-0229-d914-3dcb" type="selectionEntry" targetId="8516-4877-b178-3eb8"/>
+            <entryLink import="true" name="Astartes Drop Pod" hidden="false" id="983b-c435-c59e-9a74" type="selectionEntry" targetId="d83f-a808-b5e9-0069"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5133-4a07-082e-c36d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Librarian Dreadnought" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="840e-aafa-a17c-6cd2">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Dreadnought (Character, Heavy, Psyker)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">6</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">6</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">7</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="93ad-c469-87d0-c158">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="cb5e-7a1d-21b1-8d63" childId="6472-c32d-947c-5220" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="2" field="selections" scope="cb5e-7a1d-21b1-8d63" childId="6e37-a3dd-3c59-d3f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="cb5e-7a1d-21b1-8d63" childId="6472-c32d-947c-5220" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="cb5e-7a1d-21b1-8d63" childId="6e37-a3dd-3c59-d3f5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dual fists, raise attack</comment>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Dreadnought" hidden="false" id="04f7-5062-0901-1117" targetId="528c-8d49-6bd6-8b22" primary="false"/>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="4193-0afe-9342-2eb7" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="cd1f-2d90-2cc8-129b" primary="true" name="HQ:"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="4c27-28d8-037a-930d" primary="false" name="Heavy Sub-type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="436a-556b-0285-d08d" type="selectionEntry" targetId="a2c7-5747-8608-781e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1f9-d4fb-b567-40eb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ec1-ed4c-77ce-e46c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="797a-14c3-7377-4a37" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Searchlights" hidden="false" id="bd9e-f313-eb02-32d3" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be66-fde4-01c3-4395" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03b7-c809-7e74-f6a1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="04f5-8ff7-d9fe-03f3" type="selectionEntry" targetId="0873-34dd-e52d-d33c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfb5-1036-d880-c298" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d5d-15b0-8a7b-0ef0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Psychic Hood" hidden="false" id="b112-f88f-198a-c59d" type="selectionEntry" targetId="4df2-d42b-504d-3ec5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c59-0d59-5d80-427b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9617-ab94-44b2-82cf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gravis Power Fist w/ Built in Storm Bolter" hidden="false" id="692e-5a9f-e9b0-47dc" type="selectionEntry" targetId="6e37-a3dd-3c59-d3f5">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Built in Weapon:" id="d382-fea1-c755-ff13" hidden="false" defaultSelectionEntryId="10fe-aed7-0a67-40da">
+              <entryLinks>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="10fe-aed7-0a67-40da" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="120f-6131-60a5-67d6" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="f0b6-c2e4-fb29-da5f" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e1b-3795-df75-5050" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b8a-e2e4-462c-d5dd" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb52-fd57-23a8-5f93" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0a6-cf03-32f9-e9f7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c872-1224-dee2-ed08" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Furioso Force Halberd" hidden="false" id="4814-d07e-0ba5-9aec">
+          <profiles>
+            <profile name="Furioso Force Halberd" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="5444-2265-25f1-8c88">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Force</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Force" id="1629-9ac1-b67a-e298" hidden="false" type="rule" targetId="4c70-53e3-b356-ec36"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e5-8d91-ede6-09ee" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2300-b4de-4158-3492" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Furioso Dreadnought" hidden="false" id="3586-f06f-bead-cd75">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="160"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dreadnought Weapons" id="d386-16e9-1d90-4291" hidden="false" defaultSelectionEntryId="6dca-d89a-6361-9ef9">
+          <entryLinks>
+            <entryLink import="true" name="Gravis Power Fist w/ Built in Storm Bolter" hidden="false" id="6dca-d89a-6361-9ef9" type="selectionEntry" targetId="6e37-a3dd-3c59-d3f5">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built in Weapon:" id="409c-87ea-ca03-db4a" hidden="false" defaultSelectionEntryId="ac9c-d2df-4e80-8f99">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="ac9c-d2df-4e80-8f99" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="9f8c-f8fe-8e43-a0b2" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="9734-16d4-8c9a-8783" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28fd-eb86-94f1-a2f8" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e461-9820-29a1-7794" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d86f-9386-b432-8751" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="d86f-9386-b432-8751">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8d6d-676b-65a7-28bb" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Cannon" hidden="false" id="bbf0-36df-ee6a-2de2">
+              <profiles>
+                <profile name="Frag Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="c98a-d97e-6ea5-7856">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">Template</characteristic>
+                    <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
+                    <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+                    <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 2, Breaching (5+), Pinning</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="b155-39d6-6cf2-2bc4" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Pinning" id="4efe-0737-1678-fa05" hidden="false" type="rule" targetId="1af5-e189-a698-3034"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad60-1d43-f707-73b5" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="ad60-1d43-f707-73b5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8d6d-676b-65a7-28bb" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="ad60-1d43-f707-73b5">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="6e37-a3dd-3c59-d3f5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pair of Blood Talons" hidden="false" id="8d6d-676b-65a7-28bb">
+              <profiles>
+                <profile name="Pair of Blood Talons" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="0732-a58c-7c8a-68fc">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                    <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+                    <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+                    <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shred, Rending (4+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rending (X)" id="5750-0204-7049-e66c" hidden="false" type="rule" targetId="2e92-b54a-1bc2-8b3e">
+                  <modifiers>
+                    <modifier type="set" value="Rending (4+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shred" id="4465-304c-abde-453d" hidden="false" type="rule" targetId="0e7a-9209-ce0d-7ed2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e480-bbdf-31b2-f41b" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built in Weapons:" id="7ece-b453-edf3-690b" hidden="false" defaultSelectionEntryId="72c2-2465-b57b-11e2">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="72c2-2465-b57b-11e2" type="selectionEntry" targetId="cde8-883c-c7bc-c472">
+                      <modifiers>
+                        <modifier type="set" value="2x Storm Bolters" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="d6fc-a17d-3618-4b91" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="2x Heavy Flamer" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="244b-1593-8152-cf25" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="2x Meltaguns" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3028-3624-7f97-ae62" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ec-bea6-1a91-ff2a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="e1f4-90dd-b8d8-f68e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8d6d-676b-65a7-28bb" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e1f4-90dd-b8d8-f68e" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e6c1-0f15-689d-102b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" id="ea54-d039-50e1-2218" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="0773-e3ad-d961-3995" type="selectionEntry" targetId="8516-4877-b178-3eb8"/>
+            <entryLink import="true" name="Astartes Drop Pod" hidden="false" id="fdf2-6559-c41f-88d8" type="selectionEntry" targetId="d83f-a808-b5e9-0069"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="979b-7d9e-6f80-c72c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Furioso Dreadnought" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="84ef-1a7d-7f90-a377">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Furioso (Heavy)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">6</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">7</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">6</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3" field="93ad-c469-87d0-c158">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3586-f06f-bead-cd75" childId="bbf0-36df-ee6a-2de2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Dreadnought" hidden="false" id="4a46-e204-f1fb-8b65" targetId="528c-8d49-6bd6-8b22" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="5905-29f7-241c-63b2" targetId="d471-a611-11c4-7f09" primary="true"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="c333-2c1b-39ed-5f1b" primary="false" name="Heavy Sub-type"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="5279-266c-fcdf-27ac" type="selectionEntry" targetId="a2c7-5747-8608-781e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4497-002e-d06a-1bc9" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e92f-4a4b-399b-ac06" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="5483-1556-e7c0-ca8f" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Searchlights" hidden="false" id="96aa-b68f-715f-f749" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8485-10e8-7161-924a" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3c7-e97a-5669-4910" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="df20-1763-296d-ea6e" type="selectionEntry" targetId="0873-34dd-e52d-d33c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa6b-0a0e-ffc7-4f1e" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="000d-25bb-938b-5b43" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8f38-4501-b813-821e" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Furious Charge (X)" id="f597-3ebc-0cdf-1a28" hidden="false" type="rule" targetId="8334-21c3-ec24-e62a">
+          <modifiers>
+            <modifier type="set" value="Furious Charge (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Company Dreadnought" hidden="false" id="aca2-016b-886d-1c95">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="165"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="24a3-8c5b-6eb0-b996" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="d471-a611-11c4-7f09" id="7302-597d-5b92-92df" primary="true" name="Elites:"/>
+        <categoryLink targetId="528c-8d49-6bd6-8b22" id="0e74-7b17-b167-8eaf" primary="false" name="Dreadnought"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6e94-3425-2c55-2212" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="755f-014c-958a-430c" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="757d-cca8-d6fe-c16f" type="selectionEntry" targetId="a2c7-5747-8608-781e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7af-89ed-a813-7d54" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c78-bf5e-3336-29fd" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlights" hidden="false" id="9a49-ebab-194b-27e4" type="selectionEntry" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd9b-13bf-5bb8-5bcd" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2e3-25de-606a-8c95" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="835f-0ccf-ec57-d2b9" type="selectionEntry" targetId="0873-34dd-e52d-d33c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e721-58a9-7bed-c41b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b958-eebd-f19c-5676" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Dedicated Transport" id="d3f5-3487-89f6-3c51" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="7f76-5a4c-95fc-a543" type="selectionEntry" targetId="8516-4877-b178-3eb8"/>
+            <entryLink import="true" name="Astartes Drop Pod" hidden="false" id="cb2c-4b51-382e-e8bf" type="selectionEntry" targetId="d83f-a808-b5e9-0069"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc95-c6f3-9ae6-627e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dreadnought Weapons" id="7d54-fd61-5654-83bc" hidden="false" defaultSelectionEntryId="6dca-d89a-6361-9ef9">
+          <entryLinks>
+            <entryLink import="true" name="Gravis Power Fist w/ Built in Storm Bolter" hidden="false" id="dee9-4ca0-ed89-3615" type="selectionEntry" targetId="6e37-a3dd-3c59-d3f5">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built in Weapon:" id="66ba-ea6c-f178-3655" hidden="false" defaultSelectionEntryId="24a2-0363-cc25-6c1f">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="24a2-0363-cc25-6c1f" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="016e-6346-8008-ee01" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="a7ae-5f3c-75bd-ae8d" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d314-399f-c23a-0d1b" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bb3-0259-bf98-c464" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d07a-36ca-204c-6316" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="d07a-36ca-204c-6316">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b51-a42b-45d4-6343" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Cannon" hidden="false" id="c767-5492-836e-47eb">
+              <profiles>
+                <profile name="Frag Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="6e3f-2dfe-0ae2-e804">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">Template</characteristic>
+                    <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
+                    <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+                    <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 2, Breaching (5+), Pinning</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="2a7e-4ad5-48db-dc58" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Pinning" id="a229-2e7e-ca43-991e" hidden="false" type="rule" targetId="1af5-e189-a698-3034"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d207-c7f1-6fe7-7f80" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="d207-c7f1-6fe7-7f80">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b51-a42b-45d4-6343" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="d207-c7f1-6fe7-7f80">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="6e37-a3dd-3c59-d3f5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pair of Blood Talons" hidden="false" id="0b51-a42b-45d4-6343">
+              <profiles>
+                <profile name="Pair of Blood Talons" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="7184-3c41-c10c-2600">
+                  <characteristics>
+                    <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                    <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+                    <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+                    <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shred, Rending (4+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Rending (X)" id="3901-a276-1503-65e8" hidden="false" type="rule" targetId="2e92-b54a-1bc2-8b3e">
+                  <modifiers>
+                    <modifier type="set" value="Rending (4+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shred" id="db39-7280-f84c-0efd" hidden="false" type="rule" targetId="0e7a-9209-ce0d-7ed2"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fecd-f2a7-a149-b2d8" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built in Weapons:" id="75bc-b10f-6b50-7e17" hidden="false" defaultSelectionEntryId="4371-2b9a-58d9-68e9">
+                  <entryLinks>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" id="4371-2b9a-58d9-68e9" type="selectionEntry" targetId="cde8-883c-c7bc-c472">
+                      <modifiers>
+                        <modifier type="set" value="2x Storm Bolters" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="37a7-2967-81d2-6500" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="2x Heavy Flamer" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="160e-5cdb-16c0-2927" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="2x Meltaguns" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62a8-2a71-8d84-c75f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6b9-ec70-f717-c14d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="9467-0086-41d1-688b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0b51-a42b-45d4-6343" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9467-0086-41d1-688b" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ebf5-93af-c681-ab02" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Death Company Dreadnought" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="6832-3e60-5705-1f50">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Death Company (Heavy)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">6</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">6</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">5</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="3" field="93ad-c469-87d0-c158">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="aca2-016b-886d-1c95" childId="c767-5492-836e-47eb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Furious Charge (X)" id="263e-c3e0-ce2a-70dd" hidden="false" type="rule" targetId="8334-21c3-ec24-e62a">
+          <modifiers>
+            <modifier type="set" value="Furious Charge (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rage (X)" id="ca68-f092-dec9-c1f1" hidden="false" type="rule" targetId="1f81-9208-2de0-2c78">
+          <modifiers>
+            <modifier type="set" value="Rage (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pathfinder" id="a5b1-aa45-0a02-9f54" hidden="false" type="rule" targetId="77ba-ee29-687e-9993"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
