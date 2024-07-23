@@ -22,7 +22,7 @@
     <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="1694-721c-7859-e18c" type="selectionEntry" targetId="a189-dab7-3f3e-534e"/>
     <entryLink import="true" name="Devastator Squad" hidden="false" id="5714-3861-43f0-79dc" type="selectionEntry" targetId="cc50-f04a-0cd6-e966"/>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="aab4-62fe-df32-d296" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="eda7-d0cd-6237-34f8" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="eda7-d0cd-6237-34f8" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="87c0-e54a-ec8d-d861" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="7727-a223-60e1-a460" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="1913-efaa-6501-b9ef" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -60,7 +60,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="7d40-75c4-6f61-f95b" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="2504-2354-fc29-0c7a" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="df91-3489-c713-3fab" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="31e9-361d-4475-8b80" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="31e9-361d-4475-8b80" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="9fb3-555e-cb9b-58f6" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Thunderfire Cannon Battery" hidden="false" id="da67-152e-93c4-4689" type="selectionEntry" targetId="325b-7a48-4da1-c934"/>
     <entryLink import="true" name="Thunderhawk Heavy Gunship" hidden="false" id="7151-365d-0740-be72" type="selectionEntry" targetId="c746-d882-2f6a-d74c"/>
@@ -747,7 +747,7 @@
               </modifiers>
             </infoLink>
             <infoLink name="Specialist Weapon" id="2419-99ce-e6e2-92ae" hidden="false" type="rule" targetId="3f63-8915-cff1-87f8"/>
-            <infoLink name="Master-crafted" id="d639-a5e5-1217-b0b2" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Master-Crafted" id="d639-a5e5-1217-b0b2" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
             <infoLink name="Unwieldy" id="4593-87a4-a1a8-a1ab" hidden="false" type="rule" targetId="7efd-92ce-72e1-132e"/>
           </infoLinks>
           <constraints>

@@ -206,28 +206,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     <categoryEntry id="11f2-472f-c1d1-9ae9" name="Astartes" hidden="false"/>
     <categoryEntry id="4f07-3d45-4f28-a0c6" name="Independent Character" hidden="false">
       <rules>
-        <rule id="c57d-4820-458a-7ab5" name="Independent Character" publicationId="2d25-7683-189b-ddd5" page="241" hidden="false">
-          <description>Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multicharacter unit.
-
-Joining and Leaving a Unit
-An Independent Character can begin the game already with a unit, either by being deployed in unit coherency with it or, if the unit is in Reserve, by you informing your opponent which unit it has joined.
-
-In order to join a unit, an Independent Character simply has to move so that they are within unit coherency distance of a friendly unit at the end of their Movement phase. If the Independent Character is within unit coherency of more than one unit at the end of its Movement phase, the player must declare which unit it is joining. If an Independent Character does not intend to, or cannot, join a unit, it must, where possible, remain outside of unit coherency with that unit at the end of the Movement phase. This is to make clear whether they have joined a unit or not. Note that after an Independent Character joins a unit, that unit can Move no further that Movement phase.
-An Independent Character can leave a unit during the Movement phase by moving out of unit coherency with it. They cannot join or leave during any other Phase – once shots are fired or Charges are declared.
-
-An Independent Character cannot leave a unit while either they or the unit are in Reserve, locked in combat, Falling Back or have been Pinned. They cannot join a unit that is in Reserve, locked in combat or Falling Back. If an Independent Character joins a unit, and all other models in that unit are killed, they again become a unit of one model at the start of the following Phase. While an Independent Character is part of a unit, they count as part of the unit for all rules purposes, though they still follow the rules for Characters.
-
-Special Rules
-When an Independent Character joins a unit, it might have different special rules from those of the unit. Unless specified in the rule itself (as in the Stubborn special rule), the unit’s special rules are not conferred upon the Independent Character, and the Independent Character’s special rules are not conferred upon the unit. Special rules that are conferred to the unit only apply for as long as the Independent Character is with them.
-
-Independent Characters and Infiltrate
-An Independent Character without the Infiltrate special rule cannot join a unit of Infiltrators during deployment, and vice versa.
-
-Independent Characters and Ongoing Effects
-Sometimes, a unit that an Independent Character has joined will be the target of a beneficial or harmful effect, such as those bestowed by the Blind special rule, for example. If the Independent Character leaves the unit, both the Independent Character and the unit continue to be affected by the effect, so you’ll need to mark the Independent Character accordingly.
-
-Conversely, if an Independent Character joins a unit after that unit has been the target of an ongoing effect (or joins a unit after they themselves have been the target of an ongoing effect), benefits and penalties from that effect are not shared.</description>
-        </rule>
+        <rule id="c57d-4820-458a-7ab5" name="Independent Character" publicationId="2d25-7683-189b-ddd5" page="241" hidden="false"/>
       </rules>
     </categoryEntry>
     <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type" hidden="false">
@@ -277,6 +256,14 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Sumatris" id="b19e-e1d6-94f9-5cd2" hidden="false"/>
     <categoryEntry name="Valthex" id="f7ec-2a71-975c-d1a1" hidden="false"/>
     <categoryEntry name="Commodus" id="33fa-5916-17f1-68a1" hidden="false"/>
+    <categoryEntry name="Fast Vehicle" id="8bb8-6a10-86cb-aa21" hidden="false">
+      <rules>
+        <rule name="Fast Vehicle" id="54cb-520a-fb39-b5ea" hidden="false">
+          <description>Fast Vehicles always count as having moved at Combat speed regardless of distance moved, unless they go Flat Out.
+Flat Out: May move twice the vehicles movement distance but at the end of movement roll a D6. On 1, the vehicle takes a Glancing Hit and the effects of a Crew Stunned on the damage table. May only fire Snap Shots if moving Flat Out.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -938,7 +925,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <profiles>
         <profile id="d662-9eef-4bc5-6925" name="Frag Grenades" publicationId="1ea9-215e-21c0-c2e9" page="143" hidden="false" typeId="19f7-de55-815b-3358" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A unit with at least one model carrying frag grenades attacks at its normal Initiative Step during an Assault after charging through Difficult or Dangerous Terrain. It still suffers Charge roll penalties from such terrain.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -953,7 +940,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <profiles>
         <profile id="7c60-dea9-cae9-79e1" name="Krak Grenades" publicationId="0a24-8d5a-55ca-b028" page="223" hidden="false" typeId="19f7-de55-815b-3358" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with krak grenades can inflict a Str 6, AP 3 Hit on a Building, Fortification, Vehicle, Dreadnought, or Automata at Initiative Step 1 instead of attacking normally. It cannot use other attacks or special rules that phase but can participate in Sweeping Advances.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1832,8 +1819,7 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
       <profiles>
         <profile id="81e3-4429-e33d-9b3d" name="Iron Halo" hidden="false" typeId="19f7-de55-815b-3358" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with an iron halo gains a 4+ Invulnerable Save.
-Invulnerable Saves granted by a refractor field or iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with an iron halo gains a 4+ Invulnerable Save. This save does not stack with other Invulnerable Saves but can benefit from rules that increase existing saves. If a model has another Invulnerable Save, the controlling player must choose which one to use.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2820,7 +2806,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       <profiles>
         <profile id="bf8d-44e6-7247-b1a2" name="Company Standard" hidden="false" typeId="19f7-de55-815b-3358" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">All models in a unit that includes a Company standard gain the Line Sub-type as long as they remain part of that unit. In addition to this they gain +1 to combat resolution. If any reason a combat is drawn, the unit with the Company Standard instead wins the combat by 1. If both units have a Company Standard, there is no bonuses. These benefits are lost immediately if the model with the Company Standard is removed as a casualty, in addition the enemy gains 1 Victory Point.</characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">All models in a unit with a Company Standard gain the Line Sub-type and +1 to combat resolution. If a combat is drawn, they win by 1. If both units have a Company Standard, there is no bonus. These benefits are lost if the model with the Company Standard is removed, and the enemy gains 1 Victory Point.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4847,7 +4833,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
       <rules>
         <rule name="Headhunters" id="5320-2e80-d245-8e59" hidden="false">
           <description>All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge - roll saves against these attacks separately. 
-The character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible. </description>
+The character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible.</description>
         </rule>
         <rule name="Bitter Mettle" id="9804-34db-33f0-3f79" hidden="false">
           <description>All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc. 
@@ -4872,6 +4858,16 @@ The character with the highest WS (if two or more characters are tied, then the 
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Lamenters" hidden="false" id="12c6-07ed-0a19-fb87">
+      <rules>
+        <rule name="Encarmine Fury" id="f71b-f234-78cf-20ac" hidden="false">
+          <description>All models with The Lamenters chapter tactic require one lower result to wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful charge against an enemy unit even if that Charge is counted as Disordered.</description>
+        </rule>
+        <rule name="Maelstrom Warder" id="375f-07bb-50ad-8b57" hidden="false">
+          <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5256,13 +5252,11 @@ In either case, this special rule has no effect against Vehicles or Buildings.</
 A model that has made a Disordered Charge that turn receives no benefit from Furious Charge (see page 182).</description>
     </rule>
     <rule id="c6b7-5471-5caf-2f83" name="Gets Hot" publicationId="0a24-8d5a-55ca-b028" page="239" hidden="false">
-      <description>When firing a weapon that Gets Hot. roll To Hit as normal. For each unmodified To Hit roll of 1, the firing model immediately suffers a single Wound with an AP value equal to that of the weapon that was used to attack (Armour Saves, Invulnerable Saves and Feel No Pain rolls can be taken, but not Cover Saves or Shrouded rolls) - this Wound cannot be allocated to any other model in the unit. A Vehicle instead rolls a D6 for each roll of a 1 To Hit. If this roll results in a 1 or 2, the Vehicle suffers a Glancing Hit.
-
-Gets Hot and Weapons that do not Roll To Hit 
-Weapons that do not roll To Hit (such as Blast weapons) must roll a D6 for each shot immediately before firing. On a 2+, the shot is resolved as normal. For each roll of a 1, the weapon Gets Hot; that shot is not fired and the firing model immediately suffers a single Wound with an AP value equal to that of the weapon that was used to attack (Armour Saves, Invulnerable Saves and Feel No Pain rolls can be taken, but not Cover Saves or Shrouded rolls) – this Wound cannot be allocated to any other model in the unit. A Vehicle instead rolls a D6 for each roll of a 1 to Hit. If this roll results in a 1 or 2, the Vehicle suffers a Glancing Hit.
-
-Gets Hot and Re-rolls
-If a model has the ability to re-roll its rolls To Hit (including because of BS 6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
+      <description>When firing a weapon that Gets Hot, roll To Hit as normal. For each unmodified roll of 1, the model suffers a Wound with the weapon&apos;s AP (no Cover or Shrouded saves). Vehicles roll a D6 for each 1 To Hit; on a 1 or 2, they suffer a Glancing Hit.
+Weapons that do not Roll To Hit:
+Roll a D6 for each shot before firing. On a 2+, resolve as normal. On a 1, the weapon Gets Hot, the shot is not fired, and the model suffers a Wound with the weapon&apos;s AP (no Cover or Shrouded saves). Vehicles roll a D6 for each 1; on a 1 or 2, they suffer a Glancing Hit.
+Re-rolls:
+If a model can re-roll To Hit rolls (e.g., BS 6+ or Twin-linked), a Wound is only suffered if the re-roll is a 1. Re-rolls also apply to Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
     <rule id="da70-f966-7a93-4466" name="Graviton Collapse" publicationId="0a24-8d5a-55ca-b028" page="119" hidden="false">
       <description>Instead of rolling To Wound normally with a weapon with this special rule, the controlling player of any model Hit by it must roll equal to or under that model’s Strength Characteristic on 2D6 or it suffers a Wound (Armour Saves and Damage Mitigation rolls may be taken as normal – except Shrouded rolls which may not be used). Against targets with an Armour Value, the attacking player rolls 4D6 for armour penetration instead.</description>
@@ -5271,7 +5265,7 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS 
       <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fe56-9123-6361-aa6c" name="Grenades" publicationId="0a24-8d5a-55ca-b028" page="142" hidden="false">
-      <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
+      <description>Grenades are Wargear with specific effects, not weapons, and do not count as Shooting Attacks. Their effects are covered by these rules. Grenade launchers, however, are Shooting Weapons and follow standard Shooting rules.</description>
     </rule>
     <rule id="0839-5239-384e-db04" name="Guided Fire" publicationId="0a24-8d5a-55ca-b028" page="239" hidden="false">
       <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.</description>
@@ -5529,7 +5523,7 @@ For example, a model with the Rending (5+) special rule that rolls To Wound agai
       <description>In any of the controlling player’s Shooting phases, instead of making any Shooting Attacks with a model with this special rule, the controlling player may instead roll a D6. On the roll of a ‘4’ or more, a damage result of Immobilised that has been inflicted on this model may be removed but no Hull Points are returned.</description>
     </rule>
     <rule id="44f8-daf1-b5f8-9f19" name="Retinue" publicationId="1ea9-215e-21c0-c2e9" page="124" hidden="false">
-      <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Legion special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Legion special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Legion special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader.</description>
+      <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad, or Legion Tartaros Command Squad can only be taken in a Detachment with at least one model with the Master of the Legion rule. This unit becomes a Retinue Squad, and the model with Master of the Legion is the Leader. The Retinue Squad doesn&apos;t use a Force Organisation slot and is part of the Leader&apos;s unit. They must deploy together, and the Leader cannot leave the Retinue Squad. These squads cannot be selected without a Leader.</description>
     </rule>
     <rule id="54ba-94cd-1756-e2eb" name="Rocket Barrage" publicationId="1ea9-215e-21c0-c2e9" page="124" hidden="false">
       <description>If a model that has a weapon with this special rule does not move in the Movement phase of a given turn, that weapon may be given the Rending (4+) and Pinning special rules until the start of the controlling player’s next turn.</description>

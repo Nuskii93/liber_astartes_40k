@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1e0f-6909-314c-1f70" name="The Raptors - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1e0f-6909-314c-1f70" name="The Raptors - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="e115-b0e9-f9fc-7d09" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="e4da-5f18-8c9c-4ff9" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="3d23-1079-e10f-6abd" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="3d23-1079-e10f-6abd" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="c458-ab16-cb82-4cae" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="439a-ed69-ee79-b0e8" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="92e8-8277-21e8-3f69" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="ba30-5727-b0c1-ee8f" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1143-eacb-d506-bf06" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="fa69-908a-d8c0-c70e" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="c283-5bad-d523-2a8e" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="c283-5bad-d523-2a8e" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="5ce2-5ac8-85eb-8fe8" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="3a07-083b-7524-de5e" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -367,10 +367,10 @@
       <rules>
         <rule name="Infilitrate, Isolate, And Destroy" id="7bb1-84ec-449a-45fd" hidden="false">
           <description>If Lias lssodon begins the game in reserve, when he enters play the controlling player may select an enemy unit, non-flyer vehicle, or fortification that is on the battlefield. 
-The unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a single automatic penetrating hit at AP 1. Cover or Shrouded saves may not be taken against this attack. </description>
+The unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a single automatic penetrating hit at AP 1. Cover or Shrouded saves may not be taken against this attack.</description>
         </rule>
         <rule name="Cunning Strategist" id="3164-4bdb-c866-aad0" hidden="false">
-          <description>Enemy Reserve rolls suffer a -1 penalty while Lias Issodon Is present In the army. </description>
+          <description>Enemy Reserve rolls suffer a -1 penalty while Lias Issodon Is present In the army.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -420,7 +420,7 @@ The unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a sin
                 <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">72&quot;</characteristic>
                 <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">7</characteristic>
                 <characteristic name="AP" typeId="d24d-64be-92be-d248">1</characteristic>
-                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Armourbane (Ranged), Rending (4+) </characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Armourbane (Ranged), Rending (4+)</characteristic>
               </characteristics>
             </profile>
             <profile name="Execution Rounds" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="f3d5-598d-5e2c-66e6">
@@ -474,11 +474,14 @@ The unit suffers either D6 Str 6 AP 2 hits if it has a Toughness value, or a sin
           </infoLinks>
           <rules>
             <rule name="Malice" id="6cf3-40dd-e5b4-3d54" hidden="false">
-              <description>When firing Malice, the controlling player can elect to fire with different types of ammunition. This must be declared prior to any dice rolls being made. </description>
+              <description>When firing Malice, the controlling player can elect to fire with different types of ammunition. This must be declared prior to any dice rolls being made.</description>
             </rule>
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d197-26e4-cbf0-0704" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

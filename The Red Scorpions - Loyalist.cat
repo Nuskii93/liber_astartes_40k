@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="36ed-d0e6-c7d0-cfbc" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="3f1b-101d-7083-e994" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="3f1b-101d-7083-e994" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="c54a-d864-6023-8d49" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="3737-358f-4a69-961c" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="af92-424a-888e-c807" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="1f64-64d1-0507-6605" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="9d53-89c9-2175-7fac" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="fa03-4075-1e23-71f1" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="27f1-4461-63f1-a980" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="27f1-4461-63f1-a980" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="a1a2-bf76-6b93-19da" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="dc85-db98-36f2-50d4" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -618,6 +618,9 @@ In Addition to this while Culln is alive, the controlling player may make an add
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="f5bc-6289-aa67-7286" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="59d1-ddb6-be4d-0f59" primary="false" name="Character"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0d85-5738-2d19-81bc" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

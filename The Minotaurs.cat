@@ -119,7 +119,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="9771-3638-597c-42bb" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="db47-d923-d74f-bd7e" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="db47-d923-d74f-bd7e" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="6611-706c-1ebd-3277" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="06d3-8317-73c3-080b" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="2fd7-dd6a-fae0-312e" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -227,7 +227,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="ca08-5574-6725-183c" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1199-63f6-7b31-6f5f" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="69e0-0066-55aa-a6ba" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="9112-41b5-00de-b5c5" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="9112-41b5-00de-b5c5" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="0d0a-7c31-4db5-b251" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="abbc-1318-b42e-1c06" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -1076,6 +1076,9 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d455-9905-2c0c-f3c9" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaplain Ivanus Enkomi" hidden="false" id="2dcd-86a3-0df6-f402">
       <costs>
@@ -1226,6 +1229,9 @@
         <categoryLink targetId="6513-093f-7312-6d09" id="288e-f8d8-4fb7-ba7c" primary="false" name="Character"/>
         <categoryLink targetId="4580-2b27-ee69-e8f5" id="937b-3b40-c937-f87f" primary="false" name="Enkomi"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="41d6-606f-3229-3b15" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

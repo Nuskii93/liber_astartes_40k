@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6a26-69c0-2d7f-f803" name="The Fire Angels - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6a26-69c0-2d7f-f803" name="The Fire Angels - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="a517-fd46-99b5-d038" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="00dd-bf68-5f9e-d246" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="3ac7-e72f-6302-0823" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="3ac7-e72f-6302-0823" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="3006-7660-ef0a-5de2" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="2af5-242b-71fa-12d1" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="a3cc-892b-4a37-cc9e" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="6b5c-be15-932a-b05f" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="bc01-3d95-cfc3-95fe" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="1b19-66a9-ebda-db37" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="440f-24a2-4b4d-af62" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="440f-24a2-4b4d-af62" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="6bda-6411-0910-df71" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="2644-7271-6e21-78b9" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -1085,6 +1085,9 @@ Extra Armour: A model with the Extra Armour Wargear counts a Crew Stunned result
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="080d-1197-cd9f-e785" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="ed73-baf7-806f-76d2" primary="false" name="Character"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9009-583f-263d-c63f" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

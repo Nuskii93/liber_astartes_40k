@@ -359,7 +359,7 @@
           <profiles>
             <profile name="Aenigmata Ferrum" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="81d4-6167-b703-c8a4">
               <characteristics>
-                <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any friendly Space Marines model with the Chapter Tactics (Executioners) within 12&apos; of ThuIsa Kane can re-roll 1 s when rolling to wound on the tum in which they charge into an assault. </characteristic>
+                <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any friendly Space Marines model with the Chapter Tactics (Executioners) within 12&apos; of ThuIsa Kane can re-roll 1 s when rolling to wound on the tum in which they charge into an assault.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -433,7 +433,7 @@
               <profiles>
                 <profile name="Wrath of Old Night" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="9f10-fdb2-68ff-1c4f">
                   <characteristics>
-                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Thulsa Kane is your army&apos;s warlord, during any Assault phase in which Thulsa Kane is fighting a challenge, all friendly units with Chapter Tactics (Executioners) gain a +1 bonus to their score for working out the victor in an assault and +1 to any Sweeping Advance Rolls. While Thulsa Kane is alive, the army may make an additional reaction in the movement phase. </characteristic>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Thulsa Kane is your army&apos;s warlord, during any Assault phase in which Thulsa Kane is fighting a challenge, all friendly units with Chapter Tactics (Executioners) gain a +1 bonus to their score for working out the victor in an assault and +1 to any Sweeping Advance Rolls. While Thulsa Kane is alive, the army may make an additional reaction in the movement phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -454,7 +454,7 @@
       </selectionEntryGroups>
       <rules>
         <rule name="Wrath of Old Night" id="946b-4bed-190f-b851" hidden="false">
-          <description>Both Thulsa Kane and any unit with the Chapter Tactics (Executioners) special rule that he joins gain the Fearless rule as well as Hatred (Everything!). ln addition to this, any unit with Chapter Tactics (Executioners) within 6&apos; of Thulsa Kane gain the Stubborn special rule. </description>
+          <description>Both Thulsa Kane and any unit with the Chapter Tactics (Executioners) special rule that he joins gain the Fearless rule as well as Hatred (Everything!). ln addition to this, any unit with Chapter Tactics (Executioners) within 6&apos; of Thulsa Kane gain the Stubborn special rule.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -464,6 +464,9 @@
         <categoryLink targetId="6513-093f-7312-6d09" id="6c06-a64d-064a-e8c9" primary="false" name="Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9497-3620-a345-d1c3" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dcb9-cd7f-af95-77f2" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="4de8-133b-7743-3033" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="483a-29a4-cd07-226e" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="483a-29a4-cd07-226e" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="d626-0e1d-f0e0-4034" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="b5eb-4a58-3445-898f" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="7ce1-7ee7-df7d-219f" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="e104-54df-d175-3467" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="6129-3b58-41dd-7add" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="a7db-5314-3000-f7d7" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="4ff9-1c63-d1e6-4707" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="4ff9-1c63-d1e6-4707" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="a7e1-d105-5734-6576" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="e5a8-a0bf-e58e-bf7e" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -300,7 +300,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Vaylund Cal" hidden="false" id="b3c2-c1b3-1270-edab" type="selectionEntry" targetId="c609-ad52-e274-ecfc"/>
+    <entryLink import="true" name="Iron Thane Vaylund Cal" hidden="false" id="b3c2-c1b3-1270-edab" type="selectionEntry" targetId="c609-ad52-e274-ecfc"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Gorgon Squad" hidden="false" id="03e5-2aed-2205-4ca3">
@@ -368,7 +368,7 @@
             </entryLink>
             <entryLink import="true" name="Indomitus Terminator Armour" hidden="false" id="0fd5-b076-7b9b-1a96" collective="false" targetId="d357-1419-fc5c-7ecf" type="selectionEntry">
               <profiles>
-                <profile name="Gorgon Indomitus " typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="0c96-7690-cebc-228e">
+                <profile name="Gorgon Indomitus" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="0c96-7690-cebc-228e">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Heavy)</characteristic>
                     <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
@@ -1006,6 +1006,9 @@
           <description>Vaylund Cal counts as having the Chapter Master rule for all intents and purposes</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="04a5-6a9a-f564-11a9" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

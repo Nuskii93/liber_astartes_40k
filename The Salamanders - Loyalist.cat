@@ -30,7 +30,7 @@
     </entryLink>
     <entryLink import="true" name="Boarding Squad" hidden="false" id="914a-e6dc-525d-ec7b" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
     <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="d0bb-c096-e6d4-7a8f" type="selectionEntry" targetId="cd69-4c31-b6c2-4481"/>
-    <entryLink import="true" name="Salamanders" hidden="false" id="af82-94b5-e12f-7d42" type="selectionEntry" targetId="a545-c6d2-36bd-9d03">
+    <entryLink import="true" name="The Salamanders" hidden="false" id="af82-94b5-e12f-7d42" type="selectionEntry" targetId="a545-c6d2-36bd-9d03">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9503-843f-47d3-7492" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5377-9559-6155-b33c" includeChildSelections="false"/>
@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="3f0b-9dae-5b2f-ba5f" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="3efe-94ad-7f06-68d8" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="3efe-94ad-7f06-68d8" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="e389-4422-c012-d56b" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="179b-5e05-7239-2fd2" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="d63e-840d-58b7-509c" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="87c1-99a3-03f6-f167" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="2520-773f-1158-7a50" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="9a91-be75-7ebe-9df2" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="e0d1-4e73-1d3d-17e8" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="e0d1-4e73-1d3d-17e8" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="b619-ea8f-a50a-9826" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="7bf2-c19f-37e1-2bbe" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -498,14 +498,14 @@
               <profiles>
                 <profile name="The Chapters Legacy" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="f806-8058-f4fb-575d">
                   <characteristics>
-                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Master Harath Shen is your armies warlord then he and any unit he joins gets the Here and No Further! Special Rule. </characteristic>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Master Harath Shen is your armies warlord then he and any unit he joins gets the Here and No Further! Special Rule.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <rules>
                 <rule name="Here and No Further!" id="8a02-c8b1-47f4-4352" hidden="false">
                   <description>The moment that the controlling player receives a victory point due to the Sacred Trust special rule, both Harath Shen and his 
-unit gain the Fearless and Counter Attack (2) Special Rules, In addition they also gain the Line unit subtype. In addition, while Harath Shen is alive, the controlling player may make an additional reaction in the Assault Phase. </description>
+unit gain the Fearless and Counter Attack (2) Special Rules, In addition they also gain the Line unit subtype. In addition, while Harath Shen is alive, the controlling player may make an additional reaction in the Assault Phase.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -547,14 +547,14 @@ unit gain the Fearless and Counter Attack (2) Special Rules, In addition they al
       </infoLinks>
       <rules>
         <rule name="Master of Chirurgery" id="7345-608e-b3ec-2ef0" hidden="false">
-          <description>Such is a Master Apothecary&apos;s skills that any failed Feel No Pain rolls taken as a result of their Narthecium rule that roll a &apos;1&apos; may be re-rolled. </description>
+          <description>Such is a Master Apothecary&apos;s skills that any failed Feel No Pain rolls taken as a result of their Narthecium rule that roll a &apos;1&apos; may be re-rolled.</description>
         </rule>
         <rule name="Pride of the Chapter" id="e489-9a64-70e3-4c0e" hidden="false">
           <description>Master Harath Shen and his unit may re-roll any failed charges. In addition the unit he is a part of adds +1 to its score in order to
 determine the result of an assault.</description>
         </rule>
         <rule name="Sacred Trust" id="c136-09c2-af07-2db1" hidden="false">
-          <description>In missions where victory points are scored for destroying units, if Master Harath Shen is within 6&quot; &apos;friendly of a friendly Space Marine Infantry or Jump Infantry unit which is wiped out by the enemy, roll a D6. On a 5+, the player whose unit was destroyed also gains a Victory point, as well as the enemy. </description>
+          <description>In missions where victory points are scored for destroying units, if Master Harath Shen is within 6&quot; &apos;friendly of a friendly Space Marine Infantry or Jump Infantry unit which is wiped out by the enemy, roll a D6. On a 5+, the player whose unit was destroyed also gains a Victory point, as well as the enemy.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -683,6 +683,9 @@ determine the result of an assault.</description>
         <categoryLink targetId="a800-52d7-1961-6e29" id="e4eb-a227-f7e3-0859" primary="true" name="HQ:"/>
         <categoryLink targetId="0124-9b28-2fe3-912c" id="3cd7-1e83-cd86-54dd" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d64c-da54-51d8-6fb8" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
