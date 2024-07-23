@@ -291,6 +291,18 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="a0b4-0061-b140-7cf0" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb89-a01b-2e44-80f6"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="2.5) Bayonet" id="fca1-644e-c7dd-b3b3" hidden="false" collective="false" import="true">
@@ -1390,6 +1402,19 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="e105-9aed-96b0-2109" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a81a-cd84-94a5-3938" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f2-56d0-f779-3f2c"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f622-27ca-4b20-e356" name="3.5) Bayonet" hidden="false" collective="false" import="true">
@@ -2388,6 +2413,18 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="ca9e-78ff-8f0b-8f25" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9daa-bbd5-b902-af70"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2608,6 +2645,18 @@
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee4-63cc-b6a7-d303" type="max"/>
                       </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="6107-d22d-8164-5045" type="selectionEntry" targetId="7133-d858-85e2-46df">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce56-20f4-2b81-161b"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -3262,6 +3311,18 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e2-ff1f-5226-f16c" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="63f6-07e9-344c-5ac1" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef09-e7fa-ecd2-db14"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="4ce3-d654-6348-caed" name="2)  Must Also Select One:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ace3-4328-6a5c-2437">
@@ -3609,6 +3670,18 @@
                   </conditions>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chainaxe" hidden="false" id="4f16-82c7-24e2-e9c6" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d6-61a9-4706-de4c"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -5598,6 +5671,16 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="0" field="7992-13c8-e552-57c1">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68db-582a-86a4-f206"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="a1d5-bcc9-bdbd-e82d" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="a765-b19a-2f01-721d" type="selectionEntry">
                   <costs>
@@ -6189,6 +6272,42 @@
                 <entryLink import="true" name="Hellfire Rounds" hidden="false" id="34c8-b7de-aa35-6676" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1) Executioners - Aetheling" id="9efd-158f-4591-dbbb" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Aetheling " hidden="false" id="6658-10d4-12a1-9ef1">
+                  <rules>
+                    <rule name="Aetheling " id="f58f-4693-358b-0b74" hidden="false">
+                      <description>An Aetheling gains the Counter-Attack (1) special rule and confers the Furious Charge Special Rule on a squad he joins. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Furious Charge (X)" id="255d-cb09-f019-0fcc" hidden="false" type="rule" targetId="8334-21c3-ec24-e62a">
+                      <modifiers>
+                        <modifier type="set" value="Furious Charge (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Counter-Attack (X)" id="bb4c-e593-2472-f117" hidden="false" type="rule" targetId="fbd0-13c1-e833-cb6b">
+                      <modifiers>
+                        <modifier type="set" value="Counter-Attack (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a84-d921-177d-40aa" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="b078-70e6-9c81-2451" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
@@ -6301,12 +6420,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Master of the Company" hidden="false" id="9e2c-f9a9-a40f-6080" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fda5-2ee1-ba43-a56c" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3959-5e06-67b6-20a3" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="9e2c-f9a9-a40f-6080" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29"/>
         <entryLink import="true" name="Chapter Tactics" hidden="false" id="b438-33b6-0d23-5ecc" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
       <costs>
@@ -6937,6 +7051,42 @@
                 <entryLink import="true" name="Hellfire Rounds" hidden="false" id="a9b7-3169-5539-b477" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="1) Executioners - Aetheling" id="da44-aeca-6e00-8c2a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Aetheling " hidden="false" id="0270-d23b-a34c-13be">
+                  <rules>
+                    <rule name="Aetheling " id="2d6c-c4d1-c36b-6737" hidden="false">
+                      <description>An Aetheling gains the Counter-Attack (1) special rule and confers the Furious Charge Special Rule on a squad he joins. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Furious Charge (X)" id="d8d5-1e92-ccbe-a156" hidden="false" type="rule" targetId="8334-21c3-ec24-e62a">
+                      <modifiers>
+                        <modifier type="set" value="Furious Charge (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Counter-Attack (X)" id="f12c-0b49-9382-dbe5" hidden="false" type="rule" targetId="fbd0-13c1-e833-cb6b">
+                      <modifiers>
+                        <modifier type="set" value="Counter-Attack (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb8-c09c-7524-1131" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="130"/>
@@ -7035,6 +7185,12 @@
                 <modifier type="set" field="b6e9-f8ba-2256-a63e" value="Infantry (Character, Heavy)">
                   <conditions>
                     <condition field="selections" scope="7111-dfcb-76f1-8189" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="719f-754b-b9c6-c8a5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10" field="0474-29b3-6a22-7416">
+                  <comment>Executioners</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="3066-7892-a32a-8829" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7314,6 +7470,9 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44a2-5fd9-6701-9277"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="8648-05f6-3b00-945e" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="a765-b19a-2f01-721d" type="selectionEntry">
                   <costs>
@@ -9146,6 +9305,31 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death-Speaker Chaplains" hidden="false" id="3066-7892-a32a-8829">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
+              </costs>
+              <rules>
+                <rule name="Slaughter-Tallies" id="5734-afaa-5d45-a57f" hidden="false">
+                  <description>Any enemy with the character sub-type that is slain in a Challenge within 6&quot; of a Death-Speaker Chaplain gains The Executioners player an extra Victory Point.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Stubborn" id="674d-88f0-fa80-16bb" hidden="false" type="rule" targetId="d995-66b1-9d51-7873"/>
+                <infoLink name="Hatred (X)" id="132b-1d1c-7f06-95c8" hidden="false" type="rule" targetId="a0e7-d035-d976-fd42">
+                  <modifiers>
+                    <modifier type="set" value="Hatred (Everything!)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Retinue" id="ea1d-65a9-7e5f-6236" hidden="true" collective="false" import="true">
@@ -9312,6 +9496,12 @@
                                 <condition field="selections" scope="06c9-0d6b-9147-8d62" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b3b-0173-e38e-d9c3" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="set" value="10" field="0474-29b3-6a22-7416">
+                              <comment>Executioners</comment>
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="3066-7892-a32a-8829" shared="true"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                         </modifierGroup>
                       </modifierGroups>
@@ -9356,6 +9546,12 @@
                                 <condition field="selections" scope="06c9-0d6b-9147-8d62" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b3b-0173-e38e-d9c3" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="set" value="10" field="0474-29b3-6a22-7416">
+                              <comment>Executioners</comment>
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="3066-7892-a32a-8829" shared="true"/>
+                              </conditions>
+                            </modifier>
                           </modifiers>
                         </modifierGroup>
                       </modifierGroups>
@@ -9395,6 +9591,12 @@
                             <modifier type="set" field="0474-29b3-6a22-7416" value="10">
                               <conditions>
                                 <condition field="selections" scope="06c9-0d6b-9147-8d62" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b3b-0173-e38e-d9c3" type="atLeast"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" value="10" field="0474-29b3-6a22-7416">
+                              <comment>Executioners</comment>
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="3066-7892-a32a-8829" shared="true"/>
                               </conditions>
                             </modifier>
                           </modifiers>
@@ -10913,6 +11115,24 @@
                 </entryLink>
               </entryLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death-Speaker Chaplains" hidden="false" id="d39f-2f8f-a586-3334">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
+              </costs>
+              <rules>
+                <rule name="Slaughter-Tallies" id="2090-6900-a6de-e5b3" hidden="false">
+                  <description>Any enemy with the character sub-type that is slain in a Challenge within 6&quot; of a Death-Speaker Chaplain gains The Executioners player an extra Victory Point.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Stubborn" id="848b-d7ce-f84a-5f5b" hidden="false" type="rule" targetId="d995-66b1-9d51-7873"/>
+                <infoLink name="Hatred (X)" id="7e36-6508-e27e-d94a" hidden="false" type="rule" targetId="a0e7-d035-d976-fd42">
+                  <modifiers>
+                    <modifier type="set" value="Hatred (Everything!)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Retinue" id="9778-12df-3ba5-fb25" hidden="true" collective="false" import="true">
@@ -11755,6 +11975,15 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Chainaxe" hidden="false" id="862d-3137-c871-b27f" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -14732,6 +14961,15 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Chainaxe" hidden="false" id="1aaa-7549-e426-ba40" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f44f-90fa-eee1-c0a3" includeChildSelections="false"/>
@@ -15585,6 +15823,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="f61f-f205-1ecb-7fe1" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2db1-b1eb-d9ca-5da7"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -19259,6 +19509,18 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="3615-27fe-50bc-87ed" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcc8-7381-9869-a40f"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7086-1304-1196-060f" includeChildSelections="false"/>
@@ -19871,6 +20133,18 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="828a-3065-0b7d-d8ec" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a49f-12ee-324a-d38d"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -20115,6 +20389,18 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                       <modifiers>
                         <modifier type="set" value="0" field="86d0-1bc3-84fb-340a"/>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="c3c1-1566-99ad-18b3" type="selectionEntry" targetId="7133-d858-85e2-46df" collective="false">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06bc-39ef-3122-1b01"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -20611,12 +20897,6 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Space Marine Bike Squad" hidden="false" id="95a7-ebc6-07a7-f651">
       <entryLinks>
-        <entryLink import="true" name="Chainsword" hidden="false" id="15c4-a7f5-2a5b-5c81" type="selectionEntry" targetId="d26e-1136-7300-4c3c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a0d-5716-107f-e4fe" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="e727-acf0-403e-5222" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="9765-310b-0b8b-7fd6" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc8e-b5e7-bec3-8d6a" includeChildSelections="false"/>
@@ -20777,6 +21057,33 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
               </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Close Combat Weapon" id="b449-ded8-8026-3fe7" hidden="false" defaultSelectionEntryId="3c5b-4724-738e-d055">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="b5ee-9f89-2921-8a83" type="selectionEntry" targetId="7133-d858-85e2-46df">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffc7-30a6-f051-3cf6" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="3c5b-4724-738e-d055" type="selectionEntry" targetId="6c95-36e3-92b6-29ff">
+                      <modifiers>
+                        <modifier type="set" value="0" field="c85b-b381-6d39-b809"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ff1-ad58-522c-be3e" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c85b-b381-6d39-b809" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Marine Biker Sergeant" hidden="false" id="7821-9252-6a30-ad08" collective="false">
               <constraints>
@@ -20899,6 +21206,18 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="c8a9-adaf-5146-80f3" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93bf-9e7e-9970-7186" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -21518,6 +21837,18 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="67c4-133e-3a83-940c" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0af-a235-2edb-3083"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -23783,6 +24114,12 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </constraints>
         </entryLink>
         <entryLink import="true" name="Chapter Tactics" hidden="false" id="fc2f-a6fd-260f-db7d" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="c397-2f48-2990-fab9" type="selectionEntry" targetId="54b1-8989-fbbe-7cc3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24bb-15d9-413c-d41f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d0-201f-3323-ee6c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="1.2) Bayonet" id="7a87-a91d-3242-f9de" hidden="false" collective="false" import="true">
@@ -24099,6 +24436,18 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainaxe" hidden="false" id="dad9-25ba-7b9a-33ea" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="199b-5000-a476-fd91"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -31289,6 +31638,18 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Chainaxe" hidden="false" id="3d7c-f7a6-1b6b-44ad" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b391-1f3b-0aa3-3036"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c5bf-64ae-7620-4efa" name="4.5) Mobility (Must match Leaders option)" hidden="false" collective="false" import="true">
@@ -32501,6 +32862,11 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" percentValue="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Chapter Tactics (Executioners)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true" percentValue="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </rule>
       </rules>
@@ -32998,6 +33364,23 @@ While the warlord is alive, the army may make an additional reaction in the Assa
             </modifier>
           </modifiers>
           <comment>Astral Claws</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Marauding Belligerent" hidden="false" id="d0a3-c6d5-b8d0-647a">
+          <profiles>
+            <profile name="Marauding Belligerent" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="07db-745a-f717-e4bb">
+              <characteristics>
+                <characteristic name="Text" typeId="fd21-268e-062f-c8f2">The Warlord and up to 3 units may be given the Outflank special rule. While the warlord is alive, the army may make an additional reaction in the Movement Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Executioners</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="948e-7150-25a0-cf97" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>

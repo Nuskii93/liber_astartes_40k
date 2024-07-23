@@ -4843,6 +4843,36 @@ Note that units which contain models with any variant of the Bulky (x) special r
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Executioners" hidden="false" id="948e-7150-25a0-cf97">
+      <rules>
+        <rule name="Headhunters" id="5320-2e80-d245-8e59" hidden="false">
+          <description>All character models with this special rule inflict Instant Death on a To Wound roll of 6 in a Challenge - roll saves against these attacks separately. 
+The character with the highest WS (if two or more characters are tied, then the controlling player must select one) in any assault with this special rule must always issue or accept a challenge in an assault if possible. </description>
+        </rule>
+        <rule name="Bitter Mettle" id="9804-34db-33f0-3f79" hidden="false">
+          <description>All models with Chapter Tactics (Executioners) special rule ignore all negative modifiers on a turn in which they charge or are charged (e.g. Ignore the negatives of Fear (1), or Rad Grenades -1 Toughness etc, charging through cover etc. 
+(Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry id="7133-d858-85e2-46df" name="Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="f50f-bb7c-901c-2654" name="Chainaxe" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e687-5b68-2b57-aaab" name="Shred" hidden="false" targetId="0e7a-9209-ce0d-7ed2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
