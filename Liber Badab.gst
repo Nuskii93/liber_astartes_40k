@@ -273,6 +273,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Enkomi" id="4580-2b27-ee69-e8f5" hidden="false"/>
     <categoryEntry name="Issodon" id="03eb-a86d-969a-6d68" hidden="false"/>
     <categoryEntry name="Vaylund" id="1491-0e46-6f25-551b" hidden="false"/>
+    <categoryEntry name="Huron" id="d64e-4be0-0219-9b4f" hidden="false"/>
+    <categoryEntry name="Sumatris" id="b19e-e1d6-94f9-5cd2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -343,6 +345,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1491-0e46-6f25-551b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6dc2-e9d8-a1d4-18be">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d64e-4be0-0219-9b4f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4463,6 +4470,16 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="0" field="743c-8f7b-ce78-6382">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b19e-e1d6-94f9-5cd2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
@@ -4725,13 +4742,13 @@ Note that units which contain models with any variant of the Bulky (x) special r
     <selectionEntry type="upgrade" import="true" name="The Salamanders" hidden="false" id="a545-c6d2-36bd-9d03">
       <rules>
         <rule name="Blood of Fire" id="8dc3-ffa5-9bd2-dd69" hidden="false">
-          <description>When rolling to wound against a model with this special rule for any attack inflicted by a Flame, Melta, or Plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule. </description>
+          <description>When rolling to wound against a model with this special rule for any attack inflicted by a Flame, Melta, or Plasma weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the weapon, only the roll to wound). In addition, all models that have more than one wound or Hull point gain the It Will Not Die (6+) special rule.</description>
         </rule>
         <rule name="Master Artisan" id="fc38-ec6c-61c3-9079" hidden="false">
-          <description>Any model with the Chapter Tactics (Salamanders) and the Character unit sub­type may upgrade their weapon to have the Master-Crafted special rule for +10 points. </description>
+          <description>Any model with the Chapter Tactics (Salamanders) and the Character unit sub­type may upgrade their weapon to have the Master-Crafted special rule for +10 points.</description>
         </rule>
         <rule name="First Founding Chapter" id="bedd-2d1a-3284-965b" hidden="false">
-          <description>A Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+          <description>A Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4752,10 +4769,10 @@ Note that units which contain models with any variant of the Bulky (x) special r
     <selectionEntry type="upgrade" import="true" name="The Sons of Medusa" hidden="false" id="3885-72f6-8cc9-9239">
       <rules>
         <rule name="True Sons" id="0de9-43e2-31ef-b21a" hidden="false">
-          <description>All shooting attacks made against a model with this special rule that does not have the vehicle Unit Type, suffer a modifier of -1 to the strength of the attack. </description>
+          <description>All shooting attacks made against a model with this special rule that does not have the vehicle Unit Type, suffer a modifier of -1 to the strength of the attack.</description>
         </rule>
         <rule name="Maletek-Exorcism Reclamation Protocols" id="e6aa-5558-954c-ba7c" hidden="false">
-          <description>A Sons of Medusa Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules. </description>
+          <description>A Sons of Medusa Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4783,6 +4800,16 @@ Note that units which contain models with any variant of the Bulky (x) special r
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Astral Claws" hidden="false" id="ed67-cef8-7802-d102">
+      <rules>
+        <rule name="Reckless Courage" id="5e8e-f683-4917-19a6" hidden="false">
+          <description>Any Astral Claws model gains the Stubborn special rule and may never choose to automatically fail a Morale check.</description>
+        </rule>
+        <rule name="Maelstrom Warder" id="74b7-4e45-f129-71cf" hidden="false">
+          <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10} when within its own deployment zone.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

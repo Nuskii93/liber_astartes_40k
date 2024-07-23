@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fced-6dcf-7d19-ceba" name="The Minotaurs - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fced-6dcf-7d19-ceba" name="The Minotaurs - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" authorName="Boff89" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="5f06-dfec-665c-f4af" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
     <entryLink import="true" name="Assault Squad" hidden="false" id="3fca-3cb3-4af8-9ddd" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
@@ -942,8 +942,8 @@
         <profile name="Lord Asterion Moloc" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="a839-eac6-5348-6db3">
           <characteristics>
             <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">4</characteristic>
-            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">7</characteristic>
             <characteristic name="BS" typeId="9dda-7029-992e-a66e">6</characteristic>
             <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
@@ -968,15 +968,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3337-78ea-f3d9-2744" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Master of the Company" hidden="false" id="817f-551b-580f-9c39" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bae-a5d7-6c6d-e075" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e29-ca89-60df-945c" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="817f-551b-580f-9c39" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29"/>
         <entryLink import="true" name="Warlord" hidden="false" id="4e87-d3db-d5c4-818b" type="selectionEntry" targetId="fd37-1b61-577f-b84b">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="923b-4811-972b-8173" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c9d-d75d-f429-5acd" includeChildSelections="false"/>
           </constraints>
         </entryLink>
@@ -1044,10 +1038,10 @@
       </selectionEntries>
       <rules>
         <rule name="Dark Fury" id="8f56-4093-2456-4f6a" hidden="false">
-          <description>Asterion Moloc and any unit he coins gain the Stubborn Special rule. In addition the entire unit counts as being equipped with Frag Grenades. </description>
+          <description>Asterion Moloc and any unit he coins gain the Stubborn Special rule. In addition the entire unit counts as being equipped with Frag Grenades.</description>
         </rule>
         <rule name="Legendary Fighter" id="28a1-6103-9c06-c20e" hidden="false">
-          <description>Asterion Moloc&apos;s Controlling player must always issue challenges, but gains +1 VP for every model with the Character sub-type that Asterion Moloc kills in a challenge. </description>
+          <description>Asterion Moloc&apos;s Controlling player must always issue challenges, but gains +1 VP for every model with the Character sub-type that Asterion Moloc kills in a challenge.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -1057,7 +1051,7 @@
               <profiles>
                 <profile name="Sanctioned Fratricide" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="75cd-4f6a-fcb7-a19a">
                   <characteristics>
-                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Asterion Moloc is your Warlord, then all models with the Chapter Tactics (Minotaurs) gain Preferred Enemy (Space Marines). If they already have that special rule, the also gain the Hatred (Space Marines) rule as well. A Primary Detachment that includes Asterion Moloc treats all allied forces as Desperate Allies. In addition to the above rules, while Asterion Moloc is alive the controlling player may make an additional reaction in the Movement Phase. </characteristic>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Asterion Moloc is your Warlord, then all models with the Chapter Tactics (Minotaurs) gain Preferred Enemy (Space Marines). If they already have that special rule, the also gain the Hatred (Space Marines) rule as well. A Primary Detachment that includes Asterion Moloc treats all allied forces as Desperate Allies. In addition to the above rules, while Asterion Moloc is alive the controlling player may make an additional reaction in the Movement Phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1200,10 +1194,10 @@
       </infoLinks>
       <rules>
         <rule name="Bane of Hatred" id="89ab-8909-3a44-5ce0" hidden="false">
-          <description>Ivanus Enkomi and any unit he joins gain the Rage (1 ), Fearless and Hatred (Everything!) Special rules while Enkomi is part of the unit. </description>
+          <description>Ivanus Enkomi and any unit he joins gain the Rage (1 ), Fearless and Hatred (Everything!) Special rules while Enkomi is part of the unit.</description>
         </rule>
         <rule name="High Reclusiarch" id="fea2-ecc9-b0f7-6da9" hidden="false">
-          <description>Enkomi counts as having the Master of the Company Special rule. You may ignore the &apos;Few and the Proud&apos; part of this rule if Asterion Moloc is also part of the army. </description>
+          <description>Enkomi counts as having the Master of the Company Special rule. You may ignore the &apos;Few and the Proud&apos; part of this rule if Asterion Moloc is also part of the army.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -1216,7 +1210,7 @@
               <profiles>
                 <profile name="Intimidating Presence" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="b67b-4253-cadd-43e7">
                   <characteristics>
-                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Enkomi is the army&apos;s Warlord, then all enemy units within 12&quot; of Enkomi must use the squads lowest leadership instead of its highest for any Morale or Pinning Leadership Tests. In addition to this, while Enkomi is alive, the controlling player may make an additional Reaction in the Assault Phase. </characteristic>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Enkomi is the army&apos;s Warlord, then all enemy units within 12&quot; of Enkomi must use the squads lowest leadership instead of its highest for any Morale or Pinning Leadership Tests. In addition to this, while Enkomi is alive, the controlling player may make an additional Reaction in the Assault Phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

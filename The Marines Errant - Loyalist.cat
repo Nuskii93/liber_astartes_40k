@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="631c-0a05-8cb1-ef75" name="The Marines Errant - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="631c-0a05-8cb1-ef75" name="The Marines Errant - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="c43b-d804-068c-fb15" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -362,11 +362,10 @@
       </infoLinks>
       <rules>
         <rule name="House Ecale Secondment" id="0523-c043-4b11-0dfd" hidden="false">
-          <description>Anton Naravaez and any unit he joins gains the Scout, Move Through Cover and Precision Shots (6+) Special Rules. 
-</description>
+          <description>Anton Naravaez and any unit he joins gains the Scout, Move Through Cover and Precision Shots (6+) Special Rules.</description>
         </rule>
         <rule name="Heavy Drop-Craft" id="caea-2ed4-4bba-061a" hidden="false">
-          <description>If chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction, in the Movement Phase. </description>
+          <description>If chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction, in the Movement Phase.</description>
         </rule>
       </rules>
       <selectionEntries>
@@ -419,7 +418,7 @@
                 <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
                 <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">User</characteristic>
                 <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
-                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Specialist Weapon, Cutting Strike, Master-Crafted </characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Specialist Weapon, Cutting Strike, Master-Crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -430,7 +429,7 @@
           </rules>
           <infoLinks>
             <infoLink name="Specialist Weapon" id="06d2-e425-1ac3-ed81" hidden="false" type="rule" targetId="3f63-8915-cff1-87f8"/>
-            <infoLink name="Master-crafted" id="e176-ad57-e8bd-d398" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Master-Crafted" id="e176-ad57-e8bd-d398" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -464,7 +463,7 @@
                   <profiles>
                     <profile name="Direct Fire Support" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="a18b-484f-a1a7-7e95">
                       <characteristics>
-                        <characteristic name="Text" typeId="fd21-268e-062f-c8f2">In lieu of firing a weapon, Naravaez may call down an Orbital Bombardment once per game. This may be fired even if he moved and may be fired at a different unit than what his unit has shot at and will not stop his unit from charging in the following Assault Phase. It may not be fired as part of a Reaction. In addition the controlling player may make an additional Reaction in the Shooting Phase. </characteristic>
+                        <characteristic name="Text" typeId="fd21-268e-062f-c8f2">In lieu of firing a weapon, Naravaez may call down an Orbital Bombardment once per game. This may be fired even if he moved and may be fired at a different unit than what his unit has shot at and will not stop his unit from charging in the following Assault Phase. It may not be fired as part of a Reaction. In addition the controlling player may make an additional Reaction in the Shooting Phase.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Orbital Bombardment" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="6bf7-9124-327e-059e">
@@ -482,12 +481,17 @@
                     <infoLink name="Blast" id="36a6-71e2-29f4-c373" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>
                     <infoLink name="Ordnance" id="a2bd-cfd7-1729-7c94" hidden="false" type="rule" targetId="b0df-8129-676a-794c"/>
                   </infoLinks>
+                  <rules>
+                    <rule name="Orbital Strike" id="cf49-b4c2-0cd2-992f" hidden="false">
+                      <description>This Attack always scatters even if a hit is rolled. use the small arrow on the Hit! Dice to determine the direction of the scatter</description>
+                    </rule>
+                  </rules>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy Drop-Craft" hidden="false" id="b743-4fed-fec1-9aaa">
                   <profiles>
                     <profile name="Heavy Drop-Craft" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="106e-91c3-9acf-00a8">
                       <characteristics>
-                        <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction, in the Movement Phase. </characteristic>
+                        <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If chosen the Controlling Player may elect to give up to 3 Vehicles with 4 hull points or less the Deep Strike Special rule. In addition, the Controlling player may make an additional Reaction, in the Movement Phase.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
