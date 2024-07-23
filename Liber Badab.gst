@@ -275,6 +275,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <categoryEntry name="Vaylund" id="1491-0e46-6f25-551b" hidden="false"/>
     <categoryEntry name="Huron" id="d64e-4be0-0219-9b4f" hidden="false"/>
     <categoryEntry name="Sumatris" id="b19e-e1d6-94f9-5cd2" hidden="false"/>
+    <categoryEntry name="Valthex" id="f7ec-2a71-975c-d1a1" hidden="false"/>
+    <categoryEntry name="Commodus" id="33fa-5916-17f1-68a1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -2900,34 +2902,64 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
           </repeats>
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f8d3-3df4-1a6d-2ee6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="2" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="3885-72f6-8cc9-9239" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3885-72f6-8cc9-9239" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="increment" value="1" field="326c-cd97-2293-5c69">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1491-0e46-6f25-551b" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f7ec-2a71-975c-d1a1" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1000" field="7992-13c8-e552-57c1" scope="force" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

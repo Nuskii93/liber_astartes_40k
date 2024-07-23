@@ -288,6 +288,8 @@
     <entryLink import="true" name="Retaliator Squad" hidden="false" id="dd05-f442-af5d-cd55" type="selectionEntry" targetId="8223-c41c-9203-3a87"/>
     <entryLink import="true" name="Lugft Huron" hidden="false" id="3884-92b1-ecc1-3c82" type="selectionEntry" targetId="7bbf-3ace-8da4-85d4"/>
     <entryLink import="true" name="Captain Corlen Sumatris" hidden="false" id="ee59-0387-1ee0-0828" type="selectionEntry" targetId="6f08-6b7c-0625-8b43"/>
+    <entryLink import="true" name="Armennus Valthex" hidden="false" id="dd85-57aa-c32b-e343" type="selectionEntry" targetId="3b4f-51c8-5b67-442b"/>
+    <entryLink import="true" name="Arch-Centurion Carnac Commodus" hidden="false" id="763a-6082-2d4f-30d5" type="selectionEntry" targetId="a9dc-e681-6bff-2978"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Retaliator Squad" hidden="false" id="8223-c41c-9203-3a87" collective="false">
@@ -795,6 +797,18 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup name="1) Astral Claws - Battle Alchemy" id="c429-a250-76e5-ce98" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="f7ec-2a71-975c-d1a1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hellfire Rounds" hidden="false" id="b66a-60f2-71ef-0414" type="selectionEntry" targetId="7e4d-66d0-9edc-9faf"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Krak Grenades" hidden="false" id="363c-4b22-4e8d-e2b2" collective="false" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
@@ -1154,6 +1168,537 @@
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="165"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armennus Valthex" hidden="false" id="3b4f-51c8-5b67-442b">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="150"/>
+      </costs>
+      <profiles>
+        <profile name="Armenneus Valthex" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="cda0-e145-f968-ab1a">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique, Heavy)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">5</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">9</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="ebe6-d8d5-20d5-05b9" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="6fde-b9e7-0dd9-853b" collective="false" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ccb-3b40-7a2a-5e9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb16-3916-377a-330f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="0e80-6d52-513f-f4e7" collective="false" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39b8-0452-7017-4445" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0949-55a9-2765-02d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power Armour" hidden="false" id="175f-284c-cf44-faad" collective="false" targetId="09dd-c282-03ec-ad0e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bb4-05ee-2508-e8e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbe7-3b9d-fc9b-2a30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Conversion Beam Cannon" hidden="false" id="a257-e0a4-7658-7de4" type="selectionEntry" targetId="06b6-e075-cd0e-869d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="396c-9b4e-033e-c329" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3682-30f3-c033-b457" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="66ba-8ab0-0139-db49" type="selectionEntry" targetId="54b1-8989-fbbe-7cc3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a296-a9ef-99bb-6a28" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9a8-3b04-01c6-e092" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="6c40-dd2b-4d74-c24d" type="selectionEntry" targetId="fd37-1b61-577f-b84b"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Indynabula Array" hidden="false" id="9e6f-6119-3a43-23ff">
+          <profiles>
+            <profile name="Indynabula Array" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="ba93-4312-f412-c7f2">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Murderous Strike (6+), Haywire, Reaping Blow (2)</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Indynabula Array" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="1f31-0c20-e937-f705">
+              <characteristics>
+                <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Allows Valthex to make up to 2 Battlesmith rolls a turn. He may choose to re-roll any failed Battlesmith Rolls. It also grants a 5+ Invulnerable Save</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reaping Blow (X)" id="46d4-aa35-00a3-4e34" hidden="false" type="rule" targetId="8fc1-7edb-6081-c0fb">
+              <modifiers>
+                <modifier type="set" value="Reaping Blow (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Haywire" id="7c27-962c-decd-f81d" hidden="false" type="rule" targetId="af50-085a-3533-bb50"/>
+            <infoLink name="Murderous Strike (X)" id="fa93-afd2-1d52-17f4" hidden="false" type="rule" targetId="fe05-b753-330d-ab0a">
+              <modifiers>
+                <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4ef-1783-517a-25bb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d10c-1195-5c3a-c5f1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Bolster Defences" id="a36b-2994-f0cf-ff05" hidden="false">
+          <description>After deployment, but before Scout redeployments and Infiltrate deployments, nominate one piece of terrain in your deployment zone (this cannot be one you have purchased as part of your army). The terrain piece&apos;s cover save is increased by 1 for the duration of the game (to a maximum of 3+ ). </description>
+        </rule>
+        <rule name="Keeper of the Dead" id="34d9-1c1f-0843-ce3e" hidden="false">
+          <description>A Detachment that includes a model with this special rule may take an additional Castraferrum Dreadnought or Contemptor Dreadnought as part as the same Force Organisation choice as the model with this special rule. The model with this special rule must join the Dreadnought unit that has been selected at the beginning of the battle during deployment and may not voluntarily leave that unit during play- this is an exception to the Dreadnought Unit Type which would normally stop such models from joining a unit including a model with the Dreadnought Unit Type. </description>
+        </rule>
+        <rule name="Ancient Devotion" id="01fb-457d-b3f1-9c62" hidden="false">
+          <description>While a model with this special rule is part of a unit, all Dreadnought models in that unit gain the It Will Not Die (5+) special rulE</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warlord Trait" id="b21b-93a4-373a-c8f4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Master of Machines" hidden="false" id="b033-a365-ad2c-665b">
+              <profiles>
+                <profile name="Master of Machines" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="462c-f6b1-cff2-c4f4">
+                  <characteristics>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Armennus Valthex if an army&apos;s warlord, any model with the Dreadnought unit type also gains the Line sub-type while within 6&quot; of Armen nus Va It hex. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3766-b80a-6b37-36c3" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de47-612e-125e-2f48" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dreadnought for Unit:" id="791f-c19b-00a6-80b0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="cc82-8eeb-8e4e-7a8a" type="selectionEntry" targetId="6c49-097a-1be5-82c6"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Castraferrum Dreadnought" hidden="false" id="2380-1da2-f3ef-c48b">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="150"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Left Arm" id="15ed-f18d-ae0f-f23c" hidden="false" defaultSelectionEntryId="4956-1ab5-d5ff-d6b9">
+                  <entryLinks>
+                    <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="4956-1ab5-d5ff-d6b9" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
+                    <entryLink import="true" name="Gravis Lascannon" hidden="false" id="bbb3-68d1-8cad-a473" type="selectionEntry" targetId="4e7f-7175-001b-92cd">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Autocannon" hidden="false" id="b4fe-de73-7797-468a" type="selectionEntry" targetId="10a4-1753-6915-a8f7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Power Fist w/ Built in Storm Bolter" hidden="false" id="d080-406f-9042-fb5f" type="selectionEntry" targetId="6e37-a3dd-3c59-d3f5">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Built in Weapon:" id="1f8c-c039-d193-ea31" hidden="false" defaultSelectionEntryId="20b1-4553-955c-4df6">
+                          <entryLinks>
+                            <entryLink import="true" name="Storm Bolter" hidden="false" id="20b1-4553-955c-4df6" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                            <entryLink import="true" name="Heavy Flamer" hidden="false" id="adca-8940-c8c8-5f7f" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Meltagun" hidden="false" id="4f33-8784-a654-9652" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cd6-24bf-9111-48df" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2e6-94d3-4f9e-425f" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Assault Cannon" hidden="false" id="730b-336b-48d3-f58a" type="selectionEntry" targetId="5da8-ea16-96a1-e82a">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Plasma Cannon" hidden="false" id="1e2c-7694-f1b5-75fb" type="selectionEntry" targetId="20e0-7862-fbf5-e43b">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Conversion Beam Cannon" hidden="false" id="8fd6-03cc-7a65-ce60" type="selectionEntry" targetId="06b6-e075-cd0e-869d">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Chainfist w/ Built in Storm Bolter" hidden="false" id="e52f-3278-ec8c-c093" type="selectionEntry" targetId="6472-c32d-947c-5220">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Built in Weapon:" id="91d6-da41-e5f6-229c" hidden="false" defaultSelectionEntryId="538e-5045-af37-5b2e">
+                          <entryLinks>
+                            <entryLink import="true" name="Storm Bolter" hidden="false" id="b34e-4e67-bc22-a61d" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                            <entryLink import="true" name="Heavy Flamer" hidden="false" id="1103-da2c-7873-43c2" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Meltagun" hidden="false" id="91f4-b4db-6fde-dde7" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c278-23ea-bf8c-ffe8" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e697-62bc-002e-5e86" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="416f-355c-a8b2-9bb3" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Flamestorm Cannon" hidden="false" id="ed47-b7fa-7162-1143" type="selectionEntry" targetId="5242-84f1-a710-0d8f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c33-b652-bf55-fe35" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b63f-7309-d542-51e2" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Right Arm" id="8a43-6f7f-bacf-cdac" hidden="false" defaultSelectionEntryId="7968-dd0d-c417-2d7f">
+                  <entryLinks>
+                    <entryLink import="true" name="Assault Cannon" hidden="false" id="51a7-adbd-3438-cdca" type="selectionEntry" targetId="5da8-ea16-96a1-e82a">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Conversion Beam Cannon" hidden="false" id="f06a-e05f-0a0f-c2a8" type="selectionEntry" targetId="06b6-e075-cd0e-869d">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Flamestorm Cannon" hidden="false" id="db44-ac27-0eea-c6ec" type="selectionEntry" targetId="5242-84f1-a710-0d8f">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Autocannon" hidden="false" id="303c-0902-10ff-15ec" type="selectionEntry" targetId="10a4-1753-6915-a8f7">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="deec-8035-7697-432e" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
+                    <entryLink import="true" name="Gravis Chainfist w/ Built in Storm Bolter" hidden="false" id="5a81-a145-a659-1107" type="selectionEntry" targetId="6472-c32d-947c-5220">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                      </costs>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Built in Weapon:" id="8710-b064-2e7f-413e" hidden="false" defaultSelectionEntryId="b75a-8ba7-45cd-c24b">
+                          <entryLinks>
+                            <entryLink import="true" name="Storm Bolter" hidden="false" id="45e6-77fa-3a19-cd38" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                            <entryLink import="true" name="Heavy Flamer" hidden="false" id="1565-c37d-1c1c-42c1" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Meltagun" hidden="false" id="3721-1d2c-2906-c69d" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6c0-0092-d7da-bdc8" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ffd-a8f2-f537-1d01" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Lascannon" hidden="false" id="f7a8-f6f4-c8de-a1b1" type="selectionEntry" targetId="4e7f-7175-001b-92cd">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="c345-2944-52ff-4fe2" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Plasma Cannon" hidden="false" id="4604-44ea-e3ea-7450" type="selectionEntry" targetId="20e0-7862-fbf5-e43b">
+                      <costs>
+                        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis Power Fist w/ Built in Storm Bolter" hidden="false" id="7968-dd0d-c417-2d7f" type="selectionEntry" targetId="6e37-a3dd-3c59-d3f5">
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Built in Weapon:" id="fbdb-36e7-66b0-3c64" hidden="false" defaultSelectionEntryId="03e3-c552-36a0-a8fc">
+                          <entryLinks>
+                            <entryLink import="true" name="Storm Bolter" hidden="false" id="03e3-c552-36a0-a8fc" type="selectionEntry" targetId="cde8-883c-c7bc-c472"/>
+                            <entryLink import="true" name="Heavy Flamer" hidden="false" id="950a-ef16-dd64-3f8b" type="selectionEntry" targetId="5507-b432-3b4c-df12">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                              </costs>
+                            </entryLink>
+                            <entryLink import="true" name="Meltagun" hidden="false" id="1283-ae7a-c346-c1d4" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+                              <costs>
+                                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e5-b66f-e2aa-4066" includeChildSelections="false"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e14f-e69d-6642-9383" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6b-d2af-b93e-f94f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34bd-5652-7088-0b3e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Castraferrum Dreadnought" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="ff10-1bbe-cc9c-c42c">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Dreadnought (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">6</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">6</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">5</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">3</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">9</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="4" field="93ad-c469-87d0-c158">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="2380-1da2-f3ef-c48b" childId="6472-c32d-947c-5220" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="2" field="selections" scope="2380-1da2-f3ef-c48b" childId="6e37-a3dd-3c59-d3f5" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="2380-1da2-f3ef-c48b" childId="6472-c32d-947c-5220" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="2380-1da2-f3ef-c48b" childId="6e37-a3dd-3c59-d3f5" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>Dual fists, raise attack</comment>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Dreadnought" hidden="false" id="008d-72e9-3172-6743" targetId="528c-8d49-6bd6-8b22" primary="false"/>
+                <categoryLink name="Elites:" hidden="false" id="f8f3-b5bb-e167-d05a" targetId="d471-a611-11c4-7f09" primary="true"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="60a6-bb47-a712-cc7a" type="selectionEntry" targetId="a2c7-5747-8608-781e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ffb-d3f9-d296-568d" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa90-0953-a818-d74b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chapter Tactics" hidden="false" id="18f8-7559-9cb8-b032" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d0-0024-cc11-bf59" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="5146-e20c-1c06-5b89" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="5bb5-2e12-02c3-2049" primary="true" name="HQ:"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="06e3-3d76-a83c-1b42" primary="false" name="Independent Character"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="5322-a865-0527-720c" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="aca2-7bf0-e87e-0d5a" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="b0b6-2652-6c71-430d" primary="false" name="Character"/>
+        <categoryLink targetId="f7ec-2a71-975c-d1a1" id="d077-dcf0-af10-717f" primary="false" name="Valthex"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arch-Centurion Carnac Commodus" hidden="false" id="a9dc-e681-6bff-2978">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="155"/>
+      </costs>
+      <profiles>
+        <profile name="Arch-Centurion Carnac Commodus" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="f864-9296-842e-720e">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character, Unique, Heavy)</characteristic>
+            <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">7</characteristic>
+            <characteristic name="WS" typeId="b5ca-14ad-b160-b767">6</characteristic>
+            <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
+            <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
+            <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
+            <characteristic name="I" typeId="3f64-901a-1299-bbc4">5</characteristic>
+            <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
+            <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
+            <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="f04b-0a93-304f-defe" collective="false" targetId="54b1-8989-fbbe-7cc3" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c54c-a011-d313-a6e7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c705-1b7c-59da-9465" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="3cc2-c99a-b656-0c38" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="705c-44b0-4004-5fda" collective="false" targetId="3bd9-e813-aafb-59f9" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc2d-c9c3-42ca-000c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c95-4e9f-601b-e9fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="d51b-d927-60c8-8257" collective="false" targetId="e0be-9432-bcf8-d305" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f65-0323-d279-a932" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c636-b3c9-5903-5201" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Artificer Armour" hidden="false" id="8f81-6f38-a8f7-43a9" collective="false" targetId="ce80-3806-af8b-1c9b" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7336-6589-d8fa-8af1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf2f-1b85-cae4-4670" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="ca5a-eeb6-8cd3-e128" collective="false" targetId="c1cb-2e29-bf3f-9b32" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46d8-1704-9e74-3e72" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2083-8f8e-e21a-a549" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Warlord" hidden="false" id="e331-f9b7-bad3-8c8b" type="selectionEntry" targetId="fd37-1b61-577f-b84b"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blood Biter" hidden="false" id="33f9-6e26-af3d-2e95">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69be-38ad-5b9b-8cdb" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7fe-c214-980b-715c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Blood Biter" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="206c-2ebb-84b0-3594">
+              <characteristics>
+                <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+                <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
+                <characteristic name="AP" typeId="d24d-64be-92be-d248">5</characteristic>
+                <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Shroud, Rending (5+), Brutal (2), Master-Crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending (X)" id="e1e5-d7d4-2502-bab2" hidden="false" type="rule" targetId="2e92-b54a-1bc2-8b3e">
+              <modifiers>
+                <modifier type="set" value="Rending (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Master-Crafted" id="6695-e28d-646c-2024" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Brutal (X)" id="f6eb-29b6-2dd9-8173" hidden="false" type="rule" targetId="8110-939a-9318-c008">
+              <modifiers>
+                <modifier type="set" value="Brutal (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Independent Character" id="3418-ecc5-09c0-a009" hidden="false" targetId="20ff-8476-332b-4530" type="rule"/>
+        <infoLink name="Crusader" id="c2f5-9767-6610-6c5b" hidden="false" targetId="b65d-cf22-b1a9-8f21" type="rule"/>
+        <infoLink name="And they Shall Know No Fear" id="1557-d38d-5575-910f" hidden="false" targetId="ce91-e2c8-ffa1-14a8" type="rule"/>
+        <infoLink name="Hatred (X)" id="0393-5ac9-a07e-da72" hidden="false" type="rule" targetId="a0e7-d035-d976-fd42">
+          <modifiers>
+            <modifier type="set" value="Hatred (Loyalists)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Legion Overseer" id="6201-08ec-6099-2556" hidden="false">
+          <description>Upgrade a single unit of Vanguard Veterans to Veteran Retallators</description>
+        </rule>
+        <rule name="The Tyrants Will" id="d15f-ca00-abaf-cda9" hidden="false">
+          <description>Any unit without the Chapter Tactics (Astral Claws) within the Tyrant&apos;s Legion that fails any Leadership check within 6&quot; of a unit with this rule automatically receives D6 AP- Wounds. It then must immediately reroll the failed Leadership Check subtracting the number of wounds taken from the total roll. If the subsequent leadership check fails, then proceed as usual. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="33fa-5916-17f1-68a1" id="8885-db59-8329-8571" primary="false" name="Commodus"/>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="aa57-54ce-da50-0813" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="116b-d393-89d7-e58f" primary="true" name="HQ:"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="ef3f-f7ff-8c9e-f113" primary="false" name="Character"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ff81-4d12-2774-6ae5" primary="false" name="Independent Character"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="60c4-d7af-b536-e1ec" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Warlord Trait" id="bf42-c39d-053d-3291" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cut Them Down!" hidden="false" id="d9ad-bafe-19cd-4420">
+              <profiles>
+                <profile name="Cut Them Down!" typeId="33d8-0b80-933b-4817" typeName="Warlord Trait" hidden="false" id="c374-77fa-783c-5de0">
+                  <characteristics>
+                    <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Carnac Commodus is this army&apos;s warlord, then all units in an Astral Claws or Tyrant&apos;s Legion Primary Detachment in a combat he is part of may re-roll any sweeping advance rolls they make.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8cc-2543-bdb9-47de" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b98-c2e6-c13d-4706" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
