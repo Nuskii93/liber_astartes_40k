@@ -5032,15 +5032,6 @@ In addition to this you may not have more units taken as Astral Claws Chapter Su
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Auxilia Legion Standard" hidden="false" id="2374-75a7-e7ea-1f82">
-      <profiles>
-        <profile name="Auxilia Legion Standard" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="525f-bc7c-a6c3-5db0">
-          <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any units with Emboldened Masses Special Rule within 12&quot; of of an Auxilia Legion Standard add +1 to any Combat Resolution. They also re-roll any failed Morale and Pinning checks</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Battle Cannon" hidden="false" id="7638-4f76-51f0-b0fa" publicationId="d0df-7166-5cd3-89fd" page="29" collective="false">
       <profiles>
         <profile name="Battle Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="7d29-66bb-2c6c-bd1f" publicationId="d0df-7166-5cd3-89fd" page="29">
@@ -5922,7 +5913,7 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
         <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
         <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 1, Breaching (5+)</characteristic>
+        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 1</characteristic>
       </characteristics>
     </profile>
     <profile id="8f98-9516-fff0-87fc" name="Volkite Charger (Secondary)" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">

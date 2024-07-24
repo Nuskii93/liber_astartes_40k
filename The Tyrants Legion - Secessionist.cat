@@ -456,10 +456,11 @@
         <entryLink import="true" name="Tyrant&apos;s Legion Chapter Support" hidden="false" id="abfc-c70d-67e5-fa21" type="selectionEntry" targetId="1626-2bd4-24f0-c70b"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Legion Auxilia Command Detachment" hidden="false" id="f9b1-63d7-da0a-f4a7" type="selectionEntry" targetId="b2c5-6e26-defc-87bd"/>
   </entryLinks>
   <sharedRules>
     <rule name="Utterly Expendable" id="0c0c-7270-2b74-3efd" hidden="false">
-      <description>The opposing player never gains Victory points for specifically destroying this unit in missions where this is relevant. his includes for secondary objectives such as First Blood, but this does not affect Victory points based on the number of total units destroyed in a particular game (such as for Attrition). </description>
+      <description>The opposing player never gains Victory points for specifically destroying this unit in missions where this is relevant. his includes for secondary objectives such as First Blood, but this does not affect Victory points based on the number of total units destroyed in a particular game (such as for Attrition).</description>
     </rule>
     <rule name="Emboldened Masses" id="cba5-744c-3887-6245" hidden="false">
       <description>A model with this rule counts as having the Chapter Tactics (Astral Claws) special rule for use with the following items; 

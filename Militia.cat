@@ -138,7 +138,7 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
       <profiles>
         <profile name="Auxilia Legion Standard" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="9c9e-fb75-edcf-211d">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any units with Emboldened Masses Special Rule within 12&quot; counts as scoring one additional wound for the purposes of calculating close combat results and may re-roll failed Morale and Pinning tests.</characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any units with Emboldened Masses Special Rule within 12&quot; of of an Auxilia Legion Standard add +1 to any Combat Resolution. They also re-roll any failed Morale and Pinning checks</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -172,7 +172,7 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
       <profiles>
         <profile name="Armoured Cockpick" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="c6be-cf08-6bc9-cc22">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A vehicle with an Armoured Cockpit on counts all Crew Stunned Results as Crew Shaken instead. </characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A vehicle with an Armoured Cockpit on counts all Crew Stunned Results as Crew Shaken instead.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -181,7 +181,7 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
       <profiles>
         <profile name="Chaff Launchers" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="9bfb-4480-5499-7c42">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A vehicle with Chaff Launchers gets a 5+ Invulnerable Save against any Missile or Rocket like weapons. </characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A vehicle with Chaff Launchers gets a 5+ Invulnerable Save against any Missile or Rocket like weapons.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -190,7 +190,7 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
       <profiles>
         <profile name="Concealment Bulwark" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="989f-be61-5d59-b39c">
           <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with the Concealment Bulwark may count its cover save a 2 better than usual (eg a 5+ going to a 3+). If the model moves for any reason, count this Wargear as destroyed. In addition anytime this model takes a successful penetrating hit, roll a dice, on a 5+ the Concealment Bulwark Wargear is also destroyed. </characteristic>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A model with the Concealment Bulwark may count its cover save a 2 better than usual (eg a 5+ going to a 3+). If the model moves for any reason, count this Wargear as destroyed. In addition anytime this model takes a successful penetrating hit, roll a dice, on a 5+ the Concealment Bulwark Wargear is also destroyed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -608,6 +608,13 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
           <costs>
             <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="3749-35c1-9e01-2c76" hidden="false" type="rule" targetId="80f9-973b-28f9-020d">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -631,17 +638,241 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9a98-24d5-fffa-d08e" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2a8e-7cd1-d55d-d45a" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="3) Wargear" id="7f2c-b114-cb9d-3373" hidden="false"/>
+        <selectionEntryGroup name="5) Wargear" id="7f2c-b114-cb9d-3373" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Auxilia Legion Standard" hidden="false" id="a84b-ef8b-74ce-59ef" type="selectionEntry" targetId="d098-b14e-fe3c-5b6f">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a84-d3f2-2725-056e"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Auspex" hidden="false" id="ab6f-a3f7-9656-c8bd" type="selectionEntry" targetId="44bc-4848-60e9-2ff5">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e607-8aef-41e5-baed"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak Grenades" hidden="false" id="91e4-4628-21bb-be41" type="selectionEntry" targetId="e0be-9432-bcf8-d305">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e155-589d-805c-f1d9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Command Vox" hidden="false" id="bdd0-3132-1f4b-a366" type="selectionEntry" targetId="2f93-268e-69c4-ec56">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d816-95db-1b96-46e2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="0) Prefect:" id="7a62-d53d-555c-4a39" hidden="false" defaultSelectionEntryId="cc83-9e1c-84f9-7a5b">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Prefect Commander" hidden="false" id="cc83-9e1c-84f9-7a5b"/>
-            <selectionEntry type="upgrade" import="true" name="Tribune Prefect" hidden="false" id="971a-feb1-79cc-9dff"/>
+            <selectionEntry type="upgrade" import="true" name="Prefect Commander" hidden="false" id="cc83-9e1c-84f9-7a5b">
+              <profiles>
+                <profile name="Prefect Commander" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="846f-f9a1-03e8-226d">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">3</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">3</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">3</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">1</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">3</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">7</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c736-6a8e-2d81-891f"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tribune Prefect" hidden="false" id="971a-feb1-79cc-9dff">
+              <profiles>
+                <profile name="Tribune Prefect" typeId="3191-d50d-2aeb-5707" typeName="Unit" hidden="false" id="e1fb-ccc3-77b5-1895">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="b6e9-f8ba-2256-a63e">Infantry (Character)</characteristic>
+                    <characteristic name="Move" typeId="d878-f1bf-ac4f-2af5">6</characteristic>
+                    <characteristic name="WS" typeId="b5ca-14ad-b160-b767">4</characteristic>
+                    <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
+                    <characteristic name="S" typeId="6744-6714-3b2b-cc1d">3</characteristic>
+                    <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">3</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="I" typeId="3f64-901a-1299-bbc4">3</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
+                    <characteristic name="Save" typeId="0517-4c64-4fd7-6739">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6317-1520-fd08-a2f2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Replace Main Weapon For:" id="6a99-4e9b-748d-01cb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="37a3-07bd-30d2-24ed" type="selectionEntry" targetId="54b1-8989-fbbe-7cc3">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="1"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="bfe8-d96a-908d-0ff6" type="selectionEntry" targetId="a765-b19a-2f01-721d">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="b2c5-6e26-defc-87bd" childId="971a-feb1-79cc-9dff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Power Lance" hidden="false" id="69ec-dd26-aa0a-239a" type="selectionEntry" targetId="6015-a078-64cc-6a54">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Sword" hidden="false" id="12f7-0023-6cca-0998" type="selectionEntry" targetId="4f6f-0064-0a64-5565">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Maul" hidden="false" id="b286-f58f-b58d-6b7a" type="selectionEntry" targetId="d831-0043-0944-a75f">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Axe" hidden="false" id="0587-ea12-1b76-f802" type="selectionEntry" targetId="9b64-83e6-bcb5-8799">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="c85f-576e-87d8-ffd4" type="selectionEntry" targetId="4c88-d3ef-512f-8bf2">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb4-9c81-6c12-8094" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="2) Armour for Squad:" id="f5e3-4cdb-b9f4-2c56" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Flak Armour" hidden="false" id="221b-2fc4-f653-1883" type="selectionEntry" targetId="bb1f-8f6a-2d88-9d65">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf45-ae7d-ec51-49d3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Carapace Armour" hidden="false" id="36fe-b515-bd71-ba1b" type="selectionEntry" targetId="b85a-8425-5556-848b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0f4-4dd0-b6b2-e2d7"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d237-29f1-b9f5-9436"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2f8-2d32-c3bf-5c5a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="3) Main Weapon for Squad:" id="0310-102b-2727-72d1" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Shotgun" hidden="false" id="cd88-68c2-2de6-441f" type="selectionEntry" targetId="7697-8327-b434-f259">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2569-38dd-21ab-6944" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="783e-4caf-df05-9b0b" type="selectionEntry" targetId="cf59-e92c-408f-232f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2536-0d91-908f-67da" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lasgun" hidden="false" id="5e18-3a96-51fe-c8ec" type="selectionEntry" targetId="0c9d-2391-74ce-c247">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b99a-84b3-6ec4-2fe1" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eed6-f405-07f7-81a6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d0-f72c-b83d-3f78" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="6) Dedicated Transport:" id="084d-86b4-f681-dc15" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chimera Armoured Transport" hidden="false" id="334a-c3d8-3003-5fb4" type="selectionEntry" targetId="01c4-c25b-d792-056f"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e3-ebb9-ed8f-9219" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="4) Two Can Exchange Main For:" id="e0bc-3507-4e35-cd1d" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c6c7-2c7e-1dcd-3faf" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Grenade Launcher" hidden="false" id="2cab-bcb0-af84-f3d0" type="selectionEntry" targetId="e26b-9ba3-4184-a610">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Flamer" hidden="false" id="bfa8-092d-8e35-01df" type="selectionEntry" targetId="9f41-82e2-90f6-973a">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Meltagun" hidden="false" id="a1b5-267b-165f-f2c4" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+              <costs>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combat Shield" hidden="false" id="056e-906a-b04f-1007" type="selectionEntry" targetId="c599-cb6f-f414-ea6d"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="43b8-5e15-4901-063a" type="selectionEntry" targetId="3bd9-e813-aafb-59f9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6f8-c593-cac9-c2b4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f94-b71b-0bb2-5f0b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="a800-52d7-1961-6e29" id="1377-2ef3-96d9-1793" primary="true" name="HQ:"/>
+        <categoryLink targetId="0124-9b28-2fe3-912c" id="2b1e-60a9-d69d-66e0" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="c3ad-091d-274d-1380" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="6513-093f-7312-6d09" id="973a-ea38-ff1b-6d00" primary="false" name="Character"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mortar" hidden="false" id="118b-a315-7f27-8c38">
       <profiles>
@@ -660,49 +891,69 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
         <infoLink name="Blast" id="7875-f481-8895-b332" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="0c9d-2391-74ce-c247">
+      <profiles>
+        <profile name="Lasgun" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="c16f-f98a-e6c0-443d">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">3</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="e26b-9ba3-4184-a610">
+      <infoLinks>
+        <infoLink name="Grenade launcher - Krak (Secondary)" id="f5d6-d91c-1c6f-08a5" hidden="false" type="profile" targetId="5b13-d7e6-e30d-9e56"/>
+        <infoLink name="Grenade launcher - Frag (Secondary)" id="0ac5-fb7d-7161-4300" hidden="false" type="profile" targetId="d12f-4d5f-c57c-dfa8"/>
+        <infoLink name="Blast" id="5e21-04f3-c7ac-b7c4" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>
+        <infoLink name="Pinning" id="23b8-c0a4-4858-7375" hidden="false" type="rule" targetId="1af5-e189-a698-3034"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Amphibious" id="17e3-c2c2-65d2-e36f" hidden="false">
       <description>A model with this special rule treats all water features as clear terrain when it moves over it instead of Dangerous Terrain.</description>
     </rule>
     <rule name="Close-in Support" id="bf31-7fac-c62d-6c2e" hidden="false">
-      <description>A Vulture (ignoring the normal rules for Flyers) may start on the board in Hover Mode if the controlling player choses, but if chosen, it may not swap to Zooming Mode until turn 2. </description>
+      <description>A Vulture (ignoring the normal rules for Flyers) may start on the board in Hover Mode if the controlling player choses, but if chosen, it may not swap to Zooming Mode until turn 2.</description>
     </rule>
     <rule name="Disposable" id="48af-87fa-359e-25a4" hidden="false">
-      <description>The opposing player never gains Victory points for specifically destroying this unit in missions where this is relevant. This includes for secondary objectives such as First Blood, but this does not affect Victory points based on the number of total units destroyed in a particular game (such as for Attrition). </description>
+      <description>The opposing player never gains Victory points for specifically destroying this unit in missions where this is relevant. This includes for secondary objectives such as First Blood, but this does not affect Victory points based on the number of total units destroyed in a particular game (such as for Attrition).</description>
     </rule>
     <rule name="Auxilia Artillerists" id="6518-c771-1eea-6d7e" hidden="false">
-      <description>An Auxilia Heavy Ordnance Battery must have one Armsmen Gunner per Artillery Carriage in order for all Artillery Carriage to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player&apos;s Shooting phases, the Auxilia Heavy Ordnance Battery contains fewer Armsmen Gunners than Artillery Carriages then only a number of Artillery Carriages equal to the number of Armsmen Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Carriages then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled, and all Armsmen Gunners in the unit gain a bonus of +1 to their Leadership Characteristic (this bonus is lost immediately once the number of Armsmen Gunners is reduced to less than the number of Artillery Carriages in the unit). </description>
+      <description>An Auxilia Heavy Ordnance Battery must have one Armsmen Gunner per Artillery Carriage in order for all Artillery Carriage to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player&apos;s Shooting phases, the Auxilia Heavy Ordnance Battery contains fewer Armsmen Gunners than Artillery Carriages then only a number of Artillery Carriages equal to the number of Armsmen Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Carriages then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled, and all Armsmen Gunners in the unit gain a bonus of +1 to their Leadership Characteristic (this bonus is lost immediately once the number of Armsmen Gunners is reduced to less than the number of Artillery Carriages in the unit).</description>
     </rule>
     <rule name="Field Commander" id="da68-3037-8f1e-4381" hidden="false">
       <description>Any unit with Emboldened Masses Special Rule that is within 12&quot; of this unit may use this units highest Leadership for any Leadership checks it is required to take.</description>
     </rule>
     <rule name="Maelstrom Fleet Armsmen" id="98c1-c8a1-03b3-59ef" hidden="false">
-      <description>The entire unit gains Carapace Armour and the Heavy Unit Sub-Type. They may also take an Arvus Lighter as a Dedicated Transport if their Occupancy is 12 or lower. </description>
+      <description>The entire unit gains Carapace Armour and the Heavy Unit Sub-Type. They may also take an Arvus Lighter as a Dedicated Transport if their Occupancy is 12 or lower.</description>
     </rule>
     <rule name="Firing Drill" id="7f0a-1da6-2104-7611" hidden="false">
-      <description>If the unit doesn&apos;t move in its own Movement Phase, it may re-roll all 1 &apos;s to hit in the following Shooting Phase. </description>
+      <description>If the unit doesn&apos;t move in its own Movement Phase, it may re-roll all 1 &apos;s to hit in the following Shooting Phase.</description>
     </rule>
     <rule name="Maelstrom Fleet Local Strikes" id="22c8-b722-9327-022b" hidden="false">
-      <description>While chosen as a squadron for the purposes of army selection, each Vehicle is treated as a separate unit during the game rather than as part of a vehicle squadron and may deploy and operate independently of each other . </description>
+      <description>While chosen as a squadron for the purposes of army selection, each Vehicle is treated as a separate unit during the game rather than as part of a vehicle squadron and may deploy and operate independently of each other .</description>
     </rule>
     <rule name="Mortal Transport" id="72df-8be9-2a53-ed69" hidden="false">
       <description>This model may not transport any model With both the Chapter Tactics (X) Special rule and the Bulky (X) Special rule. ln addition any model with the Chapter Tactics (X) Special Rule that may be Transported counts as 2 for the Transport Capacity purposes</description>
     </rule>
     <rule name="In it for the Money" id="e06b-7a8e-4e07-5e3d" hidden="false">
-      <description>Renegade Marauders may never attempt to regroup. In addition if this unit is taken in a detachment. any allied Space Marines (except those with Chapter Tactics (Astral Claws) special rule) count their Allegiance as one worse than usual. </description>
+      <description>Renegade Marauders may never attempt to regroup. In addition if this unit is taken in a detachment. any allied Space Marines (except those with Chapter Tactics (Astral Claws) special rule) count their Allegiance as one worse than usual.</description>
     </rule>
     <rule name="Immobile Artillery" id="18f0-e141-8869-b961" hidden="false">
-      <description>Artillery Carriages may not move unless they are embarking or disembarking from a Trojan Support Vehicle. </description>
+      <description>Artillery Carriages may not move unless they are embarking or disembarking from a Trojan Support Vehicle.</description>
     </rule>
     <rule name="High Grade Promethium" id="1e53-92dd-b609-d5c1" hidden="false">
-      <description>If a Hellhound Flame Tank is upgraded to High Grade Promethium it uses the alternate profile for its Flamestorm cannon. In addition if the Vehicle explodes, it does so at 2D6&quot; instead of the usual D6&quot;. </description>
+      <description>If a Hellhound Flame Tank is upgraded to High Grade Promethium it uses the alternate profile for its Flamestorm cannon. In addition if the Vehicle explodes, it does so at 2D6&quot; instead of the usual D6&quot;.</description>
     </rule>
     <rule name="Household Guard" id="e172-173f-77b0-c9e2" hidden="false">
-      <description>The unit increases its Weapon Skill by + 1 and any model may chose to take a power weapon for +5 points each. </description>
+      <description>The unit increases its Weapon Skill by + 1 and any model may chose to take a power weapon for +5 points each.</description>
     </rule>
     <rule name="Commericia Enforcers" id="574b-ffe1-9afd-fc7a" hidden="false">
-      <description>This unit gains the Move Through Cover and any Shotgun they carry gains the Brutal (2) Special Rule. </description>
+      <description>This unit gains the Move Through Cover and any Shotgun they carry gains the Brutal (2) Special Rule.</description>
     </rule>
     <rule name="Prefects Discipline" id="f735-65f5-a02e-bc77" hidden="false">
       <description>While the Cohorts Prefect is still alive, the squad may re-roll Leadership Checks for regrouping</description>
