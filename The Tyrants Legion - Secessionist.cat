@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b716-1994-94b8-15a7" name="The Tyrants Legion - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b716-1994-94b8-15a7" name="The Tyrants Legion - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="8758-15dc-20cb-41aa" targetId="b232-3062-241d-bf2e"/>
     <catalogueLink type="catalogue" name="Militia" id="d01a-8542-3aa3-ab32" targetId="9bc1-29bf-9e4e-a6b8"/>
@@ -456,7 +456,12 @@
         <entryLink import="true" name="Tyrant&apos;s Legion Chapter Support" hidden="false" id="abfc-c70d-67e5-fa21" type="selectionEntry" targetId="1626-2bd4-24f0-c70b"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Auxilia Command Detachment" hidden="false" id="f9b1-63d7-da0a-f4a7" type="selectionEntry" targetId="b2c5-6e26-defc-87bd"/>
+    <entryLink import="true" name="Legion Auxilia Command Detachment" hidden="false" id="f9b1-63d7-da0a-f4a7" type="selectionEntry" targetId="b2c5-6e26-defc-87bd">
+      <entryLinks>
+        <entryLink import="true" name="Human Auxiliary" hidden="false" id="bd2b-9bb1-46a1-8504" type="selectionEntry" targetId="b214-b5c5-fdd5-64fe"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Renegade Marauder Squad" hidden="false" id="c5e4-7b33-9cf1-6890" type="selectionEntry" targetId="d0f5-5088-e2df-468e"/>
   </entryLinks>
   <sharedRules>
     <rule name="Utterly Expendable" id="0c0c-7270-2b74-3efd" hidden="false">
@@ -831,7 +836,7 @@ Special Rules: TBD</description>
             <categoryLink name="Character" hidden="false" id="ec5f-4957-e8d5-b444" targetId="6513-093f-7312-6d09" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="1) Armour:" id="3f3a-480c-de19-399d" hidden="false" collective="false" import="true" defaultSelectionEntryId="0a68-8dac-5beb-acf3">
+            <selectionEntryGroup name="1) Armour:" id="3f3a-480c-de19-399d" hidden="false" collective="false" import="true" defaultSelectionEntryId="6cf5-4ae8-38df-87b5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aede-4922-ba8f-b5ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7d9-8db9-2fd7-b1e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1026,7 +1031,7 @@ Special Rules: TBD</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="1.5) Sgt or Vet Sgt:" id="928f-c9cf-74e7-0b03" hidden="false" collective="false" import="true" defaultSelectionEntryId="356e-fcd9-accc-adad">
+            <selectionEntryGroup name="1.5) Sgt or Vet Sgt:" id="928f-c9cf-74e7-0b03" hidden="false" collective="false" import="true" defaultSelectionEntryId="332f-6a1a-4ab7-460b">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ead9-5fd9-4e13-cb41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="319a-0a61-d8d7-cde3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1133,7 +1138,7 @@ Special Rules: TBD</description>
                 <categoryLink name="Infantry Unit Type" hidden="false" id="dfa8-b958-9d24-8836" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Bolt Pistol" id="abdf-479f-3102-b11f" hidden="false" collective="false" import="true" defaultSelectionEntryId="43f9-87c3-f14b-1d97">
+                <selectionEntryGroup name="Bolt Pistol" id="abdf-479f-3102-b11f" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b0f-6e68-e130-d7ef">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="958e-20b1-4966-c1aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="adbe-d09c-e536-0b0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1146,7 +1151,7 @@ Special Rules: TBD</description>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Chainsword" id="4226-9fed-1421-c8f6" hidden="false" collective="false" import="true" defaultSelectionEntryId="abe9-a1ea-38ab-753f">
+                <selectionEntryGroup name="Chainsword" id="4226-9fed-1421-c8f6" hidden="false" collective="false" import="true" defaultSelectionEntryId="e29f-4190-84ea-9e8a">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0cc-abc4-c01b-514d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8de3-da59-19c6-cd23" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1163,6 +1168,12 @@ Special Rules: TBD</description>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="19"/>
               </costs>
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="432c-80d5-6bf3-c292"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="432c-80d5-6bf3-c292"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

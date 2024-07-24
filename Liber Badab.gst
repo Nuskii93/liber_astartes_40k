@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="29" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="30" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -448,11 +448,13 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
         <categoryLink name="HQ:" hidden="false" id="00de-6195-785e-74d3" targetId="a800-52d7-1961-6e29">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5833-3c12-e309-41f7"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03d7-3b7b-800b-ad6f" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Troops:" hidden="false" id="3ccc-45e4-3ddd-c3fd" targetId="256c-d251-7f31-271d">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="07f8-56b9-00a0-83cd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e885-703a-0618-2b42" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elites:" hidden="false" id="f137-e3d8-0325-4933" targetId="d471-a611-11c4-7f09">
@@ -5017,9 +5019,9 @@ In addition to this you may not have more units taken as Astral Claws Chapter Su
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Autorifle" hidden="false" id="57dd-dff6-d173-3bf1" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Autogun" hidden="false" id="57dd-dff6-d173-3bf1" collective="false">
       <profiles>
-        <profile name="Autorifle" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="1d1b-9c50-ad0b-81f6" publicationId="15a4-fc68-502d-48a9" page="140">
+        <profile name="Autogun" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="1d1b-9c50-ad0b-81f6" publicationId="15a4-fc68-502d-48a9" page="140">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">3</characteristic>
