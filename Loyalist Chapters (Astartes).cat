@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="642b-58c5-2fab-e243" name="Chapter Template (Astartes)" revision="14" battleScribeVersion="2.03" authorName="Boff89" library="false" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="642b-58c5-2fab-e243" name="Chapter Template (Astartes) - Testing" revision="15" battleScribeVersion="2.03" authorName="Boff89" library="false" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" hidden="true">
   <entryLinks>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="5659-a268-a0bc-bfb8" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="29a3-6cbc-ece3-f229" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
@@ -121,7 +121,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="d9e3-5e27-0fd0-a77e" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="cf69-b6ea-3734-9452" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="cf69-b6ea-3734-9452" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="6591-60a2-f265-df35" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="c363-30b0-ade7-b2d8" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="e564-b49e-b6a9-e755" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -229,7 +229,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="dbc9-d1d9-3955-ec54" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="0777-93e5-a20f-bc2b" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="f895-8aa8-21c3-0d9e" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="41bc-6854-48fe-8597" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="41bc-6854-48fe-8597" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="1c7a-b843-91fc-ee61" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="4cba-26ad-0d75-86bc" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -286,4 +286,5 @@
   <catalogueLinks>
     <catalogueLink id="197f-8359-9943-a039" name="Astartes" targetId="b232-3062-241d-bf2e" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <comment>Just for testing</comment>
 </catalogue>

@@ -79,9 +79,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="19" field="8f66-84b2-5591-f81b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -1217,6 +1222,11 @@
         <modifier type="remove" value="5596-67a3-0a72-dccb" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c37-9b1c-17ac-f404" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Astral Claws Tactical Squad" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7292,9 +7302,14 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -7388,12 +7403,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Master of the Company" hidden="false" id="ab22-aed3-a794-0f16" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d5-d4bf-aa3b-dae0" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e51-77a5-0d86-f7ba" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Master of the Company" hidden="false" id="ab22-aed3-a794-0f16" type="selectionEntry" targetId="7fa0-6f89-c10e-6e29"/>
         <entryLink import="true" name="Chapter Tactics" hidden="false" id="c501-fa9a-0943-a32d" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
       <costs>
@@ -8728,6 +8738,13 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="c3fa-ab4e-57d6-c9ca" name="Master of Signals" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -8805,6 +8822,13 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="40"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="32dd-406e-1e51-b016" name="Master of the Apothecarium" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -8858,6 +8882,13 @@
                   </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="3c12-e2e6-45b2-fa0f" name="Codicier Librarian" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9009,6 +9040,11 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry id="653b-d0a7-4c8b-d93f" name="Master of the Recruits" hidden="false" collective="false" import="true" type="upgrade">
@@ -9053,6 +9089,13 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="c28e-2a73-b08c-e301" name="Chapter Ancient" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9082,6 +9125,13 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="ffaf-6a46-ea73-bdd4" name="Master of Relics" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9565,6 +9615,13 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="15b8-5ed4-0be4-328a" name="Lord Executioner" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9587,6 +9644,13 @@
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="062e-6c28-0649-aa16" name="Master of the Keep" hidden="false" collective="false" import="true" type="upgrade">
               <modifierGroups>
@@ -9625,6 +9689,13 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Death-Speaker Chaplains" hidden="false" id="3066-7892-a32a-8829">
               <costs>
@@ -10594,9 +10665,14 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -22495,6 +22571,11 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                     <repeat value="1" repeats="1" field="selections" scope="95a7-ebc6-07a7-f651" childId="95c0-bb97-feb2-e1e4" shared="true" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="set" value="1" field="9e7e-e6e1-439f-a6b1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <infoLinks>
                 <infoLink name="Counter-Attack (X)" id="fee1-990b-6a11-a6ce" hidden="false" type="rule" targetId="fbd0-13c1-e833-cb6b">
@@ -22506,14 +22587,20 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b720-45d3-37b3-ac58" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9e7e-e6e1-439f-a6b1"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -22547,6 +22634,11 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c37-9b1c-17ac-f404" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Legion Iron Hunter Squadron" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -33916,9 +34008,13 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
               </conditions>
             </modifier>
             <modifier type="set" value="Chapter Tactics (Astral Claws)" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" percentValue="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" percentValue="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="Chapter Tactics (Executioners)" field="name">
               <conditions>

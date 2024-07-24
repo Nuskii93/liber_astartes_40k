@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="28" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="29" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -264,6 +264,7 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Astra Claw Tactical" id="fce1-b4a6-3356-6247" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -276,6 +277,13 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="02a4-60d3-610c-36c5" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e486-e5c1-291f-3145" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="e486-e5c1-291f-3145">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="25f9-0379-bfa7-08b6" name="Compulsory HQ:" hidden="false" targetId="0124-9b28-2fe3-912c" primary="false">
           <constraints>
@@ -1968,6 +1976,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="e3c3-a651-ea46-806a" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d357-1419-fc5c-7ecf" name="Indomitus Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3081,7 +3092,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">T</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Torrent (12&quot;), Breaching (6+)</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Torrent (18&quot;), Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4313,7 +4324,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">12</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Ordnance 1, Blast (3&quot;), Sunder, Rending (4+), Brutal (3)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4326,7 +4337,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <infoLink name="Sunder" id="f662-fc02-91d9-6ea1" hidden="false" type="rule" targetId="c19f-9dd1-2047-aa27"/>
         <infoLink name="Brutal (X)" id="f422-a4e6-6c73-88be" hidden="false" type="rule" targetId="8110-939a-9318-c008">
           <modifiers>
-            <modifier type="set" value="Brutal (2)" field="name"/>
+            <modifier type="set" value="Brutal (3)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Blast" id="52ea-d214-a037-4a3e" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>
@@ -4539,6 +4550,9 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
 Predator/Vindicator: -10pts</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="00a3-a245-91ff-97cf" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Fire Hawks" hidden="false" id="7899-9401-b915-2859">
       <rules>
@@ -4553,6 +4567,9 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
           <description>􀀃del with the Chapter Tactics ( Fire Hawks) special rule lessens all cover saves receiving by 1. Eg. If a Fire Hawks Tactical Marine was in a ruin (5+ Cover Save) It would instead be a 6+ cover save.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="0679-ae0b-fab4-4726" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d9a3-4ad1-31c3-c90e" name="Hand Flamer" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
@@ -4578,6 +4595,9 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
           <description>On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="2cb4-8cfd-f705-ef2e" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="5477-4d3f-e3ba-b482" name="Master-Crafted Gravis Power Fist w/ Built in Storm Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4617,6 +4637,9 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
           <description>During a turn in which a unit made up entirely of models with the Marines Errant Chapter Tactic successfully charges, or are successfully charged, the strength of all Melee attacks made against any model in that unit that does not have the Vehicle Unit Type suffers a modifier of -1.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="e63d-4efc-fd97-b771" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Minotaurs" hidden="false" id="f8d3-3df4-1a6d-2ee6">
       <rules>
@@ -4630,6 +4653,9 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
           <description>A Minotaurs Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="c4fa-5272-0e66-4673" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Star Phantoms" hidden="false" id="89f6-d4c6-33f8-f34b">
       <rules>
@@ -4643,6 +4669,9 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
           <description>Any model with the Chapter Tactics (Star Phantoms) Special rule receives +1 to hit attacking with any &apos;Plasma&apos; or &apos;Melta&apos; weapons.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="1d63-3c80-9a1d-5b8d" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="a752-be2b-9987-47a5" name="Master-Crafted Combi-Melta" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -4676,6 +4705,9 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
 +5 points each.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="0c54-968a-81f9-48ca" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="080f-971e-e104-7be3" name="Master-Crafted Storm Bolter" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4708,6 +4740,9 @@ Note that units which contain models with any variant of the Bulky (x) special r
       <infoLinks>
         <infoLink name="Scout" id="2190-3869-f9a8-3841" hidden="false" type="rule" targetId="aadf-0b76-d0cb-a098"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="9b9f-ba1b-5d1c-cd13" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Red Scorpions" hidden="false" id="0f62-d077-925a-d095">
       <rules>
@@ -4715,6 +4750,9 @@ Note that units which contain models with any variant of the Bulky (x) special r
           <description>Models with Chapter Tactics (Red Scorpions) may re-roll all failed Pinning tests but cannot benefit from the Evade Reaction.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="20bc-9faf-04d3-79c4" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="4c31-c474-a7dd-c3a4" name="Master-Crafted Force Axe" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4769,6 +4807,9 @@ Note that units which contain models with any variant of the Bulky (x) special r
           <description>A Salamanders Detachment may include up to 2 additional Relics of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="29f2-ec67-f85a-d8cc" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="bee9-3cf9-cc59-b058" name="Master-Crafted Combi-Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -4793,6 +4834,9 @@ Note that units which contain models with any variant of the Bulky (x) special r
           <description>A Sons of Medusa Detachment may include an additional Relic of the Chapter on top of what is usually allowed by points limits or any other special rules.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="8e25-7928-e4a0-1d27" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="8712-4c7a-0e48-5315" name="Master-Crafted Thunder Hammer" publicationId="0a24-8d5a-55ca-b028" page="223" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4828,6 +4872,9 @@ Note that units which contain models with any variant of the Bulky (x) special r
           <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10} when within its own deployment zone.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="eea4-59da-027e-21af" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Executioners" hidden="false" id="948e-7150-25a0-cf97">
       <rules>
@@ -4840,6 +4887,9 @@ The character with the highest WS (if two or more characters are tied, then the 
 (Note-Use their baseline stats when being charged or on the charge (unless they benefit from Furious Charge (1) etc). TL:DR Ignore all negative stat modifiers).</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="b3a5-4991-c90a-c377" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="7133-d858-85e2-46df" name="Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
@@ -4868,20 +4918,178 @@ The character with the highest WS (if two or more characters are tied, then the 
           <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="7538-37b6-cc84-34eb" primary="true" name="Chapter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Mantis Warriors" hidden="false" id="a8ae-c0b5-6ffb-d492">
       <rules>
         <rule name="Shadow Killers" id="f22b-741f-7b2c-ab08" hidden="false">
           <description>Infantry models with the Chapter Tactics (Mantis Warriors) and without any form of the Bulky (X) Rule gain the Move Through Cover Special Rule and and add +1 to their movement characteristic. 
-In addition, ANY non-vehicle Model with the Chapter Tactics (Mantis Warriors) Special Rule, on any turn in which they declare a charge from within a terrain feature that grants a cover save (not including any terrain piece purchased as a Fortification choice), they gain the Furious Charge (1) special rule. </description>
+In addition, ANY non-vehicle Model with the Chapter Tactics (Mantis Warriors) Special Rule, on any turn in which they declare a charge from within a terrain feature that grants a cover save (not including any terrain piece purchased as a Fortification choice), they gain the Furious Charge (1) special rule.</description>
         </rule>
         <rule name="Children of Prophecy" id="6fe8-aecc-f334-c4af" hidden="false">
-          <description>A force whose primary detachment has Chapter Tactics (Mantis Warriors) may re­roll failed attempts to Seize the Initiative where this is a factor in the mission being played. </description>
+          <description>A force whose primary detachment has Chapter Tactics (Mantis Warriors) may re­roll failed attempts to Seize the Initiative where this is a factor in the mission being played.</description>
         </rule>
         <rule name="Maelstrom Warder" id="8dd3-a3b7-b396-02ea" hidden="false">
           <description>Any model with the Maelstrom Warder special rule counts its leadership as 1 higher (to a maximum of 10) when within its own deployment zone.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="4a07-b57d-bf00-f0d2" primary="true" name="Chapter"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Tyrants Legion" hidden="false" id="9647-0f58-d518-1e48">
+      <rules>
+        <rule name="The Tryant&apos;s Due" id="05b5-4880-9754-c5f4" hidden="false">
+          <description>Any Infantry and/or Cavalry unit with the Chapter Tactics (Astral Claws) special rule may choose to gain either +1 to any Cover Save or +1 to their Shrouded (X) special rule, when targeted by a shooting attack that passes through any friendly unit that has the Infantry Type as well as both the Emboldened Masses and Utterly Expendable Special Rules. 
+
+
+However, if this bonus is claimed, the unit that the shooting attack passed through immediately suffers D3 wounds per unit firing through them against which this save bonus has been claimed. Wounds inflicted this way are distributed as per wounds from normal shooting attacks and have no AP value.</description>
+        </rule>
+        <rule name="Astral Claws Chapter Support" id="cb8e-fed9-356f-bf9f" hidden="false">
+          <description>For every Astral Claws Tactical Squad included within the army it allows you to include a single choice from the Forces of the Adeptus Astartes with the Chapter Tactics (Astral Claws) Special Rule in any given force organization slot. If any of these units may take a Dedicated Transport, it may be taken as usual and doesn&apos;t count against the number of Astral Claws Chapter Support units in the army. 
+In addition to this you may not have more units taken as Astral Claws Chapter Support than you do Human Auxiliary Units.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="852b-f6b0-b8dd-1609" id="6698-1f47-cce2-6089" primary="true" name="Chapter"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tyrant&apos;s Legion Chapter Support" hidden="false" id="1626-2bd4-24f0-c70b">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03bd-2589-5ce9-f64b" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f364-c7a6-c833-514a" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="d71b-8343-5214-75fc" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <rules>
+        <rule name="Astral Claws Chapter Support" id="dd2f-5c5a-5d2e-c731" hidden="false">
+          <description>Cannot have more Chapter Support Units than Militia units</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="d71b-8343-5214-75fc">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="b214-b5c5-fdd5-64fe" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tactical Squad to Unlock" hidden="false" id="d800-0482-a1b5-6ab9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c44-2d0f-2c33-f578" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18be-fef1-0467-ec89" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="df03-e67b-7469-ea45" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="df03-e67b-7469-ea45">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="fce1-b4a6-3356-6247" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Human Auxiliary" hidden="false" id="b214-b5c5-fdd5-64fe">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="359a-fc66-c702-2bda" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cd7-171d-5907-0d33" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="6ae1-a373-ee8e-79e5" publicationId="48c2-d023-0069-001a" page="38" collective="false">
+      <profiles>
+        <profile name="Autopistol" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="f02d-aac3-7b34-ea8c" publicationId="48c2-d023-0069-001a" page="38">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">9&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">3</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Pistol 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autorifle" hidden="false" id="57dd-dff6-d173-3bf1" collective="false">
+      <profiles>
+        <profile name="Autorifle" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="1d1b-9c50-ad0b-81f6" publicationId="15a4-fc68-502d-48a9" page="140">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">3</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxilia Legion Standard" hidden="false" id="2374-75a7-e7ea-1f82">
+      <profiles>
+        <profile name="Auxilia Legion Standard" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="525f-bc7c-a6c3-5db0">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Any units with Emboldened Masses Special Rule within 12&quot; of of an Auxilia Legion Standard add +1 to any Combat Resolution. They also re-roll any failed Morale and Pinning checks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battle Cannon" hidden="false" id="7638-4f76-51f0-b0fa" publicationId="d0df-7166-5cd3-89fd" page="29" collective="false">
+      <profiles>
+        <profile name="Battle Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="7d29-66bb-2c6c-bd1f" publicationId="d0df-7166-5cd3-89fd" page="29">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Ordnance 1, Blast (5&quot;), Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="1b98-e720-d21f-5c12" hidden="false" targetId="2e92-b54a-1bc2-8b3e" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast" id="3460-c89e-6aaa-a409" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carapace Armour" hidden="false" id="b85a-8425-5556-848b">
+      <profiles>
+        <profile name="Carapace Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="ddf3-879a-1b2a-e43b">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Confers a 4+ Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sub-Flak Armour" hidden="false" id="e69c-a13a-70b3-f23b">
+      <profiles>
+        <profile name="Sub-Flak Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="9050-bef4-2623-c24c">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Confers a 6+ Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flak Armour" hidden="false" id="bb1f-8f6a-2d88-9d65">
+      <profiles>
+        <profile name="Flak Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="0adb-4638-c131-89da">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Confers a 5+ Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5443,8 +5651,8 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
       <description>A model with this special rule must be deployed onto the battlefield as part of a Deep Strike Assault, or other deployment that requires the Deep Strike special rule. It may never be deployed as normal, regardless of any other rule or mission, and if forced to do so it is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation). Furthermore, a model with this special rule may never move – and if forced to do so is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation).</description>
     </rule>
     <rule id="b0df-8129-676a-794c" name="Ordnance" publicationId="0a24-8d5a-55ca-b028" page="177" hidden="false">
-      <description>When making Shooting Attacks, a model equipped with an Ordnance weapon fires the number of times indicated in its profile after its Type. A non-Vehicle model carrying an Ordnance weapon cannon attack with it in the Shooting phase if they moved in the preceding Movement phase. Ordnance weapons cannot make Snap Shots. Furthermore if a non-Vehicle model attacks with an Ordnance weapon, that model may not make any further Shooting Attacks with any other weapon in the Phase nor will it be able to Charge in the ensuing Assault phase. Vehicle models that fire Ordnance weapons may also suffer some restrictions based upon the distance they have moved that turn.
-Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&apos;s armour with an Ordnance weapon, roll two dice instead of one and pick the highest result.</description>
+      <description>Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&apos;s armour with an Ordnance weapon, roll two dice instead of one and pick the highest result.
+In Liber Badab, Ordnance Weapons count as AP 2 on the Vehicle Damage Table.</description>
     </rule>
     <rule id="d065-a2ef-17c8-f28d" name="Outflank" publicationId="0a24-8d5a-55ca-b028" page="244" hidden="false">
       <description>A unit made up entirely of models with this special rule may perform a Flanking Assault as described on page 311. Certain Faction or unit special rules may present other options for the deployment of units with the Outflank special unit.</description>
