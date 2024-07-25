@@ -4513,7 +4513,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
+    <selectionEntry type="upgrade" import="true" name="The Carcharodons" hidden="false" id="1e02-3d58-c2f7-2e7b">
       <rules>
         <rule name="Blood Hunger" id="557e-b6fb-3b9f-9297" hidden="false">
           <description>All units with Chapter Tactics (Carcharodons) gain the Blooded (x) special rule after they have either destroyed an enemy infantry or cavalry unit in an assault or forced one to Fall Back. Place a suitable marker on any unit that gains the Blooded (x) special rule to indicate this has occurred. For each additional unit destroyed or made to fall back, place another Blooded (x) token on the unit. When one of these marked units makes a consolidation move, it must move towards the nearest enemy unit.</description>
