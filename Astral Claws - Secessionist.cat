@@ -30,7 +30,7 @@
     </entryLink>
     <entryLink import="true" name="Boarding Squad" hidden="false" id="0967-f664-db93-40a3" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
     <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="15b6-ce41-c211-e636" type="selectionEntry" targetId="cd69-4c31-b6c2-4481"/>
-    <entryLink import="true" name="Astral Claws" hidden="false" id="1200-ebe4-5bdb-a2ce" type="selectionEntry" targetId="ed67-cef8-7802-d102">
+    <entryLink import="true" name="The Astral Claws" hidden="false" id="1200-ebe4-5bdb-a2ce" type="selectionEntry" targetId="ed67-cef8-7802-d102">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8f4-5da3-987f-b3bc" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="755b-4457-4d52-9304" includeChildSelections="false"/>
@@ -690,6 +690,11 @@
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="9638-87a5-011a-fac0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="greaterThan" value="7" field="selections" scope="8223-c41c-9203-3a87" childId="ab22-aaa4-25f9-d937" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>
@@ -1314,7 +1319,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Left Arm" id="15ed-f18d-ae0f-f23c" hidden="false" defaultSelectionEntryId="4956-1ab5-d5ff-d6b9">
                   <entryLinks>
-                    <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="4956-1ab5-d5ff-d6b9" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
+                    <entryLink import="true" name="Gravis Heavy Bolter" hidden="false" id="4956-1ab5-d5ff-d6b9" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
                     <entryLink import="true" name="Gravis Lascannon" hidden="false" id="bbb3-68d1-8cad-a473" type="selectionEntry" targetId="4e7f-7175-001b-92cd">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
@@ -1427,7 +1432,7 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="deec-8035-7697-432e" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
+                    <entryLink import="true" name="Gravis Heavy Bolter" hidden="false" id="deec-8035-7697-432e" type="selectionEntry" targetId="3e85-dece-bc8c-47e0"/>
                     <entryLink import="true" name="Gravis Chainfist w/ Built in Storm Bolter" hidden="false" id="5a81-a145-a659-1107" type="selectionEntry" targetId="6472-c32d-947c-5220">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>

@@ -1260,6 +1260,11 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
                     <condition type="lessThan" value="1" field="selections" scope="roster" childId="9638-87a5-011a-fac0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="greaterThan" value="7" field="selections" scope="85c1-87b1-a06b-8645" childId="bcdd-75fe-2c06-03d0" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="220"/>

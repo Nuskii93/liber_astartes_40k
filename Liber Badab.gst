@@ -438,6 +438,13 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6368-e5b4-342b-9b30" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d78-1c61-531c-7771" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="9d78-1c61-531c-7771">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Company Level Deployments" hidden="false" id="f21a-79b9-415d-46e0" targetId="c44a-e987-25a0-8e01">
           <constraints>
@@ -1259,7 +1266,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">9</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Sunder</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1309,10 +1316,10 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <profiles>
         <profile id="f624-296d-4165-3565" name="Grav Cannon &amp; Grav Amp" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">36+</characteristic>
-            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">†</characteristic>
-            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Large Blast (5&quot;), Concussive (1), †Graviton Pulse, Haywire</characteristic>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">30</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">-</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Salvo 1/3, Grav-Ripple, Gets Hot!</characteristic>
           </characteristics>
         </profile>
         <profile name="Grav Amp" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="862a-a306-5df9-9461">
@@ -1322,14 +1329,8 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="61c6-069a-7d42-397f" name="Blast" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
-        <infoLink id="758a-690c-1f12-014c" name="Concussive (X)" hidden="false" targetId="6321-eb48-975c-2d48" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Concussive (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c7db-e814-ac2d-1307" name="Graviton Pulse" hidden="false" targetId="ab2f-c0a8-82ac-f2bd" type="rule"/>
-        <infoLink id="e1d0-648f-e25a-d4d0" name="Haywire" hidden="false" targetId="af50-085a-3533-bb50" type="rule"/>
+        <infoLink id="61c6-069a-7d42-397f" name="Grav-Ripple" hidden="false" targetId="2c26-9da5-0b6b-3133" type="rule"/>
+        <infoLink name="Gets Hot" id="e56e-152b-a21f-e133" hidden="false" targetId="c6b7-5471-5caf-2f83" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -1376,7 +1377,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Sunder</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1391,21 +1392,15 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <profile id="cfef-faee-48a6-ae88" name="Graviton Gun" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">†</characteristic>
-            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Blast (3&quot;), Concussive (1), †Graviton Pulse, Haywire</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">-</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 2, Grav-Ripple, Gets Hot!</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d99c-419e-2f4e-d66d" name="Blast" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
-        <infoLink id="92e1-a3ae-49ed-ad71" name="Concussive (X)" hidden="false" targetId="6321-eb48-975c-2d48" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Concussive (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c3ed-6d76-9d6e-cfc0" name="Graviton Pulse" hidden="false" targetId="ab2f-c0a8-82ac-f2bd" type="rule"/>
-        <infoLink id="0866-cd20-2608-0d5c" name="Haywire" hidden="false" targetId="af50-085a-3533-bb50" type="rule"/>
+        <infoLink id="c3ed-6d76-9d6e-cfc0" name="Gets Hot" hidden="false" targetId="c6b7-5471-5caf-2f83" type="rule"/>
+        <infoLink id="0866-cd20-2608-0d5c" name="Grav-Ripple" hidden="false" targetId="2c26-9da5-0b6b-3133" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
@@ -1668,7 +1663,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">72&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
-            <characteristic name="AP" typeId="d24d-64be-92be-d248">6</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">5</characteristic>
             <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Rending (5+), Sniper, Pinning</characteristic>
           </characteristics>
         </profile>
@@ -1774,7 +1769,7 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">9</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Sunder</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1796,9 +1791,6 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="5aef-2d88-f1ba-03df" name="Twin-linked" hidden="false" targetId="6ee4-c64d-5db6-b2d9" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
@@ -3064,9 +3056,9 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <infoLink name="Gets Hot" id="dfc4-3e44-b962-b985" hidden="false" targetId="c6b7-5471-5caf-2f83" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravis Melta Cannon" hidden="false" id="e93b-35f2-4b22-1f85" collective="false" publicationId="0a24-8d5a-55ca-b028" page="221">
+    <selectionEntry type="upgrade" import="true" name="Gravis Multi-Melta" hidden="false" id="e93b-35f2-4b22-1f85" collective="false" publicationId="0a24-8d5a-55ca-b028" page="221">
       <profiles>
-        <profile name="Gravis Melta Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="d898-9dd7-ff5a-242a" publicationId="0a24-8d5a-55ca-b028" page="221">
+        <profile name="Gravis Multi-Melta" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="d898-9dd7-ff5a-242a" publicationId="0a24-8d5a-55ca-b028" page="221">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
@@ -3452,7 +3444,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">4</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">5</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire 6, Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire 4, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3558,7 +3550,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <infoLink name="Shred" id="960a-e37f-e1a4-ce2f" hidden="false" type="rule" targetId="0e7a-9209-ce0d-7ed2"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Astartes Grenade Launcher" hidden="false" id="dadf-e7f8-f2fe-491b" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="dadf-e7f8-f2fe-491b" collective="false">
       <infoLinks>
         <infoLink name="Blast" id="67c8-d5c6-d2fc-250c" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
         <infoLink name="Pinning" id="6228-c955-1c02-3fa6" hidden="false" targetId="1af5-e189-a698-3034" type="rule"/>
@@ -3585,29 +3577,22 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cerberus Launcher" hidden="false" id="5b1a-91b2-7dfb-1b1a" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Cerberus Missile Launcher" hidden="false" id="5b1a-91b2-7dfb-1b1a" collective="false">
       <infoLinks>
         <infoLink name="Blast" id="a395-e27b-effb-bdb5" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
         <infoLink name="Pinning" id="08d9-f3d7-ac70-dd22" hidden="false" targetId="1af5-e189-a698-3034" type="rule"/>
+        <infoLink name="Blind" id="8f47-f34d-8df6-fd48" hidden="false" targetId="e087-5cb7-791d-d6d9" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
       <profiles>
-        <profile name="Cerberus Launcher - Frag" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="e496-9b7a-36f6-a2b6">
+        <profile name="Cerberus Missile Launcher" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="e496-9b7a-36f6-a2b6">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">4</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">6</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Blast (3&quot;), Pinning</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Cerberus Launcher - Krak" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="6d55-4200-61d5-52f5">
-          <characteristics>
-            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
-            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
-            <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Blast (3&quot;), Pinning, Blind</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3854,7 +3839,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Sunder</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4016,9 +4001,9 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         <profile name="Cyclonic Melta-Lance" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="03d6-a35a-a608-24d9">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">9</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">1</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 3, Armourbane (Melta)</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 4, Armourbane (Melta)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4081,7 +4066,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">10</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Sunder, Exoshock (5+), Twin-linked</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Exoshock (5+), Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4294,7 +4279,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">7</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Ordnance 1, Barrage, Blast (3&quot;), Breacher (5+)</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Ordnance 1, Barrage, Blast (3&quot;), Breaching (5+)</characteristic>
           </characteristics>
         </profile>
         <profile name="Icarios AA Missile" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="452d-4f9f-6c16-216a">
@@ -5306,6 +5291,76 @@ Four single Blast Shields</characteristic>
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seismic Hammer w/ Meltagun" hidden="false" id="cd7e-2e44-268d-e043">
+      <profiles>
+        <profile name="Seismic Hammer" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="8b9b-c3ca-485a-3ec6">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">x2</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">1</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Concussive (2), Brutal (2), Sunder, Unwieldly</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Brutal (X)" id="05fd-b650-4831-5b15" hidden="false" type="rule" targetId="8110-939a-9318-c008">
+          <modifiers>
+            <modifier type="set" value="Brutal (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Concussive (X)" id="f2a9-5f22-20ff-60fa" hidden="false" type="rule" targetId="6321-eb48-975c-2d48">
+          <modifiers>
+            <modifier type="set" value="Concussive (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Sunder" id="f8a6-2b20-c66e-cd00" hidden="false" type="rule" targetId="c19f-9dd1-2047-aa27"/>
+        <infoLink name="Unwieldy" id="6131-482e-377e-d527" hidden="false" type="rule" targetId="7efd-92ce-72e1-132e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Meltagun" hidden="false" id="705c-5855-c60f-6a50" type="selectionEntry" targetId="4804-a8a1-c9d9-b7c7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1209-5d77-33ef-ffcd" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="326d-7453-412f-d6c2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c7fb-41e3-48d0-7dfa" name="Gravis Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Gravis Missile Launcher - Flak" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="feb3-e9f5-704c-a86f" publicationId="0a24-8d5a-55ca-b028" page="221">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">7</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gravis Missile Launcher - Frag" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="7c7b-c9d3-d1ec-cf0a" publicationId="0a24-8d5a-55ca-b028" page="221">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">4</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">6</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Blast (3&quot;), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gravis Missile Launcher - Krak" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="067c-4cf5-4b35-560d" publicationId="0a24-8d5a-55ca-b028" page="221">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">8</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 2, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="35ed-fe22-a16b-370f" hidden="false" targetId="2ba7-1d21-4c3d-f6a5" type="rule"/>
+        <infoLink name="Blast" id="870a-8907-9efa-0db9" hidden="false" targetId="0329-e40f-18be-9169" type="rule"/>
+        <infoLink name="Pinning" id="e34a-d60d-bec0-02eb" hidden="false" targetId="1af5-e189-a698-3034" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f45b-0a73-d710-3a6c" name="Power Weapon" hidden="false" collective="false" import="true">
@@ -5867,7 +5922,7 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
     </rule>
     <rule id="b0df-8129-676a-794c" name="Ordnance" publicationId="0a24-8d5a-55ca-b028" page="177" hidden="false">
       <description>Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&apos;s armour with an Ordnance weapon, roll two dice instead of one and pick the highest result.
-In Liber Badab, Ordnance Weapons count as AP 2 on the Vehicle Damage Table.</description>
+Liber Badab Addition: A unit may not reroll an Armour Save due to the Heavy Rule, if wounded by a weapon with the Ordnance Trait.</description>
     </rule>
     <rule id="d065-a2ef-17c8-f28d" name="Outflank" publicationId="0a24-8d5a-55ca-b028" page="244" hidden="false">
       <description>A unit made up entirely of models with this special rule may perform a Flanking Assault as described on page 311. Certain Faction or unit special rules may present other options for the deployment of units with the Outflank special unit.</description>
@@ -6105,6 +6160,9 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
     </rule>
     <rule id="9c0a-081e-93fa-d4d7" name="Master of the Chapter" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
       <description>Selecting a model with the Master of the Chapter special rule as the army&apos;s Warlord will grant the controlling player access to a number of Company Level Deployments.</description>
+    </rule>
+    <rule name="Grav-Ripple" id="2c26-9da5-0b6b-3133" hidden="false">
+      <description>A weapon with the Grav-Ripple effect rolls to hit as normal. To wound it needs whatever the targets Armour save is (Eg if hitting a Space Marine with an armour save of 3+, you would require a 3+ to wound the Marine). Models wounded by a weapon with the Grav-Ripple trait do not make a normal saving through, but instead make save based on their Toughness. EG if a Guardsmen, at Toughness 3 is wounded by a Grav-Ripple Weapon, they will save the wound on a 3+</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
