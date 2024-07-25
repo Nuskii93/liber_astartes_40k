@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="30" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="31" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3091,7 +3091,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       <profiles>
         <profile name="Flamestorm Cannon" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="9f5e-3ca0-62ff-cdc5">
           <characteristics>
-            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">T</characteristic>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">Template</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
             <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Torrent (18&quot;), Breaching (6+)</characteristic>
@@ -3106,7 +3106,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
         </infoLink>
         <infoLink name="Torrent (X)" id="50e8-262a-7e02-8d27" hidden="false" type="rule" targetId="6aa9-6346-980a-e26a">
           <modifiers>
-            <modifier type="set" value="Torrent (18)" field="name"/>
+            <modifier type="set" value="Torrent (18&quot;)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4944,10 +4944,10 @@ In addition, ANY non-vehicle Model with the Chapter Tactics (Mantis Warriors) Sp
     <selectionEntry type="upgrade" import="true" name="The Tyrants Legion" hidden="false" id="9647-0f58-d518-1e48">
       <rules>
         <rule name="The Tryant&apos;s Due" id="05b5-4880-9754-c5f4" hidden="false">
-          <description>Any Infantry and/or Cavalry unit with the Chapter Tactics (Astral Claws) special rule may choose to gain either +1 to any Cover Save or +1 to their Shrouded (X) special rule, when targeted by a shooting attack that passes through any friendly unit that has the Infantry Type as well as both the Emboldened Masses and Utterly Expendable Special Rules. 
+          <description>Any Infantry and/or Cavalry unit with the Chapter Tactics (Astral Claws) special rule may choose to gain either +1 to any Cover Save or +1 to their Shrouded (X) special rule, when targeted by a shooting attack that passes through any friendly unit that has the Infantry Type as well as both the Emboldened Masses and Utterly Expendable Special Rules.
 
 
-However, if this bonus is claimed, the unit that the shooting attack passed through immediately suffers D3 wounds per unit firing through them against which this save bonus has been claimed. Wounds inflicted this way are distributed as per wounds from normal shooting attacks and have no AP value.</description>
+However, if this bonus is claimed, the unit that the shooting attack passed through immediately suffers D3 wounds per unit firing through them against which this save bonus has been claimed. Wounds inflicted this way are distributed as per wounds from normal shooting attacks and have no AP value.</description>
         </rule>
         <rule name="Astral Claws Chapter Support" id="cb8e-fed9-356f-bf9f" hidden="false">
           <description>For every Astral Claws Tactical Squad included within the army it allows you to include a single choice from the Forces of the Adeptus Astartes with the Chapter Tactics (Astral Claws) Special Rule in any given force organization slot. If any of these units may take a Dedicated Transport, it may be taken as usual and doesn&apos;t count against the number of Astral Claws Chapter Support units in the army. 
@@ -5083,6 +5083,185 @@ In addition to this you may not have more units taken as Astral Claws Chapter Su
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sub-Flak Armour" hidden="false" id="f6ed-2c2b-a593-6048" collective="true">
+      <profiles>
+        <profile name="Sub-Flak Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="189b-dee1-9962-89b2">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Confers a 6+ Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skyreaper Battery" hidden="false" id="b871-3399-9d59-838f" collective="false">
+      <profiles>
+        <profile name="Skyreaper Battery" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="ffe7-4a27-e998-a41a" publicationId="a716-c1c4-7b26-8424" page="128">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">7</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 5, Skyfire, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="fd27-7c63-f3ea-5924" hidden="false" targetId="2ba7-1d21-4c3d-f6a5" type="rule"/>
+        <infoLink name="Twin-linked" id="e955-0dda-4d1f-60bc" hidden="false" targetId="6ee4-c64d-5db6-b2d9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Defence Line" hidden="false" id="d681-7334-104f-5607" publicationId="e77a-823a-da94-16b9" page="229" collective="false">
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Defence Line" typeId="7f77-d816-b128-92a6" typeName="Fortification" hidden="false" id="ecbb-4d24-1f2c-289d">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="97b6-ac64-f1cd-d4d6">Fortication (Barricade)
+Four double Blast Shields
+Four single Blast Shields</characteristic>
+            <characteristic name="BS" typeId="44f7-0ff5-c412-58f8">-</characteristic>
+            <characteristic name="Front" typeId="a2d0-5a79-470a-9c3e">-</characteristic>
+            <characteristic name="Side" typeId="892d-dc22-0ef9-96ce">-</characteristic>
+            <characteristic name="Rear" typeId="33fa-8dd8-aa91-a98e">-</characteristic>
+            <characteristic name="HP" typeId="8828-3e02-3cfc-bc9f">-</characteristic>
+            <characteristic name="Transport Capacity" typeId="e15d-393d-6edc-cf0e">-</characteristic>
+            <characteristic name="Fire Points" typeId="1c51-eedd-82d1-e944">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barricades, Walls and Defence Lines" id="b0b1-c914-44ec-4522" hidden="false" targetId="0c07-134e-f599-425b" type="rule"/>
+        <infoLink name="Blast-shield" id="9721-d5b5-67ca-18c6" hidden="false" targetId="b0c9-d2c5-0e5e-a33e" type="rule"/>
+        <infoLink name="Multi-part Fortifications" id="c94b-a6ef-ab94-3f52" hidden="false" targetId="111a-d3da-15cd-2584" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skyreaper Battery" hidden="false" id="ebcc-062b-ad41-8d9f" type="selectionEntry" targetId="b871-3399-9d59-838f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2154-fc8c-0342-c2de" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="b641-b5fc-cebd-7593" id="8193-f1da-e292-4588" primary="true" name="Fortifications"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flak Armour" hidden="false" id="c14d-2f5f-2606-85d6" collective="true">
+      <profiles>
+        <profile name="Flak Armour" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="eb10-de85-faa6-9377">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">Confers a 5+ Save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="a11c-7659-3715-c2f4" name="Hull (Front) Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="da54-2d1c-c8a2-4e3e" name="Hull (Front) Mounted Heavy Bolter" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69e7-4b8a-df2e-dc2b" name="Hull (Front) Mounted Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c171-5d6d-d041-137a" name="Hull (Front) Mounted Heavy Flamer" publicationId="0a24-8d5a-55ca-b028" page="221" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">Template</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="89f5-db46-3022-a54e" name="Template Weapons" hidden="false" targetId="3d7a-7ae8-f063-593c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad4d-0672-2e89-c233" name="Frag Grenades" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="a9c3-4136-2b7f-e25d" name="Frag Grenades" publicationId="1ea9-215e-21c0-c2e9" page="143" hidden="false" typeId="19f7-de55-815b-3358" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">A unit with at least one model carrying frag grenades attacks at its normal Initiative Step during an Assault after charging through Difficult or Dangerous Terrain. It still suffers Charge roll penalties from such terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4afb-ae5a-3846-39b4" name="Grenades" hidden="false" targetId="fe56-9123-6361-aa6c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="46ad-98c9-3f53-eaf3" name="Close Combat Weapon" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="d12a-058b-717b-abdd" name="Close Combat Weapon" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">User</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ae6-041a-600e-7975" name="Hull (Front) Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b6cf-94ed-8f7d-8e8b" name="Hull (Front) Lascannon" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">9</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">2</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 1, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="77f6-337f-0e88-69d6" name="Sunder" publicationId="2d25-7683-189b-ddd5" hidden="false" targetId="c19f-9dd1-2047-aa27" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bomb" hidden="false" id="c334-8fa5-e5df-acb1">
+      <profiles>
+        <profile name="Bomb" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="f371-031d-0cf2-80ba">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Bomb 1, Large Blast (5”), Breaching (6+), One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="4edd-f87f-76ee-cc96" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>
+        <infoLink name="Breaching (X)" id="95af-511b-1063-b0ab" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="One Use/One Shot" id="0cd4-da44-e03b-32ac" hidden="false" type="rule" targetId="856b-ad3e-6ce1-a1ba"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
