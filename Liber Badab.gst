@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="31" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="32" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1785,14 +1785,14 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e85-dece-bc8c-47e0" name="Gravis Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3e85-dece-bc8c-47e0" name="Gravis Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="294e-3f69-44c2-1d4f" name="Gravis Bolt Cannon" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+        <profile id="294e-3f69-44c2-1d4f" name="Gravis Heavy Bolter" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">48&quot;</characteristic>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">36&quot;</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 6, Twin-Linked</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 6</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4865,7 +4865,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Astral Claws" hidden="false" id="ed67-cef8-7802-d102">
+    <selectionEntry type="upgrade" import="true" name="The Astral Claws" hidden="false" id="ed67-cef8-7802-d102">
       <rules>
         <rule name="Reckless Courage" id="5e8e-f683-4917-19a6" hidden="false">
           <description>Any Astral Claws model gains the Stubborn special rule and may never choose to automatically fail a Morale check.</description>
@@ -5261,6 +5261,49 @@ Four single Blast Shields</characteristic>
           </modifiers>
         </infoLink>
         <infoLink name="One Use/One Shot" id="0cd4-da44-e03b-32ac" hidden="false" type="rule" targetId="856b-ad3e-6ce1-a1ba"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="31a3-36b7-af81-a605" name="Hull Mounted Gravis Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="86ac-befb-21ee-1e3b" name="Hull Mounted Gravis Heavy Bolter" publicationId="0a24-8d5a-55ca-b028" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">5</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">4</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6112-52ec-5899-96d0" name="Twin-linked" hidden="false" targetId="6ee4-c64d-5db6-b2d9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vulcan Mega Bolter" hidden="false" id="c016-55df-f9ce-c085">
+      <profiles>
+        <profile name="Vulcan Mega Bolter" typeId="d30e-0868-cb7e-98bb" typeName="Weapon" hidden="false" id="3de7-1ce5-1757-cd20">
+          <characteristics>
+            <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">6</characteristic>
+            <characteristic name="AP" typeId="d24d-64be-92be-d248">3</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Heavy 14, Breaching (5+), Pinning, Shell Shock, Spool-up!</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e4b1-db7f-c07f-87f7" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="9a62-361a-50f0-4731" hidden="false" type="rule" targetId="1af5-e189-a698-3034"/>
+        <infoLink name="Shell Shock (X)" id="de14-3c02-7187-82d8" hidden="false" type="rule" targetId="5a38-a7ce-51a6-0749">
+          <modifiers>
+            <modifier type="set" value="Shell Shock (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

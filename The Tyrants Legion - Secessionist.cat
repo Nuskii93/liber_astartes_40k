@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b716-1994-94b8-15a7" name="The Tyrants Legion - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b716-1994-94b8-15a7" name="The Tyrants Legion - Secessionist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="8758-15dc-20cb-41aa" targetId="b232-3062-241d-bf2e"/>
     <catalogueLink type="catalogue" name="Militia" id="d01a-8542-3aa3-ab32" targetId="9bc1-29bf-9e4e-a6b8"/>
@@ -11,7 +11,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="838e-0265-8539-3dbf" includeChildSelections="false"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Astral Claws" hidden="false" id="0fff-19df-a4ef-3323" type="selectionEntry" targetId="ed67-cef8-7802-d102">
+    <entryLink import="true" name="The Astral Claws" hidden="false" id="0fff-19df-a4ef-3323" type="selectionEntry" targetId="ed67-cef8-7802-d102">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8bb-045f-3edd-3016" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33dd-f646-b65f-bc26" includeChildSelections="false"/>
@@ -510,17 +510,30 @@
     </entryLink>
     <entryLink import="true" name="Artillery Barrage" hidden="false" id="e24e-34ce-645e-1968" type="selectionEntry" targetId="51e1-786a-18a3-8374"/>
     <entryLink import="true" name="Minefield" hidden="false" id="39f7-3780-cc0b-5fe4" type="selectionEntry" targetId="cbd7-0b98-41d9-fb01"/>
+    <entryLink import="true" name="Baneblade Super-Heavy Tank" hidden="false" id="d1ff-da5e-68ef-635b" type="selectionEntry" targetId="0874-1149-f034-4dfd">
+      <rules>
+        <rule name="The Tyrant&apos;s Chosen" id="5a4c-45ba-ebfb-2971" hidden="false">
+          <description>These vehicles are crewed by Astartes, or at the very least commanded by an Astartes, therefore this vehicle gains the Chapter Tactics (Astral Claws) Trait as well as an increased Ballistic Skill (already added above).
+In addition, if this vehicle conveys any victory points to the opposing player, those points are doubled.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="2d85-0ff2-b08b-a4e9" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormlord Super-Heavy Carrier" hidden="false" id="e10a-a3b9-946a-ef32" type="selectionEntry" targetId="7816-bfb1-29ca-014a">
+      <rules>
+        <rule name="The Tyrant&apos;s Chosen" id="9f46-c5de-0107-0d49" hidden="false">
+          <description>These vehicles are crewed by Astartes, or at the very least commanded by an Astartes, therefore this vehicle gains the Chapter Tactics (Astral Claws) Trait as well as an increased Ballistic Skill (already added above).
+In addition, if this vehicle conveys any victory points to the opposing player, those points are doubled.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Chapter Tactics" hidden="false" id="44a4-3cae-0a40-34ac" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Minotaur Heavy Artillery Tank Battery" hidden="false" id="7d1e-8fb8-32ea-7c2e" type="selectionEntry" targetId="520e-a40a-e4f1-6198"/>
   </entryLinks>
-  <sharedRules>
-    <rule name="Utterly Expendable" id="0c0c-7270-2b74-3efd" hidden="false">
-      <description>The opposing player never gains Victory points for specifically destroying this unit in missions where this is relevant. his includes for secondary objectives such as First Blood, but this does not affect Victory points based on the number of total units destroyed in a particular game (such as for Attrition).</description>
-    </rule>
-    <rule name="Emboldened Masses" id="cba5-744c-3887-6245" hidden="false">
-      <description>A model with this rule counts as having the Chapter Tactics (Astral Claws) special rule for use with the following items; 
-Wargear: Chapter Standard, TBD
-Special Rules: TBD</description>
-    </rule>
-  </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Lugft Huron" hidden="false" id="4c18-71f7-b6e4-d73a">
       <profiles>
