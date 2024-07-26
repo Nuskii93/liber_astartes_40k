@@ -6055,6 +6055,11 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Storm Shield" hidden="false" id="07f1-633e-17e7-4f3e" type="selectionEntry" targetId="4c6b-c69c-5efd-20d1">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="132f-7b41-c7b8-294f" name="5) Other Wargear:" hidden="false" collective="false" import="true">
