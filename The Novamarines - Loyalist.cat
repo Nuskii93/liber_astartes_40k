@@ -294,6 +294,7 @@
     </entryLink>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="2021-41f1-8052-04f6" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Captain Mordaci Blaylock" hidden="false" id="04dd-b7cd-46d9-15bf" type="selectionEntry" targetId="dafe-6648-af26-dc69"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="4d0d-53d8-7d26-8775" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Captain Mordaci Blaylock" hidden="false" id="dafe-6648-af26-dc69">
@@ -419,6 +420,7 @@
         <categoryLink targetId="9231-183c-b97b-63f9" id="8f00-24f5-9e22-16c5" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="5151-e3c6-76ce-e917" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="3ead-fc58-1846-a0f4" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="c6d2-08f1-2ade-1d66" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d5df-2039-b845-731a" includeChildSelections="true"/>

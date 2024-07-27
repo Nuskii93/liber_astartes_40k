@@ -286,6 +286,7 @@
     </entryLink>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="fd5a-2621-257a-b83d" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="High Chaplain Thulsa Kane" hidden="false" id="762f-7246-6599-4028" type="selectionEntry" targetId="4875-6d65-7624-2ca8"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="2bf3-a925-bf86-9654" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="High Chaplain Thulsa Kane" hidden="false" id="4875-6d65-7624-2ca8">
@@ -463,6 +464,7 @@
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ac8d-6d92-7b75-157f" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="6c06-a64d-064a-e8c9" primary="false" name="Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9497-3620-a345-d1c3" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="0be8-037a-f0d1-f7eb" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dcb9-cd7f-af95-77f2" includeChildSelections="true"/>

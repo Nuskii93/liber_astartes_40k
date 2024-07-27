@@ -265,6 +265,8 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
       </rules>
     </categoryEntry>
     <categoryEntry name="Astra Claw Tactical" id="fce1-b4a6-3356-6247" hidden="false"/>
+    <categoryEntry name="Culln" id="d5d3-7e29-8b8b-07f1" hidden="false"/>
+    <categoryEntry name="Unique" id="fdfb-b86a-0fcd-1668" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -480,6 +482,13 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="4543-e6cd-2eb7-4df4">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>

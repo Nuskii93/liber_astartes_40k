@@ -301,6 +301,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Iron Thane Vaylund Cal" hidden="false" id="b3c2-c1b3-1270-edab" type="selectionEntry" targetId="c609-ad52-e274-ecfc"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="4a26-6912-ea84-cc91" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Gorgon Squad" hidden="false" id="03e5-2aed-2205-4ca3">
@@ -875,6 +876,7 @@
       <categoryLinks>
         <categoryLink targetId="d471-a611-11c4-7f09" id="23c9-2160-31db-18d4" primary="true" name="Elites:"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="54b5-5c4d-ce86-ad99" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="5437-17ff-621a-a7d2" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="738f-0a80-1481-4a79" includeChildSelections="false"/>
@@ -994,6 +996,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2540-680e-a914-2e67" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="95cc-7645-74da-f605" primary="false" name="Character"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="19e8-b994-edb0-e882" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="4f08-3b74-888c-d668" primary="false" name="Unique"/>
       </categoryLinks>
       <rules>
         <rule name="Purge the Weak" id="04ec-bbe0-e7f8-d513" hidden="false">

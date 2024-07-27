@@ -298,6 +298,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Captain Zhrukal Androcles" hidden="false" id="8c33-ea3e-24bb-b7c9" type="selectionEntry" targetId="b2b0-2f2a-3c46-fba3"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="a3f9-40bf-5c3c-d5f2" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="c2b1-8345-d05a-8dbd" targetId="b232-3062-241d-bf2e"/>
@@ -396,6 +397,7 @@ In addition, anytime Zhrukal uses the Melta component of his Combi-Weapon and th
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="c000-a689-007e-1b95" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="61c5-b416-6834-c797" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="0d4f-ff28-d819-a512" id="34b7-9bd7-3645-b738" primary="false" name="Deep Strike:"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="0d14-bc87-20b1-dffb" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Retinue" id="6ae8-3b23-5472-62c5" hidden="false" collective="false" import="true">

@@ -300,6 +300,7 @@
     </entryLink>
     <entryLink import="true" name="Lord Asterion Moloc" hidden="false" id="3c4f-7d4e-af1f-3dac" type="selectionEntry" targetId="55ab-07fd-34d0-f264"/>
     <entryLink import="true" name="Chaplain Ivanus Enkomi" hidden="false" id="b1c5-4689-8eec-3e92" type="selectionEntry" targetId="2dcd-86a3-0df6-f402"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="f9f1-6b6f-4a22-4ad2" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="0213-f05d-3d69-aec1" targetId="b232-3062-241d-bf2e"/>
@@ -336,6 +337,7 @@
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="d471-a611-11c4-7f09" id="d716-793c-4fcc-7a40" primary="true" name="Elites:"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="3b63-d0f6-baa4-7651" primary="false" name="Unique"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sacred-Band Terminators" hidden="false" id="1137-937f-ebe4-998b" collective="false">
@@ -365,6 +367,7 @@
         <categoryLink name="Deep Strike:" hidden="false" id="ce55-e664-bbe5-3ace" targetId="0d4f-ff28-d819-a512" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="87e3-b920-b2a3-e369" targetId="d471-a611-11c4-7f09" primary="true"/>
         <categoryLink name="Character" hidden="false" id="66bd-ac3a-55a4-5a6f" targetId="6513-093f-7312-6d09" primary="false"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="4d6c-a552-dfed-a8cf" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="0.5) Terminator Armour" id="641c-472b-4958-666c" hidden="false" collective="false" import="true" defaultSelectionEntryId="6939-c237-6887-c093">
@@ -990,6 +993,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f63f-3f11-3771-a5e5" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1222-35bb-2dc8-0e35" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="17d9-9b4f-9c18-a970" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="ec39-2ffb-1bd7-8f6e" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Black Spear" hidden="false" id="3d2f-9538-bf57-92da">
@@ -1228,6 +1232,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="c234-2e2d-4bd9-6a72" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="288e-f8d8-4fb7-ba7c" primary="false" name="Character"/>
         <categoryLink targetId="4580-2b27-ee69-e8f5" id="937b-3b40-c937-f87f" primary="false" name="Enkomi"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="bd44-606d-6a91-7056" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="41d6-606f-3229-3b15" includeChildSelections="true"/>

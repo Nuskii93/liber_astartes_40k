@@ -304,6 +304,7 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Captain Tarnus Vale" hidden="false" id="64b0-4961-6990-2f33" type="selectionEntry" targetId="d8d2-7346-ab5c-e54f"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="4c75-84c6-9f46-bb17" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="1st Company Veteran Elite" hidden="false" id="a3e2-207f-a5cf-9dde" collective="false">
@@ -343,6 +344,7 @@
         <categoryLink name="Deep Strike:" hidden="false" id="ffe2-4572-11c2-a135" targetId="0d4f-ff28-d819-a512" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="ba8f-2466-50f6-459a" targetId="d471-a611-11c4-7f09" primary="true"/>
         <categoryLink name="Character" hidden="false" id="2009-c488-310a-76f4" targetId="6513-093f-7312-6d09" primary="false"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="1eba-a3e8-6b83-e0c5" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="0.5) Terminator Armour" id="cb09-9586-8362-fe96" hidden="false" collective="false" import="true" defaultSelectionEntryId="2538-695a-1d85-395d">
@@ -1084,6 +1086,7 @@ Extra Armour: A model with the Extra Armour Wargear counts a Crew Stunned result
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="ce95-8282-8e86-7c1c" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="080d-1197-cd9f-e785" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="ed73-baf7-806f-76d2" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="6d60-2152-7630-245c" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9009-583f-263d-c63f" includeChildSelections="true"/>

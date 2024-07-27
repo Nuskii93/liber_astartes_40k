@@ -67,7 +67,7 @@
     <entryLink import="true" name="Thunderhawk Heavy Transporter" hidden="false" id="7e8d-4ef5-7a1c-8f03" type="selectionEntry" targetId="4d1c-ed2e-71d7-8bb5"/>
     <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="b248-4dbc-12a0-30e7" type="selectionEntry" targetId="a921-21d2-1964-1e2d"/>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="9618-7fb2-df29-2b17" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
-    <entryLink import="true" name="Carcharodons" hidden="false" id="4f76-37fa-9af5-6b60" type="selectionEntry" targetId="1e02-3d58-c2f7-2e7b">
+    <entryLink import="true" name="The Carcharodons" hidden="false" id="4f76-37fa-9af5-6b60" type="selectionEntry" targetId="1e02-3d58-c2f7-2e7b">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd38-df5c-7be6-09bb" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e6c-619d-1c8d-d5b1" includeChildSelections="false"/>
@@ -308,6 +308,7 @@
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Company Level Deployments" hidden="false" id="9a44-b132-7815-5573" type="selectionEntry" targetId="fb02-1d06-e689-6dee"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="2264-0ef5-0f94-801a" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="The Red Brethren" hidden="false" id="c70b-ae4a-e26d-68f4" collective="false">
@@ -336,6 +337,7 @@
         <categoryLink name="Infantry Unit Type" hidden="false" id="1c45-966f-4c97-c517" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink name="Deep Strike:" hidden="false" id="c563-2410-8aa8-d708" targetId="0d4f-ff28-d819-a512" primary="false"/>
         <categoryLink targetId="d471-a611-11c4-7f09" id="1869-b4f4-566f-1723" primary="true" name="Elites:"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="e3a0-bcfc-0614-e551" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="0.5) Terminator Armour" id="2a53-b2e2-7ad4-cd39" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1b6-5423-9486-4650">
@@ -809,6 +811,7 @@
         <categoryLink targetId="0124-9b28-2fe3-912c" id="4f55-b1e4-f46d-79c8" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ba72-d1d8-f0be-a665" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="e947-e15d-6ea2-a262" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="3da7-9bd6-5a84-9299" primary="false" name="Unique"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Master of the Chapter" id="f9b8-421c-7d01-39e7" hidden="false" type="rule" targetId="9c0a-081e-93fa-d4d7"/>

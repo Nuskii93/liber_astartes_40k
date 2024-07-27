@@ -288,6 +288,7 @@
     <entryLink import="true" name="Captain Pellas Mir&apos;san" hidden="false" id="24ed-b2de-744a-ef0b" type="selectionEntry" targetId="1550-9e7d-1fd8-3464"/>
     <entryLink import="true" name="Master Harath Shen" hidden="false" id="d3aa-0cda-ce1c-9f5a" type="selectionEntry" targetId="6e4e-e2d3-652d-0f94"/>
     <entryLink import="true" name="Bray&apos;arth Ashmantle" hidden="false" id="8738-1640-6d62-4a9a" type="selectionEntry" targetId="60fa-1830-5d61-9963"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="f660-3c0e-0c5d-6eae" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Captain Pellas Mir&apos;san" hidden="false" id="1550-9e7d-1fd8-3464">
@@ -419,6 +420,7 @@
         <categoryLink targetId="6513-093f-7312-6d09" id="5e2e-4164-58bd-2298" primary="false" name="Character"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="f211-432f-4fff-e261" primary="false" name="Independent Character"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="965e-56ca-7562-bf01" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="49a6-a0b3-dc8e-6980" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fd97-eba3-79f1-f53f" includeChildSelections="true"/>
@@ -564,6 +566,7 @@ determine the result of an assault.</description>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="08d5-fc01-a62c-1e66" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b01d-988c-84de-cb69" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="9640-77ac-333b-0c1c" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="4dfb-25f9-6cf6-2fe3" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f0f1-8c38-e1b8-5f6a" includeChildSelections="true"/>
@@ -682,6 +685,7 @@ determine the result of an assault.</description>
         <categoryLink targetId="6513-093f-7312-6d09" id="434d-871e-3df6-9db4" primary="false" name="Character"/>
         <categoryLink targetId="a800-52d7-1961-6e29" id="e4eb-a227-f7e3-0859" primary="true" name="HQ:"/>
         <categoryLink targetId="0124-9b28-2fe3-912c" id="3cd7-1e83-cd86-54dd" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="0ae8-fd08-a99d-e36b" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d64c-da54-51d8-6fb8" includeChildSelections="true"/>

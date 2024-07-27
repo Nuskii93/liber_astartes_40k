@@ -120,7 +120,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="a52a-e9ff-5f9a-d86f" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="57fc-9021-d908-5bc7" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="57fc-9021-d908-5bc7" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="9ff4-d6c5-6fca-427b" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="30be-703a-ba83-7424" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="baa2-eb88-ae48-aba2" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -228,7 +228,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="562c-64e4-74d5-c813" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="90d2-8f0c-2a1a-e5ac" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="c845-62aa-e545-34d7" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="1198-2455-a30f-b1ff" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="1198-2455-a30f-b1ff" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="73c4-6150-1568-abd7" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="f0cd-52cb-8c1a-e5fc" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -283,6 +283,7 @@
     </entryLink>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="24f6-3ce9-96db-680b" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Knight-Captain Elam Courbray" hidden="false" id="4307-52ad-487c-1f95" type="selectionEntry" targetId="3bbd-98b5-c093-71e6"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="f5eb-7fea-7b55-1043" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="fd49-4cd5-0ae8-d445" targetId="b232-3062-241d-bf2e"/>
@@ -336,7 +337,7 @@
                 <modifier type="set" value="Brutal (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Master-crafted" id="d2ce-85bd-fed5-407c" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
+            <infoLink name="Master-Crafted" id="d2ce-85bd-fed5-407c" hidden="false" type="rule" targetId="b56f-12c1-9c3e-8cea"/>
             <infoLink name="Breaching (X)" id="1162-1e2c-6611-2c6d" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
               <modifiers>
                 <modifier type="set" value="Breaching (4+)" field="name"/>
@@ -424,6 +425,7 @@
         <categoryLink targetId="9231-183c-b97b-63f9" id="82df-f092-a856-d5dd" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="0170-f90f-d0b7-73b6" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="7f9a-e483-44ff-0e4e" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="cdfe-c5dd-facf-5847" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Warlord Trait" id="e713-6311-ddee-5def" hidden="false">

@@ -290,6 +290,7 @@
     <entryLink import="true" name="Captain Corlen Sumatris" hidden="false" id="ee59-0387-1ee0-0828" type="selectionEntry" targetId="6f08-6b7c-0625-8b43"/>
     <entryLink import="true" name="Armennus Valthex" hidden="false" id="dd85-57aa-c32b-e343" type="selectionEntry" targetId="3b4f-51c8-5b67-442b"/>
     <entryLink import="true" name="Arch-Centurion Carnac Commodus" hidden="false" id="763a-6082-2d4f-30d5" type="selectionEntry" targetId="a9dc-e681-6bff-2978"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="274a-f3e1-8a2e-2a78" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Retaliator Squad" hidden="false" id="8223-c41c-9203-3a87" collective="false">
@@ -320,6 +321,7 @@
         <categoryLink name="Infantry Unit Type" hidden="false" id="c627-66a6-a421-1475" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink name="Troops:" hidden="false" id="1d78-e819-9d6b-ff9d" targetId="256c-d251-7f31-271d" primary="true"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="3d11-7d4e-b5e1-bd30" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="d545-45d4-8c8b-137e" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Retaliator Sergeant" hidden="false" id="c6a6-d1d1-042e-f080" collective="false">
@@ -1021,6 +1023,7 @@
         <categoryLink targetId="0d4f-ff28-d819-a512" id="041e-9a72-0488-8beb" primary="false" name="Deep Strike:"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="d798-6b1c-61ae-25dd" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="d64e-4be0-0219-9b4f" id="389e-06c6-e4f0-5107" primary="false" name="Huron"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="b6d7-7e79-f4f3-a938" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="35a6-5b3d-b115-db2f" includeChildSelections="true"/>
@@ -1172,6 +1175,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4415-41da-f824-4a94" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="3cde-2e12-5112-7df3" primary="false" name="Character"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3214-c475-efd9-6b4a" primary="false" name="Independent Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="2c5e-356e-9d1f-1ac3" primary="false" name="Unique"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="165"/>
@@ -1394,7 +1398,7 @@
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </entryLink>
-                    <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="416f-355c-a8b2-9bb3" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
+                    <entryLink import="true" name="Gravis Multi-Melta" hidden="false" id="416f-355c-a8b2-9bb3" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                       </costs>
@@ -1464,7 +1468,7 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="35"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="c345-2944-52ff-4fe2" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
+                    <entryLink import="true" name="Gravis Multi-Melta" hidden="false" id="c345-2944-52ff-4fe2" type="selectionEntry" targetId="e93b-35f2-4b22-1f85">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                       </costs>
@@ -1570,6 +1574,7 @@
         <categoryLink targetId="9231-183c-b97b-63f9" id="aca2-7bf0-e87e-0d5a" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="b0b6-2652-6c71-430d" primary="false" name="Character"/>
         <categoryLink targetId="f7ec-2a71-975c-d1a1" id="d077-dcf0-af10-717f" primary="false" name="Valthex"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="6a92-e234-5f32-b6cf" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d06-e363-9963-13c1" includeChildSelections="true"/>
@@ -1686,6 +1691,7 @@
         <categoryLink targetId="6513-093f-7312-6d09" id="ef3f-f7ff-8c9e-f113" primary="false" name="Character"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ff81-4d12-2774-6ae5" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="60c4-d7af-b536-e1ec" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="2637-2561-5a6e-30bd" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Warlord Trait" id="bf42-c39d-053d-3291" hidden="false">

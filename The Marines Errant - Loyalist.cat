@@ -123,7 +123,7 @@
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="2832-a35a-4db6-df6a" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
-    <entryLink import="true" name="Force Commander (Centurion)" hidden="false" id="fa43-a16c-7104-5729" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
+    <entryLink import="true" name="Force Commander" hidden="false" id="fa43-a16c-7104-5729" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
     <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="32f7-5936-e6f6-6e0d" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
     <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="31b9-aa80-1a07-6bfd" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
     <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="4e7c-69f0-ef44-b49f" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
@@ -231,7 +231,7 @@
     <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="c785-0452-84ed-ff45" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="11ca-3a67-c760-c664" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="e74d-a966-3ba2-c9a1" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Force Command (Centurion)" hidden="false" id="8f97-6b6f-4a08-956e" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
+    <entryLink import="true" name="Terminator Force Command" hidden="false" id="8f97-6b6f-4a08-956e" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="2696-b056-328e-b9fa" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="bc26-2486-6d30-8294" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
@@ -286,6 +286,7 @@
     </entryLink>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="2a8e-3d5b-e99d-86a9" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Lieutenant Commander Anton Naravaez" hidden="false" id="52e8-4862-78fd-2be5" type="selectionEntry" targetId="5a72-1438-d451-d95e"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="9466-42b1-2292-5d91" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Lieutenant Commander Anton Naravaez" hidden="false" id="5a72-1438-d451-d95e">
@@ -528,6 +529,7 @@
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2dac-9740-be4f-bfaf" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="b033-1407-7cb4-c8a5" primary="false" name="Character"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="9f6d-4c04-8adc-efee" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="ed4a-74c4-1881-7c42" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06c9-8e31-a0d1-edfd" includeChildSelections="true"/>

@@ -298,6 +298,7 @@
       </constraints>
     </entryLink>
     <entryLink import="true" name="Ahazra Redth" hidden="false" id="17b3-4bed-37b0-db9d" type="selectionEntry" targetId="6a7e-08ba-9bcf-31dc"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="a7d0-0ce7-3974-cdd5" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Ahazra Redth" hidden="false" id="6a7e-08ba-9bcf-31dc">
@@ -327,7 +328,7 @@
           <characteristics>
             <characteristic name="Description" typeId="a596-978a-837f-583d">Instead of of making a Shooting Attack, the controlling player of a Psyker with this Psychic Power may select a single friendly unit with at least one model-within 6&quot; of the Psyker that is composed entirely of models with the Infantry, Cavalry or Dreadnought 
 Unit Types. The chosen unit gains the Shrouded (5+) special rule and all charges count as Disordered against this unit until the beginning of the controlling player&apos;s next Shooting phase. 
-When using this Power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the effect is improved to Shrouded (3+) and any unit charging this unit must take a Disordered Charge as well as making a Dangerous Terrain check. If the Check is failed the Shrouded (5+) special rule is applied to the target unit and the Psyker suffers a Perils of the Warp. </characteristic>
+When using this Power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the effect is improved to Shrouded (3+) and any unit charging this unit must take a Disordered Charge as well as making a Dangerous Terrain check. If the Check is failed the Shrouded (5+) special rule is applied to the target unit and the Psyker suffers a Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -395,10 +396,10 @@ When using this Power, the controlling player may choose to have the Psyker take
       </infoLinks>
       <rules>
         <rule name="Whispers of the Wind" id="6bc4-c558-6fff-e47f" hidden="false">
-          <description>If Ahazra Redth is part of this army and on the battlefield the Mantis Warrior player gets + 1 to the Steal the Initiative roll and enemy Reserve Rolls are made at a -1. In addition, upon being placed on the Battlefield, Ahazra Redth can choose to have the Skirmish and/or the Light unit sub type. </description>
+          <description>If Ahazra Redth is part of this army and on the battlefield the Mantis Warrior player gets + 1 to the Steal the Initiative roll and enemy Reserve Rolls are made at a -1. In addition, upon being placed on the Battlefield, Ahazra Redth can choose to have the Skirmish and/or the Light unit sub type.</description>
         </rule>
         <rule name="Battle Psyker" id="9846-d4f2-57bb-a973" hidden="false">
-          <description>Ahazra may pick up to two of the following Psychic disciplines: Biomancy, Divination, Pyromancy, Telekinesis, Telepathy, Thaumaturgy, well as knowing the Mirage spell. </description>
+          <description>Ahazra may pick up to two of the following Psychic disciplines: Biomancy, Divination, Pyromancy, Telekinesis, Telepathy, Thaumaturgy, well as knowing the Mirage spell.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -459,6 +460,7 @@ When using this Power, the controlling player may choose to have the Psyker take
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="e33c-8206-48b9-e353" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2625-5c7f-49d3-7d94" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="d204-1631-7f4e-7af3" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="804b-889c-e8db-7f43" primary="false" name="Unique"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

@@ -28,7 +28,7 @@
     </entryLink>
     <entryLink import="true" name="Boarding Squad" hidden="false" id="89b8-c0c0-7da5-419c" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
     <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="f55f-bd74-c268-ca2f" type="selectionEntry" targetId="cd69-4c31-b6c2-4481"/>
-    <entryLink import="true" name="Carcharodons" hidden="false" id="17e0-ede0-c895-cd6f" type="selectionEntry" targetId="1e02-3d58-c2f7-2e7b">
+    <entryLink import="true" name="The Carcharodons" hidden="false" id="17e0-ede0-c895-cd6f" type="selectionEntry" targetId="1e02-3d58-c2f7-2e7b">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="793f-ba7e-0956-3edc" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3050-24ae-7066-140c" includeChildSelections="false"/>
@@ -282,6 +282,7 @@
         <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="b721-2afd-ae67-2c47" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="986e-e83f-182a-2150" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink id="197f-8359-9943-a039" name="Astartes" targetId="b232-3062-241d-bf2e" type="catalogue" importRootEntries="true"/>

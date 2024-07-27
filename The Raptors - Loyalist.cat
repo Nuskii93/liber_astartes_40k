@@ -286,6 +286,7 @@
     </entryLink>
     <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="0f7a-f357-ce01-0616" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
     <entryLink import="true" name="Chapter Master Lias Issodon" hidden="false" id="71fb-0501-7139-a65c" type="selectionEntry" targetId="4e82-dd88-3998-d0bc"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="06d6-b575-850a-fa94" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Chapter Master Lias Issodon" hidden="false" id="4e82-dd88-3998-d0bc">
@@ -363,6 +364,7 @@
         <categoryLink targetId="d87f-b1a3-5a99-9669" id="4b4a-0f4a-3d16-0ed3" primary="false" name="Skirmish"/>
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1152-54bc-7897-5931" primary="false" name="Independent Character"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="7635-da41-5ea9-9d32" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="8681-fa4e-cc20-486a" primary="false" name="Unique"/>
       </categoryLinks>
       <rules>
         <rule name="Infilitrate, Isolate, And Destroy" id="7bb1-84ec-449a-45fd" hidden="false">

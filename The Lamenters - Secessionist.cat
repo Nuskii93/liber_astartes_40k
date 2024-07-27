@@ -290,6 +290,7 @@
     <entryLink import="true" name="Librarian Dreadnought" hidden="false" id="5c9e-83a1-712c-3900" type="selectionEntry" targetId="cb5e-7a1d-21b1-8d63"/>
     <entryLink import="true" name="Furioso Dreadnought" hidden="false" id="dd39-8f2c-d785-dc09" type="selectionEntry" targetId="3586-f06f-bead-cd75"/>
     <entryLink import="true" name="Death Company Dreadnought" hidden="false" id="a838-d4e5-c740-8766" type="selectionEntry" targetId="aca2-016b-886d-1c95"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="1062-223a-5451-1dca" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Death Company" hidden="false" id="b151-ce24-1095-2092">
@@ -780,6 +781,7 @@
         <categoryLink targetId="d471-a611-11c4-7f09" id="736e-f70c-9670-1e87" primary="true" name="Elites:"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="1aa7-92db-f748-d98c" primary="false" name="Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b667-2770-d007-f4f4" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="79a6-64f1-1fb9-2911" primary="false" name="Unique"/>
       </categoryLinks>
       <rules>
         <rule name="The Black Rage" id="d39f-23bb-7cdb-6947" hidden="false">
@@ -924,6 +926,7 @@
         <categoryLink targetId="4f07-3d45-4f28-a0c6" id="09d3-64cd-e655-3786" primary="false" name="Independent Character"/>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1c29-8f7a-9bb2-86ea" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="6513-093f-7312-6d09" id="0c41-b89f-382c-8725" primary="false" name="Character"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="fcfa-cebe-96d7-9aca" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Retinue" id="c259-a5fd-6110-5640" hidden="false" collective="false" import="true">
@@ -1037,6 +1040,7 @@
         <categoryLink targetId="0124-9b28-2fe3-912c" id="4193-0afe-9342-2eb7" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="a800-52d7-1961-6e29" id="cd1f-2d90-2cc8-129b" primary="true" name="HQ:"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="4c27-28d8-037a-930d" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="7af5-ea63-815d-f458" primary="false" name="Unique"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="436a-556b-0285-d08d" type="selectionEntry" targetId="a2c7-5747-8608-781e">
@@ -1305,6 +1309,7 @@
         <categoryLink name="Dreadnought" hidden="false" id="4a46-e204-f1fb-8b65" targetId="528c-8d49-6bd6-8b22" primary="false"/>
         <categoryLink name="Elites:" hidden="false" id="5905-29f7-241c-63b2" targetId="d471-a611-11c4-7f09" primary="true"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="c333-2c1b-39ed-5f1b" primary="false" name="Heavy Sub-type"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="35a4-0ee9-8e6a-c3f3" primary="false" name="Unique"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Ferromantic Deflector" hidden="false" id="5279-266c-fcdf-27ac" type="selectionEntry" targetId="a2c7-5747-8608-781e">
@@ -1346,6 +1351,7 @@
         <categoryLink targetId="9231-183c-b97b-63f9" id="24a3-8c5b-6eb0-b996" primary="false" name="Heavy Sub-type"/>
         <categoryLink targetId="d471-a611-11c4-7f09" id="7302-597d-5b92-92df" primary="true" name="Elites:"/>
         <categoryLink targetId="528c-8d49-6bd6-8b22" id="0e74-7b17-b167-8eaf" primary="false" name="Dreadnought"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="0be3-f852-2450-4ba3" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6e94-3425-2c55-2212" includeChildSelections="false"/>

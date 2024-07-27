@@ -533,6 +533,11 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
       </entryLinks>
     </entryLink>
     <entryLink import="true" name="Minotaur Heavy Artillery Tank Battery" hidden="false" id="7d1e-8fb8-32ea-7c2e" type="selectionEntry" targetId="520e-a40a-e4f1-6198"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="5f6f-ab44-f4e7-0f9f" type="selectionEntry" targetId="2b66-226f-e1a2-c002">
+      <entryLinks>
+        <entryLink import="true" name="Tyrant&apos;s Legion Chapter Support" hidden="false" id="1471-28e4-ab6b-3030" type="selectionEntry" targetId="1626-2bd4-24f0-c70b"/>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Lugft Huron" hidden="false" id="4c18-71f7-b6e4-d73a">
@@ -709,6 +714,7 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
         <categoryLink name="Deep Strike:" hidden="false" id="57de-aff0-ebcb-fd2c" targetId="0d4f-ff28-d819-a512" primary="false"/>
         <categoryLink name="Heavy Sub-type" hidden="false" id="b544-52fd-7a39-27df" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink name="Huron" hidden="false" id="10ed-8f44-7f3a-c610" targetId="d64e-4be0-0219-9b4f" primary="false"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="bf55-46ae-4a67-f92c" primary="false" name="Unique"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="58bf-b0f0-31ab-2413" includeChildSelections="true"/>
@@ -825,6 +831,7 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
         <categoryLink name="Character" hidden="false" id="4f14-ba0d-a12c-6315" targetId="6513-093f-7312-6d09" primary="false"/>
         <categoryLink name="Independent Character" hidden="false" id="5ab5-6a18-2fc3-c71c" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink name="Infantry Unit Type" hidden="false" id="c29c-0bec-3e2a-654a" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="1da3-930f-47ed-98db" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Warlord Trait" id="6f6d-b9d6-0b67-babe" hidden="false">
@@ -884,6 +891,7 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
         <categoryLink name="Infantry Unit Type" hidden="false" id="cc0c-d057-c263-e2ac" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink name="Troops:" hidden="false" id="585f-bdcd-7c7f-04e4" targetId="256c-d251-7f31-271d" primary="true"/>
         <categoryLink name="Heavy Sub-type" hidden="false" id="8f44-afa9-e733-5531" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink targetId="fdfb-b86a-0fcd-1668" id="8824-2538-b93e-d8fb" primary="false" name="Unique"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Retaliator Sergeant" hidden="false" id="f5b1-644a-ca43-eb25" collective="false">
