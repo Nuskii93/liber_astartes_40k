@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="28" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="29" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -549,8 +549,23 @@
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="6a26-d047-8b38-d4a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1221,9 +1236,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8a3e-fbcb-5cfc-3367" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -1873,8 +1898,23 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="6a26-d047-8b38-d4a2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2457,9 +2497,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -2989,8 +3039,23 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="9547-7fba-408b-91dc" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="9547-7fba-408b-91dc" childId="6a26-d047-8b38-d4a2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3567,9 +3632,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="9547-7fba-408b-91dc" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -4735,9 +4810,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="d6ad-6c5a-46d3-0343" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -6560,13 +6645,40 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Griffon Warblade" hidden="false" id="e4b1-195d-193c-b1d6" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -6754,9 +6866,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="88fc-251d-5ce2-3c3f" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -6941,9 +7063,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -6967,9 +7099,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7899-9401-b915-2859" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -6979,9 +7121,19 @@
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -6994,18 +7146,38 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="1) Salamanders - Mantle of the Elder Drake" id="2072-0e12-c842-8da4" hidden="false">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <entryLinks>
@@ -7021,9 +7193,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="ede4-3265-080b-2f3a" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -7544,13 +7726,40 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Griffon Warblade" hidden="false" id="e1f0-bdff-d957-3280" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -7606,9 +7815,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -7775,9 +7994,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -7787,9 +8016,19 @@
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -7802,18 +8041,38 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="1) Salamanders - Mantle of the Elder Drake" id="3fa1-bbf2-b5c7-636c" hidden="false">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <entryLinks>
@@ -7829,9 +8088,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="925a-3e84-4760-fd4c" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -8533,13 +8802,40 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Griffon Warblade" hidden="false" id="5569-cd9b-7387-5618" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -8933,9 +9229,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -9102,9 +9408,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="41fb-6d64-11c7-d5d7" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -9128,9 +9444,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7899-9401-b915-2859" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -9140,9 +9466,19 @@
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -9155,18 +9491,38 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="1) Salamanders - Mantle of the Elder Drake" id="3c08-a34a-ab28-567f" hidden="false">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <entryLinks>
@@ -9182,9 +9538,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -9639,9 +10005,19 @@
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="7111-dfcb-76f1-8189" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -10175,9 +10551,19 @@
                           </selectionEntries>
                           <modifiers>
                             <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="lessThan" value="1" field="selections" scope="3455-70aa-54a3-bf39" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
                             </modifier>
                           </modifiers>
                         </selectionEntryGroup>
@@ -10924,13 +11310,40 @@
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Griffon Warblade" hidden="false" id="5fb5-e674-16ea-b2cf" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -11009,9 +11422,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -11178,9 +11601,19 @@
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -11190,9 +11623,19 @@
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -11205,18 +11648,38 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="1) Salamanders - Mantle of the Elder Drake" id="e415-d0c6-2855-08a0" hidden="false">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <entryLinks>
@@ -11232,9 +11695,19 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -11583,9 +12056,19 @@
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="5ed8-8c58-e3e4-9887" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -12057,9 +12540,19 @@
                           </selectionEntries>
                           <modifiers>
                             <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="lessThan" value="1" field="selections" scope="5980-0301-87ac-ea58" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
                             </modifier>
                           </modifiers>
                         </selectionEntryGroup>
@@ -12524,9 +13017,19 @@
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="179a-7d39-c15f-3066" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -12956,9 +13459,19 @@
                       </entryLinks>
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
@@ -13091,9 +13604,19 @@
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -13366,6 +13889,21 @@
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="1) Exorcists - Asphyx Shells For Bolt Weapons" id="b491-3ae7-b347-68c0" hidden="false">
@@ -13531,9 +14069,19 @@
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -13561,9 +14109,19 @@
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7899-9401-b915-2859" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -13576,9 +14134,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -13599,9 +14167,19 @@
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8ba2-ea7b-a90e-36bf" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -14233,10 +14811,20 @@
                 <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="increment" value="1" field="9426-d322-3ae0-8700">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="58f4-572d-850f-93e6" childId="e933-88d6-a838-0c42" shared="true" roundUp="false"/>
-              </repeats>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -14403,9 +14991,19 @@
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -14418,9 +15016,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -14441,9 +15049,19 @@
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="58f4-572d-850f-93e6" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -15456,9 +16074,19 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -15509,9 +16137,19 @@
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="9e1e-b418-0522-9d42" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -16696,9 +17334,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="a921-21d2-1964-1e2d" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -16719,9 +17367,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="a921-21d2-1964-1e2d" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -17883,9 +18541,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -18399,9 +19067,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="6c49-097a-1be5-82c6" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -20351,9 +21029,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="7e18-45b5-06ba-cd6d" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -20601,9 +21289,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -20770,9 +21468,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="3b77-97a5-4fc8-5ec7" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -20796,9 +21504,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7899-9401-b915-2859" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -20944,9 +21662,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       </entryLinks>
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
@@ -20961,9 +21689,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -21277,9 +22015,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                       </entryLinks>
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -21334,9 +22082,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <entryLink import="true" name="Griffon Warblade" hidden="false" id="a768-791e-754b-0686" type="selectionEntry" targetId="44fe-e9cf-025e-3aa5">
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="890d-5016-a243-69f3" shared="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true"/>
+                                <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <costs>
@@ -21457,9 +22215,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -21626,9 +22394,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="a4e1-d401-d8cc-c2e8" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -21652,18 +22430,38 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="7899-9401-b915-2859" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="0.5) Star Phantoms - Chapter Mortuary Cult Imperialis" id="303f-53e3-7ef6-66e0" hidden="false">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <selectionEntries>
@@ -21698,9 +22496,19 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="a545-c6d2-36bd-9d03" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="db22-78a1-b307-ac9c" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
@@ -22191,8 +22999,23 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="b769-b066-d315-9de4" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b769-b066-d315-9de4" childId="6a26-d047-8b38-d4a2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22821,9 +23644,19 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="b769-b066-d315-9de4" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -27210,8 +28043,23 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                   </selectionEntries>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="cc50-f04a-0cd6-e966" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="force" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="cc50-f04a-0cd6-e966" childId="6a26-d047-8b38-d4a2" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -27596,9 +28444,19 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="cc50-f04a-0cd6-e966" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -28178,9 +29036,19 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="e504-7189-3574-ce61" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -28287,9 +29155,19 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="325b-7a48-4da1-c934" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -28840,9 +29718,19 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="a189-dab7-3f3e-534e" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -28925,7 +29813,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
       </profiles>
       <categoryLinks>
         <categoryLink id="9021-248f-52de-c58c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="53a4-d35a-f84f-f46c" primary="true" name="Heavy Support:"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="66ba-c6a0-956d-dec9" name="1) Turret Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="02cf-81b5-d852-b5d8">
@@ -32864,9 +33751,19 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="9de4-7d85-524d-d69a" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -34301,9 +35198,19 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
               </entryLinks>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="adc6-ad85-64b6-dec1" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
@@ -34587,9 +35494,19 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
               </repeats>
             </modifier>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="1e02-3d58-c2f7-2e7b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="adc6-ad85-64b6-dec1" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -34756,9 +35673,19 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="adc6-ad85-64b6-dec1" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -34771,9 +35698,19 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="89f6-d4c6-33f8-f34b" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="adc6-ad85-64b6-dec1" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -35203,9 +36140,19 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="roster" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="8026-ddea-ae5c-4467" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -35572,13 +36519,6 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
         </infoLink>
         <infoLink name="Unwieldy" id="15ba-7535-601e-31de" hidden="false" type="rule" targetId="7efd-92ce-72e1-132e"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Griffon Warblade" hidden="false" id="44fe-e9cf-025e-3aa5">
       <profiles>

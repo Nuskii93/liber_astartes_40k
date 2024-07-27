@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="32" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="33" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -267,6 +267,7 @@ Flat Out: May move twice the vehicles movement distance but at the end of moveme
     <categoryEntry name="Astra Claw Tactical" id="fce1-b4a6-3356-6247" hidden="false"/>
     <categoryEntry name="Culln" id="d5d3-7e29-8b8b-07f1" hidden="false"/>
     <categoryEntry name="Unique" id="fdfb-b86a-0fcd-1668" hidden="false"/>
+    <categoryEntry name="AlliedChapter" id="6a26-d047-8b38-d4a2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b9a1-864e-a65d-216f" name="1. Badab Forces Organisation Chart" publicationId="0a24-8d5a-55ca-b028" page="10" hidden="false">
@@ -1981,6 +1982,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="e3c3-a651-ea46-806a" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="29d4-8d19-4548-4598" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d357-1419-fc5c-7ecf" name="Indomitus Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -4524,6 +4526,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       </rules>
       <categoryLinks>
         <categoryLink name="Chapter" hidden="false" id="47d6-2c7c-0c7d-8a28" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="319a-6064-5231-c259" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
@@ -4534,6 +4537,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       </rules>
       <categoryLinks>
         <categoryLink name="Chapter" hidden="false" id="1da1-f676-c5df-9d0a" targetId="852b-f6b0-b8dd-1609" primary="true"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="b886-c6f3-9c82-2cdb" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Fire Angels" hidden="false" id="b2ec-b3ad-c672-8de4">
@@ -4548,6 +4552,7 @@ Predator/Vindicator: -10pts</description>
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="00a3-a245-91ff-97cf" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="b8b5-1896-0084-8467" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Fire Hawks" hidden="false" id="7899-9401-b915-2859">
@@ -4565,6 +4570,7 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="0679-ae0b-fab4-4726" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="997c-e028-5e2f-9fc1" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d9a3-4ad1-31c3-c90e" name="Hand Flamer" hidden="false" collective="true" import="true" type="upgrade">
@@ -4585,7 +4591,7 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="The Howling Griffons" hidden="false" id="890d-5016-a243-69f3">
+    <selectionEntry type="upgrade" import="true" name="The Howling Griffons" hidden="false" id="890d-5016-a243-69f3" collapsible="false">
       <rules>
         <rule name="Into the Fray" id="c9fb-a0c1-8a01-064f" hidden="false">
           <description>On the turn in which they make a successful charge, even if that charge is considered a Disordered Charge, models with the Howling Griffons special rule make their attacks at one initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account.</description>
@@ -4593,6 +4599,7 @@ using the Deep Strike special rule (including models exiting from Drop Pods). Ha
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="2cb4-8cfd-f705-ef2e" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="a7dc-ac50-faee-ab8e" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="5477-4d3f-e3ba-b482" name="Master-Crafted Gravis Power Fist w/ Built in Storm Bolter" hidden="false" collective="false" import="true" type="upgrade">
@@ -4635,6 +4642,7 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="e63d-4efc-fd97-b771" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="3578-e3fe-089f-c0aa" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Minotaurs" hidden="false" id="f8d3-3df4-1a6d-2ee6">
@@ -4651,6 +4659,7 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="c4fa-5272-0e66-4673" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="b095-acaf-5c29-b83a" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Star Phantoms" hidden="false" id="89f6-d4c6-33f8-f34b">
@@ -4667,6 +4676,7 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="1d63-3c80-9a1d-5b8d" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="27d3-c780-da67-d997" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="a752-be2b-9987-47a5" name="Master-Crafted Combi-Melta" hidden="false" collective="false" import="true" type="upgrade">
@@ -4703,6 +4713,7 @@ before it is removed as a casualty or replaced with a Wreck, all models both fri
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="0c54-968a-81f9-48ca" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="70d8-e70c-2cc5-ae1c" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="080f-971e-e104-7be3" name="Master-Crafted Storm Bolter" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" collective="false" import="true" type="upgrade">
@@ -4738,6 +4749,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="9b9f-ba1b-5d1c-cd13" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="90d5-9d80-0fda-9789" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Red Scorpions" hidden="false" id="0f62-d077-925a-d095">
@@ -4748,6 +4760,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="20bc-9faf-04d3-79c4" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="f2c8-571d-a8f3-9ec7" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="4c31-c474-a7dd-c3a4" name="Master-Crafted Force Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -4805,6 +4818,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="29f2-ec67-f85a-d8cc" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="2b1f-5a02-029e-8fa5" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="bee9-3cf9-cc59-b058" name="Master-Crafted Combi-Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -4832,6 +4846,7 @@ Note that units which contain models with any variant of the Bulky (x) special r
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="8e25-7928-e4a0-1d27" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="6214-5847-bf7e-88a0" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="8712-4c7a-0e48-5315" name="Master-Crafted Thunder Hammer" publicationId="0a24-8d5a-55ca-b028" page="223" hidden="false" collective="false" import="true" type="upgrade">
@@ -4885,6 +4900,7 @@ The character with the highest WS (if two or more characters are tied, then the 
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="b3a5-4991-c90a-c377" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="645a-73f1-d29e-1f9a" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="7133-d858-85e2-46df" name="Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
@@ -4916,6 +4932,7 @@ The character with the highest WS (if two or more characters are tied, then the 
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="7538-37b6-cc84-34eb" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="4143-32c2-5af8-7c93" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Mantis Warriors" hidden="false" id="a8ae-c0b5-6ffb-d492">
@@ -4933,6 +4950,7 @@ In addition, ANY non-vehicle Model with the Chapter Tactics (Mantis Warriors) Sp
       </rules>
       <categoryLinks>
         <categoryLink targetId="852b-f6b0-b8dd-1609" id="4a07-b57d-bf00-f0d2" primary="true" name="Chapter"/>
+        <categoryLink targetId="6a26-d047-8b38-d4a2" id="bdcc-de5c-6706-4837" primary="false" name="AlliedChapter"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="The Tyrants Legion" hidden="false" id="9647-0f58-d518-1e48">
