@@ -586,7 +586,7 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="0) Warlord Trait" id="c001-e20a-4b68-d7c3" hidden="false">
+        <selectionEntryGroup name="0) Warlord Trait" id="c001-e20a-4b68-d7c3" hidden="false" defaultSelectionEntryId="caf6-d6e9-fc2c-8e2f">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Master of the Counter Assault" hidden="false" id="caf6-d6e9-fc2c-8e2f">
               <profiles>
@@ -600,20 +600,8 @@ In addition, if this vehicle conveys any victory points to the opposing player, 
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d723-63c2-e001-3fb1" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="34d9-f1cc-bfa2-4824" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34d9-f1cc-bfa2-4824" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="34d9-f1cc-bfa2-4824">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Retinue" id="bb07-d20c-ef17-db58" hidden="false" collective="false" import="true">
           <constraints>

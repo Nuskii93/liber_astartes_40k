@@ -3039,7 +3039,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
       <infoLinks>
         <infoLink name="Breaching (X)" id="a694-4581-bbe6-a335" hidden="false" type="rule" targetId="198e-0027-2f5d-89b4">
           <modifiers>
-            <modifier type="set" value="Breaching (4+)" field="name"/>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Blast" id="9fd6-e02d-dcff-b262" hidden="false" type="rule" targetId="0329-e40f-18be-9169"/>

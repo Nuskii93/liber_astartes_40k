@@ -4,7 +4,22 @@
     <catalogueLink type="catalogue" name="Astartes" id="5574-3e98-425c-16c6" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="b0f8-f7cd-9c5c-3c9e" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
+    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="b0f8-f7cd-9c5c-3c9e" type="selectionEntry" targetId="c5bb-fad3-cce1-180c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="7399-77dc-ebef-a7e4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="ac76-8bc8-6df8-a93d" type="selectionEntryGroup" targetId="8b87-8b13-93f3-4c41"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Assault Squad" hidden="false" id="4b5a-0b7a-e85b-0f4d" type="selectionEntry" targetId="b769-b066-d315-9de4">
       <selectionEntryGroups>
         <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="b87f-658c-5d4f-0a9f" hidden="false">
@@ -18,6 +33,20 @@
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="8245-38f2-1209-2660" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Chapters" hidden="false" id="add3-79af-e913-e729" type="selectionEntryGroup" targetId="8b87-8b13-93f3-4c41"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </entryLink>

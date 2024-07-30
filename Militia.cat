@@ -489,7 +489,7 @@ Orders given from a unit with a Command Vox may be re-rolled.</characteristic>
           <entryLinks>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="c09d-54cb-fda4-c4f0" type="selectionEntry" targetId="5507-b432-3b4c-df12"/>
             <entryLink import="true" name="Heavy Bolter" hidden="false" id="0f86-41c8-0673-5165" type="selectionEntry" targetId="07fd-c24a-9235-4206"/>
-            <entryLink import="true" name="Gravis Bolt Cannon" hidden="false" id="861f-8a45-0e4f-52f3" type="selectionEntry" targetId="3e85-dece-bc8c-47e0">
+            <entryLink import="true" name="Gravis Heavy Bolter" hidden="false" id="861f-8a45-0e4f-52f3" type="selectionEntry" targetId="3e85-dece-bc8c-47e0">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
               </costs>
@@ -4414,7 +4414,7 @@ In addition, in Zone-Mortalis Battles, or a battlefield with a ‘roof’ the Ar
             <characteristic name="Unit Type" typeId="63f5-0526-e8ed-4939">Vehicle (Slow, Reinforced)</characteristic>
             <characteristic name="Move" typeId="d836-fd61-faae-3bf8">10</characteristic>
             <characteristic name="BS" typeId="ec85-5928-42ac-3642">3</characteristic>
-            <characteristic name="Front" typeId="694b-f1c4-92ec-b01e">13</characteristic>
+            <characteristic name="Front" typeId="694b-f1c4-92ec-b01e">12</characteristic>
             <characteristic name="Side" typeId="a8b7-4b00-bdfd-8c74">12</characteristic>
             <characteristic name="Rear" typeId="6e9c-0884-6cab-a10c">13</characteristic>
             <characteristic name="HP" typeId="5ab6-c2c2-2362-513f">4</characteristic>

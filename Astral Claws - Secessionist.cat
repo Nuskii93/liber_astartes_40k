@@ -4,8 +4,38 @@
     <catalogueLink type="catalogue" name="Astartes" id="5199-a37d-d20b-048c" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="a7c6-a2a0-4da1-a300" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
-    <entryLink import="true" name="Assault Squad" hidden="false" id="11e8-aba1-312e-f0ca" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
+    <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="a7c6-a2a0-4da1-a300" type="selectionEntry" targetId="c5bb-fad3-cce1-180c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="f801-30f3-6ef6-1ece" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="2cd5-039d-afbe-2ab7" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Assault Squad" hidden="false" id="11e8-aba1-312e-f0ca" type="selectionEntry" targetId="b769-b066-d315-9de4">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="386a-1ebe-0ee3-9980" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="070a-cf77-367c-19c0" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Assault Squad" hidden="false" id="33bb-6fb4-9d1f-b3b2" type="selectionEntry" targetId="b769-b066-d315-9de4">
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="6cf8-aad2-4f7a-1512" targetId="256c-d251-7f31-271d" primary="true"/>
@@ -27,9 +57,53 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="961e-6b05-71ac-b5f0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="8954-6ef0-d36f-aa59" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Boarding Squad" hidden="false" id="0967-f664-db93-40a3" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry"/>
-    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="15b6-ce41-c211-e636" type="selectionEntry" targetId="cd69-4c31-b6c2-4481"/>
+    <entryLink import="true" name="Boarding Squad" hidden="false" id="0967-f664-db93-40a3" collective="false" targetId="b94f-4192-0adb-b0ff" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="d31c-191e-aa39-9272" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="0e82-7b72-584d-30c2" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="15b6-ce41-c211-e636" type="selectionEntry" targetId="cd69-4c31-b6c2-4481">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="2360-be0c-1313-2028" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="e291-de96-18d9-8b91" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="The Astral Claws" hidden="false" id="1200-ebe4-5bdb-a2ce" type="selectionEntry" targetId="ed67-cef8-7802-d102">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8f4-5da3-987f-b3bc" includeChildSelections="false"/>
@@ -43,8 +117,37 @@
       <categoryLinks>
         <categoryLink name="Elites:" hidden="false" id="ab09-eb44-a2e4-4f53" targetId="d471-a611-11c4-7f09" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="8111-d7d3-bc63-132e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="29d3-3929-7e9a-a63b" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="6337-2045-5271-8c2e" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d"/>
+    <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="6337-2045-5271-8c2e" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="a4f9-0378-e72d-4ceb" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="f02c-99fe-d483-ceb4" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Centurion Assault Squad" hidden="false" id="96e1-cbb0-3103-1aad" type="selectionEntry" targetId="7e18-45b5-06ba-cd6d">
       <categoryLinks>
         <categoryLink name="Troops:" hidden="false" id="1bab-3b90-cc8b-046e" targetId="256c-d251-7f31-271d" primary="true"/>
@@ -66,8 +169,37 @@
         </modifier>
       </modifiers>
       <comment>8th Company ROW</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="8f90-cdf0-4de0-10d8" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="b0fd-d1ee-f318-e6f1" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="3f67-5d9f-c62a-c486" type="selectionEntry" targetId="e504-7189-3574-ce61"/>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="3f67-5d9f-c62a-c486" type="selectionEntry" targetId="e504-7189-3574-ce61">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="900a-3c3d-b36b-444b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="9d8e-cf6b-901f-a096" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="a740-9adf-f6de-a49d" type="selectionEntry" targetId="e504-7189-3574-ce61">
       <categoryLinks>
         <categoryLink name="Infantry Unit Type" hidden="false" id="d864-0c50-ee08-9579" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -91,14 +223,103 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="950a-9bba-af50-d454" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="8cc3-f7a8-fb97-4110" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink import="true" name="Company Captain" hidden="false" id="ef3e-8c54-0a70-1e0c" collective="false" targetId="ede4-3265-080b-2f3a" type="selectionEntry"/>
     <entryLink import="true" name="Company Level Deployments" hidden="false" id="065c-b6c7-e7b7-405d" type="selectionEntry" targetId="fb02-1d06-e689-6dee"/>
-    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="82d7-344b-0e0c-503c" type="selectionEntry" targetId="6c49-097a-1be5-82c6"/>
-    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="4014-41ff-30c6-96cb" collective="false" targetId="179a-7d39-c15f-3066" type="selectionEntry"/>
-    <entryLink import="true" name="Deathstorm Drop Pod Strike Group" hidden="false" id="5c5d-deac-afba-75b7" type="selectionEntry" targetId="782a-65f3-6350-4227"/>
-    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="3950-a067-6bbe-5fb3" type="selectionEntry" targetId="a189-dab7-3f3e-534e"/>
-    <entryLink import="true" name="Devastator Squad" hidden="false" id="ed6c-c6bc-437c-ddde" type="selectionEntry" targetId="cc50-f04a-0cd6-e966"/>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="82d7-344b-0e0c-503c" type="selectionEntry" targetId="6c49-097a-1be5-82c6">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="2179-0f12-256f-9c50" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="c768-f104-0fd8-69d4" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="4014-41ff-30c6-96cb" collective="false" targetId="179a-7d39-c15f-3066" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="37c3-f9d5-ff47-4cc3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="e2be-6127-dd61-1494" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Deathstorm Drop Pod Strike Group" hidden="false" id="5c5d-deac-afba-75b7" type="selectionEntry" targetId="782a-65f3-6350-4227">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="279d-5777-06a0-c734" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="945c-68d6-8604-5465" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="3950-a067-6bbe-5fb3" type="selectionEntry" targetId="a189-dab7-3f3e-534e">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="0ed8-b922-8059-b4f3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="7900-672d-6b02-e126" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Devastator Squad" hidden="false" id="ed6c-c6bc-437c-ddde" type="selectionEntry" targetId="cc50-f04a-0cd6-e966">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="199f-f85e-9f2e-408a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="0785-87ff-d779-8f5c" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Devastator Squad" hidden="false" id="e0da-0909-16d7-a492" type="selectionEntry" targetId="cc50-f04a-0cd6-e966">
       <categoryLinks>
         <categoryLink name="Infantry Unit Type" hidden="false" id="9d6a-2815-4c1d-b076" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -121,13 +342,102 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="91f4-a987-62f8-10c3" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="6652-f491-76af-195e" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="db38-fb89-3df9-9290" type="selectionEntry" targetId="9790-9fbb-a100-0c73"/>
+    <entryLink import="true" name="Fire Raptor Gunship" hidden="false" id="db38-fb89-3df9-9290" type="selectionEntry" targetId="9790-9fbb-a100-0c73">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="841c-c7b2-365b-b033" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="f887-643d-f9cb-7f7b" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Force Commander" hidden="false" id="2917-8fac-f351-0cf2" collective="false" targetId="7111-dfcb-76f1-8189" type="selectionEntry"/>
-    <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="7f06-7188-f542-5a69" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba"/>
-    <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="93d8-fbad-6557-61d8" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab"/>
-    <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="d00e-9f0b-19ed-48da" type="selectionEntry" targetId="9de4-7d85-524d-d69a"/>
-    <entryLink import="true" name="Land Raider Support Squadron" hidden="false" id="083f-d165-6086-8531" type="selectionEntry" targetId="5a6a-c53a-440b-939a"/>
+    <entryLink import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="7f06-7188-f542-5a69" type="selectionEntry" targetId="83bd-6f3c-4cd9-12ba">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="f202-3e47-c098-4b11" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="8eb8-e7c3-0a90-3bc0" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Carrier Squadron" hidden="false" id="93d8-fbad-6557-61d8" type="selectionEntry" targetId="f82f-4dbc-e92f-17ab">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="e4fc-6294-3095-a736" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="38dc-c9df-7134-3c65" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Spartan Heavy Assault Carrier" hidden="false" id="d00e-9f0b-19ed-48da" type="selectionEntry" targetId="9de4-7d85-524d-d69a">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="0b55-9ebb-d4c3-7aba" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="4e08-9ba1-68fc-602d" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Support Squadron" hidden="false" id="083f-d165-6086-8531" type="selectionEntry" targetId="5a6a-c53a-440b-939a">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="7242-52d4-fc7c-68c2" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="82bc-ccda-4208-fb55" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Land Speeder Javelin" hidden="false" id="63b2-5078-3244-4bd8" type="selectionEntry" targetId="e785-818b-fcb0-5813">
       <modifiers>
         <modifier type="set" value="0" field="be1f-b227-66c0-c31d">
@@ -136,6 +446,20 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="eff6-3e19-6d6c-67d2" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="5e65-5066-715a-37b3" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
     <entryLink import="true" name="Land Speeder Proteus" hidden="false" id="3bba-92e5-6bcc-9e72" type="selectionEntry" targetId="f291-81c2-dd43-082f">
       <modifiers>
@@ -145,12 +469,101 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="299d-c14a-b664-3a91" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="9a50-8e99-fbf0-e35a" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="787a-8793-3a5d-5567" type="selectionEntry" targetId="a770-b7f3-0129-7cd7"/>
-    <entryLink import="true" name="Land Speeder Storm" hidden="false" id="452d-36dd-8983-6bae" collective="false" targetId="1ecc-ee9a-1f72-1ec5" type="selectionEntry"/>
-    <entryLink import="true" name="Leviathan Siege Dreadnought" hidden="false" id="a367-cfa7-8271-a208" type="selectionEntry" targetId="8934-5581-2518-006b"/>
-    <entryLink import="true" name="Predator Main Battle Tank Squadron" hidden="false" id="2242-8baf-ec20-00ad" type="selectionEntry" targetId="2fd6-6cd2-df56-7c43"/>
-    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="080a-9ec6-da12-cb1b" type="selectionEntry" targetId="089f-7f15-f7d1-5f42"/>
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="787a-8793-3a5d-5567" type="selectionEntry" targetId="a770-b7f3-0129-7cd7">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="7714-a01f-e569-cfc7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="d06d-25d4-6ee0-1aab" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Storm" hidden="false" id="452d-36dd-8983-6bae" collective="false" targetId="1ecc-ee9a-1f72-1ec5" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="defd-8b44-3e50-4cc9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="14f0-0639-c674-c51e" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Leviathan Siege Dreadnought" hidden="false" id="a367-cfa7-8271-a208" type="selectionEntry" targetId="8934-5581-2518-006b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="a684-c903-cb64-30da" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="7993-c803-6162-3651" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Predator Main Battle Tank Squadron" hidden="false" id="2242-8baf-ec20-00ad" type="selectionEntry" targetId="2fd6-6cd2-df56-7c43">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="1955-36a9-4b2b-3f50" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="d506-cfae-213f-6acf" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Scout Bike Squad" hidden="false" id="080a-9ec6-da12-cb1b" type="selectionEntry" targetId="089f-7f15-f7d1-5f42">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="03ab-5b28-05dd-3915" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="d3ba-295b-62b8-fa22" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Scout Bike Squad" hidden="false" id="0a9e-f29e-4e2a-8916" type="selectionEntry" targetId="089f-7f15-f7d1-5f42">
       <categoryLinks>
         <categoryLink name="Cavalry Unit Type" hidden="false" id="fba7-f378-0057-29e1" targetId="1f61-547f-0ff6-f835" primary="false"/>
@@ -174,10 +587,69 @@
       <entryLinks>
         <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="09f3-51e9-4a7d-23b9" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="4b49-8ecb-ff59-008e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="b459-33a4-9a9d-23cd" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Scout Squad" hidden="false" id="40df-53d5-c99f-0154" collective="false" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry"/>
-    <entryLink import="true" name="Siege Assault Squad" hidden="false" id="89f1-f40a-63af-cca9" collective="false" targetId="9547-7fba-408b-91dc" type="selectionEntry"/>
-    <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="a4d8-f898-29fe-dcb6" type="selectionEntry" targetId="95a7-ebc6-07a7-f651"/>
+    <entryLink import="true" name="Scout Squad" hidden="false" id="40df-53d5-c99f-0154" collective="false" targetId="d6ad-6c5a-46d3-0343" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="815c-3471-cf5a-d112" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="2bf4-f69b-e5d3-8f2f" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Siege Assault Squad" hidden="false" id="89f1-f40a-63af-cca9" collective="false" targetId="9547-7fba-408b-91dc" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="b6a6-04be-30eb-8e50" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="8f2c-23f6-ac7e-a3d4" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="a4d8-f898-29fe-dcb6" type="selectionEntry" targetId="95a7-ebc6-07a7-f651">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="7637-1dab-5fbe-c323" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="82d4-b1fe-743f-99e2" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Space Marine Bike Squad" hidden="false" id="e8ca-2fba-5536-2649" type="selectionEntry" targetId="95a7-ebc6-07a7-f651">
       <categoryLinks>
         <categoryLink name="Cavalry Unit Type" hidden="false" id="e298-92f8-7211-9144" targetId="1f61-547f-0ff6-f835" primary="false"/>
@@ -200,9 +672,53 @@
         </modifier>
       </modifiers>
       <comment>8th Company ROW</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="0910-b137-c0d5-ede4" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="56b4-8c90-a753-5412" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Specialist Detachment" hidden="false" id="c15e-5197-381f-3e6a" type="selectionEntry" targetId="db22-78a1-b307-ac9c"/>
-    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="2a85-3d98-2e69-c4fe" type="selectionEntry" targetId="4cc2-6eec-77d4-5165"/>
+    <entryLink import="true" name="Specialist Detachment" hidden="false" id="c15e-5197-381f-3e6a" type="selectionEntry" targetId="db22-78a1-b307-ac9c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="0108-9a51-b28d-e307" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="9560-1344-2aa0-00ce" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="2a85-3d98-2e69-c4fe" type="selectionEntry" targetId="4cc2-6eec-77d4-5165">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="6a53-30d0-524d-6d78" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="4005-9576-3e35-d53f" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="3cff-ead9-1f7f-34a2" type="selectionEntry" targetId="4cc2-6eec-77d4-5165">
       <categoryLinks>
         <categoryLink name="Elites:" hidden="false" id="6d21-92e3-dd92-9fc3" targetId="d471-a611-11c4-7f09" primary="false"/>
@@ -225,14 +741,103 @@
         <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="1e1d-cdc2-a802-0e8b" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
       </entryLinks>
       <comment>1st Company RoW</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="f4d6-35d0-152f-6da9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="496d-9d43-0de1-b244" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Storm Eagle Gunship" hidden="false" id="c558-38a5-107e-ab95" type="selectionEntry" targetId="30c3-2c14-a27f-f411"/>
-    <entryLink import="true" name="Stormraven Gunship" hidden="false" id="4e4c-d294-13bb-0f70" type="selectionEntry" targetId="29d4-4cc4-7c36-0b58"/>
-    <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="2fe2-21ac-3ecf-a441" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb"/>
-    <entryLink import="true" name="Tactical Squad" hidden="false" id="b684-2208-c737-036b" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry"/>
+    <entryLink import="true" name="Storm Eagle Gunship" hidden="false" id="c558-38a5-107e-ab95" type="selectionEntry" targetId="30c3-2c14-a27f-f411">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="cdfa-62bb-3047-d7f9" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="73f5-9cb7-57f6-c643" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Stormraven Gunship" hidden="false" id="4e4c-d294-13bb-0f70" type="selectionEntry" targetId="29d4-4cc4-7c36-0b58">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="efe8-610d-ff6c-b68f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="3dc3-18d9-efd3-2518" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Stormtalon Gunship" hidden="false" id="2fe2-21ac-3ecf-a441" type="selectionEntry" targetId="e0ef-1221-0dcb-56bb">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="1af1-12a1-7e0c-ce74" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="59dc-e877-ec6f-5e02" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Tactical Squad" hidden="false" id="b684-2208-c737-036b" collective="false" targetId="8a3e-fbcb-5cfc-3367" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="4e45-4df3-da81-8b8b" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="ec38-cd00-6e9b-7f27" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Terminator Company Captain" hidden="false" id="89c5-bceb-c94f-96b0" collective="false" targetId="925a-3e84-4760-fd4c" type="selectionEntry"/>
     <entryLink import="true" name="Terminator Force Command" hidden="false" id="649e-0fcd-5234-f344" collective="false" targetId="5ed8-8c58-e3e4-9887" type="selectionEntry"/>
-    <entryLink import="true" name="Terminator Squad" hidden="false" id="5f8f-cf8f-dde0-2c1f" type="selectionEntry" targetId="9e1e-b418-0522-9d42"/>
+    <entryLink import="true" name="Terminator Squad" hidden="false" id="5f8f-cf8f-dde0-2c1f" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="e007-9d48-3564-880f" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="1c13-bba2-176e-c3c5" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Terminator Squad" hidden="false" id="a35e-8561-c2c6-7763" type="selectionEntry" targetId="9e1e-b418-0522-9d42">
       <categoryLinks>
         <categoryLink name="Infantry Unit Type" hidden="false" id="6705-ecee-5545-1655" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -256,11 +861,85 @@
       <entryLinks>
         <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="079b-4307-4e26-b521" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="c8be-e1c2-b190-5ef7" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="dd80-7df7-c8ef-c7ed" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Thunderfire Cannon Battery" hidden="false" id="0d06-db63-9988-c7f5" type="selectionEntry" targetId="325b-7a48-4da1-c934"/>
-    <entryLink import="true" name="Thunderhawk Heavy Gunship" hidden="false" id="dc57-e409-5486-2ba0" type="selectionEntry" targetId="c746-d882-2f6a-d74c"/>
-    <entryLink import="true" name="Thunderhawk Heavy Transporter" hidden="false" id="2439-d73d-43ec-e3c2" type="selectionEntry" targetId="4d1c-ed2e-71d7-8bb5"/>
-    <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="284a-acbb-6a72-f00d" type="selectionEntry" targetId="a921-21d2-1964-1e2d"/>
+    <entryLink import="true" name="Thunderfire Cannon Battery" hidden="false" id="0d06-db63-9988-c7f5" type="selectionEntry" targetId="325b-7a48-4da1-c934">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="2994-629e-ab56-6f57" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="6a6c-0579-0b70-2614" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk Heavy Gunship" hidden="false" id="dc57-e409-5486-2ba0" type="selectionEntry" targetId="c746-d882-2f6a-d74c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="d40c-2375-b5fd-f978" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="e5ea-298a-f1b5-0ef9" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk Heavy Transporter" hidden="false" id="2439-d73d-43ec-e3c2" type="selectionEntry" targetId="4d1c-ed2e-71d7-8bb5">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="8463-78b0-8e08-fecb" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="ae72-7ec5-608f-0bdc" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="284a-acbb-6a72-f00d" type="selectionEntry" targetId="a921-21d2-1964-1e2d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="94f3-31f3-4712-b3e0" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="add7-ae09-439c-c5a8" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Vanguard Veteran Squad" hidden="false" id="adb5-5f84-42d2-b9a1" type="selectionEntry" targetId="a921-21d2-1964-1e2d">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -283,14 +962,58 @@
       <entryLinks>
         <entryLink import="true" name="1st Company Compulsory Troops" hidden="false" id="82ee-5968-2972-d7fd" type="selectionEntry" targetId="8c3a-f99e-4226-e519"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="5d0c-2f2f-3e8f-18d2" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="a145-63be-274e-7d8b" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </entryLink>
-    <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="8af3-0784-eca1-dd37" type="selectionEntry" targetId="101f-7164-6f2f-80e2"/>
+    <entryLink import="true" name="Vindicator Siege Tank Squadron" hidden="false" id="8af3-0784-eca1-dd37" type="selectionEntry" targetId="101f-7164-6f2f-80e2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="e956-190f-e0d3-4a80" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="1c1c-fd07-700e-ecd4" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
     <entryLink import="true" name="Retaliator Squad" hidden="false" id="dd05-f442-af5d-cd55" type="selectionEntry" targetId="8223-c41c-9203-3a87"/>
     <entryLink import="true" name="Lugft Huron" hidden="false" id="3884-92b1-ecc1-3c82" type="selectionEntry" targetId="7bbf-3ace-8da4-85d4"/>
     <entryLink import="true" name="Captain Corlen Sumatris" hidden="false" id="ee59-0387-1ee0-0828" type="selectionEntry" targetId="6f08-6b7c-0625-8b43"/>
     <entryLink import="true" name="Armennus Valthex" hidden="false" id="dd85-57aa-c32b-e343" type="selectionEntry" targetId="3b4f-51c8-5b67-442b"/>
     <entryLink import="true" name="Arch-Centurion Carnac Commodus" hidden="false" id="763a-6082-2d4f-30d5" type="selectionEntry" targetId="a9dc-e681-6bff-2978"/>
-    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="274a-f3e1-8a2e-2a78" type="selectionEntry" targetId="2b66-226f-e1a2-c002"/>
+    <entryLink import="true" name="Whirlwind Mobile Artillery" hidden="false" id="274a-f3e1-8a2e-2a78" type="selectionEntry" targetId="2b66-226f-e1a2-c002">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="00) Use Chapter From (1 Unit Per Army):" id="0265-d27d-7973-f878" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Chapters" hidden="false" id="ca3a-affe-a310-21c1" type="selectionEntryGroup" targetId="098e-54ea-054c-8ab3"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Retaliator Squad" hidden="false" id="8223-c41c-9203-3a87" collective="false">
@@ -895,7 +1618,7 @@
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="0) Warlord Trait" id="6d51-3f54-d982-f176" hidden="false">
+        <selectionEntryGroup name="0) Warlord Trait" id="6d51-3f54-d982-f176" hidden="false" defaultSelectionEntryId="011f-f8fb-231e-6a0d">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Master of the Counter Assault" hidden="false" id="011f-f8fb-231e-6a0d">
               <profiles>
@@ -909,20 +1632,8 @@
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8571-4a55-e387-a009" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ca90-2e48-ac01-8cd4" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca90-2e48-ac01-8cd4" includeChildSelections="false"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="ca90-2e48-ac01-8cd4">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="fd37-1b61-577f-b84b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Retinue" id="2fc6-cc4d-ed72-a358" hidden="false" collective="false" import="true">
           <constraints>
@@ -936,6 +1647,28 @@
             </entryLink>
             <entryLink import="true" name="Terminator Command Squad" hidden="false" id="877d-f5da-02fb-755e" collective="false" targetId="58f4-572d-850f-93e6" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Bring Allied Unit From:" id="48e2-e874-abda-d661" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="The Executioners" hidden="false" id="9c06-8fd8-5f11-cab7" type="selectionEntry" targetId="948e-7150-25a0-cf97">
+              <categoryLinks>
+                <categoryLink targetId="8027-d7a9-cacf-870a" id="dd89-20ed-bd60-4a38" primary="false" name="ExecutionersAlly"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="The Lamenters" hidden="false" id="4a3c-17d6-ae02-a804" type="selectionEntry" targetId="12c6-07ed-0a19-fb87">
+              <categoryLinks>
+                <categoryLink targetId="c64c-c33e-4891-a3be" id="c106-2c6a-20e4-70c5" primary="false" name="LamentersAlly"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="The Mantis Warriors" hidden="false" id="6435-e0cf-3b48-1d7d" type="selectionEntry" targetId="a8ae-c0b5-6ffb-d492">
+              <categoryLinks>
+                <categoryLink targetId="dcc8-7c03-3fb7-c98e" id="48fa-c5d8-a29f-de98" primary="false" name="MantisWarriorsAlly"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01c8-991b-e09a-0056" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -958,6 +1691,11 @@
         </rule>
         <rule name="Shadowed Fate" id="e861-8185-e24e-86c6" hidden="false">
           <description>The first time Huron would be removed as a casualty for any reason, leave him on his side, on the table where this has happened. Roll a D6 at the beginning of his controlling players next turn, on a 2+ he instead survives with one wound remaining and is placed back in play as close to where he fell as possible.</description>
+        </rule>
+        <rule name="Strategic Command (Traitors)" id="6579-0d0b-1689-f262" hidden="false">
+          <description>An army led by a model with the Supreme Commander (X) Rule may, if it choses, take 0-1 choices of any non Unique, Non HQ unit from any other army within their faction.
+For instance, in an army led by Lufgt Huron, he could take a Tactical Squad with Chapter Tactics (Lamenters) or an Assault Squad with Chapter Tactics (Mantis Warriors) in his Primary Detachment, counting the unit for all intents and purposes as part of the Primary Detachment.
+Note this unit must be painted up in the correct colours as its chosen Chapter Tactics (X) rule, this is to be used ideally for thematic modelling and not trying to game in a better tactical squad etc.</description>
         </rule>
       </rules>
       <selectionEntries>
@@ -1724,4 +2462,55 @@
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="MantisWarriorsAlly" id="dcc8-7c03-3fb7-c98e" hidden="false"/>
+    <categoryEntry name="LamentersAlly" id="c64c-c33e-4891-a3be" hidden="false"/>
+    <categoryEntry name="ExecutionersAlly" id="8027-d7a9-cacf-870a" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Chapters" id="098e-54ea-054c-8ab3" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="The Mantis Warriors" hidden="false" id="4e14-d164-ef22-bd57" type="selectionEntry" targetId="a8ae-c0b5-6ffb-d492">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="dcc8-7c03-3fb7-c98e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="e5cd-410e-a291-3313" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Lamenters" hidden="false" id="0cf0-9594-a78d-10b8" type="selectionEntry" targetId="12c6-07ed-0a19-fb87">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="0385-6d76-7063-f022" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c64c-c33e-4891-a3be" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="The Executioners" hidden="false" id="e3cc-b2dd-a772-79e6" type="selectionEntry" targetId="948e-7150-25a0-cf97">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="a85f-d757-db3f-43e8" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="8027-d7a9-cacf-870a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6631-f318-3622-e194" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6939-664f-dc7d-a1ca" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
