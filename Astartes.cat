@@ -1791,29 +1791,6 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Chainaxe" hidden="false" id="e105-9aed-96b0-2109" type="selectionEntry" targetId="538d-20fb-7d92-0dd5">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="b94f-4192-0adb-b0ff" childId="948e-7150-25a0-cf97" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="force" childId="d64e-4be0-0219-9b4f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="948e-7150-25a0-cf97" shared="true" includeChildSelections="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a81a-cd84-94a5-3938" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2f2-56d0-f779-3f2c"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Encarmine Axe" hidden="false" id="94b2-a1eb-01ae-898e" type="selectionEntry" targetId="f0d5-0132-1152-ca2e">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
