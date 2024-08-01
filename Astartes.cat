@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="29" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="31" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -78,7 +78,7 @@
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8f66-84b2-5591-f81b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="19" field="8f66-84b2-5591-f81b">
+                <modifier type="increment" value="19" field="8f66-84b2-5591-f81b">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -672,10 +672,26 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="14"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f966-9e00-ce33-4d8b" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3eea-c082-1258-7385" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="3eea-c082-1258-7385">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="9647-0f58-d518-1e48" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="ed67-cef8-7802-d102" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="0531-85dd-feb0-116d" name="3) Dedicated Transport:" hidden="false" collective="false" import="true">
           <constraints>
@@ -882,7 +898,7 @@
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Grav Cannon &amp; Grav Amp" hidden="false" id="ad76-0fbe-e043-d874" collective="false" targetId="be9e-10d8-eab2-43b7" type="selectionEntry">
+                    <entryLink import="true" name="Grav Cannon" hidden="false" id="ad76-0fbe-e043-d874" collective="false" targetId="be9e-10d8-eab2-43b7" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                       </costs>
@@ -1436,9 +1452,6 @@
         </entryLink>
         <entryLink import="true" name="Chapter Tactics" hidden="false" id="b20b-a3a0-abce-70d6" type="selectionEntry" targetId="f2ba-4369-e687-0f22"/>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="7992-13c8-e552-57c1" value="14"/>
-      </costs>
       <modifiers>
         <modifier type="remove" value="6399-5c65-7833-1025" field="category">
           <conditions>
@@ -3506,22 +3519,22 @@
             </entryLink>
             <entryLink import="true" name="Power Axe" hidden="false" id="7f03-e8a4-2216-8661" collective="false" targetId="9b64-83e6-bcb5-8799" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="7"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Lance" hidden="false" id="fdf8-57b7-f31f-e471" collective="false" targetId="6015-a078-64cc-6a54" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="7"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Maul" hidden="false" id="347b-7110-dbb8-700f" collective="false" targetId="d831-0043-0944-a75f" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="7"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Power Sword" hidden="false" id="fa0f-2d92-3fa7-ebf7" collective="false" targetId="4f6f-0064-0a64-5565" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="7"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -8129,7 +8142,11 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Legatine Axe" hidden="false" id="14a6-b0d9-4896-ca79" type="selectionEntry" targetId="6e7f-82b9-1e46-e2e2"/>
+                <entryLink import="true" name="Legatine Axe" hidden="false" id="14a6-b0d9-4896-ca79" type="selectionEntry" targetId="6e7f-82b9-1e46-e2e2">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
+                </entryLink>
                 <entryLink import="true" name="Encarmine Axe" hidden="false" id="d2f6-5ea7-fa08-03b7" type="selectionEntry" targetId="f0d5-0132-1152-ca2e">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="5"/>
@@ -11969,6 +11986,11 @@
                       </conditionGroups>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Legatine Axe" hidden="false" id="251c-9e8f-4152-c777" type="selectionEntry" targetId="6e7f-82b9-1e46-e2e2">
+                  <costs>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -17559,11 +17581,10 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink name="Line Sub-type" hidden="false" id="dcea-23a1-6768-43d8" targetId="6399-5c65-7833-1025" primary="false"/>
                 <categoryLink name="Infantry Unit Type" hidden="false" id="5275-69a7-fc12-c0d4" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="55"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="63"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Veteran Marine" hidden="false" id="88af-f3a1-4791-8827" collective="false">
@@ -17600,11 +17621,8 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                   </modifiers>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink name="Line Sub-type" hidden="false" id="394a-12b1-940d-9939" targetId="6399-5c65-7833-1025" primary="false"/>
-              </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="18"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -18518,11 +18536,17 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
         </modifier>
         <modifier type="add" value="6399-5c65-7833-1025" field="category">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -18832,6 +18856,11 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="cad2-22f5-6326-c972" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" value="1" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="bbad-807c-56e5-a188" shared="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </profile>
               </profiles>
@@ -18839,7 +18868,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <categoryLink name="Line Sub-type" hidden="false" id="2181-2884-834a-76f7" targetId="6399-5c65-7833-1025" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="22"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="9ef3-ef61-00c6-9f9a" collective="false" collapsible="true">
@@ -18873,6 +18902,11 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="cad2-22f5-6326-c972" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" value="1" field="9dda-7029-992e-a66e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="bbad-807c-56e5-a188" shared="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </profile>
               </profiles>
@@ -18881,7 +18915,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <categoryLink name="Infantry Unit Type" hidden="false" id="fbe3-907c-21f5-5181" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="47"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="55"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="1) Sergeant Armour:" id="de54-5b35-d36f-b77e" hidden="false" defaultSelectionEntryId="ab2d-e9cc-6aac-5c84">
@@ -19654,6 +19688,59 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="a8ae-c0b5-6ffb-d492" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="1) Red Scorpions - Anphelion Veterans" id="6b00-6262-cdcf-e9c4" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7289-9a95-8fc9-5479" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Anphelion Veterans" hidden="false" id="bbad-807c-56e5-a188" type="selectionEntry" targetId="d1b6-6da6-bd24-1de3">
+              <modifiers>
+                <modifier type="increment" value="12" field="7992-13c8-e552-57c1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="94cb-2428-de66-e118" shared="true" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="force" childId="d5d3-7e29-8b8b-07f1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="primary-catalogue" childId="0f62-d077-925a-d095" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="1e02-3d58-c2f7-2e7b" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="b2ec-b3ad-c672-8de4" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="870d-45ae-c360-f871" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="890d-5016-a243-69f3" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="7e67-696a-e56a-312b" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="f8d3-3df4-1a6d-2ee6" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="89f6-d4c6-33f8-f34b" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="435f-66fa-79e7-1d94" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="1d9b-3e37-8a75-d5f6" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="a545-c6d2-36bd-9d03" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="4cc2-6eec-77d4-5165" childId="3885-72f6-8cc9-9239" shared="true" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -25011,6 +25098,22 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="04f3-b308-ff35-c26b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7899-9401-b915-2859" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="754c-95c4-8096-d68c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Space Marine Bike Squad" hidden="false" id="95a7-ebc6-07a7-f651">
@@ -25095,7 +25198,7 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                     <characteristic name="BS" typeId="9dda-7029-992e-a66e">4</characteristic>
                     <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
-                    <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+                    <characteristic name="W" typeId="5578-542d-96eb-bde5">1</characteristic>
                     <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
                     <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">7</characteristic>
@@ -28420,14 +28523,14 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         <profile name="Storm Eagle Gunship" typeId="2464-f115-2ad5-0754" typeName="Vehicle" hidden="false" id="e66c-5708-40e9-9f54">
           <characteristics>
             <characteristic name="Unit Type" typeId="63f5-0526-e8ed-4939">Vehicle (Transport)</characteristic>
-            <characteristic name="Move" typeId="d836-fd61-faae-3bf8">14</characteristic>
+            <characteristic name="Move" typeId="d836-fd61-faae-3bf8">18</characteristic>
             <characteristic name="BS" typeId="ec85-5928-42ac-3642">4</characteristic>
-            <characteristic name="Front" typeId="694b-f1c4-92ec-b01e">11</characteristic>
-            <characteristic name="Side" typeId="a8b7-4b00-bdfd-8c74">11</characteristic>
-            <characteristic name="Rear" typeId="6e9c-0884-6cab-a10c">10</characteristic>
-            <characteristic name="HP" typeId="5ab6-c2c2-2362-513f">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="7ec7-c2e6-e22e-9655">12</characteristic>
-            <characteristic name="Access Points" typeId="eda2-3f5e-7bc2-8219">Has one Access Point on each side of the hull and one at the rear.</characteristic>
+            <characteristic name="Front" typeId="694b-f1c4-92ec-b01e">12</characteristic>
+            <characteristic name="Side" typeId="a8b7-4b00-bdfd-8c74">12</characteristic>
+            <characteristic name="Rear" typeId="6e9c-0884-6cab-a10c">12</characteristic>
+            <characteristic name="HP" typeId="5ab6-c2c2-2362-513f">4</characteristic>
+            <characteristic name="Transport Capacity" typeId="7ec7-c2e6-e22e-9655">20</characteristic>
+            <characteristic name="Access Points" typeId="eda2-3f5e-7bc2-8219">Has one Access Point on each side of the hull, front, and one at the rear.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -28784,7 +28887,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="deda-e178-5a34-2c33" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Grav Cannon &amp; Grav Amp" hidden="false" id="d26b-cdb2-5ad9-5ddb" collective="false" targetId="be9e-10d8-eab2-43b7" type="selectionEntry">
+            <entryLink import="true" name="Grav Cannon" hidden="false" id="d26b-cdb2-5ad9-5ddb" collective="false" targetId="be9e-10d8-eab2-43b7" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
               </costs>
@@ -30219,7 +30322,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Grav Cannon &amp; Grav Amp" hidden="false" id="6a4c-9443-ee2e-e962" type="selectionEntry" targetId="be9e-10d8-eab2-43b7">
+                <entryLink import="true" name="Grav Cannon" hidden="false" id="6a4c-9443-ee2e-e962" type="selectionEntry" targetId="be9e-10d8-eab2-43b7">
                   <costs>
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
                   </costs>
@@ -30919,6 +31022,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
             <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Move Through Cover" id="e85c-361e-ef7f-2195" hidden="false" type="rule" targetId="b4e6-c3e5-cdc7-7939"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deredeo Dreadnought" hidden="false" id="a189-dab7-3f3e-534e">
@@ -38283,7 +38387,7 @@ on a model with this special rule, Embarking and Disembarking as per the normal 
       </infoLinks>
       <rules>
         <rule name="Anphelion Veterans" id="57b4-9e5a-ac6d-2fbc" hidden="false">
-          <description>A single Terminator Command Squad or Terminator Squad may be up Anphelion Veterans for +12 points a model. They each increase their BS by+ 1 and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules.</description>
+          <description>Each model iincrease their BS by+ 1 (added into profile already) and the entire units Bolt and Auto weapons gain the Poison (2+) special rule. They also gain the Move Through Cover and Night Vision Special Rules.</description>
         </rule>
       </rules>
       <constraints>

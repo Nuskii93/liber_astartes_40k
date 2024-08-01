@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3c8e-0445-8cfa-0673" name="The Star Phantoms - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3c8e-0445-8cfa-0673" name="The Star Phantoms - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Anti-Aircraft Tank Battery" hidden="false" id="7ecb-9a9b-1410-0724" type="selectionEntry" targetId="c5bb-fad3-cce1-180c"/>
     <entryLink import="true" name="Assault Squad" hidden="false" id="22d3-dc94-2b10-dbad" type="selectionEntry" targetId="b769-b066-d315-9de4"/>
@@ -387,8 +387,11 @@
           <description>If Zhrukal Androcles is present in a detachment, Devastator Squads may be taken as Elites as well as in Heavy Support.</description>
         </rule>
         <rule name="Entwined Fate" id="fffa-643a-fec8-6abb" hidden="false">
-          <description>If Lugft Huron is part of the opposing players army, Zhrukal Andorcles gains the Fearless, Fleet, Precision Shot (2+) and Eternal Warrior special rules while Lugft Huron is still alive. 
-In addition, anytime Zhrukal uses the Melta component of his Combi-Weapon and the wound is allocated to Lugft Huron, it also gains the Brutal (6) Special Rule.</description>
+          <description>&quot;If Lugft Huron is part of the opposing players army, Zhrukal Androcles gains the Fearless, Fleet and Eternal Warrior special rules while Lugft Huron is still alive.
+Anytime Zhrukal Androcles targets a unit containing Lugft Huron, he gains the Precision Strike (2+) rule. In addition any wounds assigned to Lugft Huron from the Melta component of Zhrukal Androclecs Combi-Weapon, it gain the Brutal (3) Special Rule.</description>
+        </rule>
+        <rule name="Master of Destruction" id="4d1b-38b2-cd90-9692" hidden="false">
+          <description>Once per turn, either Zhrukal Androcles himself, or a single chosen Space Marine Unit within 6” of him, may gain the benefit of his experience in taking out enemy fortifications or vehicles. The chosen unit adds +1 to their rolls to wound or penetrate. This bonus is cumulative to any other weapon’s special rules</description>
         </rule>
       </rules>
       <categoryLinks>

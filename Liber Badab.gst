@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="33" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="54ff-6cb4-65fe-7ad5" name="Liber Badab" revision="35" battleScribeVersion="2.03" authorName="Boff89" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>All these rules are 100% from the lovely folks who put together Liber Badab. test</readme>
   <publications>
     <publication id="0a24-8d5a-55ca-b028" name="Liber Astartes v1.6" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1322,19 +1322,14 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be9e-10d8-eab2-43b7" name="Grav Cannon &amp; Grav Amp" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="be9e-10d8-eab2-43b7" name="Grav Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f624-296d-4165-3565" name="Grav Cannon &amp; Grav Amp" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+        <profile id="f624-296d-4165-3565" name="Grav Cannon" publicationId="0a24-8d5a-55ca-b028" page="220" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">30</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">-</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
             <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Salvo 1/3, Grav-Ripple, Gets Hot!</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Grav Amp" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="862a-a306-5df9-9461">
-          <characteristics>
-            <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">When rolling To Wound with a grav weapon, or to determine its effects on a vehicle, the bearer can re-roll the result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6287,6 +6282,11 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
         <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">3</characteristic>
         <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
         <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 4, Force</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grav Amp" typeId="19f7-de55-815b-3358" typeName="Wargear Item" hidden="false" id="d630-9367-1d69-d608">
+      <characteristics>
+        <characteristic name="Description" typeId="250d-e1a0-86ec-0ae2">When rolling To Wound with a grav weapon, or to determine its effects on a vehicle, the bearer can re-roll the result.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

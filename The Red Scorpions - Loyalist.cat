@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="47de-6963-c3b0-1154" name="The Red Scorpions - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="47de-6963-c3b0-1154" name="The Red Scorpions - Loyalist" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="23" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Astartes" id="5574-3e98-425c-16c6" targetId="b232-3062-241d-bf2e"/>
   </catalogueLinks>
@@ -1018,7 +1018,8 @@ Note this unit must be painted up in the correct colours as its chosen Chapter T
                   <characteristics>
                     <characteristic name="Text" typeId="fd21-268e-062f-c8f2">If Carab Culln is the army&apos;s warlord, the army may take an additional Allied Detachment (2 Allied Detachments in total). In addition to this all Allies count-as one better than they would usually be on the allied chart when fighting under Carab Culln.
 Eg. If two of the detachments were &quot;By The Tyrant&apos;s/High Commanders Command&quot;, they would instead become &quot;Distrusted Allies&quot; Instead.
-In Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase ( only 1 additional reaction per player turn).</characteristic>
+In Addition to this while Culln is alive, the controlling player may make an additional reaction in any phase ( only 1 additional reaction per player turn).
+Also if Carab Culln is involved in a challenge, he gains +1 to hit while he remains in a challenge.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
