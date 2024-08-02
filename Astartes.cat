@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="31" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b232-3062-241d-bf2e" name="Astartes" revision="32" battleScribeVersion="2.03" authorName="Boff89" library="true" gameSystemId="54ff-6cb4-65fe-7ad5" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="8a3e-fbcb-5cfc-3367" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -33292,7 +33292,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
       <categoryLinks>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="ecd5-a2ea-f317-d7e8" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="09be-58ad-1860-531f" primary="false" name="Vehicle Unit:"/>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="02a4-ccde-35dd-3364" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Land Raider Prometheus" hidden="false" id="e2c1-2566-2f90-8b34">
@@ -33597,7 +33596,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="14b1-2679-817f-0aeb" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="24fb-2593-2233-3ae5" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="c242-ab08-ef92-6fdb" primary="false" name="Vehicle Unit:"/>
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="b385-dcd8-4e36-5df7" primary="false" name="Reinforced"/>
@@ -33960,7 +33958,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="4712-dfd5-d6cc-4412" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="892b-4f1e-1acb-2ae8" primary="false" name="Vehicle Unit:"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="f8bb-2cd2-7e8e-006d" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="2656-94e7-c8dd-5fda" primary="false" name="Reinforced"/>
@@ -34285,7 +34282,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="0b4f-1c59-ad20-ff2b" primary="false" name="Reinforced"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="bb18-9c55-3ee4-5054" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="630d-d310-fd4d-9b66" primary="false" name="Vehicle Unit:"/>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="7f08-1cd8-2feb-95da" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Land Raider Assault Carrier Squadron" hidden="false" id="83bd-6f3c-4cd9-12ba">
@@ -34320,10 +34316,10 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="cffb-6a85-36cf-6062" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="ae9f-6450-d483-7528" primary="false" name="Vehicle Unit:"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="5a5f-7b7c-ee17-747b" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="0488-a561-9add-01fa" primary="false" name="Reinforced"/>
+        <categoryLink targetId="1a92-d90b-9550-a0a7" id="d6eb-4f96-8677-4957" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Land Raider Achillies" hidden="false" id="0f90-687a-a837-a3fd">
@@ -34679,7 +34675,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="4bf0-4ee9-3ddf-40d5" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="dbc7-a732-de59-806b" primary="false" name="Transport Sub-type"/>
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="4b39-8e88-794c-2ad7" primary="false" name="Reinforced"/>
       </categoryLinks>
@@ -34997,7 +34992,6 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
       <categoryLinks>
         <categoryLink targetId="23eb-0b9e-0857-e965" id="b79d-ec2f-02ca-c37c" primary="false" name="Vehicle Unit:"/>
         <categoryLink targetId="a7fa-0a53-e64f-3cf1" id="5643-df83-17c9-e9e2" primary="false" name="Reinforced"/>
-        <categoryLink targetId="1a92-d90b-9550-a0a7" id="3833-d656-4a19-a1eb" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="7b0a-a743-a8da-3a39" id="fe21-1a4e-aaff-b5cf" primary="false" name="Transport Sub-type"/>
       </categoryLinks>
     </selectionEntry>
