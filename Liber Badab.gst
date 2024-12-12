@@ -4527,7 +4527,7 @@ In addition, all models in a unit that includes a Chapter standard gain the Line
     <selectionEntry type="upgrade" import="true" name="The Exorcists" hidden="false" id="870d-45ae-c360-f871">
       <rules>
         <rule name="Indomitable" id="02ff-b504-b173-d842" hidden="false">
-          <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw.</description>
+          <description>All models with Chapter Tactics (Exorcists) gain the Battle Hardened (1) Special Rule. In addition a model with this special rule may never have its leadership characteristic modified below a value of 6 (Via Fear, Loss of Combat, Nightfight etc). Furthermore if one or more models with this special rule are part of a combat that results in a draw, then a side which includes one or more models with this special rule at the end of the fight sub-phase is counted at having won the combat by one point. If both sides include this rule, the combat remains a draw. Furthermore, models with this chapter tactic gain preferred enemy (Daemons) and preferred enemy (Corrupted) special rules</description>
         </rule>
       </rules>
       <categoryLinks>
