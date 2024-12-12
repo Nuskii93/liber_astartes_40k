@@ -484,7 +484,7 @@
                             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                             <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                             <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                            <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                             <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                             <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                           </characteristics>
@@ -1909,7 +1909,7 @@
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                       </characteristics>
@@ -2159,7 +2159,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="19"/>
+                <cost name="Pts" typeId="7992-13c8-e552-57c1" value="20"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3098,7 +3098,7 @@
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                       </characteristics>
@@ -4353,7 +4353,7 @@
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">4+</characteristic>
                       </characteristics>
@@ -6688,7 +6688,7 @@
                 <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
                 <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
                 <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
-                <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
+                <characteristic name="W" typeId="5578-542d-96eb-bde5">4</characteristic>
                 <characteristic name="I" typeId="3f64-901a-1299-bbc4">5</characteristic>
                 <characteristic name="A" typeId="93ad-c469-87d0-c158">4</characteristic>
                 <characteristic name="Ld" typeId="0474-29b3-6a22-7416">10</characteristic>
@@ -6891,9 +6891,9 @@
                     <cost name="Pts" typeId="7992-13c8-e552-57c1" value="2"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3d77-e2a0-6593-1108" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="d90f-d91c-f964-38d0" type="selectionEntry">
+                <entryLink id="3d77-e2a0-6593-1108" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="c377-41ca-a941-2890" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="10"/>
+                    <cost name="Pts" typeId="7992-13c8-e552-57c1" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="916c-893c-d2f9-f0b9" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="e99a-780a-6eff-2f32" type="selectionEntry">
@@ -8853,7 +8853,7 @@
             <characteristic name="BS" typeId="9dda-7029-992e-a66e">5</characteristic>
             <characteristic name="S" typeId="6744-6714-3b2b-cc1d">4</characteristic>
             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
-            <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
+            <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
             <characteristic name="I" typeId="3f64-901a-1299-bbc4">5</characteristic>
             <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
             <characteristic name="Ld" typeId="0474-29b3-6a22-7416">9</characteristic>
@@ -10229,7 +10229,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="60"/>
+            <cost name="Pts" typeId="7992-13c8-e552-57c1" value="70"/>
           </costs>
           <infoGroups>
             <infoGroup name="10th Company ROW" id="dc93-59ab-e9a9-0b66" hidden="true">
@@ -17557,7 +17557,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                     <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                     <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">9</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                   </characteristics>
@@ -18887,7 +18887,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                     <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                     <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                     <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                    <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                    <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                     <characteristic name="Ld" typeId="0474-29b3-6a22-7416">9</characteristic>
                     <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                   </characteristics>
@@ -21756,7 +21756,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                       </characteristics>
@@ -21781,7 +21781,7 @@ The Techmarine cannot ever leave the unit it was assigned to. If that unit is re
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                       </characteristics>
@@ -24205,7 +24205,7 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                       </characteristics>
@@ -25583,7 +25583,7 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                             <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                             <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                            <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                             <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                             <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                           </characteristics>
@@ -26396,7 +26396,7 @@ All enemy models with the Chapter Tactics (X) special rule gain the Hatred (Cor
                             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                             <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                             <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                            <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                             <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                             <characteristic name="Save" typeId="0517-4c64-4fd7-6739">4+</characteristic>
                           </characteristics>
@@ -29270,7 +29270,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                             <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">4</characteristic>
                             <characteristic name="W" typeId="5578-542d-96eb-bde5">2</characteristic>
                             <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                            <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                            <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                             <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                             <characteristic name="Save" typeId="0517-4c64-4fd7-6739">3+</characteristic>
                           </characteristics>
@@ -30162,7 +30162,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                       </characteristics>
@@ -30187,7 +30187,7 @@ In addition when hovering, a Storm Talon gunship receives the Shrouded (6+) spec
                         <characteristic name="T" typeId="5e7b-26ca-3c3d-1719">5</characteristic>
                         <characteristic name="W" typeId="5578-542d-96eb-bde5">3</characteristic>
                         <characteristic name="I" typeId="3f64-901a-1299-bbc4">4</characteristic>
-                        <characteristic name="A" typeId="93ad-c469-87d0-c158">2</characteristic>
+                        <characteristic name="A" typeId="93ad-c469-87d0-c158">3</characteristic>
                         <characteristic name="Ld" typeId="0474-29b3-6a22-7416">8</characteristic>
                         <characteristic name="Save" typeId="0517-4c64-4fd7-6739">2+</characteristic>
                       </characteristics>

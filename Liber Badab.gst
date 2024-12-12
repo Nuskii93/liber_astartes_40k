@@ -811,14 +811,14 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="7992-13c8-e552-57c1" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d90f-d91c-f964-38d0" name="Charnabal Glaive" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d90f-d91c-f964-38d0" name="Charnable Glaive" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9c0e-c5e3-0842-d5bf" name="Charnabal Glaive" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
+        <profile id="9c0e-c5e3-0842-d5bf" name="Charnable Glaive" publicationId="0a24-8d5a-55ca-b028" page="222" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">-</characteristic>
             <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">+1</characteristic>
             <characteristic name="AP" typeId="d24d-64be-92be-d248">-</characteristic>
-            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Breaching (5+), Duellist&apos;s Edge (2), Two-handed</characteristic>
+            <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Melee, Breaching (5+), Duellist's edge (5), Two-handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6249,7 +6249,7 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
         <characteristic name="Range" typeId="ce84-cf4b-b4bd-043f">24&quot;</characteristic>
         <characteristic name="Strength" typeId="b0f9-2a83-aa51-b932">4</characteristic>
         <characteristic name="AP" typeId="d24d-64be-92be-d248">5</characteristic>
-        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire, Master-crafted</characteristic>
+        <characteristic name="Type" typeId="a1ae-1a76-5a16-c8b0">Rapid Fire</characteristic>
       </characteristics>
     </profile>
     <profile id="48bb-8780-c730-ebeb" name="Bolt Pistol" publicationId="0a24-8d5a-55ca-b028" page="219" hidden="false" typeId="d30e-0868-cb7e-98bb" typeName="Weapon">
